@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components\.venv-p0\Scripts\python.exe
+rootdir: C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components
+configfile: pyproject.toml
+collecting ... collected 2 items
+
+components\tests\test_doctor.py::test_doctor_reports_actual_environment_without_claiming_model_readiness PASSED [ 50%]
+components\tests\test_doctor.py::test_unimplemented_training_command_fails_instead_of_implying_training_ran PASSED [100%]
+
+============================== 2 passed in 0.54s ==============================
