@@ -1,0 +1,33 @@
+{
+  "source_counts": {
+    "train:0": 904,
+    "test:1": 100,
+    "test:0": 100
+  },
+  "split_counts": {
+    "reference": {
+      "0": 100
+    },
+    "calibration": {
+      "0": 100,
+      "1": 20
+    },
+    "test": {
+      "0": 100,
+      "1": 80
+    },
+    "unused": {
+      "0": 704
+    },
+    "quarantined": {}
+  },
+  "duplicate_pairs": [],
+  "quarantined": 0,
+  "physical_product_ids": "Unavailable. Filename is not a verified unique physical board identifier; physical-instance leakage remains possible.",
+  "mask_values": [
+    0,
+    255
+  ],
+  "protocol_sha256": "cae47ec4a69f8083a2de92e0156f9694df0abdaa7c73e1e778eeba9bb5b810a6",
+  "split_sha256": "78922715c7944171792df258fcd01de383c90e8fcad4f252554eac95f69420ba"
+}

@@ -1,0 +1,177 @@
+{
+  "export_seconds": 6.01638389999971,
+  "model_bytes": 43125528,
+  "fixtures": [
+    {
+      "id": "test_0130",
+      "label": 0,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 6.4418535232543945,
+      "onnx_score": 6.4418559074401855,
+      "score_abs_difference": 2.384185791015625e-06,
+      "map_max_abs_difference": 8.58306884765625e-06,
+      "onnx_milliseconds": 33.144100000754406,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0142",
+      "label": 0,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 6.677016735076904,
+      "onnx_score": 6.677018642425537,
+      "score_abs_difference": 1.9073486328125e-06,
+      "map_max_abs_difference": 5.7220458984375e-06,
+      "onnx_milliseconds": 23.806799999874784,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0125",
+      "label": 0,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 11.920941352844238,
+      "onnx_score": 11.920941352844238,
+      "score_abs_difference": 0.0,
+      "map_max_abs_difference": 9.5367431640625e-06,
+      "onnx_milliseconds": 22.75310000004538,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0194",
+      "label": 0,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 13.657279968261719,
+      "onnx_score": 13.657278060913086,
+      "score_abs_difference": 1.9073486328125e-06,
+      "map_max_abs_difference": 5.7220458984375e-06,
+      "onnx_milliseconds": 19.608200000220677,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0152",
+      "label": 0,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 9.704912185668945,
+      "onnx_score": 9.704914093017578,
+      "score_abs_difference": 1.9073486328125e-06,
+      "map_max_abs_difference": 6.67572021484375e-06,
+      "onnx_milliseconds": 21.196300000156043,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0070",
+      "label": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 10.237580299377441,
+      "onnx_score": 10.23758316040039,
+      "score_abs_difference": 2.86102294921875e-06,
+      "map_max_abs_difference": 6.67572021484375e-06,
+      "onnx_milliseconds": 24.352599999474478,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0025",
+      "label": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 10.471139907836914,
+      "onnx_score": 10.471136093139648,
+      "score_abs_difference": 3.814697265625e-06,
+      "map_max_abs_difference": 6.67572021484375e-06,
+      "onnx_milliseconds": 23.790899999767134,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0073",
+      "label": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 11.470059394836426,
+      "onnx_score": 11.470059394836426,
+      "score_abs_difference": 0.0,
+      "map_max_abs_difference": 6.67572021484375e-06,
+      "onnx_milliseconds": 21.227799999905983,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0003",
+      "label": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 12.792977333068848,
+      "onnx_score": 12.792981147766113,
+      "score_abs_difference": 3.814697265625e-06,
+      "map_max_abs_difference": 8.58306884765625e-06,
+      "onnx_milliseconds": 19.041800000195508,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    },
+    {
+      "id": "test_0037",
+      "label": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "native_score": 9.555070877075195,
+      "onnx_score": 9.555075645446777,
+      "score_abs_difference": 4.76837158203125e-06,
+      "map_max_abs_difference": 7.62939453125e-06,
+      "onnx_milliseconds": 29.20300000005227,
+      "threshold": 11.106827735900879,
+      "accepted": true
+    }
+  ],
+  "note": "Native ONNX CPU parity, not browser/phone evidence."
+}

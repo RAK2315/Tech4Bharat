@@ -1,0 +1,50 @@
+{
+  "stage": "initial_scaffold",
+  "package_version": "0.1.0",
+  "project_root": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components",
+  "python": {
+    "version": "3.12.14",
+    "executable": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\.venv-p0\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\.venv-p0",
+    "isolated": true,
+    "supported": true
+  },
+  "setup_runtime_ready": true,
+  "resources": {
+    "logical_cpu_count": 16,
+    "available_ram_bytes": 12286922752,
+    "free_disk_bytes": 661082296320
+  },
+  "packages": {
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2",
+    "pytest": "9.1.1",
+    "torch": null,
+    "torchvision": null,
+    "anomalib": null
+  },
+  "configurations": {
+    "backend-targets.yaml": {
+      "schema_version": 1,
+      "status": "proposed_not_installed_or_validated"
+    },
+    "ksdd2_surface.yaml": {
+      "schema_version": 1,
+      "status": "not_evaluated"
+    },
+    "mvtec_metal_nut.yaml": {
+      "schema_version": 1,
+      "status": "not_evaluated"
+    },
+    "protocol.yaml": {
+      "schema_version": 1,
+      "status": "draft_not_frozen"
+    }
+  },
+  "implemented_commands": [
+    "doctor"
+  ],
+  "models_ready": false,
+  "datasets_downloaded": false,
+  "readiness_note": "Initial scaffold only. Dataset acquisition, artifact validation and model inference are not implemented; these flags do not audit future data."
+}

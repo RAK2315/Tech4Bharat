@@ -1,0 +1,11 @@
+{
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "hardwareConcurrency": 16,
+  "executionProvider": "wasm",
+  "threads": 1,
+  "fixtures": [],
+  "model_bytes": 43125528,
+  "model_fetch_ms": 165.8999999994412,
+  "error": "Error: no available backend found. ERR: [wasm] TypeError: Failed to resolve module specifier 'node_modules/onnxruntime-web/dist/ort-wasm-simd-threaded.mjs'",
+  "complete": false
+}

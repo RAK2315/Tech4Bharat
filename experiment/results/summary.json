@@ -1,0 +1,860 @@
+{
+  "reference": {
+    "calibration": {
+      "count": 120,
+      "defects": 20,
+      "normals": 100,
+      "TP": 5,
+      "FN_unflagged_accepted": 15,
+      "FN_abstained": 0,
+      "FP": 2,
+      "TN": 98,
+      "abstained_normals": 0,
+      "recall_all_defects": {
+        "numerator": 5,
+        "denominator": 20,
+        "rate": 0.25,
+        "wilson95": [
+          0.11186005278940309,
+          0.4687050099580636
+        ]
+      },
+      "recall_accepted_defects": {
+        "numerator": 5,
+        "denominator": 20,
+        "rate": 0.25,
+        "wilson95": [
+          0.11186005278940309,
+          0.4687050099580636
+        ]
+      },
+      "fpr_accepted_normals": {
+        "numerator": 2,
+        "denominator": 100,
+        "rate": 0.02,
+        "wilson95": [
+          0.005501852234968185,
+          0.07001316294199365
+        ]
+      },
+      "fp_all_normals": {
+        "numerator": 2,
+        "denominator": 100,
+        "rate": 0.02,
+        "wilson95": [
+          0.005501852234968185,
+          0.07001316294199365
+        ]
+      },
+      "precision_observed": {
+        "numerator": 5,
+        "denominator": 7,
+        "rate": 0.7142857142857143,
+        "wilson95": [
+          0.35892909014821267,
+          0.9177828342909844
+        ]
+      },
+      "observed_prevalence": {
+        "numerator": 20,
+        "denominator": 120,
+        "rate": 0.16666666666666666,
+        "wilson95": [
+          0.11055912012704824,
+          0.24345439391023813
+        ]
+      },
+      "coverage": {
+        "numerator": 120,
+        "denominator": 120,
+        "rate": 1.0,
+        "wilson95": [
+          0.9689797289440706,
+          1.0
+        ]
+      },
+      "retake_requests": 0,
+      "latency_ms": {
+        "median": 146.28700000002937,
+        "p95": 162.55609999998342,
+        "accepted_p95": 162.55609999998342,
+        "total_processing_seconds": 17.69856250000157
+      },
+      "human_review_time": "UNMEASURED; timed exercise pending",
+      "capture_time": "UNMEASURED",
+      "total_inspection_time": "UNMEASURED",
+      "provisional_screen_pass": false
+    },
+    "test": {
+      "count": 180,
+      "defects": 80,
+      "normals": 100,
+      "TP": 15,
+      "FN_unflagged_accepted": 65,
+      "FN_abstained": 0,
+      "FP": 1,
+      "TN": 99,
+      "abstained_normals": 0,
+      "recall_all_defects": {
+        "numerator": 15,
+        "denominator": 80,
+        "rate": 0.1875,
+        "wilson95": [
+          0.11705207812728378,
+          0.2865852570380757
+        ]
+      },
+      "recall_accepted_defects": {
+        "numerator": 15,
+        "denominator": 80,
+        "rate": 0.1875,
+        "wilson95": [
+          0.11705207812728378,
+          0.2865852570380757
+        ]
+      },
+      "fpr_accepted_normals": {
+        "numerator": 1,
+        "denominator": 100,
+        "rate": 0.01,
+        "wilson95": [
+          0.0017673865655472645,
+          0.0544875247609346
+        ]
+      },
+      "fp_all_normals": {
+        "numerator": 1,
+        "denominator": 100,
+        "rate": 0.01,
+        "wilson95": [
+          0.0017673865655472645,
+          0.0544875247609346
+        ]
+      },
+      "precision_observed": {
+        "numerator": 15,
+        "denominator": 16,
+        "rate": 0.9375,
+        "wilson95": [
+          0.7167073163197013,
+          0.9888809426916687
+        ]
+      },
+      "observed_prevalence": {
+        "numerator": 80,
+        "denominator": 180,
+        "rate": 0.4444444444444444,
+        "wilson95": [
+          0.37376583474975517,
+          0.5174448596741402
+        ]
+      },
+      "coverage": {
+        "numerator": 180,
+        "denominator": 180,
+        "rate": 1.0,
+        "wilson95": [
+          0.9791037501849418,
+          1.0
+        ]
+      },
+      "retake_requests": 0,
+      "latency_ms": {
+        "median": 138.1261500000619,
+        "p95": 155.6517650001069,
+        "accepted_p95": 155.6517650001069,
+        "total_processing_seconds": 25.187912300003973
+      },
+      "human_review_time": "UNMEASURED; timed exercise pending",
+      "capture_time": "UNMEASURED",
+      "total_inspection_time": "UNMEASURED",
+      "provisional_screen_pass": false
+    },
+    "synthetic_stress": {
+      "brightness_0.6": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 1,
+        "FN_unflagged_accepted": 79,
+        "FN_abstained": 0,
+        "FP": 1,
+        "TN": 99,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 1,
+          "denominator": 80,
+          "rate": 0.0125,
+          "wilson95": [
+            0.002209918618306224,
+            0.06746432423965451
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 1,
+          "denominator": 80,
+          "rate": 0.0125,
+          "wilson95": [
+            0.002209918618306224,
+            0.06746432423965451
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "precision_observed": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5,
+          "wilson95": [
+            0.09452865480086614,
+            0.9054713451991339
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 149.59109999972497,
+          "p95": 164.06309999963466,
+          "accepted_p95": 164.06309999963466,
+          "total_processing_seconds": 27.183148899997832
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      },
+      "brightness_1.4": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 8,
+        "FN_unflagged_accepted": 72,
+        "FN_abstained": 0,
+        "FP": 1,
+        "TN": 99,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 8,
+          "denominator": 80,
+          "rate": 0.1,
+          "wilson95": [
+            0.05154699917768554,
+            0.18510878983397458
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 8,
+          "denominator": 80,
+          "rate": 0.1,
+          "wilson95": [
+            0.05154699917768554,
+            0.18510878983397458
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "precision_observed": {
+          "numerator": 8,
+          "denominator": 9,
+          "rate": 0.8888888888888888,
+          "wilson95": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 157.89940000013303,
+          "p95": 180.49289999992197,
+          "accepted_p95": 180.49289999992197,
+          "total_processing_seconds": 28.8028907000039
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      },
+      "blur_2.0": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 11,
+        "FN_unflagged_accepted": 69,
+        "FN_abstained": 0,
+        "FP": 1,
+        "TN": 99,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 11,
+          "denominator": 80,
+          "rate": 0.1375,
+          "wilson95": [
+            0.07854633679551142,
+            0.22967297199630554
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 11,
+          "denominator": 80,
+          "rate": 0.1375,
+          "wilson95": [
+            0.07854633679551142,
+            0.22967297199630554
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 1,
+          "denominator": 100,
+          "rate": 0.01,
+          "wilson95": [
+            0.0017673865655472645,
+            0.0544875247609346
+          ]
+        },
+        "precision_observed": {
+          "numerator": 11,
+          "denominator": 12,
+          "rate": 0.9166666666666666,
+          "wilson95": [
+            0.6461140782014047,
+            0.9851352905492264
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 199.91345000016736,
+          "p95": 236.96956500011765,
+          "accepted_p95": 236.96956500011765,
+          "total_processing_seconds": 36.55048899999838
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      }
+    }
+  },
+  "padim": {
+    "calibration": {
+      "count": 120,
+      "defects": 20,
+      "normals": 100,
+      "TP": 14,
+      "FN_unflagged_accepted": 6,
+      "FN_abstained": 0,
+      "FP": 6,
+      "TN": 94,
+      "abstained_normals": 0,
+      "recall_all_defects": {
+        "numerator": 14,
+        "denominator": 20,
+        "rate": 0.7,
+        "wilson95": [
+          0.4810232237710206,
+          0.854524726031006
+        ]
+      },
+      "recall_accepted_defects": {
+        "numerator": 14,
+        "denominator": 20,
+        "rate": 0.7,
+        "wilson95": [
+          0.4810232237710206,
+          0.854524726031006
+        ]
+      },
+      "fpr_accepted_normals": {
+        "numerator": 6,
+        "denominator": 100,
+        "rate": 0.06,
+        "wilson95": [
+          0.02778574526665662,
+          0.12476968531222507
+        ]
+      },
+      "fp_all_normals": {
+        "numerator": 6,
+        "denominator": 100,
+        "rate": 0.06,
+        "wilson95": [
+          0.02778574526665662,
+          0.12476968531222507
+        ]
+      },
+      "precision_observed": {
+        "numerator": 14,
+        "denominator": 20,
+        "rate": 0.7,
+        "wilson95": [
+          0.4810232237710206,
+          0.854524726031006
+        ]
+      },
+      "observed_prevalence": {
+        "numerator": 20,
+        "denominator": 120,
+        "rate": 0.16666666666666666,
+        "wilson95": [
+          0.11055912012704824,
+          0.24345439391023813
+        ]
+      },
+      "coverage": {
+        "numerator": 120,
+        "denominator": 120,
+        "rate": 1.0,
+        "wilson95": [
+          0.9689797289440706,
+          1.0
+        ]
+      },
+      "retake_requests": 0,
+      "latency_ms": {
+        "median": 77.29844999994384,
+        "p95": 85.87636499978544,
+        "accepted_p95": 85.87636499978544,
+        "total_processing_seconds": 9.2941257999978
+      },
+      "human_review_time": "UNMEASURED; timed exercise pending",
+      "capture_time": "UNMEASURED",
+      "total_inspection_time": "UNMEASURED",
+      "provisional_screen_pass": false
+    },
+    "test": {
+      "count": 180,
+      "defects": 80,
+      "normals": 100,
+      "TP": 45,
+      "FN_unflagged_accepted": 35,
+      "FN_abstained": 0,
+      "FP": 15,
+      "TN": 85,
+      "abstained_normals": 0,
+      "recall_all_defects": {
+        "numerator": 45,
+        "denominator": 80,
+        "rate": 0.5625,
+        "wilson95": [
+          0.4534093786865696,
+          0.6658631542803586
+        ]
+      },
+      "recall_accepted_defects": {
+        "numerator": 45,
+        "denominator": 80,
+        "rate": 0.5625,
+        "wilson95": [
+          0.4534093786865696,
+          0.6658631542803586
+        ]
+      },
+      "fpr_accepted_normals": {
+        "numerator": 15,
+        "denominator": 100,
+        "rate": 0.15,
+        "wilson95": [
+          0.09305903191162297,
+          0.23283733332157835
+        ]
+      },
+      "fp_all_normals": {
+        "numerator": 15,
+        "denominator": 100,
+        "rate": 0.15,
+        "wilson95": [
+          0.09305903191162297,
+          0.23283733332157835
+        ]
+      },
+      "precision_observed": {
+        "numerator": 45,
+        "denominator": 60,
+        "rate": 0.75,
+        "wilson95": [
+          0.6276768905451521,
+          0.8422361442158816
+        ]
+      },
+      "observed_prevalence": {
+        "numerator": 80,
+        "denominator": 180,
+        "rate": 0.4444444444444444,
+        "wilson95": [
+          0.37376583474975517,
+          0.5174448596741402
+        ]
+      },
+      "coverage": {
+        "numerator": 180,
+        "denominator": 180,
+        "rate": 1.0,
+        "wilson95": [
+          0.9791037501849418,
+          1.0
+        ]
+      },
+      "retake_requests": 0,
+      "latency_ms": {
+        "median": 84.72990000018399,
+        "p95": 97.33005000020967,
+        "accepted_p95": 97.33005000020967,
+        "total_processing_seconds": 15.474530299989965
+      },
+      "human_review_time": "UNMEASURED; timed exercise pending",
+      "capture_time": "UNMEASURED",
+      "total_inspection_time": "UNMEASURED",
+      "provisional_screen_pass": false
+    },
+    "synthetic_stress": {
+      "brightness_0.6": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 44,
+        "FN_unflagged_accepted": 36,
+        "FN_abstained": 0,
+        "FP": 9,
+        "TN": 91,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 44,
+          "denominator": 80,
+          "rate": 0.55,
+          "wilson95": [
+            0.4411931301173402,
+            0.6542248962562025
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 44,
+          "denominator": 80,
+          "rate": 0.55,
+          "wilson95": [
+            0.4411931301173402,
+            0.6542248962562025
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 9,
+          "denominator": 100,
+          "rate": 0.09,
+          "wilson95": [
+            0.04807199516388488,
+            0.16226374696643667
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 9,
+          "denominator": 100,
+          "rate": 0.09,
+          "wilson95": [
+            0.04807199516388488,
+            0.16226374696643667
+          ]
+        },
+        "precision_observed": {
+          "numerator": 44,
+          "denominator": 53,
+          "rate": 0.8301886792452831,
+          "wilson95": [
+            0.7077446317626587,
+            0.9080015822777624
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 88.06420000018989,
+          "p95": 102.94601499999769,
+          "accepted_p95": 102.94601499999769,
+          "total_processing_seconds": 16.119450099996357
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      },
+      "brightness_1.4": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 58,
+        "FN_unflagged_accepted": 22,
+        "FN_abstained": 0,
+        "FP": 27,
+        "TN": 73,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 58,
+          "denominator": 80,
+          "rate": 0.725,
+          "wilson95": [
+            0.618557347158301,
+            0.8108237715226401
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 58,
+          "denominator": 80,
+          "rate": 0.725,
+          "wilson95": [
+            0.618557347158301,
+            0.8108237715226401
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 27,
+          "denominator": 100,
+          "rate": 0.27,
+          "wilson95": [
+            0.1926946091766482,
+            0.3643230022623127
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 27,
+          "denominator": 100,
+          "rate": 0.27,
+          "wilson95": [
+            0.1926946091766482,
+            0.3643230022623127
+          ]
+        },
+        "precision_observed": {
+          "numerator": 58,
+          "denominator": 85,
+          "rate": 0.6823529411764706,
+          "wilson95": [
+            0.5773362018838148,
+            0.7715994318733441
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 92.60140000060346,
+          "p95": 102.41862500038224,
+          "accepted_p95": 102.41862500038224,
+          "total_processing_seconds": 16.71044279999751
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      },
+      "blur_2.0": {
+        "count": 180,
+        "defects": 80,
+        "normals": 100,
+        "TP": 44,
+        "FN_unflagged_accepted": 36,
+        "FN_abstained": 0,
+        "FP": 14,
+        "TN": 86,
+        "abstained_normals": 0,
+        "recall_all_defects": {
+          "numerator": 44,
+          "denominator": 80,
+          "rate": 0.55,
+          "wilson95": [
+            0.4411931301173402,
+            0.6542248962562025
+          ]
+        },
+        "recall_accepted_defects": {
+          "numerator": 44,
+          "denominator": 80,
+          "rate": 0.55,
+          "wilson95": [
+            0.4411931301173402,
+            0.6542248962562025
+          ]
+        },
+        "fpr_accepted_normals": {
+          "numerator": 14,
+          "denominator": 100,
+          "rate": 0.14,
+          "wilson95": [
+            0.08526265754464905,
+            0.22137360383807236
+          ]
+        },
+        "fp_all_normals": {
+          "numerator": 14,
+          "denominator": 100,
+          "rate": 0.14,
+          "wilson95": [
+            0.08526265754464905,
+            0.22137360383807236
+          ]
+        },
+        "precision_observed": {
+          "numerator": 44,
+          "denominator": 58,
+          "rate": 0.7586206896551724,
+          "wilson95": [
+            0.6346977437031315,
+            0.8504126027303373
+          ]
+        },
+        "observed_prevalence": {
+          "numerator": 80,
+          "denominator": 180,
+          "rate": 0.4444444444444444,
+          "wilson95": [
+            0.37376583474975517,
+            0.5174448596741402
+          ]
+        },
+        "coverage": {
+          "numerator": 180,
+          "denominator": 180,
+          "rate": 1.0,
+          "wilson95": [
+            0.9791037501849418,
+            1.0
+          ]
+        },
+        "retake_requests": 0,
+        "latency_ms": {
+          "median": 138.07900000028894,
+          "p95": 167.13609500056916,
+          "accepted_p95": 167.13609500056916,
+          "total_processing_seconds": 25.23859799999991
+        },
+        "human_review_time": "UNMEASURED; timed exercise pending",
+        "capture_time": "UNMEASURED",
+        "total_inspection_time": "UNMEASURED",
+        "provisional_screen_pass": false
+      }
+    }
+  }
+}

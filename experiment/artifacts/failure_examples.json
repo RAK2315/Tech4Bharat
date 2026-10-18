@@ -1,0 +1,98 @@
+[
+  {
+    "kind": "missed_defect",
+    "id": "test_0070",
+    "file": "missed_defect_test_0070.jpg",
+    "score": 10.237580299377441,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "missed_defect",
+    "id": "test_0025",
+    "file": "missed_defect_test_0025.jpg",
+    "score": 10.471139907836914,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "missed_defect",
+    "id": "test_0037",
+    "file": "missed_defect_test_0037.jpg",
+    "score": 9.555070877075195,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "false_flag",
+    "id": "test_0125",
+    "file": "false_flag_test_0125.jpg",
+    "score": 11.920941352844238,
+    "label": 0,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "false_flag",
+    "id": "test_0194",
+    "file": "false_flag_test_0194.jpg",
+    "score": 13.657279968261719,
+    "label": 0,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "false_flag",
+    "id": "test_0119",
+    "file": "false_flag_test_0119.jpg",
+    "score": 11.205062866210938,
+    "label": 0,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "caught_defect",
+    "id": "test_0073",
+    "file": "caught_defect_test_0073.jpg",
+    "score": 11.470059394836426,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "caught_defect",
+    "id": "test_0003",
+    "file": "caught_defect_test_0003.jpg",
+    "score": 12.792977333068848,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "caught_defect",
+    "id": "test_0032",
+    "file": "caught_defect_test_0032.jpg",
+    "score": 12.745080947875977,
+    "label": 1,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "normal_no_flag",
+    "id": "test_0130",
+    "file": "normal_no_flag_test_0130.jpg",
+    "score": 6.4418535232543945,
+    "label": 0,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "normal_no_flag",
+    "id": "test_0142",
+    "file": "normal_no_flag_test_0142.jpg",
+    "score": 6.677016735076904,
+    "label": 0,
+    "reference_decision": "no_flag"
+  },
+  {
+    "kind": "normal_no_flag",
+    "id": "test_0152",
+    "file": "normal_no_flag_test_0152.jpg",
+    "score": 9.704912185668945,
+    "label": 0,
+    "reference_decision": "no_flag"
+  }
+]

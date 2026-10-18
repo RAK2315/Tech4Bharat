@@ -1,0 +1,20 @@
+schema_version: 1
+recipe_id: mvtec_metal_nut
+dataset: mvtec_ad
+category: metal_nut
+official_source: https://www.mvtec.com/research-teaching/datasets/mvtec-ad
+license: CC-BY-NC-SA-4.0
+release_hash: null
+raw_root: data/raw/mvtec_ad
+input:
+  height: 256
+  width: 256
+  geometry: aspect_preserving_letterbox
+  padding_rgb: [0, 0, 0]
+  rotation_clockwise_degrees: 0
+  color_mode: RGB
+expected_defect_folders_to_verify: [bent, color, flip, scratch]
+output_task: binary_anomaly_with_optional_attention_map
+predict_defect_subtypes: false
+validation_status: not_evaluated
+

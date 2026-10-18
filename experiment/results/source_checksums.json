@@ -1,0 +1,14 @@
+{
+  "PROTOCOL.md": "cae47ec4a69f8083a2de92e0156f9694df0abdaa7c73e1e778eeba9bb5b810a6",
+  "inspection.py": "6e4b0c6ef274c7efe93d6af1ea0957c6d4a0ed92e0ee5e4f55d2b6a74df7f0ce",
+  "prepare.py": "94894b655ee716370c214820fde222bdea7079b7ad17f10ed0deace62d8b5708",
+  "run.py": "3c858d9b7cda344617e42ace5a6e844e004b27114b3ba6d3e20626488507cdf0",
+  "download.py": "09f334cb76c3f146a4e17172873534d971f889df2f015e34dd6b79bf60207399",
+  "accounting.py": "21b45409e6f64ce40790d6015c3ff7f871166897519bb1bb1a8c0e421e9c3bca",
+  "test_accounting.py": "48ea65a57fd2fbb430446352e0f91582ebdc5a7022dc4653ee05f718f44e7142",
+  "test_evaluation.py": "798b53bd1868eda8d9e0d1f9ae6261db6ee4155e8f57ef8cf319c2de7f2470cf",
+  "make_artifacts.py": "29b7adafef4a2192f322e5313fceb52cb999093ce50a1d842f4243411b53e781",
+  "summarize.py": "c1b3bd3ee689b3a210890318e06d98c15f32ede0d05457c1ace6ea6f02d2cac1",
+  "browser/index.html": "870f89d4c1bc1fbeb658d241ff6f1c11b958fe1dbb2785a16925eb489968d27b",
+  "requirements-lock.txt": "e4a0f11b145da1bc931b274fd0916dad305ace0bd4cb37ae444d493f846334a4"
+}

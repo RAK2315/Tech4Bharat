@@ -1,0 +1,88 @@
+{
+  "fictional": true,
+  "events": [
+    {
+      "type": "photo",
+      "product": "A",
+      "hash": "fictional-A-v1"
+    },
+    {
+      "type": "photo",
+      "product": "B",
+      "hash": "fictional-B-v1"
+    },
+    {
+      "type": "photo",
+      "product": "C",
+      "hash": "fictional-C-v1"
+    },
+    {
+      "type": "photo",
+      "product": "D",
+      "hash": "fictional-D-v1"
+    },
+    {
+      "type": "photo",
+      "product": "E",
+      "hash": "fictional-E-v1"
+    },
+    {
+      "type": "duplicate_photo",
+      "product": "A"
+    },
+    {
+      "type": "inspection",
+      "product": "A",
+      "decision": "acceptable",
+      "reviewer": "FICTIONAL reviewer"
+    },
+    {
+      "type": "inspection",
+      "product": "B",
+      "decision": "defective",
+      "reviewer": "FICTIONAL reviewer"
+    },
+    {
+      "type": "rework",
+      "product": "B"
+    },
+    {
+      "type": "photo",
+      "product": "B",
+      "hash": "fictional-B-v2"
+    },
+    {
+      "type": "inspection",
+      "product": "B",
+      "decision": "acceptable",
+      "reviewer": "FICTIONAL reviewer"
+    },
+    {
+      "type": "inspection",
+      "product": "C",
+      "decision": "cannot_determine",
+      "reviewer": "FICTIONAL reviewer"
+    },
+    {
+      "type": "inspection",
+      "product": "D",
+      "decision": "defective",
+      "reviewer": "FICTIONAL reviewer"
+    }
+  ],
+  "counts": {
+    "products": 6,
+    "unique_photos": 6,
+    "duplicate_uploads": 1,
+    "inspection_events": 5,
+    "unique_inspected": 4,
+    "completed_current": 3,
+    "current_acceptable": 2,
+    "current_defective": 1,
+    "unresolved": 1,
+    "uninspected": 2,
+    "awaiting_reinspection": 0,
+    "historical_defect_events": 2
+  },
+  "owner": null
+}

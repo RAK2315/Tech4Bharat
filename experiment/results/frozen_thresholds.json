@@ -1,0 +1,8 @@
+{
+  "thresholds": {
+    "reference": 0.2463272660970688,
+    "padim": 11.106827735900879
+  },
+  "protocol_sha256": "cae47ec4a69f8083a2de92e0156f9694df0abdaa7c73e1e778eeba9bb5b810a6",
+  "split_sha256": "78922715c7944171792df258fcd01de383c90e8fcad4f252554eac95f69420ba"
+}

@@ -1,0 +1,30 @@
+schema_version: 1
+status: draft_not_frozen
+seed: 4217
+recipes: [mvtec_metal_nut, ksdd2_surface]
+official_test_policy: preserve_membership_until_audit
+normal_group_roles: {fit: 0.60, development: 0.20, calibration: 0.20}
+max_fit_groups: 128
+baseline_reference_count: 16
+primary_method: padim
+candidate_backend: anomalib_p0
+fit_device: cpu
+batch_size: 1
+torch_threads: 4
+dataloader_workers: 0
+augmentation: none
+normal_calibration_alpha: 0.10
+threshold_rule: ceil_0_90_times_n_plus_1_strict_greater
+provisional_screens:
+  all_defect_recall_min: 0.90
+  accepted_normal_fpr_max: 0.10
+  technical_coverage_min: 0.90
+  warm_p95_seconds_max: 5.0
+  inference_rss_gib_max: 4.0
+fit_rss_limits: {absolute_gib: 4.0, available_ram_fraction: 0.60}
+implementation_status:
+  dataset_adapters: pending
+  split_manifests: pending
+  model_fitting: pending
+  evaluation: pending
+

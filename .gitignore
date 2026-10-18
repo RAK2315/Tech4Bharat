@@ -1,0 +1,30 @@
+# Local runtimes, dependencies and caches
+.venv*/
+node_modules/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Local secrets and machine files
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+Thumbs.db
+.DS_Store
+*.log
+
+# Preserve historical metrics, exclude generated images and arrays
+/experiment/results/*
+!/experiment/results/*.json
+/experiment/artifacts/*
+!/experiment/artifacts/EXPERIMENT_REPORT.md
+!/experiment/artifacts/fictional_accounting.json
+!/experiment/artifacts/failure_examples.json

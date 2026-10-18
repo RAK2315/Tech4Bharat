@@ -1,0 +1,20 @@
+schema_version: 1
+recipe_id: ksdd2_surface
+dataset: ksdd2
+category: component_surface
+official_source: https://www.vicos.si/resources/kolektorsdd2/
+license: CC-BY-NC-SA-4.0
+release_hash: null
+raw_root: data/raw/ksdd2
+input:
+  height: 256
+  width: 640
+  geometry: aspect_preserving_letterbox
+  padding_rgb: [0, 0, 0]
+  rotation_clockwise_degrees: null
+  rotation_policy: determine_recipe_wide_from_training_inventory_before_freeze
+  color_mode: RGB
+output_task: binary_anomaly_with_optional_attention_map
+predict_defect_subtypes: false
+validation_status: not_evaluated
+

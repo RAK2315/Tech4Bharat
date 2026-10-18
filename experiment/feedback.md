@@ -1,0 +1,18 @@
+- Purpose: determine whether this narrow inspection workflow is useful, adds work, or omits evidence. This is a prepared exercise; no manufacturer/buyer has been contacted and no feedback has been collected.
+- Show: one original image, one AI-flagged image/region, an unresolved result, and the sample batch report. Explain that benchmark images are real, batch IDs and human decisions are fictional, and the model is not production-validated.
+- Manufacturer/supervisor questions:
+  - Walk through the last batch rejected or reworked: which visible defect mattered and where was it found?
+  - Show the current inspection sheet, photo workflow, or software if you are comfortable. What already works?
+  - Which decisions here match your actual acceptance rules? Which require a gauge, functional test, or buyer approval?
+  - Perform one example inspection. Count every extra photo, retake, tap, escalation, and minute; which step would workers skip under pressure?
+  - How are products/batches identified, and how is rework recorded? Could one photo accidentally represent several units?
+  - Who can approve normal examples and adjudicate borderline labels? How often does the design change?
+  - Compare this with your present tool and ERPNext/Tulip/LandingLens or another relevant alternative. What specific benefit is missing there?
+  - Would you agree to a small supervised trial using your own permitted images? What would make you stop it?
+- Buyer-quality questions:
+  - Would this report change a specific acceptance, follow-up, or sampling decision? If not, why not?
+  - What evidence is absent: sampling procedure, authenticity, calibration, dimensional/function tests, traceability, signatory authority, or something else?
+  - Which defects and tolerances would you approve as visual reference examples?
+  - Would supplier-generated photo evidence ever reduce your inspection burden? Under what verification conditions?
+- Record answers verbatim where permitted; distinguish actual prior behavior from opinions about the concept. A positive reaction is not willingness to pay or proof of acceptance.
+- Pass to a pilot only if someone identifies a concrete recurring task, permits relevant data collection, and agrees on an observable trial outcome. Do not infer demand from a feature request alone.

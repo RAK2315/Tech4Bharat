@@ -1,0 +1,21 @@
+schema_version: 1
+status: proposed_not_installed_or_validated
+p0:
+  implementation: anomalib
+  version: 2.7.0
+  torch_target: 2.10.0
+  torchvision_target: 0.25.0
+  backend: cpu
+  backbone: resnet18
+  layers: [layer1, layer2, layer3]
+  retained_features: 100
+  compatibility_budget_hours: 4
+p1:
+  implementation: native_compact_padim
+  torch_target: 2.6.0+cpu
+  torchvision_target: 0.21.0+cpu
+  backbone: resnet18
+  layers: [layer1, layer2, layer3]
+  retained_features: 50
+  status: fallback_only
+

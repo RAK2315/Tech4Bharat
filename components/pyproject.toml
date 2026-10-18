@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tech4bharat-component-inspector"
+version = "0.1.0"
+description = "Research component inspection assistant; initial project scaffold."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["PyYAML>=6.0,<7", "psutil>=6,<8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+component-inspector = "component_inspector.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/component_inspector"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
