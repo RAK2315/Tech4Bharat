@@ -34,3 +34,77 @@ local remote configuration cannot establish private visibility.
 Next: request stage 1 / remaining T01 using the exact prompt in
 [the build playbook](../../docs/superpowers/plans/2026-10-18-codex-build-playbook.md).
 Do not run planned acquisition, fitting or service commands until implemented.
+
+## Stage 1 — safe acquisition
+
+Run from the repository root. All real archives/raw data/manifests remain ignored.
+No model packages are needed. See DATA_SOURCES.md for the current access blocker,
+measured bytes, licence/attribution and the full archive SHA256.
+
+```powershell
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli acquire --dataset mvtec_ad --category metal_nut
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli acquire --dataset ksdd2
+.\components\.venv-p0\Scripts\python.exe -m pytest components/tests/test_sources.py -v -p no:cacheprovider
+.\components\.venv-p0\Scripts\python.exe -m pytest components/tests -v -p no:cacheprovider
+uv --cache-dir components/.cache/uv pip check --python components/.venv-p0/Scripts/python.exe
+```
+
+MVTec currently returns a JSON `blocked_access` record and exit **3**. This is
+expected, not a successful download. KSDD2 acquisition returns exit **0**; subsequent
+runs verify saved archive/inventory/raw hashes without downloading again. General
+failures return JSON on stderr and exit **1**; unsupported commands still exit **2**.
+
+After personally obtaining the category archive through the official flow, use
+its real local path (the placeholder below is not a runnable acquisition):
+
+```powershell
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli acquire --dataset mvtec_ad --category metal_nut --archive 'C:\PATH\TO\metal_nut.tar.xz'
+```
+
+Local ZIP, TAR, TAR.GZ and TAR.XZ are supported. `--archive` copies and hashes bytes
+without changing the supplied archive; its provider identity and original retrieval
+date are unverified. Do not use it to substitute an unrecorded mirror. Only
+`mvtec_ad --category metal_nut` and `ksdd2` without a category are supported.
+`--root PATH` selects an isolated project root for fictional software fixtures;
+never use fictional fixture sources as real dataset/model evidence.
+
+Safety bounds: 2 GiB archive/download, 6 GiB declared/actual extracted payload,
+64 MiB per file, 20,000 visible members, 200× expansion. ZIP directory metadata is
+bounded before parsing; ZIP64/multidisk/encrypted entries are rejected. TAR metadata
+reads are bounded to at most 1 MiB, stream expansion includes metadata/headers,
+and XZ dictionary memory is capped at 128 MiB. Links, devices, FIFOs, sparse TAR,
+traversal/absolute/Windows drive/ADS/device names and path collisions are rejected.
+Only regular file bytes are manually written, with per-file hashes and ZIP CRC
+verification. One training PNG is decoded after extraction; full image/mask audit
+is deferred to stage 2. Limits may reject other layouts; do not silently relax them.
+
+Extraction uses a private temporary tree; raw output is published only after the
+training sample check. Existing destinations are never replaced. Acquisition has
+an exclusive per-dataset lock. On interruption, inspect the ignored `.acquire-*`
+scratch directory and `.acquire-DATASET.lock`; do not automatically delete a lock
+or existing raw/source records. Orphan archive/inventory files may remain after a
+storage/publication failure and need inspection. Do not use cleanup commands on
+real data. Mutation/concurrent edits by other local programs are not prevented by
+an OS-level immutable filesystem; this CLI is a local single-user tool.
+
+In this Codex sandbox the initial network calls were blocked. Approved escalation
+allowed the official KSDD2 download; reading its new files for reuse verification
+also required escalation. No ACLs were changed. PyPI installation of Pillow also
+required approved network access. The existing venv was reused, and its editable
+metadata refreshed; no ML package was installed. `uv pip check` now passes using
+the explicit project-local cache (the stage 0 default-cache failure is historical).
+
+The updated lock was generated offline from available package metadata:
+
+```powershell
+uv --cache-dir components/.cache/uv pip compile components/pyproject.toml --python components/.venv-p0/Scripts/python.exe --extra dev --generate-hashes --output-file components/requirements-setup.lock --offline
+uv --cache-dir components/.cache/uv pip install --python components/.venv-p0/Scripts/python.exe --offline --no-deps -e components
+```
+
+Fresh environments require permitted network access for the hashed lock install
+and build dependencies, as described in components/README.md. No clean environment
+rebuild is claimed for this stage. Doctor still reports conservative scaffold
+readiness flags; actual acquisition state lives in the per-dataset source records.
+
+Stage 2 must wait for usable MVTec data or an explicitly approved scope amendment.
+Do not fit models or reinterpret final-test data to work around this blocker.

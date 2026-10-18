@@ -1,8 +1,8 @@
-# Setup progress â€” 18 October 2026
+# Setup progress — 18 October 2026
 
 Plan: [Tech4Bharat_Codex_Execution_Plan.md](../../Tech4Bharat_Codex_Execution_Plan.md).
 
-## Current authorised work
+## Initial authorised work (historical)
 
 User requested the virtual environment, initial files and folders only.
 This is the setup portion of T01, not authorisation to run the entire plan.
@@ -42,13 +42,13 @@ earlier no-initialisation ruling above: initialise the workspace repository and
 commit the existing research and scaffold, excluding local dependencies, datasets,
 weights and generated binary artifacts. No remote publication was requested.
 
-## Remaining implementation
+## Remaining implementation after initial setup (historical)
 
 Official archive access/licence/source ledger, safe acquisition and extraction tests,
 and actual dataset acquisition remain unimplemented. Follow with T02 split auditing
 before any model fitting. No performance or readiness result is implied by setup.
 
-## Stage 0 verification â€” 18 October 2026
+## Stage 0 verification — 18 October 2026
 
 - Gate passed for the existing scaffold only. Stage 1 was not executed.
 - Branch `main` tracks `origin/main`; HEAD before this verification was `d30447b`.
@@ -80,3 +80,56 @@ before any model fitting. No performance or readiness result is implied by setup
   [STAGE0_TESTS.txt](STAGE0_TESTS.txt), and commands in [REPRODUCE.md](REPRODUCE.md).
 - Next authorised prompt: stage 1 / remaining T01 in the build playbook. Dataset
   source/terms inspection, safe acquisition and tests remain future work.
+
+
+## Stage 1 / remaining T01 — 18 October 2026
+
+Current authorisation is safe acquisition only. Software is verified; the complete
+stage/data gate is **blocked**, because MVTec requires the user's personal form
+step. Stage 2 and all model/application stages were not started.
+
+- Working branch: `stage-1-safe-acquisition`, based on stage 0 commit `b36d144`.
+  User's modified root README and untracked root docs remain separate.
+- Added real `acquire` CLI and local `--archive` import; source registry permits
+  only MVTec metal_nut and KSDD2. Blocked access exits 3, failures exit 1, unsupported
+  commands exit 2. `doctor` lists acquire but its readiness flags remain scaffold
+  defaults, not a dataset-ledger audit.
+- Download/extraction use fixed byte/member/expansion bounds, safe portable names,
+  regular files only, temporary extraction, one training-only PNG decode, SHA256
+  archives/inventories, and no-overwrite/idempotent verification. No downloaded
+  script or pickle is executed. No final-test image was viewed/decoded for design.
+- MVTec CLI ran and recorded `blocked_access`; zero bytes downloaded. Required
+  action: personally use the official form and obtain the metal_nut archive if
+  terms are acceptable, then provide its local path. No terms were accepted.
+- KSDD2: 853,126,555 downloaded bytes; 852,612,567 extracted bytes in 6,677 files;
+  archive + raw logical total 1,705,739,122 bytes (~1.589 GiB). One training image
+  decoded at 229×645. Source/inventory/byte hashes and notices are in DATA_SOURCES.md
+  and STAGE1_SOURCES.json. Reuse verified all saved hashes and file membership.
+- Release layout includes train/test PNGs and five inert .pyb files. Training-file
+  count needs reconciliation against provider image counts in stage 2; no label,
+  mask-pairing, physical identity or split audit is claimed here.
+- Pillow 12.1.0 installed into the reused venv; verified wheel/import/decode on
+  Python 3.12.14, updated hashed lightweight lock and editable metadata. No ML
+  packages, GPU, paid service or historical environment changes.
+- Sandbox blocked initial network attempts; approved escalation enabled Pillow
+  install and KSDD2 acquisition. Download-created data also required approved
+  access for reuse verification; no ACL changes made. uv discovery initially
+  failed in the sandbox, then succeeded with explicit Python and approved access.
+- TDD: initial 40 acquisition cases failed for the absent module/CLI. New TAR/ZIP
+  metadata, raw-extra-file, XZ and TAR-small-file regressions were each observed
+  failing before fixes. Existing-behaviour checks cover CRC cleanup, retries,
+  blocked CLI status and original doctor/unsupported-fit contract.
+- Final suite: **53 passed** (51 source cases + 2 existing doctor cases).
+  Commands/results and self-review are recorded in STAGE1_EVIDENCE.md;
+  full test output is STAGE1_TESTS.txt. RED logs remain ignored under
+  outputs/stage1/. No new model evidence is claimed by fictional archives.
+- `uv --cache-dir components/.cache/uv pip check --python
+  components/.venv-p0/Scripts/python.exe` passed (10 installed packages checked).
+- Next: resume stage 1 with a legitimately obtained MVTec archive. Do not start
+  dependent stage 2 without both sources or an explicit human scope amendment.
+
+Rulings: work in the user-requested checkout with a dedicated local branch and
+self-review (no subagents, per user instruction); preserve unrelated working-tree
+changes. Cost/limit: no independent reviewer and no separate worktree isolation.
+MVTec's personal access flow is a real blocker, not a reason to substitute a mirror.
+The earlier source/scaffold statements above are dated historical verification.

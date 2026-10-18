@@ -1,4 +1,4 @@
-"""Initial setup diagnostics; model and acquisition commands are not implemented."""
+"""Setup diagnostics and safe acquisition; model commands are not implemented."""
 
 import argparse
 from importlib import metadata
@@ -55,11 +55,11 @@ def doctor_report() -> dict:
         },
         "packages": packages,
         "configurations": configurations,
-        "implemented_commands": ["doctor"],
+        "implemented_commands": ["doctor", "acquire"],
         "models_ready": False,
         "datasets_downloaded": False,
         "readiness_note": (
-            "Initial scaffold only. Dataset acquisition, artifact validation and "
+            "Doctor readiness flags are scaffold defaults, not a source-ledger audit. Artifact validation and "
             "model inference are not implemented; these flags do not audit future data."
         ),
     }
@@ -70,7 +70,21 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     doctor = commands.add_parser("doctor", help="Report isolated setup runtime and scaffold status")
     doctor.add_argument("--json", action="store_true", help="Emit machine-readable diagnostics")
+    acquisition = commands.add_parser("acquire", help="Acquire approved research data safely")
+    acquisition.add_argument("--dataset", required=True, choices=["mvtec_ad", "ksdd2"])
+    acquisition.add_argument("--category")
+    acquisition.add_argument("--archive", type=Path)
+    acquisition.add_argument("--root", type=Path, help="Isolated project root (default: components)")
     args = parser.parse_args(argv)
+    if args.command == "acquire":
+        from component_inspector.data.acquire import acquire, AcquisitionError
+        try:
+            result = acquire(args.dataset, category=args.category, archive=args.archive, root=args.root)
+        except AcquisitionError as exc:
+            print(json.dumps({"status": "failed", "error": str(exc)}), file=sys.stderr)
+            return 1
+        print(json.dumps(result, indent=2))
+        return 0 if result["status"] == "acquired" else 3
     report = doctor_report()
     if args.json:
         print(json.dumps(report, indent=2))
