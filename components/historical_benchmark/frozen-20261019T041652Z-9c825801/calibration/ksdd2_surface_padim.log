@@ -1,0 +1,9 @@
+C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components\.venv-p0\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components\.venv-p0\Lib\site-packages\anomalib\models\image\dinomaly\components\layers.py:22: FutureWarning: The anomalib.models.components.dinov2 package is deprecated and will be removed in a future release. Please use the timm-based feature extractor instead: anomalib.models.components.feature_extractors.TimmFeatureExtractor
+  from anomalib.models.components.dinov2.layers import Attention, DropPath, LayerScale, MemEffAttention
+calibration ksdd2_surface/padim 0/417
+calibration ksdd2_surface/padim 100/417
+calibration ksdd2_surface/padim 200/417
+calibration ksdd2_surface/padim 300/417
+calibration ksdd2_surface/padim 400/417

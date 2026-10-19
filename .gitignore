@@ -20,6 +20,7 @@ dist/
 Thumbs.db
 .DS_Store
 *.log
+!components/historical_benchmark/**/*.log
 
 # Preserve historical metrics, exclude generated images and arrays
 /experiment/results/*

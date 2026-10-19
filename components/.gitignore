@@ -14,6 +14,8 @@ web/dist/
 data/**
 !data/**/
 !data/**/.gitkeep
+!data/manifests/*.json
+!data/manifests/stage2/**
 models/**
 !models/.gitkeep
 runs/**

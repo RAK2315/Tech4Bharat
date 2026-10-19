@@ -1,0 +1,48 @@
+{
+  "source_url": "https://www.vicos.si/resources/kolektorsdd2/",
+  "download_url": "https://go.vicos.si/kolektorsdd2",
+  "attribution": "Kolektor Group; Bozic, Tabernik, Skocaj (2021), Mixed supervision for surface-defect detection: from weakly to fully supervised learning, Computers in Industry.",
+  "dataset": "ksdd2",
+  "category": null,
+  "checked_at_utc": "2026-10-18T08:54:23.939224+00:00",
+  "license": "CC-BY-NC-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "terms": "Research only for this build. Retain attribution/license and disclose changes; NonCommercial and ShareAlike apply. Public-demo/commercial suitability is not established.",
+  "provider_release_id": null,
+  "limits": {
+    "max_archive_bytes": 2147483648,
+    "max_total_bytes": 6442450944,
+    "max_file_bytes": 67108864,
+    "max_members": 20000,
+    "max_ratio": 200
+  },
+  "status": "acquired",
+  "acquisition_mode": "official_https_download",
+  "retrieved_at_utc": "2026-10-18T09:00:15.340489+00:00",
+  "retrieval_note": "HTTPS retrieval completed",
+  "archive": {
+    "requested_url": "https://go.vicos.si/kolektorsdd2",
+    "resolved_url": "https://data.vicos.si/datasets/KSDD/KolektorSDD2.zip",
+    "bytes": 853126555,
+    "sha256": "edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8",
+    "last_modified": "Thu, 28 Sep 2023 10:40:04 GMT",
+    "etag": "\"65155804-32d9ad9b\"",
+    "path": "data/archives/edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8.zip"
+  },
+  "raw_path": "data/raw/ksdd2",
+  "inventory": {
+    "path": "data/manifests/ksdd2_edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8_inventory.json",
+    "sha256": "8c6e47dbd3b8e6ac76c695725f84c66a45dc40dd043106de040eb44ec0d20547",
+    "files": 6677,
+    "extracted_bytes": 852612567
+  },
+  "readable_training_sample": {
+    "path": "train/10000.png",
+    "width": 229,
+    "height": 645,
+    "mode": "RGB",
+    "format": "PNG",
+    "scope": "one training image decoded; not a full image/mask audit"
+  },
+  "validation_status": "acquired_not_audited_or_split"
+}

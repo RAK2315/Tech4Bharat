@@ -18,6 +18,7 @@ Local anomaly-detection research implementation for the [Codex execution plan](.
 Progress and evidence: [implementation ledger](docs/IMPLEMENTATION_PROGRESS.md).
 Results and limitations: [stage 5 report](docs/STAGE5_REPORT.md).
 Reviewer entry point: [Stage 5 reviewer guide](docs/STAGE5_REVIEW_GUIDE.md).
+Fresh-machine setup and source links: [colleague reproduction guide](docs/COLLEAGUE_REPRODUCTION.md).
 Frozen commands and one-time run restrictions: [reproduction guide](docs/REPRODUCE.md).
 
 ## Local dataset folders

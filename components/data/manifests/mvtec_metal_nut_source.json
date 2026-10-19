@@ -1,0 +1,22 @@
+{
+  "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad",
+  "download_url": null,
+  "attribution": "MVTec Software GmbH; Bergmann et al., MVTec AD (CVPR 2019).",
+  "dataset": "mvtec_ad",
+  "category": "metal_nut",
+  "checked_at_utc": "2026-10-18T08:54:01.103630+00:00",
+  "license": "CC-BY-NC-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "terms": "Research only for this build. Retain attribution/license and disclose changes; NonCommercial and ShareAlike apply. Public-demo/commercial suitability is not established.",
+  "provider_release_id": null,
+  "limits": {
+    "max_archive_bytes": 2147483648,
+    "max_total_bytes": 6442450944,
+    "max_file_bytes": 67108864,
+    "max_members": 20000,
+    "max_ratio": 200
+  },
+  "status": "blocked_access",
+  "archive": null,
+  "required_human_action": "Personally complete the official MVTec download form/terms if acceptable; obtain only metal_nut and rerun with --archive PATH. No form was submitted by Codex."
+}
