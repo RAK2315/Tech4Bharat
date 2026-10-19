@@ -1,0 +1,272 @@
+{
+  "created_at_utc": "2026-10-19T04:16:55.559007+00:00",
+  "details": {
+    "artifacts": {
+      "ksdd2_surface": {
+        "padim": {
+          "artifact_path": "models/ksdd2_surface/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e",
+          "backend": "anomalib_p0",
+          "metadata_sha256": "36a3a354799c1303e9969c42e94c6d0036fa6a099837efddeb5ddede4baec2d7",
+          "state_sha256": "b19d4c422578868759460b8d9f1ac252669443517b83fb7ecab8a9395e23365c"
+        },
+        "reference": {
+          "artifact_path": "models/ksdd2_surface/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338",
+          "backend": "reference",
+          "metadata_sha256": "16ccca55e38a3c52ade245387f63254f2a30e6f0e3831e0648101af87dcd7603",
+          "state_sha256": "c754e08b781b1cf76daf274159e94101e9908d20fc9a99979de4db2faf1efafb"
+        }
+      },
+      "mvtec_3d_cable_gland_rgb": {
+        "padim": {
+          "artifact_path": "models/mvtec_3d_cable_gland_rgb/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e",
+          "backend": "anomalib_p0",
+          "metadata_sha256": "f69870c8ae3de27b1f4a30ab558a5c3d8d435ae01f808c575e9c10ea05fd91da",
+          "state_sha256": "6b1d1acf856cd4052fbc8a2d5055564ea4d16dd954243b12b36347dbbe5d987d"
+        },
+        "reference": {
+          "artifact_path": "models/mvtec_3d_cable_gland_rgb/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338",
+          "backend": "reference",
+          "metadata_sha256": "bcff08e4bafd16d03165d022edeadcef5171bc7d2ca0290ef53435664edba72b",
+          "state_sha256": "da37d9e7f2d04c680e4c1d69d8fc52f22d032e98194a568963f2f8dbb5d9c54b"
+        }
+      }
+    },
+    "backend": "anomalib_p0",
+    "effective_recipes": {
+      "ksdd2_surface": {
+        "category": "component_surface",
+        "dataset": "ksdd2",
+        "input": {
+          "color_mode": "RGB",
+          "geometry": "aspect_preserving_letterbox",
+          "height": 256,
+          "padding_rgb": [
+            0,
+            0,
+            0
+          ],
+          "rotation_clockwise_degrees": 90,
+          "rotation_policy": "determine_recipe_wide_from_training_inventory_before_freeze",
+          "width": 640
+        },
+        "license": "CC-BY-NC-SA-4.0",
+        "official_source": "https://www.vicos.si/resources/kolektorsdd2/",
+        "output_task": "binary_anomaly_with_optional_attention_map",
+        "predict_defect_subtypes": false,
+        "raw_root": "data/raw/ksdd2",
+        "recipe_id": "ksdd2_surface",
+        "release_hash": "edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8",
+        "schema_version": 1,
+        "validation_status": "not_evaluated"
+      },
+      "mvtec_3d_cable_gland_rgb": {
+        "active_in_protocol": true,
+        "category": "cable_gland",
+        "dataset": "mvtec_3d_ad",
+        "excluded_modalities": [
+          "xyz",
+          "camera_calibration"
+        ],
+        "expected_defect_folders_to_verify": [
+          "bent",
+          "cut",
+          "hole",
+          "thread"
+        ],
+        "expected_rgb_counts_to_audit": {
+          "test_anomalous": 87,
+          "test_normal": 21,
+          "train_normal": 223,
+          "validation_normal": 23
+        },
+        "image_globs": {
+          "test": "test/*/rgb/*.png",
+          "train": "train/good/rgb/*.png",
+          "validation": "validation/good/rgb/*.png"
+        },
+        "image_modality": "rgb",
+        "input": {
+          "color_mode": "RGB",
+          "geometry": "aspect_preserving_letterbox",
+          "height": 256,
+          "padding_rgb": [
+            0,
+            0,
+            0
+          ],
+          "rotation_clockwise_degrees": 0,
+          "width": 256
+        },
+        "license": "CC-BY-NC-SA-4.0",
+        "mask_glob": "test/*/gt/*.png",
+        "official_source": "https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad",
+        "official_validation_role": "development_only",
+        "output_task": "binary_anomaly_with_optional_attention_map",
+        "predict_defect_subtypes": false,
+        "provider_identity": "local_archive_unverified_provider_identity",
+        "provider_release_id": null,
+        "raw_root": "data/raw/mvtec_3d_cable_gland/cable_gland",
+        "recipe_id": "mvtec_3d_cable_gland_rgb",
+        "release_hash": "63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed",
+        "schema_version": 1,
+        "source_notice_reconciliation": "pending_before_freeze",
+        "validation_status": "acquired_not_audited_or_split"
+      }
+    },
+    "manifest_path": "data/manifests/stage2/b769d8598112008728d354145526815eceeaaf32e477861af22c25a541a1ecc9/manifest.json",
+    "manifest_sha256": "f1fdd9113745565f00827529f475989192465562e881478a3f6d3d31f59b4863",
+    "membership_hash": "6d24d51d1858c67b08d14340998310c8a4e419ab7f232270d4f322a7bcd53ca2",
+    "primary_method": "padim",
+    "protocol": {
+      "augmentation": "none",
+      "baseline_reference_count": 16,
+      "batch_size": 1,
+      "candidate_backend": "anomalib_p0",
+      "dataloader_workers": 0,
+      "dataset_role_overrides": {
+        "mvtec_3d_cable_gland_rgb": {
+          "exclude_modalities": [
+            "xyz",
+            "camera_calibration"
+          ],
+          "modalities": [
+            "rgb"
+          ],
+          "official_validation_role": "development_only",
+          "source_notice_reconciliation": "pending_before_freeze"
+        }
+      },
+      "deferred_recipes": [
+        "mvtec_metal_nut"
+      ],
+      "fit_device": "cpu",
+      "fit_rss_limits": {
+        "absolute_gib": 4.0,
+        "available_ram_fraction": 0.6
+      },
+      "implementation_status": {
+        "dataset_adapters": "pending",
+        "evaluation": "pending",
+        "model_fitting": "pending",
+        "split_manifests": "pending"
+      },
+      "max_fit_groups": 128,
+      "normal_calibration_alpha": 0.1,
+      "normal_group_roles": {
+        "calibration": 0.2,
+        "development": 0.2,
+        "fit": 0.6
+      },
+      "official_test_policy": "preserve_membership_until_audit",
+      "primary_method": "padim",
+      "provisional_screens": {
+        "accepted_normal_fpr_max": 0.1,
+        "all_defect_recall_min": 0.9,
+        "inference_rss_gib_max": 4.0,
+        "technical_coverage_min": 0.9,
+        "warm_p95_seconds_max": 5.0
+      },
+      "recipes": [
+        "mvtec_3d_cable_gland_rgb",
+        "ksdd2_surface"
+      ],
+      "schema_version": 1,
+      "seed": 4217,
+      "status": "draft_not_frozen",
+      "threshold_rule": "ceil_0_90_times_n_plus_1_strict_greater",
+      "torch_threads": 4
+    },
+    "selection_rule": "Per recipe: primary PaDiM must pass all provisional screens. Baseline-only pass requires explicit scope decision; neither pass is no-go. No test-driven tuning or holdout rerun.",
+    "source_resolution": {
+      "allowed_experiment_scope": "Local noncommercial RGB-only research on the identified supplied archive bytes; no certified current-release, factory, 3D or redistribution claim.",
+      "archive_notice": "Readme describes an early review subset, copyright MVTec 2021, CC-BY-NC-SA-4.0",
+      "archive_sha256": "63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed",
+      "canonicalized_zone_identifier_sha256": "efb6b86c03163733484300ee171362bc647d49071b6a0fe7c867b652fd04189c",
+      "category": "cable_gland",
+      "dataset": "mvtec_3d_ad",
+      "download_url": "https://www.mydrive.ch/shares/45892/8836f2fd7407ec1c54dc165a5b8a2e91/download/428792309-1643274318/cable_gland.tar.xz",
+      "limitations": [
+        "Windows download metadata is local provenance evidence, not a cryptographic provider attestation.",
+        "The current provider release ID remains unknown; results must identify the supplied archive hash.",
+        "Publication or commercial use is not authorized by this record."
+      ],
+      "notice_resolution": "Retain the early-review notice. Category layout/counts agree with published cable-gland category statistics; do not claim a confirmed current provider release.",
+      "observed_category_counts": {
+        "test_anomalous": 87,
+        "test_normal": 21,
+        "train_normal": 223,
+        "validation_normal": 23
+      },
+      "official_dataset_page": "https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad",
+      "provider_checksum_verified": false,
+      "provider_identity": "local_archive_unverified_provider_identity",
+      "provider_release_id": null,
+      "publication_review_required": true,
+      "statistics_reference_url": "https://www.mvtec.com/fileadmin/Redaktion/mvtec.com/05_research_teaching/1662158.pdf",
+      "status": "download_origin_recorded_local_research_release_uncertainty_retained",
+      "url_evidence": "Original Downloads archive Zone.Identifier HostUrl; no ReferrerUrl present"
+    },
+    "status": "frozen_before_calibration_and_test",
+    "versions": {
+      "Pillow": "12.1.0",
+      "anomalib": "2.7.0",
+      "numpy": "2.2.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.15.2",
+      "timm": "1.0.30",
+      "torch": "2.10.0+cpu",
+      "torchvision": "0.25.0+cpu"
+    }
+  },
+  "file_hashes": {
+    "configs/ksdd2_surface.yaml": "61506503350536798df22759c3e7df845b413d71bb022ba8f09f3608d1ddb0a3",
+    "configs/mvtec_3d_cable_gland_rgb.yaml": "7442fda13e0bde767afa9d4fad1fa929c00e58970b0c6ed512f8a5da9c0ab683",
+    "configs/protocol.yaml": "b3bb0525c06826b48d2b731bd40d63b9cee798016c34a93e63fc6bb3fb2be7d1",
+    "data/archives/63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed.tar": "63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed",
+    "data/archives/edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8.zip": "edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8",
+    "data/manifests/ksdd2_edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8_inventory.json": "8c6e47dbd3b8e6ac76c695725f84c66a45dc40dd043106de040eb44ec0d20547",
+    "data/manifests/ksdd2_source.json": "6400cb7e2b739449b1f6cca99c5af9a1a4f0742fa1d7d7bc0aa1038d9e72b290",
+    "data/manifests/mvtec_3d_cable_gland_63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed_inventory.json": "7e3f5e22b18edc9c3e9894a402973dbbf05345a8deea30b32e0c9879d707032c",
+    "data/manifests/mvtec_3d_cable_gland_source.json": "dd7c28589218a6270e743adb3d375c458dfde39ad3b907f20a6b6394fab60989",
+    "data/manifests/stage2/b769d8598112008728d354145526815eceeaaf32e477861af22c25a541a1ecc9/manifest.json": "f1fdd9113745565f00827529f475989192465562e881478a3f6d3d31f59b4863",
+    "docs/CABLE_GLAND_SOURCE_RECONCILIATION.json": "8d0bbf63da080a62567f728ba9acb9056a8262afa9cc35dff27773f23c0d9ff0",
+    "docs/STAGE3_DEVELOPMENT_SUMMARY.json": "02bcc1c47f5a90101592a3e769543bfd6369aacbb81e2c4e18cc2a4d0e8db853",
+    "docs/STAGE4_FEASIBILITY_SUMMARY.json": "793cf1c9f6a2986e1d91e858050404d310c71ff233d7f2812ca52f9c30f74d83",
+    "models/ksdd2_surface/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e/metadata.json": "36a3a354799c1303e9969c42e94c6d0036fa6a099837efddeb5ddede4baec2d7",
+    "models/ksdd2_surface/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e/state.pt": "b19d4c422578868759460b8d9f1ac252669443517b83fb7ecab8a9395e23365c",
+    "models/ksdd2_surface/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/bank.npy": "c754e08b781b1cf76daf274159e94101e9908d20fc9a99979de4db2faf1efafb",
+    "models/ksdd2_surface/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/metadata.json": "16ccca55e38a3c52ade245387f63254f2a30e6f0e3831e0648101af87dcd7603",
+    "models/mvtec_3d_cable_gland_rgb/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e/metadata.json": "f69870c8ae3de27b1f4a30ab558a5c3d8d435ae01f808c575e9c10ea05fd91da",
+    "models/mvtec_3d_cable_gland_rgb/padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e/state.pt": "6b1d1acf856cd4052fbc8a2d5055564ea4d16dd954243b12b36347dbbe5d987d",
+    "models/mvtec_3d_cable_gland_rgb/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/bank.npy": "da37d9e7f2d04c680e4c1d69d8fc52f22d032e98194a568963f2f8dbb5d9c54b",
+    "models/mvtec_3d_cable_gland_rgb/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/metadata.json": "bcff08e4bafd16d03165d022edeadcef5171bc7d2ca0290ef53435664edba72b",
+    "outputs/stage3/4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/results.json": "d25a7d752d8c46f26e868e8ce2b96be862b2232c243db3b5f2c16d6c1ff9ee86",
+    "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/report.json": "a4753284249a68091a9ad98540d4b01d0caa78658ce1c2fc5b72fa48a596fd12",
+    "pyproject.toml": "91d614927eea316645eba75501d2df2c7eef60d2a80773500ff5db44efcec5c6",
+    "requirements-p0.lock": "7a19570761826dc8cbfed9207badae700a54e139387a6155f0f30302fa0112d3",
+    "src/component_inspector/contracts.py": "449d6eae987ca1c29481a017ae69f188081746af5ffd6dcd208e149396e01107",
+    "src/component_inspector/data/__init__.py": "c58c711e0db350fa8a5d9bf4af8c8dfe16bc62274dd7c8a534b5857421e1d48e",
+    "src/component_inspector/data/acquire.py": "dc188b79cf2f08f3aeda0df4b2acd914407f47e9fbe416af6e3ff47176f9e841",
+    "src/component_inspector/data/adapters.py": "107ea1fa9636645a7c77a26c69cb9c910285f1cb192cd1ceb955417aa5b27866",
+    "src/component_inspector/data/audit.py": "709aaedce26f108bcf60fc009dc8f2958e70b925bcef2eb1575b2e353bff7b27",
+    "src/component_inspector/data/prepare.py": "2c0c12a995371835964b07e0b0f75da52eea0df99b54a896d27d392cdc1faca3",
+    "src/component_inspector/data/split.py": "0ac9b77f92fa78f4ad0754c148e25fd0832f98e8e225fd597d3bd345a8db40b3",
+    "src/component_inspector/evaluation/__init__.py": "93d56824445de7d0c217f095861d311f85ddd4bd92ee9ee41e836e852f677f3c",
+    "src/component_inspector/evaluation/calibration.py": "791db95c06a3c472ceedeb4ca005ed8affcd06592666038e2ed9a628f1dd9eed",
+    "src/component_inspector/evaluation/freeze.py": "96f6c9215b0bfa235b179e96c94dfdd48ae409c450d0bdb0e52b790e8b2af0c5",
+    "src/component_inspector/evaluation/metrics.py": "e04f149529cff755dc99adb19060aed5be3d3bb00752f34a86e5115d383d3544",
+    "src/component_inspector/evaluation/phase_worker.py": "43a0040132c238005ab36a8d9a664b96ea23e28c7525cb96d990982aab3ab477",
+    "src/component_inspector/evaluation/reports.py": "d68a53a413fc26b6aa5ae18de2c5ceb536fdb7b1ff2ee46800507f211557e53e",
+    "src/component_inspector/evaluation/runner.py": "7d44a2fee62d0d4abb42e82777b67ce58c4de0060a9ab575ad5ecbc4677ce34b",
+    "src/component_inspector/vision/__init__.py": "15b27fabeeb4233410ef0586bfb52add2fe7157bada8c87a01b74a32238e4a23",
+    "src/component_inspector/vision/develop.py": "2c8518f124300258d3e1f0a34ebd9f716cc16a994fd905de1945b6f0da50e46f",
+    "src/component_inspector/vision/geometry.py": "dce8e09a3d9fe343c02ab412fb53c13d1fb1c91129b7821d1672b008272d31d8",
+    "src/component_inspector/vision/media.py": "9b86f3d933b63bef976cedc656eae83ec3f7cb3e3684e12ce9d19d3afa80b167",
+    "src/component_inspector/vision/padim_adapter.py": "ae017b2ac293168f1eba339763c0222afaaff56d3168dc577335c609fcc8f7fd",
+    "src/component_inspector/vision/reference.py": "c6e08509bbf8d7c62efea0866e79b8425eb68202bf826e926fb1c4ffcf20cb83",
+    "src/component_inspector/vision/resources.py": "0c205a89f2e53aced612e99c8ead9986a3871550fbae7119e048a0b8a896ea5b",
+    "src/component_inspector/vision/spike.py": "7bf531bc4d42c681ad5f69098802431120d200993d05985aac02ed9ce3534daa",
+    "src/component_inspector/vision/spike_worker.py": "6fefda06df3d88157358df5467475dd784b73219604e1422116df1940696781d"
+  },
+  "schema_version": 1
+}

@@ -1,3 +1,28 @@
+# Current cable-gland / KSDD2 reproduction commands
+
+Run from the repository root. Reuse the existing Python 3.12 environment.
+The following imports/verifies real sources; it does not fit a model:
+
+```powershell
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli acquire --dataset mvtec_3d_ad --category cable_gland --archive 'C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components\data\archives\cable_gland.tar.xz'
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli acquire --dataset ksdd2
+.\components\.venv-p0\Scripts\python.exe -m component_inspector.cli doctor --json
+.\components\.venv-p0\Scripts\python.exe -m pytest components/tests -q --basetemp=components/.cache/scope-check-20261018
+```
+
+Use a fresh workspace-local --basetemp directory for a later test run. Pytest
+clears an existing explicit basetemp; never point it at real data or records.
+Cable-gland source identity is separate from mvtec_ad/metal_nut. The latter
+remains supported for historical compatibility but is not an active recipe.
+Both current imports must return acquired (exit 0); missing MVTec local archives
+return blocked_access (exit 3). General failures return exit 1.
+See [current scope](CABLE_GLAND_SCOPE.md) for validation roles, RGB-only paths,
+archive notice uncertainty and the planned next data audit. No fit/calibrate/
+evaluate/serve implementation is claimed. Sections below are dated historical
+evidence and old commands; their metal-nut blocker no longer governs this build.
+
+---
+
 # Existing scaffold verification
 
 Verified 18 October 2026 from the repository root in PowerShell. Reuse the existing
@@ -108,3 +133,35 @@ readiness flags; actual acquisition state lives in the per-dataset source record
 
 Stage 2 must wait for usable MVTec data or an explicitly approved scope amendment.
 Do not fit models or reinterpret final-test data to work around this blocker.
+
+
+## Sequential-resume checkpoint - 18 October 2026
+
+All remaining stages are now authorised sequentially, but MVTec access remains a
+genuine blocker. Fresh component suite: 53 passed. MVTec acquire: blocked_access,
+exit 3. Obtain the archive personally through the official form and supply its
+local path; import it with the stage 1 --archive command above. Then continue
+stage 2 onward without routine approval, subject to each evidence gate and human
+participation requirements. No scope amendment or permission to accept personal
+terms is implied by sequential execution.
+
+## Stage 5 commands and immutable run
+
+Use `components/.venv-p0/Scripts/python.exe -m component_inspector.cli`.
+The current frozen run is `components/runs/frozen-20261019T041652Z-9c825801`.
+Commands accept `--run` followed by that directory:
+
+- `calibrate`: normal-only calibration of both methods, D1 then D2.
+- `evaluate`: original held-out memberships, only after hash-verified calibration.
+- `stress`: brightness 0.6/1.4 and blur radius 2, only after all original tests.
+- `report`: regenerate readable report/gallery from completed hash-verified phases.
+
+Calibration, evaluation and stress reserve one-time phase and per-method markers.
+Do not remove markers or rerun a held-out phase. On failure inspect retained logs;
+a software failure is not permission to tune/repeat the holdout. Report regeneration
+is read-only with respect to models and predictions. Future app/CLI/docs additions
+are outside the frozen numerical-runtime graph; modifying frozen runtime, model,
+source, role or configuration files invalidates this run.
+
+Exact freeze identity and phase hashes are in `freeze.json` and each
+`*_complete.json`. Large source/model/run artifacts remain ignored by Git.

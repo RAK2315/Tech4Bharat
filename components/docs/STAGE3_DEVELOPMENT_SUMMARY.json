@@ -1,0 +1,32 @@
+{
+  "status": "development_only_uncalibrated",
+  "results_path": "outputs/stage3/4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338/results.json",
+  "results_sha256": "d25a7d752d8c46f26e868e8ce2b96be862b2232c243db3b5f2c16d6c1ff9ee86",
+  "peak_sampled_rss_bytes": 208347136,
+  "recipes": {
+    "mvtec_3d_cable_gland_rgb": {
+      "selected_fit_groups": 16,
+      "development_images": 68,
+      "fit_seconds": 0.18477809999603778,
+      "cold_pipeline_seconds": 0.05219070000748616,
+      "warm_p95_pipeline_seconds": 0.05671958999300841,
+      "model_bytes": 12585530,
+      "artifact_path": "models/mvtec_3d_cable_gland_rgb/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338",
+      "save_load_parity": "exact",
+      "threshold": null,
+      "flagged": null
+    },
+    "ksdd2_surface": {
+      "selected_fit_groups": 16,
+      "development_images": 663,
+      "fit_seconds": 0.18088440000428818,
+      "cold_pipeline_seconds": 0.11821970000164583,
+      "warm_p95_pipeline_seconds": 0.16176392499037312,
+      "model_bytes": 31459767,
+      "artifact_path": "models/ksdd2_surface/reference-4a1602d3105cf3655039231a5d4a6a4aabd5fdf12bd178b9e93791294e136338",
+      "save_load_parity": "exact",
+      "threshold": null,
+      "flagged": null
+    }
+  }
+}

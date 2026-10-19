@@ -2,7 +2,7 @@
 
 > **For agentic workers:** use the installed `executing-plans` skill and execute tasks in order. Use `subagent-driven-development` only if the human explicitly selects delegation. Follow repository instructions, preserve prior evidence, and mark checkboxes only after verification. **Creating this document is planning, not authorisation to implement it.**
 
-**Date/status:** 18 October 2026 · Ready for review · No new implementation, downloads, training or deployment performed.
+**Date/status:** 18 October 2026 · Updated for RGB-only MVTec 3D-AD cable gland + KSDD2. Safe acquisition is implemented; both archives are imported. Data audit, model fitting and application remain pending. See [scope amendment](components/docs/CABLE_GLAND_SCOPE.md).
 
 **Goal:** build a narrow, human-reviewed component anomaly detector only after a reproducible native experiment supports its limited usefulness.
 
@@ -12,12 +12,14 @@
 
 **Spec:** [reviewed plan and evidence ledger](Tech4Bharat_Anomaly_Detector_Build_Plan_Reviewed.md). Use this file as the ordered execution guide; the reviewed plan explains evidence and trade-offs. [Original plan](Tech4Bharat_Anomaly_Detector_Build_Plan.md), [dataset catalogue](DATASET_CATALOGUE.md), [components shortlist](COMPONENT_DATASETS.md) and [PCB experiment](experiment/artifacts/EXPERIMENT_REPORT.md) remain historical/reference material. Do not resume the earlier PCB-first or rotation-bank designs by accident.
 
+> The user-selected cable-gland amendment in components/docs/CABLE_GLAND_SCOPE.md supersedes historical metal-nut scope in the reviewed/background plans. Those earlier experiments and measurements are not cable-gland evidence.
+
 ## 1. Fixed decisions: what we are actually building
 
 | Decision | Instruction for Codex |
 |---|---|
-| Product first | MVTec AD **`metal_nut`**, one dataset nut design and visible view |
-| Second dataset | **KolektorSDD2 / KSDD2**, separate component-surface benchmark, not a second nut line |
+| Product first | MVTec 3D-AD **`cable_gland`**, RGB-only mechanical-component inspection |
+| Second dataset | **KolektorSDD2 / KSDD2**, separate component-surface benchmark, not a second cable-gland line |
 | Baseline B0 | Nearest RGB residual from **16 normal reference images**, no rotation search |
 | Main candidate P0 | **PaDiM**, frozen **ResNet18**, layers `layer1`, `layer2`, `layer3`, **100 retained features**, via a thin Anomalib adapter |
 | PaDiM fitting data | At most **128 normal fit groups per recipe**; no defective images in normal statistics |
@@ -78,13 +80,13 @@ These are routine implementation selections for this plan. Model accuracy, captu
 
 ## 3. Datasets, anomalies and when each is used
 
-### D1 — MVTec AD `metal_nut`: first component experiment
+### D1 — MVTec 3D-AD `cable_gland`: RGB-only component experiment
 
-- **Official source:** [MVTec AD](https://www.mvtec.com/research-teaching/datasets/mvtec-ad); [original paper](https://www.mvtec.com/fileadmin/Redaktion/mvtec.com/05_research_teaching/datasets/mvtec_ad.pdf).
-- **Published count:** 220 normal training images; test 22 normal +93 anomalous. Actual release counts must be audited.
-- **Expected folders:** `bent`, `color`, `flip`, `scratch`; verify downloaded taxonomy before finalising defect-family reporting.
-- **What to flag:** visible deformation, unusual colour/appearance, wrong face and scratches in this benchmark recipe. A flipped face is an orientation/recipe anomaly, not necessarily damage.
-- **What the model predicts:** anomaly/no anomaly and an attention map. It does **not** reliably name those four defect classes, measure thread tolerances, test material strength or establish function.
+- **Official source:** [MVTec 3D-AD](https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad). Local archive identity and source uncertainty are recorded in DATA_SOURCES.md; the exact download URL and early-review notice require reconciliation before freeze.
+- **Imported layout:** 223 normal training RGB images, 23 normal validation RGB images; test 21 normal +87 anomalous RGB images. Audit labels, masks, groups and release identity before treating these as verified benchmark counts.
+- **Expected folders:** `bent`, `cut`, `hole`, `thread`; verify downloaded taxonomy before finalising defect-family reporting.
+- **What to flag:** visible cable-gland deformation, cuts, holes and thread anomalies in RGB. Geometry-only defects may not be visible in RGB; no 3D sensitivity is claimed.
+- **What the model predicts:** anomaly/no anomaly and an attention map. It does **not** reliably name the defect subtypes, measure thread tolerances, test material strength or establish function.
 - **Why first:** simpler-looking discrete component and a clear product narrative; rotation/normal surface variation still make it technically nontrivial. No performance improvement assumed.
 - **Use:** T02 data audit; T03 geometry/baseline; T04 first PaDiM development fit; T05 locked calibration/evaluation; T07 first live-review screen if supported.
 
@@ -92,35 +94,36 @@ These are routine implementation selections for this plan. Model accuracy, captu
 
 - **Official source:** [ViCoS KSDD2](https://www.vicos.si/resources/kolektorsdd2/); [official dataset layout reference](https://github.com/vicoslab/mixed-segdec-net-comind2021/blob/master/datasets/README.md).
 - **Published count:** train 2,085 normal +246 anomalous; test 894 normal +110 anomalous. Images approximately 230×630; audit actual sizes/masks.
-- **What to flag:** visible scratches, spots and surface imperfections as **binary anomalies**. Do not invent subtype labels or call the product a metal nut without release evidence.
-- **Why second:** checks whether the same software can support a separate surface-inspection recipe. It is not evidence that the nut model generalises to other components.
+- **What to flag:** visible scratches, spots and surface imperfections as **binary anomalies**. Do not invent subtype labels or equate this surface dataset with cable-gland parts.
+- **Why second:** checks whether the same software can support a separate surface-inspection recipe. It is not evidence that the cable-gland model generalises to other components.
 - **Use:** audit/split alongside D1 in T02; fit and development checks after D1 in T04; independent thresholds and result table in T05. UI recipe is exposed as benchmark-tested only if its own gates pass.
 
 ### Licence and provenance rule
 
-Both proposed datasets specify **CC BY-NC-SA 4.0**. Treat the first build as research, retain attribution, check intended public-demo/redistribution terms and do not claim commercial permission. Framework code/weights have separate terms. Archive identity is the downloaded hash/date until a provider release ID is confirmed. Current exact archive sizes and raw folder contents have not been measured here. Reserve **10 GiB disk as a provisional budget**, then record actual compressed/extracted bytes before proceeding. [D1 terms](https://www.mvtec.com/research-teaching/datasets/mvtec-ad), [D2 terms](https://www.vicos.si/resources/kolektorsdd2/).
+Both proposed datasets specify **CC BY-NC-SA 4.0**. Treat the first build as research, retain attribution, check intended public-demo/redistribution terms and do not claim commercial permission. Framework code/weights have separate terms. Archive identity is the downloaded hash/date until a provider release ID is confirmed. Actual archive sizes and initial inventories are recorded in components/docs/DATA_SOURCES.md; the full data audit remains pending. Reserve **10 GiB disk as a provisional budget**, then record actual compressed/extracted bytes before proceeding. [D1 terms](https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad), [D2 terms](https://www.vicos.si/resources/kolektorsdd2/).
 
 ### Dataset/model timeline
 
-| Stage | D1 metal nut | D2 KSDD2 | Forbidden |
+| Stage | D1 cable gland (RGB only) | D2 KSDD2 | Forbidden |
 |---|---|---|---|
 | Acquire/audit | Inspect source, labels, masks and groups | Same independently | Random mirror substitutions without provenance |
 | Prepare roles | Split official-training normals | Split official-training normals; preserve 246 anomalies for development | Borrowing test anomalies for tuning |
-| Fit | B0 bank +P0 normal distribution | New B0 bank +new P0 distribution | Sharing the nut Gaussian/threshold |
+| Fit | B0 bank +P0 normal distribution | New B0 bank +new P0 distribution | Sharing either recipe's Gaussian/threshold |
 | Development | Normal feasibility/geometry; no genuine training-anomaly recall available | Normals plus declared training anomalies | Tuning against calibration or test |
 | Freeze | Both recipes and backends frozen **before either final test is scored** | Same freeze | Using D1 test failures to redesign D2 silently |
 | Calibration | D1 normal calibration scores only | D2 normal calibration scores only | F1 optimisation on test labels |
 | Final test | Separate published/cleaned membership and metrics | Separate metrics | Pooled raw-score AUROC or merged “accuracy” |
 | Application | Primary operational candidate if supported | Optional second research recipe if independently supported | Advertising both as supported because one passed |
 
-**VisA PCB1 is not training data for this build.** Preserve its failed experiment as history. No textile, maintenance, causal, multi-view or 3D datasets enter this execution.
+**VisA PCB1 is not training data for this build.** Preserve its failed experiment as history. Only RGB files from the cable-gland 3D-AD archive enter modelling. XYZ TIFFs and camera calibration files remain inert source evidence. No 3D engine, multi-view fusion, textile or maintenance task is added.
 
 ## 4. Exact data roles and leakage rules
 
 Seed **4217**. Decode originals, validate labels/masks and form known physical-item/duplicate groups **before** role allocation. Preserve official train/test membership in one field and experimental role in another.
 
 - From eligible official-training **normal groups**, assign **60% fit /20% development /20% calibration**, whole groups. Hash group IDs with seed/dataset, sort deterministically; first 60% fit, next 20% development, remainder calibration. Use nearest integer group counts with the remainder assigned to calibration; report actual image/group counts.
-- If every image is independent: D1 expected 132/44/44; D2 expected 1,251/417/417. These are arithmetic expectations, not audited results.
+- If every image is independent: D1 expected 134/45/44; D2 expected 1,251/417/417. These are arithmetic expectations, not audited results.
+- D1 official validation normals are development-only, never fit/calibration/test. If independent, they add 23 to the 45 training-development images (68 development normals). Quarantine cross-partition duplicates; do not move official test members into any development role.
 - Fit pool: first **128** normal fit groups at most, one canonical image per duplicate group. Baseline takes first **16** of those. Save exact used IDs; unused normal fit images remain unused, not silently moved.
 - D2 training anomalies (246) are development only, not PaDiM normal fitting. D1 has no genuine training anomalies; do not report development recall that does not exist.
 - Official test images remain untouched until both configurations and calibration are frozen. Test labels/masks are accessible only to final evaluation and split-integrity audit, not preprocessing/model functions.
@@ -162,7 +165,7 @@ Seed **4217**. Decode originals, validate labels/masks and form known physical-i
 
 | Recipe | Geometry | Padding/mapping |
 |---|---|---|
-| `mvtec_metal_nut` | Full image aspect-preserving letterbox to **H256×W256** | Centre padding, fixed RGB zero fill; no centre crop, face flip or registration |
+| `mvtec_3d_cable_gland_rgb` | Full image aspect-preserving letterbox to **H256×W256** | Centre padding, fixed RGB zero fill; no centre crop, rotation or registration; read only train/validation/test RGB PNGs, never XYZ TIFFs |
 | `ksdd2_surface` | If portrait, fix recipe-wide **90° clockwise** orientation from training inventory, then letterbox to **H256×W640** | Same transform for all images/masks; no label-dependent rotation; record inverse transform |
 
 Image resampling bilinear; evaluation masks nearest-neighbour. All map outputs restored to original coordinates; exclude padding from scoring/metrics. Padding may still influence nearby features/smoothing; record that limitation and inspect edge failures. No tiles in the first build.
@@ -194,7 +197,7 @@ Freeze **both** recipes' defaults/backends, data roles and primary-method choice
 | Warm native p95 | ≤5 s/image | Decode, geometry, inference and map restoration included |
 | Inference peak process RSS | ≤4 GiB | Report model init and fit RSS too |
 
-Targets are provisional engineering screens, not industry requirements. For unmodified D1 test counts, recall needs at least 84/93 anomalies flagged; FPR permits at most 2/22 normal false flags. Counts and intervals matter; 22 normals provide weak assurance. D2 results are independent.
+Targets are provisional engineering screens, not industry requirements. For unmodified D1 test counts, recall needs at least 79/87 anomalies flagged; FPR permits at most 2/21 normal false flags. Counts and intervals matter; 21 normals provide weak assurance. D2 results are independent.
 
 **Required report:** TP/FN/FP/TN, rejected counts/reasons, recall, FPR, precision at observed prevalence, coverage, image AUROC and AP, pixel AUROC/AP where masks are valid, per-verified-defect-folder recall, cold/fit/warm timing, peak RSS, model bytes and failures. Wilson 95% intervals for proportions; image/group bootstrap for ranking metrics if meaningful. No pixel-independent confidence intervals, raw-score pooling or made-up class labels.
 
@@ -215,7 +218,7 @@ components/
   pyproject.toml
   requirements-p0.lock /requirements-p1.lock     # only actual selected path locked
   .venv-p0/ /.venv-p1/                         # ignored; never overwrite old experiment
-  configs/{protocol,mvtec_metal_nut,ksdd2_surface}.yaml
+  configs/{protocol,mvtec_3d_cable_gland_rgb,ksdd2_surface}.yaml
   src/component_inspector/
     cli.py
     contracts.py
@@ -411,11 +414,11 @@ Local role labels are explicitly demo identities. Public shared uploads/storage 
 
 ```powershell
 python -m component_inspector.cli doctor
-python -m component_inspector.cli acquire --dataset mvtec_ad --category metal_nut
+python -m component_inspector.cli acquire --dataset mvtec_3d_ad --category cable_gland --archive "C:\Users\laksh\OneDrive\Desktop\Tech4Bharat\components\data\archives\cable_gland.tar.xz"
 python -m component_inspector.cli acquire --dataset ksdd2
 python -m component_inspector.cli prepare --config configs/protocol.yaml
-python -m component_inspector.cli fit --recipe mvtec_metal_nut --method reference
-python -m component_inspector.cli fit --recipe mvtec_metal_nut --method padim
+python -m component_inspector.cli fit --recipe mvtec_3d_cable_gland_rgb --method reference
+python -m component_inspector.cli fit --recipe mvtec_3d_cable_gland_rgb --method padim
 python -m component_inspector.cli fit --recipe ksdd2_surface --method reference
 python -m component_inspector.cli fit --recipe ksdd2_surface --method padim
 python -m component_inspector.cli develop --config configs/protocol.yaml

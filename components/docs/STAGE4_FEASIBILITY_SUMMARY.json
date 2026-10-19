@@ -1,0 +1,289 @@
+{
+  "status": "development_only_uncalibrated",
+  "report_path": "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/report.json",
+  "report_sha256": "a4753284249a68091a9ad98540d4b01d0caa78658ce1c2fc5b72fa48a596fd12",
+  "recipes": {
+    "mvtec_3d_cable_gland_rgb": {
+      "resource_measurement": {
+        "status": "completed",
+        "returncode": 0,
+        "peak_sampled_rss_bytes": 1627570176,
+        "elapsed_seconds": 54.969000000011874,
+        "rss_cap_bytes": 3344353689,
+        "time_cap_seconds": 1800,
+        "sample_interval_seconds": 0.05,
+        "measurement_scope": "owned process tree RSS sum",
+        "max_observed_processes": 3
+      },
+      "available_ram_at_launch_bytes": 5573922816,
+      "worker_log": "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/mvtec_3d_cable_gland_rgb_worker.log",
+      "artifact_path": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\models\\mvtec_3d_cable_gland_rgb\\padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e",
+      "backend": "anomalib_p0",
+      "cold_pipeline_seconds": 0.1445908000023337,
+      "development_images": 68,
+      "fit_seconds": 12.468698500000755,
+      "flagged": null,
+      "gaussian_shapes": {
+        "inverse_covariance": [
+          4096,
+          100,
+          100
+        ],
+        "mean": [
+          100,
+          4096
+        ]
+      },
+      "init_seconds": 8.25827279999794,
+      "input_shape": [
+        256,
+        256
+      ],
+      "model_bytes": 176686693,
+      "normal_fit_images": 128,
+      "recipe_id": "mvtec_3d_cable_gland_rgb",
+      "save_load_parity": "atol=rtol=1e-5",
+      "status": "native_development_feasible",
+      "threshold": null,
+      "warm_p95_pipeline_seconds": 0.15850963999837403,
+      "weights": {
+        "file": "model.safetensors",
+        "ignored_unused_keys": [
+          "fc.bias",
+          "fc.weight",
+          "layer4.0.bn1.bias",
+          "layer4.0.bn1.num_batches_tracked",
+          "layer4.0.bn1.running_mean",
+          "layer4.0.bn1.running_var",
+          "layer4.0.bn1.weight",
+          "layer4.0.bn2.bias",
+          "layer4.0.bn2.num_batches_tracked",
+          "layer4.0.bn2.running_mean",
+          "layer4.0.bn2.running_var",
+          "layer4.0.bn2.weight",
+          "layer4.0.conv1.weight",
+          "layer4.0.conv2.weight",
+          "layer4.0.downsample.0.weight",
+          "layer4.0.downsample.1.bias",
+          "layer4.0.downsample.1.num_batches_tracked",
+          "layer4.0.downsample.1.running_mean",
+          "layer4.0.downsample.1.running_var",
+          "layer4.0.downsample.1.weight",
+          "layer4.1.bn1.bias",
+          "layer4.1.bn1.num_batches_tracked",
+          "layer4.1.bn1.running_mean",
+          "layer4.1.bn1.running_var",
+          "layer4.1.bn1.weight",
+          "layer4.1.bn2.bias",
+          "layer4.1.bn2.num_batches_tracked",
+          "layer4.1.bn2.running_mean",
+          "layer4.1.bn2.running_var",
+          "layer4.1.bn2.weight",
+          "layer4.1.conv1.weight",
+          "layer4.1.conv2.weight"
+        ],
+        "license": "apache-2.0",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "pretrained_config": {
+          "architecture": "resnet18",
+          "classifier": "fc",
+          "crop_mode": "center",
+          "crop_pct": 0.95,
+          "custom_load": false,
+          "first_conv": "conv1",
+          "fixed_input_size": false,
+          "hf_hub_id": "timm/resnet18.a1_in1k",
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "interpolation": "bicubic",
+          "license": "apache-2.0",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "num_classes": 1000,
+          "origin_url": "https://github.com/huggingface/pytorch-image-models",
+          "paper_ids": "arXiv:2110.00476",
+          "pool_size": [
+            7,
+            7
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "tag": "a1_in1k",
+          "test_crop_pct": 1.0,
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "url": "https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a1_0-d63eafa0.pth"
+        },
+        "provider": "timm/resnet18.a1_in1k",
+        "published_download_etag_sha256": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+        "revision": "491b427b45c94c7fb0e78b5474cc919aff584bbf",
+        "sha256": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+        "source_url": "https://huggingface.co/timm/resnet18.a1_in1k/tree/491b427b45c94c7fb0e78b5474cc919aff584bbf",
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "results_path": "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/mvtec_3d_cable_gland_rgb/results.json",
+      "results_sha256": "eb2d66b018f45ee47407004492dbdd9d2b51aeb3eee887dd29b939b922e6359c"
+    },
+    "ksdd2_surface": {
+      "resource_measurement": {
+        "status": "completed",
+        "returncode": 0,
+        "peak_sampled_rss_bytes": 3173732352,
+        "elapsed_seconds": 283.5149999999994,
+        "rss_cap_bytes": 3445198848,
+        "time_cap_seconds": 1800,
+        "sample_interval_seconds": 0.05,
+        "measurement_scope": "owned process tree RSS sum",
+        "max_observed_processes": 3
+      },
+      "available_ram_at_launch_bytes": 5741998080,
+      "worker_log": "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/ksdd2_surface_worker.log",
+      "artifact_path": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\models\\ksdd2_surface\\padim-p0-38fc0d1f768474c62ecf4aa3-0ac3bf5e",
+      "backend": "anomalib_p0",
+      "cold_pipeline_seconds": 0.3210375000053318,
+      "development_images": 663,
+      "fit_seconds": 27.922461900001508,
+      "flagged": null,
+      "gaussian_shapes": {
+        "inverse_covariance": [
+          10240,
+          100,
+          100
+        ],
+        "mean": [
+          100,
+          10240
+        ]
+      },
+      "init_seconds": 8.047324400002253,
+      "input_shape": [
+        256,
+        640
+      ],
+      "model_bytes": 424902706,
+      "normal_fit_images": 128,
+      "recipe_id": "ksdd2_surface",
+      "save_load_parity": "atol=rtol=1e-5",
+      "status": "native_development_feasible",
+      "threshold": null,
+      "warm_p95_pipeline_seconds": 0.3698617749985714,
+      "weights": {
+        "file": "model.safetensors",
+        "ignored_unused_keys": [
+          "fc.bias",
+          "fc.weight",
+          "layer4.0.bn1.bias",
+          "layer4.0.bn1.num_batches_tracked",
+          "layer4.0.bn1.running_mean",
+          "layer4.0.bn1.running_var",
+          "layer4.0.bn1.weight",
+          "layer4.0.bn2.bias",
+          "layer4.0.bn2.num_batches_tracked",
+          "layer4.0.bn2.running_mean",
+          "layer4.0.bn2.running_var",
+          "layer4.0.bn2.weight",
+          "layer4.0.conv1.weight",
+          "layer4.0.conv2.weight",
+          "layer4.0.downsample.0.weight",
+          "layer4.0.downsample.1.bias",
+          "layer4.0.downsample.1.num_batches_tracked",
+          "layer4.0.downsample.1.running_mean",
+          "layer4.0.downsample.1.running_var",
+          "layer4.0.downsample.1.weight",
+          "layer4.1.bn1.bias",
+          "layer4.1.bn1.num_batches_tracked",
+          "layer4.1.bn1.running_mean",
+          "layer4.1.bn1.running_var",
+          "layer4.1.bn1.weight",
+          "layer4.1.bn2.bias",
+          "layer4.1.bn2.num_batches_tracked",
+          "layer4.1.bn2.running_mean",
+          "layer4.1.bn2.running_var",
+          "layer4.1.bn2.weight",
+          "layer4.1.conv1.weight",
+          "layer4.1.conv2.weight"
+        ],
+        "license": "apache-2.0",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "pretrained_config": {
+          "architecture": "resnet18",
+          "classifier": "fc",
+          "crop_mode": "center",
+          "crop_pct": 0.95,
+          "custom_load": false,
+          "first_conv": "conv1",
+          "fixed_input_size": false,
+          "hf_hub_id": "timm/resnet18.a1_in1k",
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "interpolation": "bicubic",
+          "license": "apache-2.0",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "num_classes": 1000,
+          "origin_url": "https://github.com/huggingface/pytorch-image-models",
+          "paper_ids": "arXiv:2110.00476",
+          "pool_size": [
+            7,
+            7
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "tag": "a1_in1k",
+          "test_crop_pct": 1.0,
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "url": "https://github.com/huggingface/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet18_a1_0-d63eafa0.pth"
+        },
+        "provider": "timm/resnet18.a1_in1k",
+        "published_download_etag_sha256": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+        "revision": "491b427b45c94c7fb0e78b5474cc919aff584bbf",
+        "sha256": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+        "source_url": "https://huggingface.co/timm/resnet18.a1_in1k/tree/491b427b45c94c7fb0e78b5474cc919aff584bbf",
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "results_path": "outputs/stage4/38fc0d1f768474c62ecf4aa3-0ac3bf5e/ksdd2_surface/results.json",
+      "results_sha256": "5871a73567153c03761bc47dad8f77e97d0712d9d681c0cf6a8c0566bca6424b"
+    }
+  }
+}

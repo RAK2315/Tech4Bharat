@@ -1,0 +1,8 @@
+{
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "method": "reference",
+  "output": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\runs\\frozen-20261019T041652Z-9c825801\\stress\\ksdd2_surface_reference",
+  "phase": "stress",
+  "recipe": "ksdd2_surface",
+  "run": "C:\\Users\\laksh\\OneDrive\\Desktop\\Tech4Bharat\\components\\runs\\frozen-20261019T041652Z-9c825801"
+}

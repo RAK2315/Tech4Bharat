@@ -1,16 +1,31 @@
 # Tech4Bharat component inspector
 
-Research scaffold and safe source acquisition for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
+Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
 ## Current scope
 
 - Python 3.12 isolated environment at `.venv-p0`.
-- Editable Python package, setup diagnostics, draft recipe/protocol configuration,
-  test location, and directories for future data/models/results/UI.
-- Safe acquisition is implemented; see `docs/DATA_SOURCES.md` for actual download/blocker status.
-- No model weights, anomaly inference, web application or training yet.
-- `configs/backend-targets.yaml` contains proposed ML versions, not an installed ML lock.
+- Editable Python package, source auditing, reproducible dataset roles, two detector
+  implementations, frozen evaluation commands and automated tests.
+- Safe acquisition is implemented. Cable gland (MVTec 3D-AD, RGB only) and KSDD2 are imported; see [current scope](docs/CABLE_GLAND_SCOPE.md) and `docs/DATA_SOURCES.md`.
+- The original metal-nut recipe is deferred; archived evidence is retained.
+- Baseline and pretrained-feature PaDiM development runs are complete for both recipes.
+- Stage 5 calibration, one-time original evaluation and paired stress runs are complete.
+  Both methods failed recall on both datasets; application stages 6–10 are stopped by the no-go gate.
+- `requirements-p0.lock` records installed CPU backend pins and dependency hashes.
 - Existing PCB experiment and prior plans remain unchanged.
+
+Progress and evidence: [implementation ledger](docs/IMPLEMENTATION_PROGRESS.md).
+Results and limitations: [stage 5 report](docs/STAGE5_REPORT.md).
+Reviewer entry point: [Stage 5 reviewer guide](docs/STAGE5_REVIEW_GUIDE.md).
+Frozen commands and one-time run restrictions: [reproduction guide](docs/REPRODUCE.md).
+
+## Local dataset folders
+
+Cable-gland archive: `data/archives/cable_gland.tar.xz`.
+Extracted source: `data/raw/mvtec_3d_cable_gland/cable_gland/`.
+KSDD2 remains at `data/raw/ksdd2/`. These files are ignored, not shipped in Git.
+The build plan documents the exact layout and RGB-only selection rules.
 
 ## Use the environment
 

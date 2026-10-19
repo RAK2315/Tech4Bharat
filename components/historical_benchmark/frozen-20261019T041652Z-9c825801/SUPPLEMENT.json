@@ -1,0 +1,229 @@
+{
+  "analysis_code_sha256": "4169e80b2023d99df90688e615b6f387b694c65a55d3d88e3fbc0177dfee1ec9",
+  "analysis_status": "post_prediction_reporting_no_rescoring_no_threshold_changes",
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "gallery_file_hashes": {
+    "evaluation/ksdd2_surface_padim/gallery/FN_mask.png": "b77eec4a4b25876d7a2303bc81a04aa865449bc8e27d8c94de0e8ca045213bbc",
+    "evaluation/ksdd2_surface_padim/gallery/FN_original.png": "23689922457517204a57ceaaf747e5e9231b8c0ee70a5a9d308834f310150b4e",
+    "evaluation/ksdd2_surface_padim/gallery/FN_overlay.png": "f16132aac9b29509b63b92e411dc38619121c610b599542d6f4d9960f1d56ce5",
+    "evaluation/ksdd2_surface_padim/gallery/FP_mask.png": "3e5a22b0b3e6d6c99e6c347236c5a8e649c7b6bbea13c717b3b395dc7e53e235",
+    "evaluation/ksdd2_surface_padim/gallery/FP_original.png": "6f7b28a94bc728e3db9a5b267ce77800271861f50a58fb040b27daf7539a1930",
+    "evaluation/ksdd2_surface_padim/gallery/FP_overlay.png": "1c50029df5007ff3dd2bfe5d75eed8f2a1ac7db18a46526ac48068ec91e8587e",
+    "evaluation/ksdd2_surface_padim/gallery/TN_mask.png": "23b99e05c0fff0c2b2df12330bfd16f85876830ccfb9e80609a6aee5c8fd6cc9",
+    "evaluation/ksdd2_surface_padim/gallery/TN_original.png": "46dcc0b617ccf814e9819652d453a910805cbb294973b019d672b036f1236979",
+    "evaluation/ksdd2_surface_padim/gallery/TN_overlay.png": "71cd5c41ff89cdca9c92c826679e4a25ae3b02a015ca883a70afde94403b72e4",
+    "evaluation/ksdd2_surface_padim/gallery/TP_mask.png": "3e3afc2224b11a545b08711cd8e18e0d1082882351ac748c4c6a74138b4a50cc",
+    "evaluation/ksdd2_surface_padim/gallery/TP_original.png": "dd52742cdd35c5350147c2c95bdf19dea2a8190608dd6e7f5a5eb5674da5bc35",
+    "evaluation/ksdd2_surface_padim/gallery/TP_overlay.png": "6140d730c3a5af6d6bece2bda8a418646dca35c3e358eabaa2902dd55349a183",
+    "evaluation/ksdd2_surface_reference/gallery/FN_mask.png": "c5aad60eaf65a18213861c41d5c9fe9cf30c0e475d1469338668962fe7b82335",
+    "evaluation/ksdd2_surface_reference/gallery/FN_original.png": "2bc901d1eeba915b9d5fab6ff4a41a881e58b26c35ba45350df7b0a42ef0d549",
+    "evaluation/ksdd2_surface_reference/gallery/FN_overlay.png": "f6bcfcae7e4792dd3f2ecf9fae2a2315fe7064884022113cfb316e6d0b9cb9d2",
+    "evaluation/ksdd2_surface_reference/gallery/FP_mask.png": "3d6f6e0d2a06d39b768096dc8ac11fe4f0d256aa0df530d3a85c0505a990cc80",
+    "evaluation/ksdd2_surface_reference/gallery/FP_original.png": "aca5528dbfaf761bd005be95176fc376bb172f5deeccf8f0ddfc68cd5cd2e080",
+    "evaluation/ksdd2_surface_reference/gallery/FP_overlay.png": "52038c5821e597372d4485f917848ee76bef83f01be40a616b86c114e89fbb35",
+    "evaluation/ksdd2_surface_reference/gallery/TN_mask.png": "23b99e05c0fff0c2b2df12330bfd16f85876830ccfb9e80609a6aee5c8fd6cc9",
+    "evaluation/ksdd2_surface_reference/gallery/TN_original.png": "46dcc0b617ccf814e9819652d453a910805cbb294973b019d672b036f1236979",
+    "evaluation/ksdd2_surface_reference/gallery/TN_overlay.png": "3696e966daada96238023d536dad3f313b2d355c87ed3de6edeb395abcda3d89",
+    "evaluation/ksdd2_surface_reference/gallery/TP_mask.png": "3e3afc2224b11a545b08711cd8e18e0d1082882351ac748c4c6a74138b4a50cc",
+    "evaluation/ksdd2_surface_reference/gallery/TP_original.png": "dd52742cdd35c5350147c2c95bdf19dea2a8190608dd6e7f5a5eb5674da5bc35",
+    "evaluation/ksdd2_surface_reference/gallery/TP_overlay.png": "0259311580207d047bc21db8d6f2bfd4f44d90f21c10ff9524c7ed6d57003eac",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FN_mask.png": "12d0d8b53ce41ae403cdf7b304a9d2d292804101b131608849b5c3f24157836f",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FN_original.png": "ea0ed8b05143bc882c8149f83a2910f62350a314e51ad1285619551fb3a63abf",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FN_overlay.png": "efc35635c787221bed3e7677244e2d33c9afc0916c7965b80c230b5d4f07e044",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FP_mask.png": "093f92b0c092ce7bedfd3e451f4ced6499673b43ac54a068bf1b867817f3a37f",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FP_original.png": "0f97944d53020add8f489133ecffebdc16d5752e51b51d57d45689e3b5f14e1f",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/FP_overlay.png": "27c7d954fba3000cb5ba4dccb443325d82ef330c3065331cdb0facfe3282707e",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TN_mask.png": "093f92b0c092ce7bedfd3e451f4ced6499673b43ac54a068bf1b867817f3a37f",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TN_original.png": "069faa228583169fa6c0bf2e6e0354e653b9c259acaa7e08da584094ad451db8",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TN_overlay.png": "6c6646c52b6af8795884316b392bbd80269fe45edd4a067ac6e28f4594525a48",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TP_mask.png": "aa46975cc4be78e42ce83e00a00e833c86a8f26a8c48fd948a3be5c9109ad45a",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TP_original.png": "91d03eb86c5eb9b5b4688bb20d1baf106d9d182c4314e5ef86331c2022ebdd5c",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/gallery/TP_overlay.png": "8912b5abbfb72ca9f693a1e777fbe7760c99aa94aa6fdd23eee7a761b362a058",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FN_mask.png": "12d0d8b53ce41ae403cdf7b304a9d2d292804101b131608849b5c3f24157836f",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FN_original.png": "ea0ed8b05143bc882c8149f83a2910f62350a314e51ad1285619551fb3a63abf",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FN_overlay.png": "6f4a69574da707336839c1a53cb1c792fe52df4dcb43dce582bc17973e85fa77",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FP_mask.png": "093f92b0c092ce7bedfd3e451f4ced6499673b43ac54a068bf1b867817f3a37f",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FP_original.png": "2a70065766bb9f14f6a82f1d23d9fc264c2d2d1f8eb7b5da4b733064fde90d47",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/FP_overlay.png": "b543ff9e9f2ce6390ba475467e737167cd147c5a4e70373635895ce3759d4030",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TN_mask.png": "093f92b0c092ce7bedfd3e451f4ced6499673b43ac54a068bf1b867817f3a37f",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TN_original.png": "069faa228583169fa6c0bf2e6e0354e653b9c259acaa7e08da584094ad451db8",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TN_overlay.png": "ee0f78cfedc3da886812bf450f8b0b8ab4602f865b54db520b4bbbd715ef1d6b",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TP_mask.png": "66d4bc1ba0ee55ead9219dba10794ee5ffd870b79337d8008cea7e59b8d70cf5",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TP_original.png": "7365ae6ea9030ffd59f1c82deb16fc7be55c9134be31b9d874a841c2b43dc9ce",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/gallery/TP_overlay.png": "770513c89f4ecb913d73fc6ed43fc2bb052ac545f7f684e46ece857611a48b46"
+  },
+  "phase_completion_hashes": {
+    "calibration": "d2bce74ce7a4e452e5064788b9d18b24f80cf24d66a936b55f54316dea067087",
+    "evaluation": "c4e7d77d590fb716126610883106f59e05a407aedca5485b723e043a7f386074",
+    "stress": "83f0598c107df5679dccd914f64ab3287e8ae0bf3f870b248f347bb07af8e5b0"
+  },
+  "recipes": {
+    "ksdd2_surface": {
+      "padim": {
+        "defect_folder_note": "KSDD2 has no verified defect-type folders; none invented.",
+        "per_verified_defect_folder_recall": {},
+        "ranking_group_bootstrap": {
+          "auroc_95": [
+            0.9064877964649785,
+            0.9548203163411199
+          ],
+          "average_precision_95": [
+            0.6629189749401456,
+            0.8142941423072632
+          ],
+          "caution": "Appearance groups are not verified physical-product identities; intervals do not establish physical independence.",
+          "group_count": 1004,
+          "physical_independence_verified": false,
+          "population": "scored subset only",
+          "requested_replicates": 1000,
+          "seed": 4217,
+          "valid_replicates": 1000
+        }
+      },
+      "reference": {
+        "defect_folder_note": "KSDD2 has no verified defect-type folders; none invented.",
+        "per_verified_defect_folder_recall": {},
+        "ranking_group_bootstrap": {
+          "auroc_95": [
+            0.8608536410436671,
+            0.9251289924921844
+          ],
+          "average_precision_95": [
+            0.6221490580764815,
+            0.76860973730541
+          ],
+          "caution": "Appearance groups are not verified physical-product identities; intervals do not establish physical independence.",
+          "group_count": 1004,
+          "physical_independence_verified": false,
+          "population": "scored subset only",
+          "requested_replicates": 1000,
+          "seed": 4217,
+          "valid_replicates": 1000
+        }
+      }
+    },
+    "mvtec_3d_cable_gland_rgb": {
+      "padim": {
+        "defect_folder_note": "KSDD2 has no verified defect-type folders; none invented.",
+        "per_verified_defect_folder_recall": {
+          "bent": {
+            "denominator": 21,
+            "numerator": 3,
+            "rate": 0.14285714285714285,
+            "wilson_95": [
+              0.04981012499725268,
+              0.34636060280620945
+            ]
+          },
+          "cut": {
+            "denominator": 22,
+            "numerator": 3,
+            "rate": 0.13636363636363635,
+            "wilson_95": [
+              0.04749003714055253,
+              0.33334987166571717
+            ]
+          },
+          "hole": {
+            "denominator": 22,
+            "numerator": 5,
+            "rate": 0.22727272727272727,
+            "wilson_95": [
+              0.10123039985248516,
+              0.4343995317522171
+            ]
+          },
+          "thread": {
+            "denominator": 22,
+            "numerator": 0,
+            "rate": 0.0,
+            "wilson_95": [
+              0,
+              0.14865487460862087
+            ]
+          }
+        },
+        "ranking_group_bootstrap": {
+          "auroc_95": [
+            0.6138282937321626,
+            0.8373163082437276
+          ],
+          "average_precision_95": [
+            0.8509739450333773,
+            0.9667554344564716
+          ],
+          "caution": "Appearance groups are not verified physical-product identities; intervals do not establish physical independence.",
+          "group_count": 108,
+          "physical_independence_verified": false,
+          "population": "scored subset only",
+          "requested_replicates": 1000,
+          "seed": 4217,
+          "valid_replicates": 1000
+        }
+      },
+      "reference": {
+        "defect_folder_note": "KSDD2 has no verified defect-type folders; none invented.",
+        "per_verified_defect_folder_recall": {
+          "bent": {
+            "denominator": 21,
+            "numerator": 1,
+            "rate": 0.047619047619047616,
+            "wilson_95": [
+              0.008455987809826399,
+              0.22669360074122563
+            ]
+          },
+          "cut": {
+            "denominator": 22,
+            "numerator": 0,
+            "rate": 0.0,
+            "wilson_95": [
+              0,
+              0.14865487460862087
+            ]
+          },
+          "hole": {
+            "denominator": 22,
+            "numerator": 1,
+            "rate": 0.045454545454545456,
+            "wilson_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ]
+          },
+          "thread": {
+            "denominator": 22,
+            "numerator": 1,
+            "rate": 0.045454545454545456,
+            "wilson_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ]
+          }
+        },
+        "ranking_group_bootstrap": {
+          "auroc_95": [
+            0.3935166240409207,
+            0.6540086806488897
+          ],
+          "average_precision_95": [
+            0.7239573075896728,
+            0.912876391711812
+          ],
+          "caution": "Appearance groups are not verified physical-product identities; intervals do not establish physical independence.",
+          "group_count": 108,
+          "physical_independence_verified": false,
+          "population": "scored subset only",
+          "requested_replicates": 1000,
+          "seed": 4217,
+          "valid_replicates": 1000
+        }
+      }
+    }
+  },
+  "reporting_limitations": [
+    "Pixel average precision was not collected by the frozen worker and is unavailable.",
+    "Full raw test maps were not archived. Fixed-scale gallery visualizations and macro per-anomalous-image pixel AUROC are available.",
+    "No repeat test inference was performed to recover missing secondary outputs. These require a future independently frozen experiment."
+  ]
+}

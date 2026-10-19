@@ -8,6 +8,7 @@ It does not establish production readiness or buyer acceptance.
 ## Start here
 
 - [Current execution plan](Tech4Bharat_Codex_Execution_Plan.md)
+- [Copy-paste Codex prompts and manual checks](docs/superpowers/plans/2026-10-18-codex-build-playbook.md)
 - [Component setup and commands](components/README.md)
 - [Setup status](components/docs/STATUS.md)
 - [Component datasets](COMPONENT_DATASETS.md)
@@ -15,8 +16,10 @@ It does not establish production readiness or buyer acceptance.
 - [Historical experiment report](experiment/artifacts/EXPERIMENT_REPORT.md)
 - [Historical experiment instructions](experiment/README.md)
 
-The current component implementation provides environment diagnostics only.
-Dataset acquisition, model fitting and application development remain future work.
+The current implementation provides diagnostics and safe dataset acquisition.
+MVTec 3D-AD cable gland (RGB only) and KSDD2 are imported; data auditing,
+model fitting and application development remain pending. The original metal-nut
+recipe is deferred. See [current scope](components/docs/CABLE_GLAND_SCOPE.md).
 Follow the current execution plan when earlier documents differ.
 
 ## Repository contents

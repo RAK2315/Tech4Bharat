@@ -12,6 +12,7 @@ import re
 import stat
 import tarfile
 import tempfile
+import time
 from urllib.error import URLError
 from urllib.parse import urlsplit
 from urllib.request import build_opener, HTTPRedirectHandler, Request
@@ -32,6 +33,11 @@ class Limits:
 
 
 SOURCES = {
+    'mvtec_3d_ad': {
+        'source_url': 'https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad',
+        'download_url': None,
+        'attribution': 'MVTec Software GmbH; Bergmann, Sattlegger, Steger, The MVTec 3D-AD Dataset (VISAPP 2022).',
+    },
     'mvtec_ad': {
         'source_url': 'https://www.mvtec.com/research-teaching/datasets/mvtec-ad',
         'download_url': None,
@@ -243,7 +249,18 @@ def safe_extract(archive, destination, *, limits=Limits()):
                 raise AcquisitionError('Archive contains no regular files')
             # Windows rename does not replace an existing directory. Locking at the
             # acquisition layer serializes normal CLI writers; no shared-host claim.
-            target.rename(destination)
+            # OneDrive/indexers can briefly deny a Windows directory publication.
+            # Retry only that exact error, rechecking no-overwrite on every attempt.
+            for attempt in range(4):
+                if destination.exists():
+                    raise AcquisitionError('Extraction destination already exists')
+                try:
+                    target.rename(destination)
+                    break
+                except PermissionError as exc:
+                    if getattr(exc, 'winerror', None) != 5 or attempt == 3:
+                        raise
+                    time.sleep(.05 * (attempt + 1))
             return inventory
     except AcquisitionError:
         raise
@@ -308,6 +325,9 @@ def _training_sample(tree, dataset):
                         and not p.stem.endswith(('_GT', '_mask')))
     if dataset == 'mvtec_ad':
         candidates = [p for p in candidates if 'good' in p.parts]
+    elif dataset == 'mvtec_3d_ad':
+        candidates = [p for p in candidates
+                      if p.relative_to(tree).parts[:4] == ('cable_gland', 'train', 'good', 'rgb')]
     if not candidates:
         raise AcquisitionError('No PNG training sample found; source layout needs review')
     try:
@@ -323,11 +343,12 @@ def _training_sample(tree, dataset):
 
 
 def acquire(dataset, *, category=None, root=None, archive=None, limits=Limits()):
-    if dataset not in SOURCES or (dataset == 'mvtec_ad' and category != 'metal_nut') or (dataset == 'ksdd2' and category is not None):
-        raise AcquisitionError('Only mvtec_ad/category metal_nut or ksdd2/no category is supported')
+    categories = {'mvtec_ad': 'metal_nut', 'mvtec_3d_ad': 'cable_gland', 'ksdd2': None}
+    if dataset not in SOURCES or category != categories[dataset]:
+        raise AcquisitionError('Supported sources: mvtec_ad/metal_nut, mvtec_3d_ad/cable_gland, ksdd2/no category')
     root = Path(root) if root else Path(__file__).resolve().parents[3]
     _no_links(root)
-    key = 'mvtec_metal_nut' if dataset == 'mvtec_ad' else dataset
+    key = {'mvtec_ad': 'mvtec_metal_nut', 'mvtec_3d_ad': 'mvtec_3d_cable_gland', 'ksdd2': 'ksdd2'}[dataset]
     data = root / 'data'
     for path in (data / 'archives', data / 'raw', data / 'manifests'):
         _no_links(path)
@@ -367,9 +388,9 @@ def acquire(dataset, *, category=None, root=None, archive=None, limits=Limits())
                 'checked_at_utc': datetime.now(timezone.utc).isoformat(),
                 'license': 'CC-BY-NC-SA-4.0', 'license_url': LICENSE_URL, 'terms': TERMS,
                 'provider_release_id': None, 'limits': asdict(limits)}
-        if dataset == 'mvtec_ad' and not archive:
+        if dataset in ('mvtec_ad', 'mvtec_3d_ad') and not archive:
             blocked = {**base, 'status': 'blocked_access', 'archive': None,
-                       'required_human_action': 'Personally complete the official MVTec download form/terms if acceptable; obtain only metal_nut and rerun with --archive PATH. No form was submitted by Codex.'}
+                       'required_human_action': f'Personally complete the official MVTec download form/terms if acceptable; obtain only {category} and rerun with --archive PATH. No form was submitted by Codex.'}
             if not record_path.exists():
                 _write_json(record_path, blocked)
             return blocked

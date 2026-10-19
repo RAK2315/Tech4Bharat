@@ -1,3 +1,35 @@
+# Tech4Bharat Component Inspection Assistant - Current Scope and Historical Review
+
+**Updated 18 October 2026:** the active build uses **MVTec 3D-AD cable_gland
+RGB only + KSDD2**, with separate models/calibration/results. Original metal nut
+is deferred. See the [revised build plan](Tech4Bharat_Anomaly_Detector_Build_Plan.md),
+[binding execution plan](Tech4Bharat_Codex_Execution_Plan.md) and
+[scope amendment](components/docs/CABLE_GLAND_SCOPE.md).
+
+Current imported D1 counts are 223 train-normal RGB, 23 validation-normal RGB,
+and 21 normal +87 anomalous test RGB files, pending full audit. Train normals
+supply 60/20/20 roles (134/45/44 if independent); official validation is
+**development-only**. RGB letterbox H256 W256; XYZ/camera metadata remain inert.
+KSDD2 retains its separate H256 W640 recipe. No rotation-bank, tiling, additional
+alignment/resolution search or changed threshold screen is introduced.
+
+Both sources are acquired; source/schema audit, fitting, freeze and evaluation
+remain pending. The current software suite passed 58 tests; this is no evidence
+of model accuracy. The cable-gland archive readme describes an early review
+subset; exact download source and notice reconciliation remain pending before
+freeze. The original metal-nut access blocker no longer blocks the new recipe.
+
+## Retained technical review - 17 October 2026 (historical)
+
+The review below is retained as dated evidence. Its metal-nut counts, old source
+availability, proposed options, commands and implementation-status statements
+are historical, not active requirements. Current build/execution/scope documents
+above take precedence. Its original-plan SHA256 identifies the reviewed 17 October
+bytes, not the revised file. This update is not a new external technical review,
+a fresh verification of linked product documentation, or a new experiment.
+
+---
+
 # Tech4Bharat Component Inspection Assistant — Reviewed Build Plan
 
 > **For execution:** use the installed `executing-plans` skill for native task-by-task work; delegation requires explicit user selection. **Status: audit and planning only. Do not implement from this request.** Checkboxes below describe future work, not completed tests.

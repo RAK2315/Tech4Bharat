@@ -8,10 +8,11 @@ version = "0.1.0"
 description = "Research component inspection assistant; initial project scaffold."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
-dependencies = ["PyYAML>=6.0,<7", "psutil>=6,<8", "Pillow==12.1.0"]
+dependencies = ["PyYAML>=6.0,<7", "psutil>=6,<8", "Pillow==12.1.0", "numpy==2.2.4", "scipy==1.15.2"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+p0 = ["anomalib[cpu]==2.7.0", "torch==2.10.0+cpu", "torchvision==0.25.0+cpu"]
 
 [project.scripts]
 component-inspector = "component_inspector.cli:main"

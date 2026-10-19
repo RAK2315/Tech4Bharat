@@ -1,0 +1,29 @@
+{
+  "dataset": "mvtec_3d_ad",
+  "category": "cable_gland",
+  "archive_sha256": "63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed",
+  "download_url": "https://www.mydrive.ch/shares/45892/8836f2fd7407ec1c54dc165a5b8a2e91/download/428792309-1643274318/cable_gland.tar.xz",
+  "url_evidence": "Original Downloads archive Zone.Identifier HostUrl; no ReferrerUrl present",
+  "official_dataset_page": "https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad",
+  "archive_notice": "Readme describes an early review subset, copyright MVTec 2021, CC-BY-NC-SA-4.0",
+  "observed_category_counts": {
+    "train_normal": 223,
+    "validation_normal": 23,
+    "test_normal": 21,
+    "test_anomalous": 87
+  },
+  "notice_resolution": "Retain the early-review notice. Category layout/counts agree with published cable-gland category statistics; do not claim a confirmed current provider release.",
+  "allowed_experiment_scope": "Local noncommercial RGB-only research on the identified supplied archive bytes; no certified current-release, factory, 3D or redistribution claim.",
+  "provider_release_id": null,
+  "provider_checksum_verified": false,
+  "provider_identity": "local_archive_unverified_provider_identity",
+  "status": "download_origin_recorded_local_research_release_uncertainty_retained",
+  "publication_review_required": true,
+  "canonicalized_zone_identifier_sha256": "efb6b86c03163733484300ee171362bc647d49071b6a0fe7c867b652fd04189c",
+  "statistics_reference_url": "https://www.mvtec.com/fileadmin/Redaktion/mvtec.com/05_research_teaching/1662158.pdf",
+  "limitations": [
+    "Windows download metadata is local provenance evidence, not a cryptographic provider attestation.",
+    "The current provider release ID remains unknown; results must identify the supplied archive hash.",
+    "Publication or commercial use is not authorized by this record."
+  ]
+}

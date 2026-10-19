@@ -1,0 +1,2879 @@
+{
+  "calibration_sha256": "6860a43f1d29ee068ad4eaaa4dfd1fbfeb5f0109a42be913b113a597e07d64bc",
+  "expected_images": 108,
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "init_seconds": 37.90229700000782,
+  "method": "padim",
+  "recipe_id": "mvtec_3d_cable_gland_rgb",
+  "status": "paired_stress_not_independent_validation",
+  "transforms": {
+    "blur_radius_2": {
+      "metrics": {
+        "accepted_normal_fpr": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "anomaly_coverage": {
+          "denominator": 87,
+          "numerator": 87,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9577124930558795,
+            0.9999999999999999
+          ]
+        },
+        "counts": {
+          "FN": 77,
+          "FP": 0,
+          "TN": 21,
+          "TP": 10,
+          "rejected_anomalies": 0,
+          "rejected_normals": 0
+        },
+        "coverage": {
+          "denominator": 108,
+          "numerator": 108,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9656526402534428,
+            0.9999999999999999
+          ]
+        },
+        "false_flags_all_normals": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "normal_coverage": {
+          "denominator": 21,
+          "numerator": 21,
+          "rate": 1.0,
+          "wilson_95": [
+            0.8453609810751531,
+            1
+          ]
+        },
+        "observed_prevalence": {
+          "denominator": 108,
+          "numerator": 87,
+          "rate": 0.8055555555555556,
+          "wilson_95": [
+            0.7209648351663079,
+            0.8691562227663517
+          ]
+        },
+        "precision": {
+          "denominator": 10,
+          "numerator": 10,
+          "rate": 1.0,
+          "wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ]
+        },
+        "ranking_scored_only": {
+          "auroc": 0.6650246305418719,
+          "average_precision": 0.9024205389953928,
+          "n": 108,
+          "population": "scored subset only"
+        },
+        "recall": {
+          "denominator": 87,
+          "numerator": 10,
+          "rate": 0.11494252873563218,
+          "wilson_95": [
+            0.06364547795653458,
+            0.19880582049468454
+          ]
+        }
+      },
+      "rows": [
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/000.png",
+          "score": 27.03767204284668,
+          "seconds": 0.16261060000397265,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/001.png",
+          "score": 63.431819915771484,
+          "seconds": 0.14810550000402145,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/002.png",
+          "score": 28.60907745361328,
+          "seconds": 0.14587229999597184,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/003.png",
+          "score": 29.781875610351562,
+          "seconds": 0.17362649999267887,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/004.png",
+          "score": 42.53584671020508,
+          "seconds": 0.16612149999127723,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/005.png",
+          "score": 40.17729949951172,
+          "seconds": 0.16261640000448097,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/006.png",
+          "score": 38.184226989746094,
+          "seconds": 0.14969020000717137,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/007.png",
+          "score": 65.63221740722656,
+          "seconds": 0.15108019999752287,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/008.png",
+          "score": 29.181774139404297,
+          "seconds": 0.1504125999927055,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/009.png",
+          "score": 59.433414459228516,
+          "seconds": 0.15118479999364354,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/010.png",
+          "score": 37.50608825683594,
+          "seconds": 0.14192130000446923,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/011.png",
+          "score": 44.63511657714844,
+          "seconds": 0.14820529999269638,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/012.png",
+          "score": 37.08541488647461,
+          "seconds": 0.14944280000054277,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/013.png",
+          "score": 29.935588836669922,
+          "seconds": 0.15147180001076777,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/014.png",
+          "score": 31.524106979370117,
+          "seconds": 0.15059930000279564,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/015.png",
+          "score": 56.90866470336914,
+          "seconds": 0.14820169999438804,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/016.png",
+          "score": 26.78851318359375,
+          "seconds": 0.1623122000019066,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/017.png",
+          "score": 47.35335159301758,
+          "seconds": 0.1531546000041999,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/018.png",
+          "score": 26.75159454345703,
+          "seconds": 0.15326700000150595,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/019.png",
+          "score": 33.05825424194336,
+          "seconds": 0.15306229999987409,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/020.png",
+          "score": 30.560338973999023,
+          "seconds": 0.14444030000595376,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/000.png",
+          "score": 52.66133499145508,
+          "seconds": 0.151602300000377,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/001.png",
+          "score": 31.065702438354492,
+          "seconds": 0.1387955999962287,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/002.png",
+          "score": 35.973716735839844,
+          "seconds": 0.14557610001065768,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/003.png",
+          "score": 29.44330596923828,
+          "seconds": 0.142882300002384,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/004.png",
+          "score": 41.07632827758789,
+          "seconds": 0.14635379999526776,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/005.png",
+          "score": 58.6812629699707,
+          "seconds": 0.14879600000858773,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/006.png",
+          "score": 32.151554107666016,
+          "seconds": 0.15290200000163168,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/007.png",
+          "score": 33.71546173095703,
+          "seconds": 0.14706849999492988,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/008.png",
+          "score": 45.448211669921875,
+          "seconds": 0.15661819999513682,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/009.png",
+          "score": 64.65230560302734,
+          "seconds": 0.16532800000277348,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/010.png",
+          "score": 45.971824645996094,
+          "seconds": 0.1691458999994211,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/011.png",
+          "score": 31.515661239624023,
+          "seconds": 0.16326630000548903,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/012.png",
+          "score": 24.139402389526367,
+          "seconds": 0.16638029999739956,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/013.png",
+          "score": 27.873807907104492,
+          "seconds": 0.15980380000837613,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/014.png",
+          "score": 30.8955020904541,
+          "seconds": 0.14537019999988843,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/015.png",
+          "score": 27.665542602539062,
+          "seconds": 0.14350459999695886,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/016.png",
+          "score": 28.861478805541992,
+          "seconds": 0.14687379999668337,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/017.png",
+          "score": 27.090898513793945,
+          "seconds": 0.15396070000133477,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/018.png",
+          "score": 31.713685989379883,
+          "seconds": 0.1548443999927258,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/019.png",
+          "score": 24.963144302368164,
+          "seconds": 0.16640639999241102,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/020.png",
+          "score": 27.670024871826172,
+          "seconds": 0.16173219999473076,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/021.png",
+          "score": 41.71623992919922,
+          "seconds": 0.1484652999934042,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/000.png",
+          "score": 34.6619873046875,
+          "seconds": 0.14575979999790434,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/001.png",
+          "score": 30.04067039489746,
+          "seconds": 0.14572479999333154,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/002.png",
+          "score": 34.81380844116211,
+          "seconds": 0.14313730000867508,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/003.png",
+          "score": 29.318904876708984,
+          "seconds": 0.14094490000570659,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/004.png",
+          "score": 41.120941162109375,
+          "seconds": 0.14647120000154246,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/005.png",
+          "score": 26.440462112426758,
+          "seconds": 0.14324479999777395,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/006.png",
+          "score": 30.80084800720215,
+          "seconds": 0.15496210000128485,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/007.png",
+          "score": 25.758285522460938,
+          "seconds": 0.16386899999633897,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/008.png",
+          "score": 32.87592697143555,
+          "seconds": 0.150992299997597,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/009.png",
+          "score": 30.588516235351562,
+          "seconds": 0.15054509999754373,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/010.png",
+          "score": 30.079435348510742,
+          "seconds": 0.14967079999041744,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/011.png",
+          "score": 39.67906951904297,
+          "seconds": 0.1488513999938732,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/012.png",
+          "score": 24.61487579345703,
+          "seconds": 0.15425809999578632,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/013.png",
+          "score": 28.075664520263672,
+          "seconds": 0.14852160000009462,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/014.png",
+          "score": 29.312610626220703,
+          "seconds": 0.14662200000020675,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/015.png",
+          "score": 29.185134887695312,
+          "seconds": 0.15060050001193304,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/016.png",
+          "score": 41.31627655029297,
+          "seconds": 0.1445596999983536,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/017.png",
+          "score": 33.46944046020508,
+          "seconds": 0.16646619999664836,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/018.png",
+          "score": 28.485246658325195,
+          "seconds": 0.15318090000073425,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/019.png",
+          "score": 26.82105255126953,
+          "seconds": 0.15402800000447314,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/020.png",
+          "score": 26.608951568603516,
+          "seconds": 0.15539059998991434,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/000.png",
+          "score": 59.495445251464844,
+          "seconds": 0.15586480000638403,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/001.png",
+          "score": 37.67667007446289,
+          "seconds": 0.16168149998702575,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/002.png",
+          "score": 36.99833297729492,
+          "seconds": 0.14893380001012702,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/003.png",
+          "score": 67.8980484008789,
+          "seconds": 0.15397899999516085,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/004.png",
+          "score": 64.81681060791016,
+          "seconds": 0.1475537000078475,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/005.png",
+          "score": 44.72711181640625,
+          "seconds": 0.15347859999747016,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/006.png",
+          "score": 27.121265411376953,
+          "seconds": 0.1462805000046501,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/007.png",
+          "score": 51.88603210449219,
+          "seconds": 0.1471793999953661,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/008.png",
+          "score": 43.076656341552734,
+          "seconds": 0.14942770000197925,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/009.png",
+          "score": 48.69985580444336,
+          "seconds": 0.14339019999897573,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/010.png",
+          "score": 44.531307220458984,
+          "seconds": 0.15112569999473635,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/011.png",
+          "score": 29.439538955688477,
+          "seconds": 0.13985980000870768,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/012.png",
+          "score": 42.370304107666016,
+          "seconds": 0.1468629000009969,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/013.png",
+          "score": 42.59544372558594,
+          "seconds": 0.146347899993998,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/014.png",
+          "score": 39.298744201660156,
+          "seconds": 0.14504139999917243,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/015.png",
+          "score": 36.36143112182617,
+          "seconds": 0.1470024000009289,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/016.png",
+          "score": 40.45206069946289,
+          "seconds": 0.14013120000890922,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/017.png",
+          "score": 29.02216911315918,
+          "seconds": 0.14311920000182,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/018.png",
+          "score": 30.95060920715332,
+          "seconds": 0.14355960000830237,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/019.png",
+          "score": 27.95513343811035,
+          "seconds": 0.14712009999493603,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/020.png",
+          "score": 35.25177001953125,
+          "seconds": 0.15029750000394415,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/021.png",
+          "score": 41.898494720458984,
+          "seconds": 0.1508518000046024,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/000.png",
+          "score": 31.359130859375,
+          "seconds": 0.14823140000225976,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/001.png",
+          "score": 30.913759231567383,
+          "seconds": 0.14629789999162313,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/002.png",
+          "score": 30.579526901245117,
+          "seconds": 0.14693919999990612,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/003.png",
+          "score": 31.46467399597168,
+          "seconds": 0.14465410000411794,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/004.png",
+          "score": 24.838083267211914,
+          "seconds": 0.1520924000069499,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/005.png",
+          "score": 27.35662841796875,
+          "seconds": 0.14751659998728428,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/006.png",
+          "score": 34.29123306274414,
+          "seconds": 0.14708120000432245,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/007.png",
+          "score": 28.330541610717773,
+          "seconds": 0.14134499999636319,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/008.png",
+          "score": 27.36404037475586,
+          "seconds": 0.169134199997643,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/009.png",
+          "score": 32.266571044921875,
+          "seconds": 0.15903830000024755,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/010.png",
+          "score": 30.683713912963867,
+          "seconds": 0.1409259999927599,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/011.png",
+          "score": 30.485097885131836,
+          "seconds": 0.1523282999987714,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/012.png",
+          "score": 27.55394744873047,
+          "seconds": 0.14890059999015648,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/013.png",
+          "score": 27.660419464111328,
+          "seconds": 0.14684349999879487,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/014.png",
+          "score": 31.52692222595215,
+          "seconds": 0.14800250000553206,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/015.png",
+          "score": 29.66853141784668,
+          "seconds": 0.15306579999742098,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/016.png",
+          "score": 42.24100112915039,
+          "seconds": 0.15163900000334252,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/017.png",
+          "score": 34.56459045410156,
+          "seconds": 0.14855440000246745,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/018.png",
+          "score": 28.92723846435547,
+          "seconds": 0.1494010000023991,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/019.png",
+          "score": 33.68764114379883,
+          "seconds": 0.1439204000052996,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/020.png",
+          "score": 30.231958389282227,
+          "seconds": 0.13941760000307113,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/021.png",
+          "score": 29.068588256835938,
+          "seconds": 0.14447650000511203,
+          "status": "scored",
+          "warnings": []
+        }
+      ]
+    },
+    "brightness_0p6": {
+      "metrics": {
+        "accepted_normal_fpr": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "anomaly_coverage": {
+          "denominator": 87,
+          "numerator": 87,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9577124930558795,
+            0.9999999999999999
+          ]
+        },
+        "counts": {
+          "FN": 77,
+          "FP": 0,
+          "TN": 21,
+          "TP": 10,
+          "rejected_anomalies": 0,
+          "rejected_normals": 0
+        },
+        "coverage": {
+          "denominator": 108,
+          "numerator": 108,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9656526402534428,
+            0.9999999999999999
+          ]
+        },
+        "false_flags_all_normals": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "normal_coverage": {
+          "denominator": 21,
+          "numerator": 21,
+          "rate": 1.0,
+          "wilson_95": [
+            0.8453609810751531,
+            1
+          ]
+        },
+        "observed_prevalence": {
+          "denominator": 108,
+          "numerator": 87,
+          "rate": 0.8055555555555556,
+          "wilson_95": [
+            0.7209648351663079,
+            0.8691562227663517
+          ]
+        },
+        "precision": {
+          "denominator": 10,
+          "numerator": 10,
+          "rate": 1.0,
+          "wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ]
+        },
+        "ranking_scored_only": {
+          "auroc": 0.8166392993979201,
+          "average_precision": 0.9418418562995111,
+          "n": 108,
+          "population": "scored subset only"
+        },
+        "recall": {
+          "denominator": 87,
+          "numerator": 10,
+          "rate": 0.11494252873563218,
+          "wilson_95": [
+            0.06364547795653458,
+            0.19880582049468454
+          ]
+        }
+      },
+      "rows": [
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/000.png",
+          "score": 28.849193572998047,
+          "seconds": 0.16722889999800827,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/001.png",
+          "score": 73.75834655761719,
+          "seconds": 0.14379170000029262,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/002.png",
+          "score": 23.891132354736328,
+          "seconds": 0.14248229999793693,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/003.png",
+          "score": 24.45570182800293,
+          "seconds": 0.13930759999493603,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/004.png",
+          "score": 29.17143440246582,
+          "seconds": 0.14290150000306312,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/005.png",
+          "score": 27.139720916748047,
+          "seconds": 0.1542121000093175,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/006.png",
+          "score": 37.26913070678711,
+          "seconds": 0.1565963000030024,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/007.png",
+          "score": 63.729736328125,
+          "seconds": 0.14492340000288095,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/008.png",
+          "score": 27.992414474487305,
+          "seconds": 0.13495590000820812,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/009.png",
+          "score": 59.39488220214844,
+          "seconds": 0.15962049999507144,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/010.png",
+          "score": 29.838645935058594,
+          "seconds": 0.14045469999837223,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/011.png",
+          "score": 30.457340240478516,
+          "seconds": 0.14386329999251757,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/012.png",
+          "score": 40.99740219116211,
+          "seconds": 0.14789110000128858,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/013.png",
+          "score": 22.49687957763672,
+          "seconds": 0.14095590000215452,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/014.png",
+          "score": 27.944896697998047,
+          "seconds": 0.13922730000922456,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/015.png",
+          "score": 42.52201461791992,
+          "seconds": 0.1466598000115482,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/016.png",
+          "score": 23.92479133605957,
+          "seconds": 0.1452203999942867,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/017.png",
+          "score": 37.895057678222656,
+          "seconds": 0.14876379999623168,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/018.png",
+          "score": 18.786136627197266,
+          "seconds": 0.14190800000505988,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/019.png",
+          "score": 22.229469299316406,
+          "seconds": 0.14773170000989921,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/020.png",
+          "score": 25.430883407592773,
+          "seconds": 0.14805909999995492,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/000.png",
+          "score": 56.41286087036133,
+          "seconds": 0.14624319999711588,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/001.png",
+          "score": 30.308542251586914,
+          "seconds": 0.15109470000606962,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/002.png",
+          "score": 33.19989776611328,
+          "seconds": 0.1312789000076009,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/003.png",
+          "score": 28.534130096435547,
+          "seconds": 0.14038779999827966,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/004.png",
+          "score": 26.01543617248535,
+          "seconds": 0.1383572000049753,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/005.png",
+          "score": 55.798255920410156,
+          "seconds": 0.1428273000055924,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/006.png",
+          "score": 29.08121681213379,
+          "seconds": 0.1375811000034446,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/007.png",
+          "score": 30.79049301147461,
+          "seconds": 0.1626181000028737,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/008.png",
+          "score": 37.889095306396484,
+          "seconds": 0.14539930000319146,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/009.png",
+          "score": 76.8935546875,
+          "seconds": 0.1549154000094859,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/010.png",
+          "score": 48.73979568481445,
+          "seconds": 0.1601929000025848,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/011.png",
+          "score": 24.104463577270508,
+          "seconds": 0.1611990999954287,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/012.png",
+          "score": 21.68451499938965,
+          "seconds": 0.15489829999569338,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/013.png",
+          "score": 23.36509895324707,
+          "seconds": 0.162870500003919,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/014.png",
+          "score": 29.992521286010742,
+          "seconds": 0.15890119998948649,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/015.png",
+          "score": 26.075084686279297,
+          "seconds": 0.1422448999946937,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/016.png",
+          "score": 20.6927490234375,
+          "seconds": 0.13578270000289194,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/017.png",
+          "score": 25.618928909301758,
+          "seconds": 0.1375345999986166,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/018.png",
+          "score": 34.566650390625,
+          "seconds": 0.15325770000345074,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/019.png",
+          "score": 25.256328582763672,
+          "seconds": 0.1747832999972161,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/020.png",
+          "score": 27.256248474121094,
+          "seconds": 0.1462695999944117,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/021.png",
+          "score": 41.65589141845703,
+          "seconds": 0.15561180000077002,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/000.png",
+          "score": 23.594621658325195,
+          "seconds": 0.15131600000313483,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/001.png",
+          "score": 23.194255828857422,
+          "seconds": 0.13412740000057966,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/002.png",
+          "score": 49.011878967285156,
+          "seconds": 0.1531264000077499,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/003.png",
+          "score": 23.63884925842285,
+          "seconds": 0.14287339999282267,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/004.png",
+          "score": 23.551414489746094,
+          "seconds": 0.14280479999433737,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/005.png",
+          "score": 19.115087509155273,
+          "seconds": 0.13858179999806453,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/006.png",
+          "score": 24.487192153930664,
+          "seconds": 0.1413447999948403,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/007.png",
+          "score": 18.24199104309082,
+          "seconds": 0.14673710000352003,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/008.png",
+          "score": 22.667579650878906,
+          "seconds": 0.1472102999978233,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/009.png",
+          "score": 24.19327163696289,
+          "seconds": 0.14913429999432992,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/010.png",
+          "score": 24.10527229309082,
+          "seconds": 0.14236610000079963,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/011.png",
+          "score": 19.999338150024414,
+          "seconds": 0.14665819999936502,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/012.png",
+          "score": 22.902767181396484,
+          "seconds": 0.14293410000391304,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/013.png",
+          "score": 25.134519577026367,
+          "seconds": 0.16095530000166036,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/014.png",
+          "score": 30.671688079833984,
+          "seconds": 0.1444267999904696,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/015.png",
+          "score": 23.650720596313477,
+          "seconds": 0.14526079999632202,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/016.png",
+          "score": 25.295183181762695,
+          "seconds": 0.1426280999876326,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/017.png",
+          "score": 28.743799209594727,
+          "seconds": 0.1387096999969799,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/018.png",
+          "score": 18.92076301574707,
+          "seconds": 0.15045879999524914,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/019.png",
+          "score": 17.025461196899414,
+          "seconds": 0.1853374999918742,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/020.png",
+          "score": 21.681053161621094,
+          "seconds": 0.14857569999003317,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/000.png",
+          "score": 55.22275161743164,
+          "seconds": 0.14914360000693705,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/001.png",
+          "score": 35.70588302612305,
+          "seconds": 0.16259180000633933,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/002.png",
+          "score": 36.037166595458984,
+          "seconds": 0.14001200000348035,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/003.png",
+          "score": 69.80224609375,
+          "seconds": 0.13285259999975096,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/004.png",
+          "score": 72.49300384521484,
+          "seconds": 0.14113150000048336,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/005.png",
+          "score": 43.43789291381836,
+          "seconds": 0.1427108999923803,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/006.png",
+          "score": 23.357088088989258,
+          "seconds": 0.14187989999481943,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/007.png",
+          "score": 49.02779006958008,
+          "seconds": 0.13958580000326037,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/008.png",
+          "score": 43.913734436035156,
+          "seconds": 0.14072609999857377,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/009.png",
+          "score": 46.6282958984375,
+          "seconds": 0.13920819999475498,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/010.png",
+          "score": 40.223785400390625,
+          "seconds": 0.133115300006466,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/011.png",
+          "score": 34.50696563720703,
+          "seconds": 0.1360017999977572,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/012.png",
+          "score": 37.39799499511719,
+          "seconds": 0.1389093000034336,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/013.png",
+          "score": 38.85999298095703,
+          "seconds": 0.1396664000058081,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/014.png",
+          "score": 28.00765609741211,
+          "seconds": 0.14444210000510793,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/015.png",
+          "score": 31.002540588378906,
+          "seconds": 0.14263440000650007,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/016.png",
+          "score": 22.698699951171875,
+          "seconds": 0.14083399999071844,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/017.png",
+          "score": 23.98782730102539,
+          "seconds": 0.1392317000136245,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/018.png",
+          "score": 26.396791458129883,
+          "seconds": 0.13728739999351092,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/019.png",
+          "score": 26.329509735107422,
+          "seconds": 0.13827220001257956,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/020.png",
+          "score": 30.696054458618164,
+          "seconds": 0.15426960001059342,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/021.png",
+          "score": 35.200050354003906,
+          "seconds": 0.14162369999394286,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/000.png",
+          "score": 30.444501876831055,
+          "seconds": 0.14139479999721516,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/001.png",
+          "score": 31.34154510498047,
+          "seconds": 0.14298740000231192,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/002.png",
+          "score": 20.962970733642578,
+          "seconds": 0.14891449999413453,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/003.png",
+          "score": 27.7502384185791,
+          "seconds": 0.14032600000791717,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/004.png",
+          "score": 24.615055084228516,
+          "seconds": 0.14410179998958483,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/005.png",
+          "score": 26.640302658081055,
+          "seconds": 0.14636900000914466,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/006.png",
+          "score": 56.717124938964844,
+          "seconds": 0.13802810000197496,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/007.png",
+          "score": 23.006725311279297,
+          "seconds": 0.14888400000927504,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/008.png",
+          "score": 20.288005828857422,
+          "seconds": 0.14468549999583047,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/009.png",
+          "score": 24.4870662689209,
+          "seconds": 0.14810629999556113,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/010.png",
+          "score": 27.493986129760742,
+          "seconds": 0.1464923000021372,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/011.png",
+          "score": 29.87921905517578,
+          "seconds": 0.14098640000156593,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/012.png",
+          "score": 32.90513229370117,
+          "seconds": 0.14185709999583196,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/013.png",
+          "score": 25.22535514831543,
+          "seconds": 0.14313070000207517,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/014.png",
+          "score": 28.8137264251709,
+          "seconds": 0.14031909999903291,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/015.png",
+          "score": 28.17194366455078,
+          "seconds": 0.1513010999915423,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/016.png",
+          "score": 25.002431869506836,
+          "seconds": 0.14889599999878556,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/017.png",
+          "score": 38.0386848449707,
+          "seconds": 0.15370830000028946,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/018.png",
+          "score": 23.37844467163086,
+          "seconds": 0.13738929999817628,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/019.png",
+          "score": 40.583648681640625,
+          "seconds": 0.13933830001042224,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/020.png",
+          "score": 35.93471908569336,
+          "seconds": 0.14274700000532903,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/021.png",
+          "score": 25.89719009399414,
+          "seconds": 0.14042890000564512,
+          "status": "scored",
+          "warnings": []
+        }
+      ]
+    },
+    "brightness_1p4": {
+      "metrics": {
+        "accepted_normal_fpr": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "anomaly_coverage": {
+          "denominator": 87,
+          "numerator": 87,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9577124930558795,
+            0.9999999999999999
+          ]
+        },
+        "counts": {
+          "FN": 74,
+          "FP": 0,
+          "TN": 21,
+          "TP": 13,
+          "rejected_anomalies": 0,
+          "rejected_normals": 0
+        },
+        "coverage": {
+          "denominator": 108,
+          "numerator": 108,
+          "rate": 1.0,
+          "wilson_95": [
+            0.9656526402534428,
+            0.9999999999999999
+          ]
+        },
+        "false_flags_all_normals": {
+          "denominator": 21,
+          "numerator": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0,
+            0.154639018924847
+          ]
+        },
+        "normal_coverage": {
+          "denominator": 21,
+          "numerator": 21,
+          "rate": 1.0,
+          "wilson_95": [
+            0.8453609810751531,
+            1
+          ]
+        },
+        "observed_prevalence": {
+          "denominator": 108,
+          "numerator": 87,
+          "rate": 0.8055555555555556,
+          "wilson_95": [
+            0.7209648351663079,
+            0.8691562227663517
+          ]
+        },
+        "precision": {
+          "denominator": 13,
+          "numerator": 13,
+          "rate": 1.0,
+          "wilson_95": [
+            0.7719046276458016,
+            0.9999999999999999
+          ]
+        },
+        "ranking_scored_only": {
+          "auroc": 0.6792556102900931,
+          "average_precision": 0.908703608457916,
+          "n": 108,
+          "population": "scored subset only"
+        },
+        "recall": {
+          "denominator": 87,
+          "numerator": 13,
+          "rate": 0.14942528735632185,
+          "wilson_95": [
+            0.0894544325105219,
+            0.23904600339282686
+          ]
+        }
+      },
+      "rows": [
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/000.png",
+          "score": 25.241445541381836,
+          "seconds": 0.14606569999887142,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/001.png",
+          "score": 102.48871612548828,
+          "seconds": 0.14087609999114648,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/002.png",
+          "score": 30.6294002532959,
+          "seconds": 0.15098330000182614,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/003.png",
+          "score": 30.3829402923584,
+          "seconds": 0.14765020000049844,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/004.png",
+          "score": 35.95232009887695,
+          "seconds": 0.16372830000182148,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/005.png",
+          "score": 27.871408462524414,
+          "seconds": 0.14815439999802038,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/006.png",
+          "score": 44.77247619628906,
+          "seconds": 0.14698419999331236,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/007.png",
+          "score": 74.61045837402344,
+          "seconds": 0.2150071000069147,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/008.png",
+          "score": 26.28722381591797,
+          "seconds": 0.14500080001016613,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/009.png",
+          "score": 66.87448120117188,
+          "seconds": 0.1459024999930989,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/010.png",
+          "score": 32.015804290771484,
+          "seconds": 0.13310269999783486,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/011.png",
+          "score": 31.654361724853516,
+          "seconds": 0.13384579999546986,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/012.png",
+          "score": 42.466922760009766,
+          "seconds": 0.1501090999954613,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/013.png",
+          "score": 27.49924087524414,
+          "seconds": 0.1414876000053482,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/014.png",
+          "score": 28.326345443725586,
+          "seconds": 0.15983029999188147,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/015.png",
+          "score": 58.00265121459961,
+          "seconds": 0.13825489999726415,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/016.png",
+          "score": 29.460468292236328,
+          "seconds": 0.14117189998796675,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/017.png",
+          "score": 48.3091926574707,
+          "seconds": 0.15285849999054335,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/018.png",
+          "score": 22.352161407470703,
+          "seconds": 0.1456435000000056,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/019.png",
+          "score": 33.44123458862305,
+          "seconds": 0.14213919999019708,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/bent/rgb/020.png",
+          "score": 28.54853630065918,
+          "seconds": 0.14949529999285005,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/000.png",
+          "score": 58.25996780395508,
+          "seconds": 0.1435849999979837,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/001.png",
+          "score": 34.715877532958984,
+          "seconds": 0.13974549999693409,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/002.png",
+          "score": 35.111080169677734,
+          "seconds": 0.13709580000431743,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/003.png",
+          "score": 32.42734146118164,
+          "seconds": 0.1473385999997845,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/004.png",
+          "score": 31.309907913208008,
+          "seconds": 0.14108860000851564,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/005.png",
+          "score": 59.98087692260742,
+          "seconds": 0.1402686000074027,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/006.png",
+          "score": 30.86060905456543,
+          "seconds": 0.14145159999316093,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/007.png",
+          "score": 39.95539474487305,
+          "seconds": 0.14004559999739286,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/008.png",
+          "score": 42.31156921386719,
+          "seconds": 0.14784839999629185,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/009.png",
+          "score": 83.95497131347656,
+          "seconds": 0.15284799999790266,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/010.png",
+          "score": 51.663299560546875,
+          "seconds": 0.16815309999219608,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/011.png",
+          "score": 24.979358673095703,
+          "seconds": 0.15929419999883976,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/012.png",
+          "score": 21.49211883544922,
+          "seconds": 0.16275920000043698,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/013.png",
+          "score": 30.227375030517578,
+          "seconds": 0.15846160000364762,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/014.png",
+          "score": 33.042701721191406,
+          "seconds": 0.14544839999871328,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/015.png",
+          "score": 22.149959564208984,
+          "seconds": 0.13897220000217203,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/016.png",
+          "score": 22.04507064819336,
+          "seconds": 0.14207849999365862,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/017.png",
+          "score": 24.95577621459961,
+          "seconds": 0.15044930001022294,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/018.png",
+          "score": 35.6685676574707,
+          "seconds": 0.13616759999422356,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/019.png",
+          "score": 25.44072723388672,
+          "seconds": 0.18551389999629464,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/020.png",
+          "score": 32.50912857055664,
+          "seconds": 0.16840229999797884,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/cut/rgb/021.png",
+          "score": 49.0810661315918,
+          "seconds": 0.15306609999970533,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/000.png",
+          "score": 31.026668548583984,
+          "seconds": 0.15581830000155605,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/001.png",
+          "score": 27.03463363647461,
+          "seconds": 0.13968630001181737,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/002.png",
+          "score": 49.203453063964844,
+          "seconds": 0.1428202999959467,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/003.png",
+          "score": 27.14023780822754,
+          "seconds": 0.13935359999595676,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/004.png",
+          "score": 28.459941864013672,
+          "seconds": 0.14428760000737384,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/005.png",
+          "score": 22.466245651245117,
+          "seconds": 0.14643809999688528,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/006.png",
+          "score": 29.39698028564453,
+          "seconds": 0.14045849999820348,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/007.png",
+          "score": 20.352399826049805,
+          "seconds": 0.13921280000067782,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/008.png",
+          "score": 28.01655387878418,
+          "seconds": 0.14061670000955928,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/009.png",
+          "score": 30.962724685668945,
+          "seconds": 0.14204869999957737,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/010.png",
+          "score": 33.85182189941406,
+          "seconds": 0.14845330000389367,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/011.png",
+          "score": 36.42152404785156,
+          "seconds": 0.14399949999642558,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/012.png",
+          "score": 26.45027732849121,
+          "seconds": 0.14287619999959134,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/013.png",
+          "score": 30.959115982055664,
+          "seconds": 0.14416709999204613,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/014.png",
+          "score": 32.9250602722168,
+          "seconds": 0.1428516000014497,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/015.png",
+          "score": 25.304601669311523,
+          "seconds": 0.14631899999221787,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/016.png",
+          "score": 30.07476234436035,
+          "seconds": 0.1429016999900341,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/017.png",
+          "score": 32.13495635986328,
+          "seconds": 0.14881169999716803,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/018.png",
+          "score": 27.892982482910156,
+          "seconds": 0.14847780000127386,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/019.png",
+          "score": 22.907751083374023,
+          "seconds": 0.14806609999504872,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/good/rgb/020.png",
+          "score": 30.712526321411133,
+          "seconds": 0.15988990000914782,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/000.png",
+          "score": 68.95764923095703,
+          "seconds": 0.14812349999556318,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/001.png",
+          "score": 37.62636184692383,
+          "seconds": 0.14208630000939593,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/002.png",
+          "score": 40.16054153442383,
+          "seconds": 0.1408967000024859,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/003.png",
+          "score": 78.85126495361328,
+          "seconds": 0.14348540001083165,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/004.png",
+          "score": 81.36128234863281,
+          "seconds": 0.13616820001334418,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/005.png",
+          "score": 51.92076110839844,
+          "seconds": 0.13808520000020508,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/006.png",
+          "score": 26.915714263916016,
+          "seconds": 0.14225679999799468,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/007.png",
+          "score": 59.6849250793457,
+          "seconds": 0.1372711000003619,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/008.png",
+          "score": 50.34641647338867,
+          "seconds": 0.1419702999992296,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": true,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/009.png",
+          "score": 54.822959899902344,
+          "seconds": 0.1386010999995051,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/010.png",
+          "score": 47.230812072753906,
+          "seconds": 0.14060779999999795,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/011.png",
+          "score": 33.86296081542969,
+          "seconds": 0.14301450000493787,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/012.png",
+          "score": 41.2064094543457,
+          "seconds": 0.13884620000317227,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/013.png",
+          "score": 41.72537612915039,
+          "seconds": 0.13882849999936298,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/014.png",
+          "score": 28.339303970336914,
+          "seconds": 0.13738400000147521,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/015.png",
+          "score": 37.518829345703125,
+          "seconds": 0.14327340001182165,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/016.png",
+          "score": 26.10835838317871,
+          "seconds": 0.1385327000025427,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/017.png",
+          "score": 27.094497680664062,
+          "seconds": 0.14322549999633338,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/018.png",
+          "score": 28.14227867126465,
+          "seconds": 0.13435229999595322,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/019.png",
+          "score": 35.61247634887695,
+          "seconds": 0.13747529999818653,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/020.png",
+          "score": 34.48185348510742,
+          "seconds": 0.14297919999808073,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/hole/rgb/021.png",
+          "score": 35.22944259643555,
+          "seconds": 0.1515499999950407,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/000.png",
+          "score": 35.578792572021484,
+          "seconds": 0.13728100000298582,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/001.png",
+          "score": 32.6374626159668,
+          "seconds": 0.14425509999273345,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/002.png",
+          "score": 24.329500198364258,
+          "seconds": 0.14220709999790415,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/003.png",
+          "score": 35.1065788269043,
+          "seconds": 0.13640999999188352,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/004.png",
+          "score": 29.582971572875977,
+          "seconds": 0.15439019999757875,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/005.png",
+          "score": 26.745981216430664,
+          "seconds": 0.1413040000043111,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/006.png",
+          "score": 39.14894485473633,
+          "seconds": 0.13741450000088662,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/007.png",
+          "score": 23.871213912963867,
+          "seconds": 0.14104139999835752,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/008.png",
+          "score": 21.952760696411133,
+          "seconds": 0.14068360000965185,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/009.png",
+          "score": 28.274457931518555,
+          "seconds": 0.14847739999822807,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/010.png",
+          "score": 26.65984344482422,
+          "seconds": 0.1396740000054706,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/011.png",
+          "score": 29.57358169555664,
+          "seconds": 0.13858249998884276,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/012.png",
+          "score": 40.365577697753906,
+          "seconds": 0.13749519998964388,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/013.png",
+          "score": 31.985212326049805,
+          "seconds": 0.1530200999986846,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/014.png",
+          "score": 29.304731369018555,
+          "seconds": 0.1377282000030391,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/015.png",
+          "score": 29.45387840270996,
+          "seconds": 0.1480569999985164,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/016.png",
+          "score": 29.786376953125,
+          "seconds": 0.14842830000270624,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/017.png",
+          "score": 39.38195037841797,
+          "seconds": 0.14414839999517426,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/018.png",
+          "score": 25.094417572021484,
+          "seconds": 0.14096990000689402,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/019.png",
+          "score": 40.53487014770508,
+          "seconds": 0.13266010000370443,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/020.png",
+          "score": 36.19347381591797,
+          "seconds": 0.13855770000373013,
+          "status": "scored",
+          "warnings": []
+        },
+        {
+          "flagged": false,
+          "id": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:test/thread/rgb/021.png",
+          "score": 31.286029815673828,
+          "seconds": 0.1448279000032926,
+          "status": "scored",
+          "warnings": []
+        }
+      ]
+    }
+  }
+}

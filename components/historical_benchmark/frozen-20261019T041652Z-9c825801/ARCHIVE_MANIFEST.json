@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "archive_status": "historical_read_only",
+  "archived_at": "2026-10-19",
+  "benchmark_stage": 5,
+  "decision": "no_go",
+  "source_run": "runs/frozen-20261019T041652Z-9c825801",
+  "source_run_file_count": 122,
+  "source_run_bytes": 11449345,
+  "source_run_copy_sha256_verified": true,
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "documents": {
+    "docs/STAGE5_REPORT.md": "64e621d2413549c0118e847d98300ac8601f77c9d65f1df2cbc5345a7f79fb66",
+    "docs/STAGE5_FAILURE_ANALYSIS.md": "59d693ded34de1e0bb883742f91493915d5fdc2cc8be1fe546873b511473c7eb",
+    "docs/STAGE5_VERIFICATION.json": "5a6ada64e5b972d3a8b6d8f4b7c76d18895ef0bd1b2bf6d83b71bba661f24aa6"
+  },
+  "comparison_policy": "Treat this test holdout as observed. Compare future systems against these saved results, but use a new untouched confirmation set for independent validation."
+}

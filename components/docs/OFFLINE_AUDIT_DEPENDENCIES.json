@@ -1,0 +1,18 @@
+[
+  {
+    "name": "numpy",
+    "version": "2.2.4",
+    "origin": "repacked verified installed RECORD bytes; not original provider wheel",
+    "path": "components\\.cache\\offline-wheels\\numpy-2.2.4-cp312-cp312-win_amd64.whl",
+    "sha256": "7dc638a1233942e6950398f6ac251d5f0b3de9de6dc958971445a25bb1e15b62",
+    "verified_files": 896
+  },
+  {
+    "name": "scipy",
+    "version": "1.15.2",
+    "origin": "repacked verified installed RECORD bytes; not original provider wheel",
+    "path": "components\\.cache\\offline-wheels\\scipy-1.15.2-cp312-cp312-win_amd64.whl",
+    "sha256": "0297e695d06c33747a00a05c8ab2e75ce438c037329017f69c8e8bcc84ca5e3f",
+    "verified_files": 1538
+  }
+]

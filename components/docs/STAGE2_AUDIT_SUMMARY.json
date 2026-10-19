@@ -1,0 +1,83 @@
+{
+  "membership_hash": "6d24d51d1858c67b08d14340998310c8a4e419ab7f232270d4f322a7bcd53ca2",
+  "manifest_sha256": "f1fdd9113745565f00827529f475989192465562e881478a3f6d3d31f59b4863",
+  "manifest_path": "data/manifests/stage2/b769d8598112008728d354145526815eceeaaf32e477861af22c25a541a1ecc9/manifest.json",
+  "datasets": {
+    "ksdd2_surface": {
+      "image_counts": {
+        "ksdd2/test/0": 894,
+        "ksdd2/test/1": 110,
+        "ksdd2/train/0": 2085,
+        "ksdd2/train/1": 246,
+        "ksdd2/train/None": 2
+      },
+      "role_images": {
+        "calibration": 417,
+        "development": 663,
+        "fit": 128,
+        "quarantine": 2,
+        "test": 1004,
+        "unused_fit": 1123
+      },
+      "role_groups": {
+        "unused_fit": 1123,
+        "test": 1004,
+        "development": 663,
+        "calibration": 417,
+        "fit": 128,
+        "quarantine": 2
+      },
+      "selected_fit_images": 128,
+      "reference_images": 16,
+      "quarantine": {
+        "missing_mask": 2
+      },
+      "unknown_physical_ids": 3337,
+      "duplicate_pairs": [],
+      "resolved_rotation": 90
+    },
+    "mvtec_3d_cable_gland_rgb": {
+      "image_counts": {
+        "mvtec_3d_ad/test/0": 21,
+        "mvtec_3d_ad/test/1": 87,
+        "mvtec_3d_ad/train/0": 223,
+        "mvtec_3d_ad/validation/0": 23
+      },
+      "role_images": {
+        "calibration": 44,
+        "development": 68,
+        "fit": 129,
+        "test": 108,
+        "unused_fit": 5
+      },
+      "role_groups": {
+        "fit": 128,
+        "calibration": 44,
+        "test": 108,
+        "development": 67,
+        "unused_fit": 5
+      },
+      "selected_fit_images": 128,
+      "reference_images": 16,
+      "quarantine": {},
+      "unknown_physical_ids": 354,
+      "duplicate_pairs": [
+        {
+          "a": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:train/good/rgb/051.png",
+          "b": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:train/good/rgb/019.png",
+          "kind": "near_conservative_group",
+          "phash_hamming": 2,
+          "thumbnail_mae_255": 1.6201985677083333
+        },
+        {
+          "a": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:train/good/rgb/147.png",
+          "b": "mvtec_3d_ad:63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed:train/good/rgb/116.png",
+          "kind": "near_conservative_group",
+          "phash_hamming": 2,
+          "thumbnail_mae_255": 1.890625
+        }
+      ],
+      "resolved_rotation": 0
+    }
+  }
+}

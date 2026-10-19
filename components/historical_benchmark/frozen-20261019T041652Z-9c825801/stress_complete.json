@@ -1,0 +1,60 @@
+{
+  "file_hashes": {
+    "stress/ksdd2_surface_padim/ksdd2_surface_padim.json": "0cbd462c9c858d4876e94c02fbf1248d3c84bf214a6e722ec297b0410d9cc149",
+    "stress/ksdd2_surface_padim_resources.json": "4607813bf391fbefaa8390e1d639651aaf783f654dcf6298e334f39985683bc5",
+    "stress/ksdd2_surface_reference/ksdd2_surface_reference.json": "8b013891e39ee1e28f1c44992cb0f93bc70613074bf1f9c8d70f354bf00d25e1",
+    "stress/ksdd2_surface_reference_resources.json": "5e4312fa898f49b5a3f120ebd12380112d5e040899fc8a558b6c1a3a68233b62",
+    "stress/mvtec_3d_cable_gland_rgb_padim/mvtec_3d_cable_gland_rgb_padim.json": "3db4b9a6ee6ed661b1d101a74bad434d3cf11d061d230da6623723d84ce1b8b9",
+    "stress/mvtec_3d_cable_gland_rgb_padim_resources.json": "cf0ed2a8f0d5c5dde4e80a8099eff0113a5e035ee8c470de784028745e32ea0f",
+    "stress/mvtec_3d_cable_gland_rgb_reference/mvtec_3d_cable_gland_rgb_reference.json": "6790a50039bafdcce26c3c9271dad66bd7a60e6692ef3cb44bfc85fe16be53e3",
+    "stress/mvtec_3d_cable_gland_rgb_reference_resources.json": "d6c7ddca0e00517524936c7871be98c8ef58431f63f348d19dcb5811af728d24"
+  },
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "phase": "stress",
+  "resources": {
+    "ksdd2_surface_padim": {
+      "elapsed_seconds": 862.5470000000059,
+      "max_observed_processes": 2,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 1237340160,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "ksdd2_surface_reference": {
+      "elapsed_seconds": 414.14100000000326,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 218292224,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_padim": {
+      "elapsed_seconds": 96.0619999999908,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 789573632,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_reference": {
+      "elapsed_seconds": 28.5,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 180908032,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    }
+  }
+}

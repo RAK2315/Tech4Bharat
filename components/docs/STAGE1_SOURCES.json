@@ -68,5 +68,51 @@
       "scope": "one training image decoded; not a full image/mask audit"
     },
     "validation_status": "acquired_not_audited_or_split"
+  },
+  {
+    "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad",
+    "download_url": null,
+    "attribution": "MVTec Software GmbH; Bergmann, Sattlegger, Steger, The MVTec 3D-AD Dataset (VISAPP 2022).",
+    "dataset": "mvtec_3d_ad",
+    "category": "cable_gland",
+    "checked_at_utc": "2026-10-18T16:36:23.456195+00:00",
+    "license": "CC-BY-NC-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "terms": "Research only for this build. Retain attribution/license and disclose changes; NonCommercial and ShareAlike apply. Public-demo/commercial suitability is not established.",
+    "provider_release_id": null,
+    "limits": {
+      "max_archive_bytes": 2147483648,
+      "max_total_bytes": 6442450944,
+      "max_file_bytes": 67108864,
+      "max_members": 20000,
+      "max_ratio": 200
+    },
+    "status": "acquired",
+    "acquisition_mode": "local_archive_unverified_provider_identity",
+    "retrieved_at_utc": "2026-10-18T16:36:48.457546+00:00",
+    "retrieval_note": "Local import time; original provider retrieval date unknown",
+    "archive": {
+      "bytes": 354399396,
+      "sha256": "63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed",
+      "requested_url": null,
+      "resolved_url": null,
+      "path": "data/archives/63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed.tar"
+    },
+    "raw_path": "data/raw/mvtec_3d_cable_gland",
+    "inventory": {
+      "path": "data/manifests/mvtec_3d_cable_gland_63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed_inventory.json",
+      "sha256": "7e3f5e22b18edc9c3e9894a402973dbbf05345a8deea30b32e0c9879d707032c",
+      "files": 820,
+      "extracted_bytes": 759081950
+    },
+    "readable_training_sample": {
+      "path": "cable_gland/train/good/rgb/000.png",
+      "width": 400,
+      "height": 400,
+      "mode": "RGB",
+      "format": "PNG",
+      "scope": "one training image decoded; not a full image/mask audit"
+    },
+    "validation_status": "acquired_not_audited_or_split"
   }
 ]

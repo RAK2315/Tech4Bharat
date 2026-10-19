@@ -1,7 +1,14 @@
 schema_version: 1
 status: draft_not_frozen
 seed: 4217
-recipes: [mvtec_metal_nut, ksdd2_surface]
+recipes: [mvtec_3d_cable_gland_rgb, ksdd2_surface]
+deferred_recipes: [mvtec_metal_nut]
+dataset_role_overrides:
+  mvtec_3d_cable_gland_rgb:
+    official_validation_role: development_only
+    modalities: [rgb]
+    exclude_modalities: [xyz, camera_calibration]
+    source_notice_reconciliation: pending_before_freeze
 official_test_policy: preserve_membership_until_audit
 normal_group_roles: {fit: 0.60, development: 0.20, calibration: 0.20}
 max_fit_groups: 128

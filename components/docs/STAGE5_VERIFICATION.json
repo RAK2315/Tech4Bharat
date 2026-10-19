@@ -1,0 +1,192 @@
+{
+  "status": "verified",
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "decision": "no_go",
+  "unit_reservations": 12,
+  "gallery_images": 48,
+  "access_roles": [
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "reference",
+      "phase": "calibration",
+      "variant": "original",
+      "role": "calibration",
+      "images": 44,
+      "ordered_ids_sha256": "05f844c30cf7fd65318c38f5bad23ae99dbdb8fccf525787a2763106cf9b2946"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "reference",
+      "phase": "evaluation",
+      "variant": "original",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "blur_radius_2",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "brightness_0p6",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "brightness_1p4",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "padim",
+      "phase": "calibration",
+      "variant": "original",
+      "role": "calibration",
+      "images": 44,
+      "ordered_ids_sha256": "05f844c30cf7fd65318c38f5bad23ae99dbdb8fccf525787a2763106cf9b2946"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "padim",
+      "phase": "evaluation",
+      "variant": "original",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "blur_radius_2",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "brightness_0p6",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "mvtec_3d_cable_gland_rgb",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "brightness_1p4",
+      "role": "test",
+      "images": 108,
+      "ordered_ids_sha256": "7ef9c5becea743583ec9968e1bb3966122e0b086b622e76e47a31e02adb7df62"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "reference",
+      "phase": "calibration",
+      "variant": "original",
+      "role": "calibration",
+      "images": 417,
+      "ordered_ids_sha256": "e05cf904ef3e3f594fcb0cc316ac8ba5135687415184d417338a594d28e2b2a3"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "reference",
+      "phase": "evaluation",
+      "variant": "original",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "blur_radius_2",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "brightness_0p6",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "reference",
+      "phase": "stress",
+      "variant": "brightness_1p4",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "padim",
+      "phase": "calibration",
+      "variant": "original",
+      "role": "calibration",
+      "images": 417,
+      "ordered_ids_sha256": "e05cf904ef3e3f594fcb0cc316ac8ba5135687415184d417338a594d28e2b2a3"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "padim",
+      "phase": "evaluation",
+      "variant": "original",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "blur_radius_2",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "brightness_0p6",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    },
+    {
+      "recipe": "ksdd2_surface",
+      "method": "padim",
+      "phase": "stress",
+      "variant": "brightness_1p4",
+      "role": "test",
+      "images": 1004,
+      "ordered_ids_sha256": "3b3e6af07386f8a6b691b2dd02622a012d6294a210be244948ecd17db9065601"
+    }
+  ],
+  "source_models_runtime_versions_and_phase_hashes_verified": true,
+  "report_sha256": "820e75e12c37b232c13111383cf3379a9b3e547aed8d2eac68b41ac414602e2f",
+  "supplement_sha256": "af78747e44b63e39da28f3748528a9de65a670e6653ec3e48099e076bb671b1f"
+}

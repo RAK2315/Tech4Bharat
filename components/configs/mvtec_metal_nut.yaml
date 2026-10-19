@@ -16,5 +16,6 @@ input:
 expected_defect_folders_to_verify: [bent, color, flip, scratch]
 output_task: binary_anomaly_with_optional_attention_map
 predict_defect_subtypes: false
-validation_status: not_evaluated
+validation_status: deferred_blocked_access
+active_in_protocol: false
 

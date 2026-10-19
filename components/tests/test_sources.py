@@ -327,3 +327,53 @@ def test_zip_directory_limit_does_not_trust_forged_entry_count(tmp_path):
     source.write_bytes(payload)
     with pytest.raises(api.AcquisitionError, match='member count'):
         api._zip_directory_limit(source, api.Limits(max_members=1))
+
+
+def test_cable_gland_import_selects_training_rgb_and_keeps_separate_identity(tmp_path):
+    api = get_api()
+    source = zip_fixture(tmp_path / 'cable.zip', [
+        ('cable_gland/train/good/gt/000.png', b'not an RGB image'),
+        ('cable_gland/train/good/rgb/000.png', png()),
+        ('cable_gland/train/good/xyz/000.tiff', b'inert 3D data'),
+        ('cable_gland/test/cut/rgb/000.png', b'test must not be decoded'),
+    ])
+    record = api.acquire('mvtec_3d_ad', category='cable_gland', root=tmp_path / 'project', archive=source)
+    assert record['dataset'] == 'mvtec_3d_ad'
+    assert record['category'] == 'cable_gland'
+    assert record['raw_path'] == 'data/raw/mvtec_3d_cable_gland'
+    assert record['source_url'].endswith('/mvtec-3d-ad')
+    assert record['readable_training_sample']['path'] == 'cable_gland/train/good/rgb/000.png'
+    assert record['inventory']['files'] == 4
+    assert api.acquire('mvtec_3d_ad', category='cable_gland', root=tmp_path / 'project', archive=source) == record
+
+
+def test_cable_gland_cli_records_access_blocker_without_archive(tmp_path):
+    result = subprocess.run([sys.executable, '-m', 'component_inspector.cli', 'acquire',
+        '--dataset', 'mvtec_3d_ad', '--category', 'cable_gland', '--root', str(tmp_path)],
+        text=True, capture_output=True)
+    assert result.returncode == 3, result.stderr
+    assert json.loads(result.stdout)['status'] == 'blocked_access'
+
+
+@pytest.mark.parametrize('category', [None, 'metal_nut', 'screw'])
+def test_cable_gland_rejects_wrong_categories(tmp_path, category):
+    with pytest.raises(get_api().AcquisitionError):
+        get_api().acquire('mvtec_3d_ad', category=category, root=tmp_path)
+
+
+def test_transient_windows_publish_denial_retries_without_overwriting(tmp_path, monkeypatch):
+    source = zip_fixture(tmp_path/'tiny.zip',[('a',b'preserved')])
+    original = Path.rename
+    attempts=[]
+    def transient(self,target):
+        if self.name=='tree':
+            attempts.append(str(target))
+            if len(attempts)<3:
+                error=PermissionError('fictional Windows sharing/indexer denial')
+                error.winerror=5
+                raise error
+        return original(self,target)
+    monkeypatch.setattr(Path,'rename',transient)
+    get_api().safe_extract(source,tmp_path/'raw')
+    assert (tmp_path/'raw/a').read_bytes()==b'preserved'
+    assert len(attempts)==3

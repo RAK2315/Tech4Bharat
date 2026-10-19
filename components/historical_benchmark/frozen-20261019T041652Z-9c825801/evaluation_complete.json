@@ -1,0 +1,109 @@
+{
+  "baseline_only_scope_decision_required": [],
+  "decision": "no_go",
+  "eligible_primary_recipes": [],
+  "file_hashes": {
+    "evaluation/ksdd2_surface_padim/ksdd2_surface_padim.json": "bdb19259a8107d0eea1eae06e680810443547a25b3e4bc23b68cd9460aa40d72",
+    "evaluation/ksdd2_surface_padim_resources.json": "73f58db4cda92fde7da8d40fc6ccd234c73baea7b7bbfbc77fd023100a7d040e",
+    "evaluation/ksdd2_surface_reference/ksdd2_surface_reference.json": "2ecf1696f6301e62d6986a60819a7cc48fe21aa5c4d1f8238226eb2dd8a66cfc",
+    "evaluation/ksdd2_surface_reference_resources.json": "a14777897fb4394a8de1fd02c8d3c3422e290faff7a01ba10b53de790f395e93",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim/mvtec_3d_cable_gland_rgb_padim.json": "f5f487b7eafb7b2e680250b4f61bb07646abb31951e562d935d9f6d4c4a6a665",
+    "evaluation/mvtec_3d_cable_gland_rgb_padim_resources.json": "fb9a24238fd801f4ff6020f0246722ab74924d8ae82d55ee8117a29248add2ad",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference/mvtec_3d_cable_gland_rgb_reference.json": "cf96965882d481ebe89dfa3781df4d1e0444008efef0eeece3be7145431ee649",
+    "evaluation/mvtec_3d_cable_gland_rgb_reference_resources.json": "289b01923f1ce375f813a1886cfcb1aeb159a9931a5db0d027ca9cfda334d61e"
+  },
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "phase": "evaluate",
+  "resources": {
+    "ksdd2_surface_padim": {
+      "elapsed_seconds": 384.32799999999406,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 1285394432,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "ksdd2_surface_reference": {
+      "elapsed_seconds": 152.04700000000594,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 223010816,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_padim": {
+      "elapsed_seconds": 77.23500000000058,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 857022464,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_reference": {
+      "elapsed_seconds": 18.078000000008615,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 190263296,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    }
+  },
+  "screens": {
+    "ksdd2_surface": {
+      "padim": {
+        "checks": {
+          "accepted_normal_fpr": true,
+          "coverage": true,
+          "memory": true,
+          "recall": false,
+          "warm_latency": true
+        },
+        "passed": false
+      },
+      "reference": {
+        "checks": {
+          "accepted_normal_fpr": true,
+          "coverage": true,
+          "memory": true,
+          "recall": false,
+          "warm_latency": true
+        },
+        "passed": false
+      }
+    },
+    "mvtec_3d_cable_gland_rgb": {
+      "padim": {
+        "checks": {
+          "accepted_normal_fpr": true,
+          "coverage": true,
+          "memory": true,
+          "recall": false,
+          "warm_latency": true
+        },
+        "passed": false
+      },
+      "reference": {
+        "checks": {
+          "accepted_normal_fpr": true,
+          "coverage": true,
+          "memory": true,
+          "recall": false,
+          "warm_latency": true
+        },
+        "passed": false
+      }
+    }
+  }
+}

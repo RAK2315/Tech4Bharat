@@ -1,0 +1,64 @@
+{
+  "file_hashes": {
+    "calibration/ksdd2_surface_padim.json": "d9dc5320c1b65ada31f778da8961ac1335f271093852d4ccc8f441b2af5430fc",
+    "calibration/ksdd2_surface_padim/ksdd2_surface_padim.json": "d9dc5320c1b65ada31f778da8961ac1335f271093852d4ccc8f441b2af5430fc",
+    "calibration/ksdd2_surface_padim_resources.json": "a7b71f9c9c4bcb9781ac899306fd228be5a8cd3c595d1bfb102f1cc37e011bfb",
+    "calibration/ksdd2_surface_reference.json": "16ce07ff0ab205ce7ef5dbf400c18fe5883ee09740cdd119d2cc923b8c1e8917",
+    "calibration/ksdd2_surface_reference/ksdd2_surface_reference.json": "16ce07ff0ab205ce7ef5dbf400c18fe5883ee09740cdd119d2cc923b8c1e8917",
+    "calibration/ksdd2_surface_reference_resources.json": "d5f1c6a865f537921c142700f1a07074c108d9337c7502c1aad167c700e39246",
+    "calibration/mvtec_3d_cable_gland_rgb_padim.json": "6860a43f1d29ee068ad4eaaa4dfd1fbfeb5f0109a42be913b113a597e07d64bc",
+    "calibration/mvtec_3d_cable_gland_rgb_padim/mvtec_3d_cable_gland_rgb_padim.json": "6860a43f1d29ee068ad4eaaa4dfd1fbfeb5f0109a42be913b113a597e07d64bc",
+    "calibration/mvtec_3d_cable_gland_rgb_padim_resources.json": "833243f77595e40742da3600f15225b77830e8c84e41b88474d0b9a494c7e65b",
+    "calibration/mvtec_3d_cable_gland_rgb_reference.json": "61414621e19c8d8ac180bb37945ddb9d55aba3e30c774c126b8018ad02fc17cf",
+    "calibration/mvtec_3d_cable_gland_rgb_reference/mvtec_3d_cable_gland_rgb_reference.json": "61414621e19c8d8ac180bb37945ddb9d55aba3e30c774c126b8018ad02fc17cf",
+    "calibration/mvtec_3d_cable_gland_rgb_reference_resources.json": "3948809c39df09426bf9ae39219a24f64e5fc04b5877d52d61b622ece9310718"
+  },
+  "freeze_sha256": "49cecd4d593536eecfba7974f61968570581b44885606ab97d424ba5d86cff40",
+  "phase": "calibration",
+  "resources": {
+    "ksdd2_surface_padim": {
+      "elapsed_seconds": 161.64100000000326,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 1335357440,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "ksdd2_surface_reference": {
+      "elapsed_seconds": 65.78099999998813,
+      "max_observed_processes": 2,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 346259456,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_padim": {
+      "elapsed_seconds": 53.61000000000058,
+      "max_observed_processes": 2,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 794116096,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    },
+    "mvtec_3d_cable_gland_rgb_reference": {
+      "elapsed_seconds": 10.452999999994063,
+      "max_observed_processes": 3,
+      "measurement_scope": "owned process tree RSS sum",
+      "peak_sampled_rss_bytes": 189071360,
+      "returncode": 0,
+      "rss_cap_bytes": 4294967296,
+      "sample_interval_seconds": 0.05,
+      "status": "completed",
+      "time_cap_seconds": 3600
+    }
+  }
+}

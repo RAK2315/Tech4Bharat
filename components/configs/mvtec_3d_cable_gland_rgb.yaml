@@ -1,0 +1,36 @@
+schema_version: 1
+recipe_id: mvtec_3d_cable_gland_rgb
+dataset: mvtec_3d_ad
+category: cable_gland
+active_in_protocol: true
+official_source: https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad
+license: CC-BY-NC-SA-4.0
+release_hash: 63728f5ab3b37feaa03a796eefd44e572afe74e49b28e8fc3b19ec98838aeaed
+provider_release_id: null
+provider_identity: local_archive_unverified_provider_identity
+source_notice_reconciliation: pending_before_freeze
+raw_root: data/raw/mvtec_3d_cable_gland/cable_gland
+image_modality: rgb
+image_globs:
+  train: train/good/rgb/*.png
+  validation: validation/good/rgb/*.png
+  test: test/*/rgb/*.png
+mask_glob: test/*/gt/*.png
+excluded_modalities: [xyz, camera_calibration]
+official_validation_role: development_only
+input:
+  height: 256
+  width: 256
+  geometry: aspect_preserving_letterbox
+  padding_rgb: [0, 0, 0]
+  rotation_clockwise_degrees: 0
+  color_mode: RGB
+expected_defect_folders_to_verify: [bent, cut, hole, thread]
+expected_rgb_counts_to_audit:
+  train_normal: 223
+  validation_normal: 23
+  test_normal: 21
+  test_anomalous: 87
+output_task: binary_anomaly_with_optional_attention_map
+predict_defect_subtypes: false
+validation_status: acquired_not_audited_or_split
