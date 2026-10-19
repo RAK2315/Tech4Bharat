@@ -1,4 +1,4 @@
-# Colleague reproduction guide
+# Reproduction guide
 
 This guide recreates the Stage 5 development inputs and fitted model candidates
 locally without committing or redistributing the raw datasets or large model
