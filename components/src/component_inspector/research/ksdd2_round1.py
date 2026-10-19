@@ -410,12 +410,12 @@ def supervised(root, m):
     index = read_json(root/'features/index.json')['rows']
     training_ids = sorted(m['original_fit_ids'])+sorted(r['id'] for r in rows_for(m, 'positive_train'))
     info = [index[i] for i in training_ids]
-    x = torch.from_numpy(np.stack([np.load(root/'features'/f"{r['key']}.npy", allow_pickle=False) for r in info]))
+    shape = read_json(root/'features/index.json')['shape']
     # Training-only channel normalization, persisted for inference.
-    sums, squares = torch.zeros(x.shape[1]), torch.zeros(x.shape[1])
+    sums, squares = torch.zeros(shape[0]), torch.zeros(shape[0])
     count = 0
-    for sample in x:
-        sample = sample.float()
+    for entry in info:
+        sample = torch.from_numpy(load_feature(root, entry))
         sums += sample.sum((1, 2))
         squares += sample.square().sum((1, 2))
         count += sample.shape[1]*sample.shape[2]
@@ -424,22 +424,23 @@ def supervised(root, m):
     roi = torch.from_numpy(np.stack([np.load(root/'features'/f"{r['key']}-roi.npy", allow_pickle=False) for r in info]))
     labels = torch.tensor([float(index[i]['role'] == 'positive_train') for i in training_ids])
     targets = torch.from_numpy(np.stack([np.load(root/'features'/f"{r['key']}-target.npy", allow_pickle=False)
-                                        if index[i]['role'] == 'positive_train' else np.zeros(x.shape[-2:], np.float32)
+                                        if index[i]['role'] == 'positive_train' else np.zeros(shape[-2:], np.float32)
                                         for i, r in zip(training_ids, info)]))
     cfg = m['config']['supervised']
-    head = DefectHead(x.shape[1], cfg['hidden_channels'])
+    head = DefectHead(shape[0], cfg['hidden_channels'])
     optimizer = torch.optim.AdamW(head.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])
     generator = torch.Generator().manual_seed(m['config']['seed'])
     history = []
     start = time.perf_counter()
     for epoch in range(cfg['epochs']):
         head.train()
-        order = torch.randperm(len(x), generator=generator)
+        order = torch.randperm(len(info), generator=generator)
         total = 0.
-        for offset in range(0, len(x), cfg['batch_size']):
+        for offset in range(0, len(info), cfg['batch_size']):
             ids = order[offset:offset+cfg['batch_size']]
             optimizer.zero_grad(set_to_none=True)
-            pixel, image = head((x[ids].float()-mean)/std, roi[ids])
+            batch = torch.from_numpy(np.stack([load_feature(root, info[int(i)]) for i in ids]))
+            pixel, image = head((batch-mean)/std, roi[ids])
             loss_map = F.binary_cross_entropy_with_logits(pixel, targets[ids], pos_weight=torch.tensor(cfg['pixel_positive_weight']), reduction='none')
             loss_seg = (loss_map*roi[ids]).sum()/roi[ids].sum()
             loss = loss_seg+cfg['image_loss_weight']*F.binary_cross_entropy_with_logits(image, labels[ids])
@@ -447,11 +448,11 @@ def supervised(root, m):
             nn.utils.clip_grad_norm_(head.parameters(), 5.)
             optimizer.step()
             total += float(loss.detach())*len(ids)
-        history.append({'epoch': epoch+1, 'training_loss': total/len(x)})
+        history.append({'epoch': epoch+1, 'training_loss': total/len(info)})
         if epoch % 5 == 0:
             print('supervised epoch', epoch+1, 'loss', history[-1]['training_loss'], flush=True)
     fit_seconds = time.perf_counter()-start
-    del x, targets, optimizer
+    del targets, optimizer
     gc.collect()
     head.eval()
     output = root/'supervised'
