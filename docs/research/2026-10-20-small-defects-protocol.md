@@ -93,6 +93,15 @@ apples-to-apples paired baseline for internal improvement claims. Retain
 discordant counts and per-fold differences; do not compare different datasets
 or treat repeated inner predictions as independent observations.
 
+**Additional stability supplement registered before outer results:** repeat
+each fold-specific selected outer fit with seed offsets +1000 and +2000, keeping
+its method, fitting IDs, calibration IDs, and schedule identical. Report both
+complete three-fold repeat outcomes; neither can replace the primary or final
+checkpoint. These isolate outer-refit initialization/order variation while
+holding inner selection fixed. They do not repeat the entire inner search or
+increase the number of independent images. Registration/source hash are saved
+in `refit-repeat-plan.json`; this is not post hoc best-seed selection.
+
 Each calibration uses only normal scores with alpha0.08 and strict
 `score > threshold`. The 8% calibration level is a predeclared margin below the
 10% workload ceiling, not a post hoc adjustment to improve a held-out result.

@@ -116,6 +116,21 @@ def main():
             if key.endswith('_path'):
                 assert sha(value) == row[key[:-5]+'_sha256'], value
                 checked += 1
+    coverage = {}
+    for grid in ('coarse', 'fine'):
+        empty, partial = [], []
+        for i in p['positive_source_area_fraction']:
+            entry = index['rows'][i]
+            target_array = np.load(entry[grid+'_target_path'], allow_pickle=False) > 0
+            roi_array = np.load(entry[grid+'_roi_path'], allow_pickle=False)
+            if not (target_array & roi_array).any(): empty.append(i)
+            if (target_array & ~roi_array).any():
+                partial.append({'id': i, 'outside_valid': int((target_array & ~roi_array).sum()),
+                                'valid_positive': int((target_array & roi_array).sum())})
+        coverage[grid] = {'positive_images': 246, 'empty_valid_target_ids': empty,
+                          'partial_roi_boundary_targets': partial}
+        assert not empty
+    assert coverage == read(root/'target-coverage-audit.json')
 
     completed = [m for m in p['config']['methods'] if all((root/f'inner-{m}-{f}/complete.json').exists() for f in range(3))]
     inner, details = {}, {}
@@ -213,6 +228,41 @@ def main():
     assert abs(lower-ci['simultaneous_95_recall_lower']) < 1e-10
     assert abs(upper-ci['simultaneous_95_fpr_upper']) < 1e-10
     assert ci['point_goal_met'] == (tp/246 >= .95 and fp/1668 < .1)
+    control_plan = read(root/'paired-control-plan.json'); check_identity(control_plan)
+    assert control_plan['protocol_identity'] == p['identity']
+    assert sha(Path(__file__).parent/'run_control_small_defects.py') == control_plan['source_sha256']
+    control_totals = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
+    control_predictions = {}
+    for fold in range(3):
+        directory = root/f'control-outer-{fold}'
+        plan, training = verify_model(directory, p['config']['methods']['coarse_control'])
+        other_plan = read(root/f'outer-{fold}/plan.json')
+        assert plan['paired_control_identity'] == control_plan['identity']
+        assert plan['fitting_ids'] == other_plan['fitting_ids']
+        assert plan['calibration_ids'] == other_plan['calibration_ids']
+        expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
+        record = read(directory/f'eval-{fold}.json')
+        counts = recount(record, expected, p['positive_source_area_fraction'])
+        control_totals.update(counts)
+        control_predictions.update({r['id']: r for r in record['predictions']})
+    assert set(control_predictions) == pool
+    selected_predictions = {r['id']: r for r in nested}
+    gains = [i for i in pool if by[i]['label'] and selected_predictions[i]['flagged'] and not control_predictions[i]['flagged']]
+    losses = [i for i in pool if by[i]['label'] and not selected_predictions[i]['flagged'] and control_predictions[i]['flagged']]
+    cleared = [i for i in pool if not by[i]['label'] and not selected_predictions[i]['flagged'] and control_predictions[i]['flagged']]
+    new_alarms = [i for i in pool if not by[i]['label'] and selected_predictions[i]['flagged'] and not control_predictions[i]['flagged']]
+    paired = {'selected_nested_counts': dict(totals), 'fixed_control_counts': dict(control_totals),
+              'selected_minus_control_recall': (totals['TP']-control_totals['TP'])/246,
+              'selected_minus_control_fpr': (totals['FP']-control_totals['FP'])/1668,
+              'defects_gained_ids': sorted(gains), 'defects_lost_ids': sorted(losses),
+              'false_alarms_cleared_ids': sorted(cleared), 'new_false_alarms_ids': sorted(new_alarms),
+              'control_small_defects': {'detected': sum(r['flagged'] for i, r in control_predictions.items()
+                                                       if by[i]['label'] and p['positive_source_area_fraction'][i] <= .005),
+                                         'total': 45},
+              'interpretation': 'same outer originals and fit/calibration IDs; internal paired estimate, no independence or factory-certification claim'}
+    assert len(gains)-len(losses) == totals['TP']-control_totals['TP']
+    assert len(new_alarms)-len(cleared) == totals['FP']-control_totals['FP']
+    write(root/'paired-comparison.json', paired)
     frozen = read(root/'final/frozen.json'); check_identity(frozen)
     assert frozen['method'] == selected['final_method'] and frozen['selection_identity'] == selected['identity']
     assert sha(root/'final/model.pt') == frozen['model_sha256'] == summary['final_model_sha256']
@@ -251,6 +301,7 @@ def main():
                     'independent_confidence_bounds': [lower, upper], 'feature_artifact_hashes_checked': checked,
                     'normal_only_moments_independently_reconstructed': len(normalization_cache),
                     'outer_selection_independently_verified': True, 'final_inner_selection_independently_verified': True,
+                    'fixed_paired_control_independently_recounted': True,
                     'protected_old_benchmarks_unchanged': True, 'official_test_scored': False,
                     'new_independent_factory_validation_complete': False,
                     'pooled_cv_binomial_bounds_are_descriptive_not_formal_cv_confidence': True,
