@@ -84,6 +84,11 @@ def main():
     torch.set_num_threads(4)
     p, selected = read(root/'protocol.json'), read(root/'selection.json')
     check_identity(p); check_identity(selected)
+    prereg = read(Path(__file__).resolve().parents[2]/'docs/research/2026-10-20-small-defects-preregistration.json')
+    assert prereg['before_any_outer_prediction']
+    for name, saved in prereg['registrations'].items():
+        assert sha(root/name) == saved['sha256']
+        assert read(root/name) == saved['record']
     for file, expected in p['source_sha256'].items(): assert sha(file) == expected, file
     parent = read(Path(p['parent'])/'manifest.json'); check_identity(parent)
     assert parent['identity'] == p['parent_manifest_identity']
