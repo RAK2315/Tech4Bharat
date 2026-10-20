@@ -18,6 +18,8 @@
 /docs/research/warm-small/*.json text eol=lf
 /docs/research/warm-small/*.log -text
 /docs/research/2026-10-20-warm-small-preregistration.json text eol=lf
+/docs/research/2026-10-20-warm-small-*.json text eol=lf
+/components/tests/test_warm_small*.py text eol=lf
 /components/tools/finish_small_defects_checks.py text eol=lf
 /docs/research/small-defects/*.json text eol=lf
 /docs/research/small-defects/*.log -text
