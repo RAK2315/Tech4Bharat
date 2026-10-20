@@ -134,6 +134,9 @@ def main():
               'Preflight: 131 software tests passed with 45 upstream warnings; old baseline '
               'scores matched on the two checked originals; all ten native crop feature '
               'shapes/values passed the smoke check. Historical evidence remains unchanged. '
+              'Nine additional audit tests passed, including rejection of forged counts, flags, '
+              'labels, duplicate originals, calibration membership, small-defect counts and '
+              'thresholds, plus paired gain/loss semantics. '
               'Worker resources include all measured elapsed times and owned-process-tree RSS '
               'peaks; the fixed limits are four threads, 1,800 seconds and min(4GiB,60% free RAM) '
               'per phase. Timings are measurements of these runs, not controlled hardware claims.', '',
