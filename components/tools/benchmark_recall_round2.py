@@ -42,7 +42,7 @@ def main():
             values = {r['id']: r['score'] for r in source['calibration_scores']}
             normalization['cdf_reference'] = [values[i] for i in result['details']['normalization_ids']]
     initialization = time.perf_counter()-start
-    samples = rows_for(m, 'normal_evaluation')[:16]
+    samples = rows_for(m, 'normal_evaluation')[:8]+rows_for(m, 'positive_evaluation')[:8]
     times, deltas, decisions = [], [], []
     with torch.inference_mode():
         for row in samples:
@@ -77,7 +77,7 @@ def main():
              'initialization_seconds': initialization, 'cold_pipeline_seconds': times[0],
              'warm_p95_pipeline_seconds': float(np.percentile(times[1:], 95)), 'pipeline_seconds': times,
              'max_abs_score_difference': max(deltas), 'all_decisions_match': all(decisions),
-             'scope': '16 fixed observed-development normals; source hash, decode, geometry, frozen backbone, float16 roundtrip, selected head score and optional PatchCore fusion; batch 1 CPU, no UI/network'}
+             'scope': '8 fixed observed-development normals and 8 fixed defects, not chosen by scores; source hash, decode, geometry, frozen backbone, float16 roundtrip, selected head score and optional PatchCore fusion; batch 1 CPU, no UI/network'}
     write_json(root/f'{args.method}-live-benchmark.json', value)
     print(value, flush=True)
 

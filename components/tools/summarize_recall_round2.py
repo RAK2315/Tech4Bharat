@@ -39,6 +39,12 @@ def main():
         target = dest/p.name
         shutil.copyfile(p, target)
         summary['exported_files'][target.name] = hashlib.sha256(p.read_bytes()).hexdigest()
+    for p in sorted(root.glob('*/*.json')):
+        if p.name not in {'model.json', 'training.json', 'index.json'}:
+            continue
+        target = dest/f'{p.parent.name}-{p.name}'
+        shutil.copyfile(p, target)
+        summary['exported_files'][target.name] = hashlib.sha256(p.read_bytes()).hexdigest()
     def key(row):
         metric = row['metrics']
         return metric['accepted_normal_fpr']['rate'] < .10, metric['recall']['rate'], -metric['accepted_normal_fpr']['rate']

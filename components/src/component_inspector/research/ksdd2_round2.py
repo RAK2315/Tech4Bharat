@@ -199,7 +199,7 @@ def focal_loss(logits, target, positive_weight=8., gamma=2.):
     return loss*(1-pt).pow(gamma)
 
 
-def train(root, variant, *, seed=None):
+def train(root, variant, *, seed=None, strategy_override=None):
     parent, m, cfg = context(root)
     seed = cfg['seed'] if seed is None else seed
     fine = variant.startswith('fine')
@@ -275,7 +275,7 @@ def train(root, variant, *, seed=None):
                 valid = torch.from_numpy(roi_array(base, entry))[None]
                 _, score = restored((f-state['mean'])/state['std'], valid)
                 (cal if role == 'normal_calibration' else scores)[row['id']] = float(score[0])
-    result(root, variant, m, scores, cal, details={'strategy': 'R04' if fine else ('R05+R08' if use_focal and lighting else ('R05' if use_focal else 'R08')),
+    result(root, variant, m, scores, cal, details={'strategy': strategy_override or ('R04' if fine else ('R05+R08' if use_focal and lighting else ('R05' if use_focal else 'R08'))),
            'seed': seed, 'epochs': head_cfg['epochs'], 'fitting_ids': [r['id'] for r in rows], 'fit_seconds': fit_seconds,
            'training_history': history, 'model_sha256': sha256(output/'head.pt'),
            'fine_feature_cache': fine, 'focal': use_focal, 'lighting': lighting,

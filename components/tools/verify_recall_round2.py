@@ -39,6 +39,12 @@ def main():
         assert all(r['flagged'] == (r['score'] > threshold['threshold']) for r in predictions)
         assert evaluate(predictions, labels) == value['metrics']
         details = value.get('details', {})
+        if 'model_sha256' in details:
+            model_path = path.parent/'head.pt'
+            if not model_path.exists():
+                name = details['source_model']
+                model_path = parent/'supervised/head.pt' if name == 'round1/supervised' else root/name/'head.pt'
+            assert sha256(model_path) == details['model_sha256']
         for identity in details.get('fitting_ids', details.get('fit_ids', [])):
             assert role[identity] in {'positive_train', 'normal_fit'}
         if 'normalization_ids' in details:
@@ -50,6 +56,17 @@ def main():
             assert all(role[i] in {'normal_fit', 'positive_train'} for i in training['fitting_ids'])
             assert all(role[i] == 'normal_fit' and i not in manifest['original_fit_ids'] for i in training['hard_normal_ids'])
         checks[path.parent.name] = {'result_sha256': sha256(path), 'recount_and_calibration': 'passed'}
+    protocol = read_json(root/'protocol.json')
+    for phase in ['aggregation', 'focal', 'lighting_cache', 'lighting', 'fine_cache', 'fine', 'padim50', 'ensemble', 'stress']:
+        assert read_json(root/f'{phase}-complete.json')['source_sha256'] == protocol['source_sha256']
+    followup = read_json(root/'followup-protocol.json')
+    for phase in ['score_heads', 'combined', 'hard', 'fusion_best', 'stability']:
+        assert read_json(root/f'{phase}-complete.json')['source_sha256'] == followup['source_sha256']
+    for kind in ['fine', 'lighting']:
+        index = read_json(root/f'{kind}_features/index.json')['rows']
+        assert all(i in role and entry['role'] == role[i] for i, entry in index.items())
+        if kind == 'lighting':
+            assert all(role[i] in {'normal_fit', 'positive_train'} for i in index)
     selected = read_json(root/'selected-for-stability.json')['selected_result']
     first = read_json(parent/'supervised/result.json')
     second = read_json(root/selected/'result.json')

@@ -3,3 +3,6 @@
 /components/configs/recall_round1.json text eol=lf
 /components/src/component_inspector/research/*.py text eol=lf
 /components/tools/*recall_round1.py text eol=lf
+/docs/research/round2/*.json text eol=lf
+/components/configs/recall_round2.json text eol=lf
+/components/tools/*recall_round2*.py text eol=lf
