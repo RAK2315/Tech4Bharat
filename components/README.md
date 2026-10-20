@@ -2,6 +2,11 @@
 
 Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
+Latest research: [recall results and corrected training objective](../docs/research/2026-10-20-alignment-results.md).
+The best development checkpoint reaches 97.56% recall / 5.28% normal FPR; the
+corrected retraining recipe meets 95%+ / under-10% in all three fixed initialization
+checks. This is separate from the unchanged historical Stage 5 no-go.
+
 ## Current scope
 
 - Python 3.12 isolated environment at `.venv-p0`.
