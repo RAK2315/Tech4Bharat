@@ -140,6 +140,11 @@ def main():
               'occupying at most 0.5% of the original image, not a resized feature-mask fraction. '
               'There are only 15 small defects per fold; retain the counts instead of claiming '
               'a precise factory-wide small-defect guarantee.', '',
+              f'Of the {c["FN"]} missed defects, {45-small["detected"]} were in the small-defect '
+              f'stratum. Larger defects were caught in {c["TP"]-small["detected"]}/201 cases. '
+              'This is a diagnostic of the frozen result, not permission to retune on these '
+              'outer examples. Training fit can look excellent while this held-out small-defect '
+              'slice remains weak.', '',
               f'Descriptive Clopper-Pearson references on pooled counts are '
               f'{percent(s["nested_confidence"]["recall_exact_95"][0])}–{percent(s["nested_confidence"]["recall_exact_95"][1])} recall '
               f'and {percent(s["nested_confidence"]["fpr_exact_95"][0])}–{percent(s["nested_confidence"]["fpr_exact_95"][1])} normal FPR. '
@@ -180,9 +185,14 @@ def main():
               'authored in this same work session; no third-party certification is claimed.', '',
               f'Protocol identity: `{p["identity"]}`. Frozen main source commit: '
               f'`{p["source_commit"]}`. Source/config hashes in the protocol are authoritative. '
-              f'New feature arrays occupy {timings["new_feature_array_bytes"]/1024**3:.2f} GiB; '
+              f'New feature arrays contain {timings["new_feature_array_bytes"]/1024**3:.2f} GiB of logical data; '
               'model tensors and arrays remain local. Exact predictions, IDs, hashes, losses, '
               'selection inputs, timestamps, and resource logs are exported.', '',
+              'A lossless NTFS compression intervention reduced generated cache disk allocation '
+              'during the study. It did not change array values, fitting rules, models, or '
+              'thresholds; the final verifier checks every feature hash. Compression overlapped '
+              'one fitting phase, so elapsed times are not clean hardware speed comparisons. '
+              'See [storage intervention](small-defects/cache-storage-optimization.json).', '',
               'Evidence: [nested outcomes](small-defects/nested-results.json), '
               '[paired comparison](small-defects/paired-comparison.json), '
               '[all refit repeats](small-defects/refit-stability.json), '
@@ -214,7 +224,16 @@ def main():
               '```', '',
               'Independent factory confirmation remains incomplete. Keep the '
               '[fresh-image confirmation plan](2026-10-20-fresh-confirmation-plan.md); '
-              'do not reopen or retune the official test to manufacture a passing result.', '']
+              'do not reopen or retune the official test to manufacture a passing result.', '',
+              '## Next development hypothesis', '',
+              'The next useful hypothesis is native-resolution overlapping tiles with mask-aware '
+              'training crops: preserve tiny marks before the backbone downsamples them, rather '
+              'than only reading a finer feature layer after resizing the entire image. Test '
+              'that as a newly registered development study with fixed normal-only calibration, '
+              'not by changing thresholds on these outer predictions. The current bundled '
+              'changes do not isolate resolution, dropout, capacity, Dice loss, or score pooling '
+              'as individual causes. Keep single-factor controls when assessing a future gain. '
+              'This hypothesis has not been trained in this study and is not a claimed result.', '']
     with args.output.open('x', encoding='utf-8', newline='\n') as f: f.write('\n'.join(lines))
     print(args.output)
 

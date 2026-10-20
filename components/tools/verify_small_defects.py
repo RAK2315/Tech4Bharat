@@ -3,6 +3,7 @@ import argparse
 from collections import Counter
 from datetime import datetime, timezone
 import hashlib
+from importlib.metadata import version
 import json
 import math
 from pathlib import Path
@@ -27,6 +28,11 @@ def identity(value):
 
 
 def write(path, value):
+    # A failed audit may already have written deterministic sidecars. Preserve
+    # them and require exact agreement on retry rather than overwriting evidence.
+    if Path(path).exists():
+        assert read(path) == value, f'Existing audit evidence differs: {path}'
+        return
     with Path(path).open('x', encoding='utf-8', newline='\n') as f:
         json.dump(value, f, indent=2, sort_keys=True, allow_nan=False); f.write('\n')
 
@@ -34,6 +40,15 @@ def write(path, value):
 def check_identity(value):
     other = dict(value); expected = other.pop('identity')
     assert identity(other) == expected
+
+
+def check_finite_tensors(value):
+    if isinstance(value, torch.Tensor):
+        assert torch.isfinite(value).all()
+    elif isinstance(value, dict):
+        for child in value.values(): check_finite_tensors(child)
+    elif isinstance(value, (list, tuple)):
+        for child in value: check_finite_tensors(child)
 
 
 def threshold_from_rows(rows, alpha):
@@ -90,6 +105,9 @@ def main():
         assert sha(root/name) == saved['sha256']
         assert read(root/name) == saved['record']
     for file, expected in p['source_sha256'].items(): assert sha(file) == expected, file
+    assert sha(p['weights']) == p['weights_sha256']
+    assert sha(Path(__file__).resolve().parents[1]/'requirements-recall.lock') == p['lock_sha256']
+    assert {name: version(name) for name in p['versions']} == p['versions']
     parent = read(Path(p['parent'])/'manifest.json'); check_identity(parent)
     assert parent['identity'] == p['parent_manifest_identity']
     by = {r['id']: r for r in parent['records']}
@@ -162,8 +180,7 @@ def main():
         else:
             assert set(training['actual_learning_ids']) == {i for i in fit if not by[i]['label']}
             assert not training['history']
-        for value in state.values():
-            if isinstance(value, torch.Tensor): assert torch.isfinite(value).all()
+        check_finite_tensors(state)
         if cfg['family'] != 'morphology':
             normal_ids = sorted(i for i in fit if not by[i]['label'])
             assert set(normal_ids) == set(training['normalization_ids']) and len(normal_ids) == 256
@@ -226,6 +243,16 @@ def main():
         nested.extend(record['predictions']); outer_checks[str(fold)] = counts
     assert len(nested) == len(pool) and {r['id'] for r in nested} == pool
     summary = read(root/'nested-results.json')
+    archived_predictions = {r['id']: r for r in summary['nested_predictions']}
+    assert len(summary['nested_predictions']) == len(nested) == len(archived_predictions)
+    for row in nested:
+        archived = archived_predictions[row['id']]
+        assert all(archived[key] == value for key, value in row.items())
+        fold = p['folds'][row['id']]
+        assert archived['outer_fold'] == fold
+        assert archived['method'] == selected['outer_choices'][str(fold)]['method']
+    small_rows = [r for r in nested if r['label'] and p['positive_source_area_fraction'][r['id']] <= .005]
+    assert summary['small_defects'] == {'detected': sum(r['flagged'] for r in small_rows), 'total': len(small_rows)}
     totals = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
     for counts in outer_checks.values(): totals.update(counts)
     assert dict(totals) == summary['nested_metrics']['counts']
@@ -317,6 +344,7 @@ def main():
         directory = root/f'legacy-outer-{fold}'
         plan, training = read(directory/'plan.json'), read(directory/'training.json')
         state = torch.load(directory/'model.pt', weights_only=True)
+        check_finite_tensors(state)
         assert plan['reference_identity'] == legacy_registration['identity']
         assert sha(directory/'model.pt') == training['model_sha256']
         assert [len(training[k]) for k in ('base_history', 'hard_refinement_history', 'aligned_continuation_history')] == [60, 12, 12]
