@@ -84,6 +84,15 @@ tested by the outer results**. The outer results estimate the predeclared
 fold-specific selection procedure, whose selected method may vary by fold.
 The final checkpoint remains a candidate for new independent confirmation.
 
+**Supplement registered before any outer result:** train the fixed S01 control
+on each outer training partition with the same fitting IDs, calibration IDs,
+seed, and 30-epoch schedule as that outer selected model. Run this comparator
+after the main study completes; it never participates in selection. Record the
+registration and source hash in `paired-control-plan.json`. This supplies an
+apples-to-apples paired baseline for internal improvement claims. Retain
+discordant counts and per-fold differences; do not compare different datasets
+or treat repeated inner predictions as independent observations.
+
 Each calibration uses only normal scores with alpha0.08 and strict
 `score > threshold`. The 8% calibration level is a predeclared margin below the
 10% workload ceiling, not a post hoc adjustment to improve a held-out result.
@@ -107,6 +116,11 @@ Never choose a threshold using held-out defect labels or held-out normals.
   upper<10%, under independent representative item assumptions. Also distinguish
   the simpler point-target result. Unknown physical groups and prior exposure
   constrain interpretation even if internal metrics pass.
+  In particular, overlapping training sets make pooled cross-validation errors
+  dependent. A Clopper-Pearson calculation on pooled outer counts is a descriptive
+  binomial reference, **not an exact confidence guarantee for cross-validation**.
+  Report fold variability and each fold's result, and do not turn a passing
+  descriptive bound into independent proof for the final checkpoint.
 - Score supervised fitting images separately to reveal fitting/validation gaps.
   Report outer head replay after weight reload in reverse cached-feature order,
   and native-image/cache parity for 16 fixed final-candidate examples. These

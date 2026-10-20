@@ -1,6 +1,7 @@
 """Independent nested-study recount, provenance checks, and evidence export."""
 import argparse
 from collections import Counter
+from datetime import datetime, timezone
 import hashlib
 import json
 import math
@@ -8,6 +9,7 @@ from pathlib import Path
 import subprocess
 
 import numpy as np
+from PIL import Image
 from scipy.stats import beta
 import torch
 
@@ -91,6 +93,12 @@ def main():
     assert all(by[i]['official_split'] == 'train' for i in pool | reserved)
     assert all(by[i]['label'] == 0 for i in reserved)
     assert sum(by[i]['label'] for i in pool) == 246
+    for i, fraction in p['positive_source_area_fraction'].items():
+        assert i in pool and by[i]['label'] == 1
+        assert sha(by[i]['mask_path']) == by[i]['hashes']['mask_sha256']
+        with Image.open(by[i]['mask_path']) as im:
+            actual = float((np.asarray(im.convert('L')) > 0).mean())
+        assert actual == fraction
     group_roles = {}
     for i in pool | reserved:
         role = p['folds'][i] if i in pool else 'reserved'
@@ -118,6 +126,7 @@ def main():
         state = torch.load(directory/'model.pt', map_location='cpu', weights_only=True)
         assert sha(directory/'model.pt') == training['model_sha256']
         fit = set(plan['fitting_ids']); cal = set(plan.get('calibration_ids', []))
+        assert training['fitting_ids'] == plan['fitting_ids']
         assert fit.isdisjoint(cal | reserved) and len(fit) == len(plan['fitting_ids'])
         if cal:
             assert len(cal) == 200 and all(by[i]['label'] == 0 for i in cal)
@@ -212,6 +221,27 @@ def main():
     assert threshold_from_rows(frozen['calibration_scores'], .08) == frozen['threshold_record']['threshold']
     assert frozen['max_native_cache_score_difference'] <= 1e-5 and frozen['all_native_cache_decisions_equal']
     resources = {path.name: read(path) for path in root.glob('*-resources.json')}
+    timing = {}
+    for name, record in resources.items():
+        resource_path = root/name
+        worker_path = root/(name.removesuffix('-resources.json')+'-worker.log')
+        def utc_birth(path):
+            stat = path.stat()
+            return datetime.fromtimestamp(getattr(stat, 'st_birthtime', stat.st_ctime), timezone.utc).isoformat()
+        timing[name] = {'worker_log_created_utc': utc_birth(worker_path),
+                        'resource_record_created_utc': utc_birth(resource_path),
+                        'measured_elapsed_seconds': record['elapsed_seconds'],
+                        'peak_sampled_rss_bytes': record['peak_sampled_rss_bytes'],
+                        'status': record['status']}
+        if record['status'] == 'completed':
+            assert record['peak_sampled_rss_bytes'] <= record['rss_cap_bytes']
+    write(root/'timing-and-storage.json', {
+        'timing': timing,
+        'timestamp_scope': 'filesystem creation of exclusive worker log and resource file; approximate phase bounds, not retroactively instrumented process UTC start/end',
+        'model_artifacts': {str(path.relative_to(root)): {'sha256': sha(path), 'bytes': path.stat().st_size}
+                            for path in root.rglob('model.pt')},
+        'new_feature_array_bytes': sum(path.stat().st_size for path in (root/'features').glob('*.npy')),
+    })
     protected = ['components/historical_benchmark', 'components/data/manifests', 'docs/research/validation',
                  'docs/research/round1', 'docs/research/round2', 'docs/research/alignment']
     changed = subprocess.check_output(['git', 'diff', '--name-only', p['source_commit'], '--', *protected], text=True)
@@ -223,6 +253,7 @@ def main():
                     'outer_selection_independently_verified': True, 'final_inner_selection_independently_verified': True,
                     'protected_old_benchmarks_unchanged': True, 'official_test_scored': False,
                     'new_independent_factory_validation_complete': False,
+                    'pooled_cv_binomial_bounds_are_descriptive_not_formal_cv_confidence': True,
                     'resources': {n: r['status'] for n, r in resources.items()}}
     write(root/'verification.json', verification)
     target.mkdir(parents=True, exist_ok=False); exported = {}
