@@ -21,6 +21,7 @@ def main():
     s = read(root/'nested-results.json'); paired = read(root/'paired-comparison.json')
     stability = read(root/'refit-stability.json'); verification = read(root/'verification.json')
     frozen = read(root/'final/frozen.json'); timings = read(root/'timing-and-storage.json')
+    legacy = read(root/'legacy-comparison.json')
     c = s['nested_metrics']['counts']; control = paired['fixed_control_counts']
     recall, fpr = c['TP']/246, c['FP']/1668
     small = s['small_defects']; small_control = paired['control_small_defects']
@@ -61,6 +62,27 @@ def main():
         f'{len(paired["new_false_alarms_ids"])} new ones. These comparisons use identical outer '
         'originals, fitting IDs, and calibration IDs. They are internal paired observations, '
         'not a formal claim of significance under cross-validation dependence.', '',
+        '## Full prior-recipe reference', '',
+        'The common-budget control above uses 30 epochs. A separately preregistered '
+        'reference reproduces the prior best warm-corrected recipe with 60 base epochs, '
+        '12 hard-normal refinement epochs, and 12 aligned-objective continuation epochs. '
+        'It uses seed4217, 128 base normals plus 128 mined normals, the original whole-canvas '
+        'normalization, and the same outer positives and calibration IDs. This reference '
+        'is not an additional selectable candidate and cannot change the frozen final model.', '',
+        '| Fixed full prior recipe operating policy | TP / FN | FP / 1,668 | Recall | Normal FPR | Small / 45 |',
+        '|---|---:|---:|---:|---:|---:|',
+    ]
+    for alpha, row in legacy['outcomes'].items():
+        ct, sm = row['counts'], row['small_defects']
+        lines.append(f'| Calibration alpha {alpha} | {ct["TP"]} / {ct["FN"]} | {ct["FP"]} / 1,668 | {percent(row["recall"])} | {percent(row["normal_fpr"])} | {sm["detected"]}/45 |')
+    old = legacy['outcomes']['0.08']['counts']
+    lines += ['', f'At the common .08 calibration policy, the selected nested procedure caught '
+              f'**{c["TP"]-old["TP"]:+d} defects** and made **{c["FP"]-old["FP"]:+d} false alarms** '
+              'relative to the full prior recipe. Both .08 and the historical .10 policy '
+              'were fixed before outer outcomes. Do not claim an overall improvement over '
+              'the full prior recipe unless these comparisons support it; a gain over the '
+              'shorter control alone is insufficient. See '
+              '[full-recipe comparison](small-defects/legacy-comparison.json).', '',
         '## Every outer fold', '',
         '| Outer fold | Inner-selected method | TP / FN | FP / 556 | Recall | Normal FPR | Small / 15 |',
         '|---|---|---:|---:|---:|---:|---:|',
@@ -142,8 +164,9 @@ def main():
               f'{frozen["native_calibration_pipeline_p95_seconds"]:.4f} seconds on CPU. '
               'Outer heads were reloaded and replayed in reverse cached-feature order. '
               'Parity does not prove generalization.', '',
-              'A separate full native replay regenerated all **7,656 primary/control/repeat '
-              'evaluations on the 1,914 original RGB images**, without reading cached feature '
+              'A separate full native replay regenerated all **11,484 primary/control/repeat/legacy '
+              'model-threshold evaluations on the 1,914 original RGB images**, including the two '
+              'predeclared legacy thresholds on the same weights, without reading cached feature '
               'arrays, and checked the archived decisions. See '
               '[native replay](small-defects/full-native-replay.json) and '
               '[native prediction rows](small-defects/full-native-predictions.json).', '',
@@ -181,9 +204,11 @@ def main():
               'components/.venv-p0/Scripts/python.exe -m component_inspector.research.ksdd2_small_defects --phase freeze --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_control_small_defects.py --phase register --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_repeat_small_defects.py --phase register --root components/outputs/recall-small-defects',
+              'components/.venv-p0/Scripts/python.exe components/tools/run_legacy_small_defects.py --phase register --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_small_defects.py --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_control_small_defects.py --phase run --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_repeat_small_defects.py --phase run --root components/outputs/recall-small-defects',
+              'components/.venv-p0/Scripts/python.exe components/tools/run_legacy_small_defects.py --phase run --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/replay_native_small_defects.py --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/verify_small_defects.py --root components/outputs/recall-small-defects --export docs/research/small-defects',
               '```', '',

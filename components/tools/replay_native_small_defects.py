@@ -15,6 +15,7 @@ from component_inspector.research.ksdd2_small_defects import (
 )
 from component_inspector.vision.resources import run_bounded
 from component_inspector.vision.spike_worker import pretrained_adapter
+from run_legacy_small_defects import legacy_scorer
 
 
 @torch.inference_mode()
@@ -27,19 +28,23 @@ def replay(root):
         for role, directory in [
                 ('primary', root/f'outer-{fold}'), ('control', root/f'control-outer-{fold}'),
                 ('repeat1000', root/f'repeat-1000-outer-{fold}'),
-                ('repeat2000', root/f'repeat-2000-outer-{fold}')]:
+                ('repeat2000', root/f'repeat-2000-outer-{fold}'),
+                ('legacy08', root/f'legacy-outer-{fold}'), ('legacy10', root/f'legacy-outer-{fold}')]:
             plan = read_json(directory/'plan.json')
-            method = plan['method']; cfg = p['config']['methods'][method]
+            method = plan['method']
+            cfg = plan['configuration'] if role.startswith('legacy') else p['config']['methods'][method]
             model_hash = sha256(directory/'model.pt')
             assert model_hash == read_json(directory/'training.json')['model_sha256']
             state = torch.load(directory/'model.pt', weights_only=True, map_location='cpu')
-            result = read_json(directory/f'eval-{fold}.json')
+            suffix = '-alpha0.08' if role == 'legacy08' else '-alpha0.10' if role == 'legacy10' else ''
+            result = read_json(directory/f'eval-{fold}{suffix}.json')
             key = (fold, role)
-            models[key] = (cfg, state, scorer(state, cfg), result['threshold_record']['threshold'])
+            model_head = legacy_scorer(state) if role.startswith('legacy') else scorer(state, cfg)
+            models[key] = (cfg, state, model_head, result['threshold_record']['threshold'])
             expected[key] = {r['id']: r for r in result['predictions']}
             model_files[str(directory/'model.pt')] = model_hash
     adapter = pretrained_adapter('ksdd2_surface', manifest['config'], Path(p['weights']))
-    roles = ['primary', 'control', 'repeat1000', 'repeat2000']
+    roles = ['primary', 'control', 'repeat1000', 'repeat2000', 'legacy08', 'legacy10']
     differences = {role: 0. for role in roles}; mismatches = {role: 0 for role in roles}
     native_predictions = []
     # Reverse order relative to the cache-build/source-ID ordering.
@@ -81,7 +86,7 @@ def replay(root):
               'all_scores_bitwise_equal': not any(differences.values()),
               'all_scores_within_1e_5': max(differences.values()) <= 1e-5,
               'model_files_unchanged': model_files, 'official_test_accessed': False,
-              'scope': 'all nested/control/refit decisions regenerated from original training RGB images, source hashes, geometry, frozen backbone, float16 roundtrip and saved models; no cached feature arrays read',
+              'scope': 'all nested/control/refit/full-legacy decisions regenerated from original training RGB images; legacy has two fixed threshold policies on the same weights; no cached feature arrays read',
               'repeated_observations_do_not_add_independent_images': True}
     write_json(root/'full-native-replay.json', record)
     write_json(root/'full-native-predictions.json', {'protocol_identity': p['identity'], 'rows': native_predictions})

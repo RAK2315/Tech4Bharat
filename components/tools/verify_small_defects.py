@@ -43,11 +43,11 @@ def threshold_from_rows(rows, alpha):
     return values[k-1]
 
 
-def recount(record, truth, areas):
+def recount(record, truth, areas, alpha=.08):
     rows = record['predictions']
     assert len(rows) == len(truth) and {r['id'] for r in rows} == set(truth)
     threshold = record['threshold_record']['threshold']
-    assert threshold_from_rows(record['calibration_scores'], .08) == threshold
+    assert threshold_from_rows(record['calibration_scores'], alpha) == threshold
     counts = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
     for row in rows:
         assert row['status'] == 'scored' and row['label'] == truth[row['id']]
@@ -305,16 +305,65 @@ def main():
         'all_three_point_goals_met': ci['point_goal_met'] and all(r['point_goal_met'] for r in repeats.values()),
         'scope': repeat_plan['scope'], 'no_seed_replaces_primary_or_final_model': True,
         'same_246_defects_and_1668_normals_are_not_tripled': True})
+    legacy_registration = read(root/'legacy-reference-plan.json'); check_identity(legacy_registration)
+    legacy_snapshot = read(Path(__file__).resolve().parents[2]/'docs/research/2026-10-20-small-defects-legacy-registration.json')
+    assert legacy_snapshot['before_any_outer_prediction']
+    assert sha(root/'legacy-reference-plan.json') == legacy_snapshot['sha256']
+    assert legacy_registration == legacy_snapshot['record']
+    assert sha(Path(__file__).parent/'run_legacy_small_defects.py') == legacy_registration['source_sha256']
+    legacy_totals = {str(alpha): Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0) for alpha in (.08, .10)}
+    legacy_expected, legacy_folds = {}, {}
+    for fold in range(3):
+        directory = root/f'legacy-outer-{fold}'
+        plan, training = read(directory/'plan.json'), read(directory/'training.json')
+        state = torch.load(directory/'model.pt', weights_only=True)
+        assert plan['reference_identity'] == legacy_registration['identity']
+        assert sha(directory/'model.pt') == training['model_sha256']
+        assert [len(training[k]) for k in ('base_history', 'hard_refinement_history', 'aligned_continuation_history')] == [60, 12, 12]
+        base_ids, fit_ids = training['base_fitting_ids'], training['fitting_ids']
+        assert len(base_ids) == 292 and len(fit_ids) == 420 and len(set(fit_ids)) == 420
+        assert sum(by[i]['label'] == 0 for i in base_ids) == 128
+        assert len(training['hard_normal_ids']) == 128
+        assert all(not by[i]['label'] for i in training['hard_normal_ids']+training['mining_candidate_ids'])
+        assert all(p['folds'][i] != fold for i in set(fit_ids) | set(training['mining_candidate_ids']))
+        assert set(plan['calibration_ids']).isdisjoint(set(fit_ids) | set(training['mining_candidate_ids']))
+        assert plan['calibration_ids'] == read(root/f'outer-{fold}/plan.json')['calibration_ids']
+        assert training['normalization_ids'] == base_ids
+        sums, squares, cells = np.zeros(384), np.zeros(384), 0
+        for i in base_ids:
+            x = np.load(index['rows'][i]['coarse_path'], mmap_mode='r', allow_pickle=False).astype(np.float64)
+            sums += x.sum((1, 2)); squares += np.square(x).sum((1, 2)); cells += x.shape[1]*x.shape[2]
+        reference_mean = sums/cells; reference_std = np.sqrt(np.maximum(squares/cells-reference_mean**2, .01))
+        # Legacy intentionally retains float32 accumulation; independently
+        # reconstructed float64 moments have small rounding differences.
+        assert np.allclose(state['mean'].numpy().ravel(), reference_mean, atol=.002, rtol=.002)
+        assert np.allclose(state['std'].numpy().ravel(), reference_std, atol=.002, rtol=.002)
+        legacy_folds[str(fold)] = {}
+        for alpha in (.08, .10):
+            record = read(directory/f'eval-{fold}-alpha{alpha:.2f}.json')
+            expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
+            counts = recount(record, expected, p['positive_source_area_fraction'], alpha=alpha)
+            legacy_totals[str(alpha)].update(counts)
+            legacy_folds[str(fold)][str(alpha)] = {'counts': counts, 'small_defects': record['small_defects']}
+            legacy_expected.update({(alpha, r['id']): r for r in record['predictions']})
+    legacy = {'reference_identity': legacy_registration['identity'], 'folds': legacy_folds,
+              'outcomes': {alpha: {'counts': dict(counts), 'recall': counts['TP']/246, 'normal_fpr': counts['FP']/1668,
+                                    'small_defects': {'detected': sum(r['flagged'] for (a, i), r in legacy_expected.items()
+                                                       if str(a) == alpha and by[i]['label'] and p['positive_source_area_fraction'][i] <= .005), 'total': 45}}
+                           for alpha, counts in legacy_totals.items()},
+              'scope': 'fixed full prior recipe; not selectable; alpha .08 common policy and .10 original policy both preregistered'}
+    write(root/'legacy-comparison.json', legacy)
     native = read(root/'full-native-replay.json')
     assert native['protocol_identity'] == p['identity'] and native['image_count'] == 1914
-    assert native['model_evaluations'] == 7656 and native['all_decisions_match']
+    assert native['model_evaluations'] == 11484 and native['all_decisions_match']
     assert native['all_scores_within_1e_5'] and not native['official_test_accessed']
     native_rows = read(root/'full-native-predictions.json')['rows']
     assert len(native_rows) == 1914 and {r['id'] for r in native_rows} == pool
     for row in native_rows:
         i = row['id']; assert row['outer_fold'] == p['folds'][i]
         records = {'primary': selected_predictions[i], 'control': control_predictions[i],
-                   'repeat1000': repeat_expected[(1000, i)], 'repeat2000': repeat_expected[(2000, i)]}
+                   'repeat1000': repeat_expected[(1000, i)], 'repeat2000': repeat_expected[(2000, i)],
+                   'legacy08': legacy_expected[(.08, i)], 'legacy10': legacy_expected[(.10, i)]}
         assert set(row['predictions']) == set(records)
         for role, expected in records.items():
             assert row['predictions'][role]['flagged'] == expected['flagged']
@@ -359,7 +408,8 @@ def main():
                     'outer_selection_independently_verified': True, 'final_inner_selection_independently_verified': True,
                     'fixed_paired_control_independently_recounted': True,
                     'all_predeclared_refit_repeats_recounted_without_seed_selection': True,
-                    'original_rgb_images_replayed': 1914, 'native_model_evaluations_recounted': 7656,
+                    'original_rgb_images_replayed': 1914, 'native_model_threshold_evaluations_recounted': 11484,
+                    'full_prior_warm_corrected_recipe_reference_verified': True,
                     'protected_old_benchmarks_unchanged': True, 'official_test_scored': False,
                     'new_independent_factory_validation_complete': False,
                     'pooled_cv_binomial_bounds_are_descriptive_not_formal_cv_confidence': True,

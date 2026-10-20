@@ -102,6 +102,19 @@ holding inner selection fixed. They do not repeat the entire inner search or
 increase the number of independent images. Registration/source hash are saved
 in `refit-repeat-plan.json`; this is not post hoc best-seed selection.
 
+**Full historical-recipe reference, also registered before outer results:** the
+30-epoch S01 control is a common-budget control, not the prior best checkpoint's
+full recipe. A separate fixed reference reproduces that recipe on each outer
+training partition: 60 epochs with the legacy learned image objective, training-only
+mining of 128 hard normals, 12 refinement epochs, then 12 corrected-objective
+continuation epochs; seed4217, original whole-canvas normalization from 128 base
+normals and the fitting positives. Use identical outer images and normal
+calibration IDs. Report both the study's .08 calibration policy and the original
+.10 policy, fixed in advance. This reference never changes inner selection or
+the final candidate. Its registration is independently published in
+`2026-10-20-small-defects-legacy-registration.json`. It prevents an improvement
+claim based only on beating a shorter-trained baseline.
+
 Each calibration uses only normal scores with alpha0.08 and strict
 `score > threshold`. The 8% calibration level is a predeclared margin below the
 10% workload ceiling, not a post hoc adjustment to improve a held-out result.
@@ -134,8 +147,8 @@ Never choose a threshold using held-out defect labels or held-out normals.
   Report outer head replay after weight reload in reverse cached-feature order,
   and native-image/cache parity for 16 fixed final-candidate examples. These
   checks establish implementation consistency, not statistical generalization.
-  A separate full native replay will additionally regenerate all 7,656
-  primary/control/repeat evaluations on the 1,914 original RGB images, without
+  A separate full native replay will additionally regenerate all
+  primary/control/repeat/full-reference evaluations on the 1,914 original RGB images, without
   using cached feature arrays. Require all decisions to match and score
   differences <=1e-5; report exact equality separately. This is an inference
   audit, not an additional model-selection or accuracy experiment.
