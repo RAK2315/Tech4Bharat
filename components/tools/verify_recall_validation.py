@@ -5,7 +5,9 @@ import hashlib
 import json
 from pathlib import Path
 
-from scipy.stats import beta
+import numpy as np
+from PIL import Image
+from scipy.stats import beta, hypergeom
 
 
 def read(path):
@@ -71,6 +73,42 @@ def main():
     resources = {phase: read(root/f'{phase}-resources.json')
                  for phase in ('integrity', 'infer', 'replay', 'summarize')}
     assert all(r['status'] == 'completed' and r['returncode'] == 0 for r in resources.values())
+    primary = read(root/f"{p['primary']}-results.json")
+    by = {r['id']: r for r in primary['predictions']}
+    counts = primary['metrics']['counts']
+    flagged_count = counts['TP']+counts['FP']
+    # Conditional random-label control: for the same number of flagged images,
+    # how often would a random subset contain at least this many real defects?
+    # This is a discrimination diagnostic, not evidence against selection bias.
+    chance = float(hypergeom.sf(counts['TP']-1, 1004, 110, flagged_count))
+    buckets = {}
+    for row in read(source)['splits']['records']:
+        if row['id'] not in truth or not truth[row['id']]:
+            continue
+        image = Path(p['raw_root'])/row['provenance']['source_relative_path']
+        mask_path = image.with_name(image.stem+'_GT.png')
+        assert sha(mask_path) == row['hashes']['mask_sha256']
+        with Image.open(mask_path) as im:
+            mask = np.asarray(im.convert('L')) > 0
+        fraction = float(mask.mean())
+        area = 'area <=0.1%' if fraction <= .001 else 'area (0.1%,0.5%]' if fraction <= .005 else 'area (0.5%,2%]' if fraction <= .02 else 'area >2%'
+        edge = bool(mask[0].any() or mask[-1].any() or mask[:, 0].any() or mask[:, -1].any())
+        for key in (area, 'touches source edge' if edge else 'interior defect'):
+            bucket = buckets.setdefault(key, {'detected': 0, 'total': 0, 'missed_ids': []})
+            bucket['total'] += 1
+            bucket['detected'] += int(by[row['id']]['flagged'])
+            if not by[row['id']]['flagged']:
+                bucket['missed_ids'].append(row['id'])
+    for bucket in buckets.values():
+        bucket['recall'] = bucket['detected']/bucket['total']
+    write(root/'diagnostics.json', {
+        'primary': p['primary'], 'flagged_count': flagged_count,
+        'conditional_random_subset_probability_of_at_least_observed_true_positives': chance,
+        'random_control_scope': 'rejects random-label discrimination explanation; does not rule out overfitting, benchmark exposure, correlated items, or domain shift',
+        'defect_slices': buckets,
+        'slice_status': 'exploratory after prediction; not preregistered target screens, not used for model selection or threshold changes',
+        'source_mask_fraction': 'positive pixels / original full-resolution pixels',
+    })
     value = {'protocol_identity': p['identity'], 'independent_recounts': checks,
              'confidence_bounds_independently_checked_with_beta_quantiles': True,
              'source_weights_and_thresholds_unchanged': True,
