@@ -66,8 +66,38 @@ def main():
         outcomes.append({'seed': seed, 'method': method, 'metrics': value['metrics'],
                          'result_sha256': sha256(directory/'result.json')})
     passed = all(x['metrics']['recall']['rate'] >= .95 and x['metrics']['accepted_normal_fpr']['rate'] < .10 for x in outcomes)
+    warm_audit = None
+    if (root/'warm_aligned/result.json').exists():
+        plan = read_json(root/'warm-alignment-plan.json')
+        directory = root/'warm_aligned'
+        value = read_json(directory/'result.json')
+        training = read_json(directory/'training.json')
+        assert set(training['fitting_ids']) == set(plan['fitting_ids'])
+        assert len(training['fitting_ids']) == 420
+        assert set(training['hard_normal_ids']) == set(plan['hard_normal_ids'])
+        assert all(by[i]['v2_role'] in {'normal_fit', 'positive_train'} for i in training['fitting_ids'])
+        assert training['epochs'] == len(training['history']) == plan['epochs'] == 12
+        assert {r['id'] for r in value['calibration_scores']} == cal_ids
+        assert len(value['calibration_scores']) == len(cal_ids)
+        assert {p['id'] for p in value['predictions']} == set(labels)
+        assert all(p['label'] == labels[p['id']] for p in value['predictions'])
+        threshold = calibrate([r['score'] for r in value['calibration_scores']], alpha=.10)
+        assert threshold == value['threshold_record']
+        assert all(p['flagged'] == (p['score'] > threshold['threshold']) for p in value['predictions'])
+        assert evaluate(value['predictions'], labels) == value['metrics']
+        original = torch.load(Path(plan['source_checkpoint'])/'head.pt', weights_only=True)
+        state = torch.load(directory/'head.pt', weights_only=True)
+        assert torch.equal(state['mean'], original['mean']) and torch.equal(state['std'], original['std'])
+        for key in ['classify.weight', 'classify.bias']:
+            assert torch.equal(state['head'][key], original['head'][key])
+        assert sha256(Path(plan['source_checkpoint'])/'head.pt') == plan['source_sha256']
+        assert value['details']['model_sha256'] == sha256(directory/'head.pt')
+        assert read_json(root/'warm_aligned-complete.json')['source_sha256'] == plan['worker_source_sha256']
+        warm_audit = {'verified': True, 'metrics': value['metrics'], 'result_sha256': sha256(directory/'result.json'),
+                      'scope': 'one continuation of a fixed saved checkpoint, not an additional from-scratch repeat'}
     write_json(root/'verification.json', {'all_fixed_seed_records_verified': True,
                'manifest_identity': m['identity'], 'outcomes': outcomes,
+               'warm_continuation': warm_audit,
                'all_three_meet_development_point_target': passed,
                'scope': 'same observed split; training-only mining; normal-only calibration; no independent confirmation'})
     write_json(root/'stability-summary.json', {'canonical_seed': 4217, 'canonical_method': 'aligned',
