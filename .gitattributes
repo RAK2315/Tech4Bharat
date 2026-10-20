@@ -11,3 +11,7 @@
 /components/tools/*recall_validation.py text eol=lf
 /docs/research/validation/*.json text eol=lf
 /docs/research/validation/*.log -text
+/components/configs/recall_small_defects.json text eol=lf
+/components/tools/*small_defects.py text eol=lf
+/docs/research/small-defects/*.json text eol=lf
+/docs/research/small-defects/*.log -text
