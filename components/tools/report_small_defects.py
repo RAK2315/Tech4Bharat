@@ -23,6 +23,7 @@ def main():
     frozen = read(root/'final/frozen.json'); timings = read(root/'timing-and-storage.json')
     legacy = read(root/'legacy-comparison.json')
     c = s['nested_metrics']['counts']; control = paired['fixed_control_counts']
+    reference = legacy['outcomes']['0.08']
     recall, fpr = c['TP']/246, c['FP']/1668
     small = s['small_defects']; small_control = paired['control_small_defects']
     goal = s['nested_confidence']['point_goal_met']
@@ -46,6 +47,11 @@ def main():
         'The official test set was not rescored. These are internal cross-validation results, '
         'not new independent factory proof.', '',
         control_verdict, '',
+        f'The full prior-recipe reference averages **{percent(reference["recall"])} recall / '
+        f'{percent(reference["normal_fpr"])} normal FPR** at the fixed .08 calibration policy. '
+        'Its fold results below determine consistency; a passing pooled average on reused '
+        'training images does not establish reliable 95% performance or improve the earlier '
+        'official-test benchmark.', '',
         '## What this result means', '',
         'KSDD2 contains industrial surface images with visible imperfections such as scratches '
         'and spots. The reported goal is image-level detection: flag an image containing a '
