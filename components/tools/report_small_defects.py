@@ -30,12 +30,22 @@ def main():
     verdict = ('The primary and both predeclared refit repeats meet the internal point target.' if goal and stable else
                'The primary meets the internal point target, but at least one refit repeat does not.' if goal else
                'The primary internal nested result fails the requested point target.')
+    control_verdict = (
+        'The selected procedure did not improve on the simpler paired control: it caught '
+        'no more defects and produced no fewer false alarms.'
+        if c['TP'] <= control['TP'] and c['FP'] >= control['FP'] else
+        'The selected procedure caught at least as many defects with no more false alarms '
+        'than the paired control on this internal cohort.'
+        if c['TP'] >= control['TP'] and c['FP'] <= control['FP'] else
+        'The paired comparison shows a recall/false-alarm tradeoff; it is not an unqualified improvement.'
+    )
     lines = [
         '# Small-defect and overfitting study: verified training-only results', '',
         f'**{verdict}** The selected nested procedure caught **{c["TP"]}/246 defects '
         f'({percent(recall)} recall)** with **{c["FP"]}/1,668 normal false alarms ({percent(fpr)})**. '
         'The official test set was not rescored. These are internal cross-validation results, '
         'not new independent factory proof.', '',
+        control_verdict, '',
         '## What this result means', '',
         'KSDD2 contains industrial surface images with visible imperfections such as scratches '
         'and spots. The reported goal is image-level detection: flag an image containing a '
@@ -207,6 +217,12 @@ def main():
               '[selection record](small-defects/selection.json), '
               '[timing/storage](small-defects/timing-and-storage.json), '
               '[complete byte-hash index](small-defects/export-index.json).', '',
+              'A local ZIP preserves all audited model checkpoints, the exact backbone, '
+              'source code, and exported evidence. Its [package receipt]'
+              '(2026-10-20-small-defects-checkpoint-package.json) records the archive hash '
+              'and location. All member hashes are verified after writing. It excludes '
+              'dataset images and cached arrays; it is a checkpoint backup, not a new '
+              'evaluation or a standalone installer.', '',
               '## Every directed inner result', '']
     for method, records in inner_records.items():
         lines += [f'### {method}', '', '| Train fold → validation fold | TP / 82 | FP / 556 | Small / 15 |', '|---|---:|---:|---:|']

@@ -13,7 +13,9 @@
 /docs/research/validation/*.log -text
 /components/configs/recall_small_defects.json text eol=lf
 /components/tools/*small_defects.py text eol=lf
+/components/tools/finish_small_defects_checks.py text eol=lf
 /docs/research/small-defects/*.json text eol=lf
 /docs/research/small-defects/*.log -text
 /docs/research/2026-10-20-small-defects-preregistration.json text eol=lf
 /docs/research/2026-10-20-small-defects-legacy-registration.json text eol=lf
+/docs/research/2026-10-20-small-defects-checkpoint-package.json text eol=lf
