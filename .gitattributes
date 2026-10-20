@@ -10,3 +10,4 @@
 /docs/research/alignment/*.json text eol=lf
 /components/tools/*recall_validation.py text eol=lf
 /docs/research/validation/*.json text eol=lf
+/docs/research/validation/*.log -text
