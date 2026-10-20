@@ -275,6 +275,7 @@ def main():
     assert repeat_plan['protocol_identity'] == p['identity']
     assert sha(Path(__file__).parent/'run_repeat_small_defects.py') == repeat_plan['source_sha256']
     repeats = {}
+    repeat_expected = {}
     for offset in repeat_plan['seed_offsets']:
         repeat_totals = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
         per_fold, repeat_small = {}, {'detected': 0, 'total': 0}
@@ -291,6 +292,7 @@ def main():
             record = read(directory/f'eval-{fold}.json')
             expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
             counts = recount(record, expected, p['positive_source_area_fraction'])
+            repeat_expected.update({(offset, r['id']): r for r in record['predictions']})
             repeat_totals.update(counts)
             for key in repeat_small: repeat_small[key] += record['small_defects'][key]
             per_fold[str(fold)] = {'counts': counts, 'small_defects': record['small_defects']}
@@ -303,6 +305,20 @@ def main():
         'all_three_point_goals_met': ci['point_goal_met'] and all(r['point_goal_met'] for r in repeats.values()),
         'scope': repeat_plan['scope'], 'no_seed_replaces_primary_or_final_model': True,
         'same_246_defects_and_1668_normals_are_not_tripled': True})
+    native = read(root/'full-native-replay.json')
+    assert native['protocol_identity'] == p['identity'] and native['image_count'] == 1914
+    assert native['model_evaluations'] == 7656 and native['all_decisions_match']
+    assert native['all_scores_within_1e_5'] and not native['official_test_accessed']
+    native_rows = read(root/'full-native-predictions.json')['rows']
+    assert len(native_rows) == 1914 and {r['id'] for r in native_rows} == pool
+    for row in native_rows:
+        i = row['id']; assert row['outer_fold'] == p['folds'][i]
+        records = {'primary': selected_predictions[i], 'control': control_predictions[i],
+                   'repeat1000': repeat_expected[(1000, i)], 'repeat2000': repeat_expected[(2000, i)]}
+        assert set(row['predictions']) == set(records)
+        for role, expected in records.items():
+            assert row['predictions'][role]['flagged'] == expected['flagged']
+            assert abs(row['predictions'][role]['score']-expected['score']) <= 1e-5
     frozen = read(root/'final/frozen.json'); check_identity(frozen)
     assert frozen['method'] == selected['final_method'] and frozen['selection_identity'] == selected['identity']
     assert sha(root/'final/model.pt') == frozen['model_sha256'] == summary['final_model_sha256']
@@ -343,6 +359,7 @@ def main():
                     'outer_selection_independently_verified': True, 'final_inner_selection_independently_verified': True,
                     'fixed_paired_control_independently_recounted': True,
                     'all_predeclared_refit_repeats_recounted_without_seed_selection': True,
+                    'original_rgb_images_replayed': 1914, 'native_model_evaluations_recounted': 7656,
                     'protected_old_benchmarks_unchanged': True, 'official_test_scored': False,
                     'new_independent_factory_validation_complete': False,
                     'pooled_cv_binomial_bounds_are_descriptive_not_formal_cv_confidence': True,

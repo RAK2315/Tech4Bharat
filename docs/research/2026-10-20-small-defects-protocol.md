@@ -134,6 +134,11 @@ Never choose a threshold using held-out defect labels or held-out normals.
   Report outer head replay after weight reload in reverse cached-feature order,
   and native-image/cache parity for 16 fixed final-candidate examples. These
   checks establish implementation consistency, not statistical generalization.
+  A separate full native replay will additionally regenerate all 7,656
+  primary/control/repeat evaluations on the 1,914 original RGB images, without
+  using cached feature arrays. Require all decisions to match and score
+  differences <=1e-5; report exact equality separately. This is an inference
+  audit, not an additional model-selection or accuracy experiment.
 - Keep original test images, prior benchmark snapshots, old predictions, and old
   checkpoints unchanged. Do not inspect individual test errors, rescore test
   images, or change candidates/thresholds after seeing outer results in this study.

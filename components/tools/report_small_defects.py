@@ -142,13 +142,19 @@ def main():
               f'{frozen["native_calibration_pipeline_p95_seconds"]:.4f} seconds on CPU. '
               'Outer heads were reloaded and replayed in reverse cached-feature order. '
               'Parity does not prove generalization.', '',
+              'A separate full native replay regenerated all **7,656 primary/control/repeat '
+              'evaluations on the 1,914 original RGB images**, without reading cached feature '
+              'arrays, and checked the archived decisions. See '
+              '[native replay](small-defects/full-native-replay.json) and '
+              '[native prediction rows](small-defects/full-native-predictions.json).', '',
               f'Independent verification recounted every inner/outer/control/repeat row, '
               f'verified {verification["feature_artifact_hashes_checked"]} feature artifacts, '
               f'reconstructed {verification["normal_only_moments_independently_reconstructed"]} '
               'distinct normal-only moment sets, checked selections against permitted inner '
               'inputs, and checked the immutable source/model/threshold lineage. Old benchmark '
               'evidence is unchanged. Software suite before training: **125 passed**, '
-              '45 upstream warnings.', '',
+              '45 upstream warnings. The arithmetic verifier is a separate implementation '
+              'authored in this same work session; no third-party certification is claimed.', '',
               f'Protocol identity: `{p["identity"]}`. Frozen main source commit: '
               f'`{p["source_commit"]}`. Source/config hashes in the protocol are authoritative. '
               f'New feature arrays occupy {timings["new_feature_array_bytes"]/1024**3:.2f} GiB; '
@@ -178,6 +184,7 @@ def main():
               'components/.venv-p0/Scripts/python.exe components/tools/run_small_defects.py --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_control_small_defects.py --phase run --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_repeat_small_defects.py --phase run --root components/outputs/recall-small-defects',
+              'components/.venv-p0/Scripts/python.exe components/tools/replay_native_small_defects.py --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/verify_small_defects.py --root components/outputs/recall-small-defects --export docs/research/small-defects',
               '```', '',
               'Independent factory confirmation remains incomplete. Keep the '
