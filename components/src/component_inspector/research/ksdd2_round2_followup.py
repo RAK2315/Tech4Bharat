@@ -7,6 +7,7 @@ import argparse
 import gc
 import json
 from pathlib import Path
+import subprocess
 import time
 
 import numpy as np
@@ -261,6 +262,21 @@ def main():
     root = args.root.resolve()
     if (root/f'{args.phase}-complete.json').exists():
         raise ValueError('Follow-up already completed')
+    if args.phase == 'score_heads':
+        from component_inspector.research import ksdd2_round2
+        write_json(root/'followup-protocol.json', {
+            'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+            'source_sha256': sha256(Path(__file__)),
+            'training_dependency_sha256': sha256(Path(ksdd2_round2.__file__)),
+            'fixed_map_rule': 'top_0.1_percent',
+            'compound_limit': 1, 'hard_negative_refinement_limit': 1,
+            'fusion_rules': context(root)[2]['ensemble']['rules'],
+            'repeat_training_seeds': context(root)[2]['stability_seeds'],
+            'selection': 'observed development recall subject to FPR strictly below 10%, then fewer false alarms',
+            'seed_policy': 'repeat seeds do not enter canonical candidate selection',
+            'official_test_access': False})
+    elif not (root/'followup-protocol.json').exists():
+        raise ValueError('Run score_heads first to record the finite follow-up protocol')
     start = time.perf_counter()
     {'score_heads': score_heads, 'combined': combined, 'hard': hard, 'fusion_best': fusion_best, 'stability': stability}[args.phase](root)
     write_json(root/f'{args.phase}-complete.json', {'elapsed_seconds': time.perf_counter()-start,
