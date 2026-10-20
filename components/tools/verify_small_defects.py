@@ -172,6 +172,7 @@ def main():
         plan, training = read(directory/'plan.json'), read(directory/'training.json')
         state = torch.load(directory/'model.pt', map_location='cpu', weights_only=True)
         assert sha(directory/'model.pt') == training['model_sha256']
+        assert training['configuration'] == cfg
         fit = set(plan['fitting_ids']); cal = set(plan.get('calibration_ids', []))
         assert training['fitting_ids'] == plan['fitting_ids']
         assert fit.isdisjoint(cal | reserved) and len(fit) == len(plan['fitting_ids'])
@@ -180,6 +181,7 @@ def main():
         if cfg['family'] == 'supervised':
             assert set(training['actual_learning_ids']) == fit
             assert len(training['history']) == cfg['epochs'] == 30
+            assert [r['epoch'] for r in training['history']] == list(range(1, 31))
             assert all(np.isfinite(r['loss']) for r in training['history'])
         elif cfg['family'] == 'morphology':
             assert not training['actual_learning_ids'] and not training['normalization_ids']
@@ -215,6 +217,7 @@ def main():
         for train_fold in range(3):
             directory = root/f'inner-{method}-{train_fold}'
             plan, training = verify_model(directory, p['config']['methods'][method])
+            assert training['seed'] == p['config']['seed']+train_fold
             assert all(p['folds'][i] == train_fold for i in plan['fitting_ids']+plan['calibration_ids'])
             fit_diagnostic = read(directory/'fitting-diagnostic.json')
             recount(fit_diagnostic, {i: by[i]['label'] for i in plan['fitting_ids']}, p['positive_source_area_fraction'])
@@ -243,6 +246,7 @@ def main():
     for fold in range(3):
         directory = root/f'outer-{fold}'; method = selected['outer_choices'][str(fold)]['method']
         plan, training = verify_model(directory, p['config']['methods'][method])
+        assert training['seed'] == p['config']['seed']+100+fold
         assert plan['method'] == method and plan['selection_identity'] == selected['identity']
         assert all(p['folds'][i] != fold for i in plan['fitting_ids']+plan['calibration_ids'])
         record = read(directory/f'eval-{fold}.json')
@@ -281,6 +285,7 @@ def main():
     for fold in range(3):
         directory = root/f'control-outer-{fold}'
         plan, training = verify_model(directory, p['config']['methods']['coarse_control'])
+        assert training['seed'] == p['config']['seed']+100+fold
         other_plan = read(root/f'outer-{fold}/plan.json')
         assert plan['paired_control_identity'] == control_plan['identity']
         assert plan['fitting_ids'] == other_plan['fitting_ids']
@@ -358,8 +363,10 @@ def main():
         state = torch.load(directory/'model.pt', weights_only=True)
         check_finite_tensors(state)
         assert plan['reference_identity'] == legacy_registration['identity']
+        assert plan['configuration'] == legacy_registration['configuration'] and training['seed'] == 4217
         assert sha(directory/'model.pt') == training['model_sha256']
         assert [len(training[k]) for k in ('base_history', 'hard_refinement_history', 'aligned_continuation_history')] == [60, 12, 12]
+        assert all(np.isfinite(row['loss']) for key in ('base_history', 'hard_refinement_history', 'aligned_continuation_history') for row in training[key])
         base_ids, fit_ids = training['base_fitting_ids'], training['fitting_ids']
         assert len(base_ids) == 292 and len(fit_ids) == 420 and len(set(fit_ids)) == 420
         assert sum(by[i]['label'] == 0 for i in base_ids) == 128
@@ -413,6 +420,7 @@ def main():
     assert frozen['method'] == selected['final_method'] and frozen['selection_identity'] == selected['identity']
     assert sha(root/'final/model.pt') == frozen['model_sha256'] == summary['final_model_sha256']
     final_plan, _ = verify_model(root/'final', p['config']['methods'][frozen['method']])
+    assert read(root/'final/training.json')['seed'] == p['config']['seed']+200
     assert set(r['id'] for r in frozen['calibration_scores']) == reserved
     assert threshold_from_rows(frozen['calibration_scores'], .08) == frozen['threshold_record']['threshold']
     assert frozen['max_native_cache_score_difference'] <= 1e-5 and frozen['all_native_cache_decisions_equal']
