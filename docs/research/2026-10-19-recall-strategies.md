@@ -4,6 +4,8 @@ Research completed 19 October 2026 against upstream commit `fb4a370ff5c77901e27c
 
 **Status: research complete; model implementation and training await the user's go.** This review adds documentation and analyzes already saved outputs. No new inference, fitting, dataset download, numerical environment installation or operational threshold change was performed.
 
+**20 October update:** the user subsequently approved baseline reproduction and R01–R03. Those runs are now complete; see the [measured results](2026-10-19-round1-results.md). The status and approval checkpoint above/below describe this original research snapshot, not a new approval requirement for the already completed work.
+
 ## Decision and target
 
 Prioritize **supervised KSDD2 learning**, with **PatchCore as the strongest first normal-only comparator**. Improve the cable-gland RGB recipe separately; its failures are much larger and it lacks labeled training defects. KSDD2 success will not qualify cable-gland inspection.

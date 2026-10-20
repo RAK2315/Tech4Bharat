@@ -1,6 +1,6 @@
 # Recall experiment ledger
 
-Created 19 October 2026. **Research complete; implementation awaiting user go.** All R01–R10 entries below are proposals, not results. Baseline numbers are inherited archived evidence, not a fresh replication.
+Created 19 October 2026; updated 20 October 2026. **Baseline reproduction and R01–R03 completed.** Best development result: **93.90% recall / 6.47% normal FPR**, below the requested 95%+ recall goal. R04–R10 remain outside this round. See the [completed round 1 report](2026-10-19-round1-results.md).
 
 Research and source rationale: [ten strategies](2026-10-19-recall-strategies.md). Saved-score-only diagnostic: [audit JSON](2026-10-19-observed-score-audit.json).
 
@@ -17,10 +17,10 @@ Original decision: no-go. Observed-score threshold envelopes do not change it.
 
 | ID | Hypothesis / parent | Current status | Measured outcome | Next evidence needed |
 |---|---|---|---|---|
-| P0 | Reproduce baseline with exact local identities | Awaiting go | Not run | Python 3.12, correct safetensors, verified sources, LF byte handling, portable paths |
-| R01 | Real-mask supervised segmentation plus image classifier / P0 | Awaiting go | Not run | New supervised roles, CPU pilot and held-out development predictions |
-| R02 | Compact PatchCore / P0 with matched normal IDs | Awaiting go | Not run | Coreset memory/time and matched-data recall/FPR |
-| R03 | Representative normals, then larger normal pool / selected parent | Awaiting go | Not run | Eligible pool, diversity selection and separate subset/count ablations |
+| P0 | Reproduce baseline with exact local identities | Completed | 60/82 defects; 28/417 normal alarms | Calibration score parity passed; 73.17% recall / 6.71% FPR on the common development set |
+| R01 | Real-mask supervised segmentation plus image classifier / P0 | Completed; retain | 77/82 defects; 27/417 normal alarms | 93.90% recall / 6.47% FPR; interrupted first attempt preserved, streamed second attempt completed |
+| R02 | Compact PatchCore / P0 with matched normal IDs | Completed | 66/82 defects; 32/417 normal alarms | 80.49% recall / 7.67% FPR; improves on P0 but below R01 |
+| R03 | Representative normals, then larger normal pool / selected parent | Completed | 128: 67/82 defects, 32/417 alarms; 256: 65/82 defects, 42/417 alarms | 128 marginally improves R02; 256 fails the FPR target and worsens recall |
 | R04 | Native detail and overlap tiles / fixed geometry parent | Awaiting go | Not run | Detail-loss diagnostics, edge/coordinate checks and tile memory/time |
 | R05 | Balanced loss/sampling and hard examples / R01 | Awaiting go | Not run | Parent training pipeline and clean inner/outer groups |
 | R06 | Robust image aggregation / P0 maps | Awaiting go | Not run | New raw development maps and tiny-defect comparisons |
@@ -56,4 +56,4 @@ Retain / reject / next bounded test and decision rationale:
 
 ## Final candidate decision record
 
-Not yet applicable. Before final confirmation, record the chosen recipe/model, development evidence, every excluded alternative, frozen pipeline and reserved normal calibration identity. Later append independent confirmation membership and results if new physical items are available. An existing observed test split must retain its historical/development label.
+Retain R01 as the best development candidate. Reject the expanded 256-normal PatchCore variant; treat the diversity-selected 128 variant as a marginal alternative, not a confirmed win. No candidate achieved the requested 95%+ recall with under-10% FPR. Before any final confirmation, freeze the chosen pipeline and document calibration/exposure identities. No independent confirmation cohort was obtained in this round.

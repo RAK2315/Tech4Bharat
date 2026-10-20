@@ -1,0 +1,5 @@
+# Preserve byte hashes for new recall evidence without rewriting old snapshots.
+/docs/research/round1/*.json text eol=lf
+/components/configs/recall_round1.json text eol=lf
+/components/src/component_inspector/research/*.py text eol=lf
+/components/tools/*recall_round1.py text eol=lf

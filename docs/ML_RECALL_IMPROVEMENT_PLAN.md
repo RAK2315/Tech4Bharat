@@ -4,6 +4,8 @@
 
 **Follow-up:** the teammate subsequently committed source inventories and Stage 2 manifests at `fb4a370`. The newer [ten-strategy research review](research/2026-10-19-recall-strategies.md) supersedes this document's file-availability statements and initial experiment shortlist. It includes KSDD2 score analysis using the newly available labels. Raw datasets and trained weights remain excluded. Implementation is awaiting the user's go.
 
+**20 October update:** the user approved baseline reproduction and the first three strategies. [Round 1 results](research/2026-10-19-round1-results.md) are complete: supervised KSDD2 reaches 93.90% recall / 6.47% normal FPR on the common development split. The initial awaiting-approval status above is historical.
+
 ## Recommendation
 
 Optimize **defect recall subject to a normal false-alarm budget**, separately for each recipe. Retain the existing provisional target of recall >=90% and normal false-positive rate (FPR) <=10%; aim for >=95% recall as a stretch. Select the highest-recall candidate that satisfies the workload and resource constraints. These are targets, not promised results.
