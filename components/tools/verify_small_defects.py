@@ -62,6 +62,12 @@ def recount(record, truth, areas, alpha=.08):
     rows = record['predictions']
     assert len(rows) == len(truth) and {r['id'] for r in rows} == set(truth)
     threshold = record['threshold_record']['threshold']
+    calibration = record['calibration_scores']
+    assert len(calibration) == len({r['id'] for r in calibration}) == 200
+    assert record['threshold_record']['n'] == 200
+    assert record['threshold_record']['k'] == math.ceil(201*(1-alpha))
+    assert record['threshold_record']['alpha'] == alpha
+    assert record['threshold_record']['comparison'] == 'strict_greater'
     assert threshold_from_rows(record['calibration_scores'], alpha) == threshold
     counts = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
     for row in rows:
@@ -210,6 +216,9 @@ def main():
             directory = root/f'inner-{method}-{train_fold}'
             plan, training = verify_model(directory, p['config']['methods'][method])
             assert all(p['folds'][i] == train_fold for i in plan['fitting_ids']+plan['calibration_ids'])
+            fit_diagnostic = read(directory/'fitting-diagnostic.json')
+            recount(fit_diagnostic, {i: by[i]['label'] for i in plan['fitting_ids']}, p['positive_source_area_fraction'])
+            assert {r['id'] for r in fit_diagnostic['calibration_scores']} == set(plan['calibration_ids'])
             for val_fold in range(3):
                 if val_fold == train_fold: continue
                 record = read(directory/f'eval-{val_fold}.json')
@@ -237,6 +246,7 @@ def main():
         assert plan['method'] == method and plan['selection_identity'] == selected['identity']
         assert all(p['folds'][i] != fold for i in plan['fitting_ids']+plan['calibration_ids'])
         record = read(directory/f'eval-{fold}.json')
+        assert {r['id'] for r in record['calibration_scores']} == set(plan['calibration_ids'])
         expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
         counts = recount(record, expected, p['positive_source_area_fraction'])
         replay = read(directory/'replay.json'); assert replay['all_scores_exact']
@@ -277,6 +287,7 @@ def main():
         assert plan['calibration_ids'] == other_plan['calibration_ids']
         expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
         record = read(directory/f'eval-{fold}.json')
+        assert {r['id'] for r in record['calibration_scores']} == set(plan['calibration_ids'])
         counts = recount(record, expected, p['positive_source_area_fraction'])
         control_totals.update(counts)
         control_predictions.update({r['id']: r for r in record['predictions']})
@@ -317,6 +328,7 @@ def main():
             assert plan['fitting_ids'] == original['fitting_ids']
             assert plan['calibration_ids'] == original['calibration_ids']
             record = read(directory/f'eval-{fold}.json')
+            assert {r['id'] for r in record['calibration_scores']} == set(plan['calibration_ids'])
             expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
             counts = recount(record, expected, p['positive_source_area_fraction'])
             repeat_expected.update({(offset, r['id']): r for r in record['predictions']})
@@ -369,6 +381,7 @@ def main():
         legacy_folds[str(fold)] = {}
         for alpha in (.08, .10):
             record = read(directory/f'eval-{fold}-alpha{alpha:.2f}.json')
+            assert {r['id'] for r in record['calibration_scores']} == set(plan['calibration_ids'])
             expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
             counts = recount(record, expected, p['positive_source_area_fraction'], alpha=alpha)
             legacy_totals[str(alpha)].update(counts)

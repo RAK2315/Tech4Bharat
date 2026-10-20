@@ -37,6 +37,11 @@ def main():
         'The official test set was not rescored. These are internal cross-validation results, '
         'not new independent factory proof.', '',
         '## What this result means', '',
+        'KSDD2 contains industrial surface images with visible imperfections such as scratches '
+        'and spots. The reported goal is image-level detection: flag an image containing a '
+        'defect, while keeping false flags on normal images below the budget. Small-defect '
+        'recall is also image-level, stratified by ground-truth mask area. These counts do '
+        'not establish pixel-level localization accuracy or cable-gland performance.', '',
         'The study used only official KSDD2 training originals. Whole audited appearance groups '
         'were assigned to three folds, each containing 82 defects, 556 normals, and 15 small-defect '
         'images. Seven fixed candidates were compared using inner folds. Each outer-fold model '
@@ -97,25 +102,26 @@ def main():
               'Each row summarizes six directed inner comparisons: three independently fitted '
               'one-fold models, each evaluated on the other two folds. An image appears twice '
               'in those inner comparisons; the six results are not six independent datasets.', '',
-              '| Candidate | Inner recall range | Inner FPR range | Small-defect recall range | Inner point-goal cases / 6 | Total fit seconds |',
-              '|---|---:|---:|---:|---:|---:|']
+              '| Candidate | Fitting recall range | Held-out inner recall range | Inner FPR range | Small-defect recall range | Inner point-goal cases / 6 | Total fit seconds |',
+              '|---|---:|---:|---:|---:|---:|---:|']
     inner_records = {}
     for method in p['config']['methods']:
-        records, fit_seconds = [], 0.
+        records, fit_recalls, fit_seconds = [], [], 0.
         for train in range(3):
             directory = root/f'inner-{method}-{train}'
             if not (directory/'complete.json').exists(): continue
             fit_seconds += read(directory/'training.json')['fit_seconds']
+            fit_recalls.append(read(directory/'fitting-diagnostic.json')['metrics']['recall']['rate'])
             for val in range(3):
                 if train != val: records.append((train, val, read(directory/f'eval-{val}.json')))
         inner_records[method] = records
         if len(records) != 6:
-            lines.append(f'| {method} | Incomplete; preserved failure | — | — | — | — |'); continue
+            lines.append(f'| {method} | Incomplete; preserved failure | — | — | — | — | — |'); continue
         recalls = [r['metrics']['recall']['rate'] for _, _, r in records]
         fprs = [r['metrics']['accepted_normal_fpr']['rate'] for _, _, r in records]
         small_rates = [r['small_defects']['detected']/r['small_defects']['total'] for _, _, r in records]
         passed = sum(a >= .95 and b < .1 for a, b in zip(recalls, fprs))
-        lines.append(f'| {method} | {percent(min(recalls))}–{percent(max(recalls))} | {percent(min(fprs))}–{percent(max(fprs))} | {percent(min(small_rates))}–{percent(max(small_rates))} | {passed}/6 | {fit_seconds:.2f} |')
+        lines.append(f'| {method} | {percent(min(fit_recalls))}–{percent(max(fit_recalls))} | {percent(min(recalls))}–{percent(max(recalls))} | {percent(min(fprs))}–{percent(max(fprs))} | {percent(min(small_rates))}–{percent(max(small_rates))} | {passed}/6 | {fit_seconds:.2f} |')
     lines += ['', 'The exact configurations and industrial sources are in the '
               '[preregistered protocol](2026-10-20-small-defects-protocol.md). The regularized '
               'heads are experimental bundles, compact PatchCore is not the paper-scale '
