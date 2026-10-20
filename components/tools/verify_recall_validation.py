@@ -101,11 +101,21 @@ def main():
                 bucket['missed_ids'].append(row['id'])
     for bucket in buckets.values():
         bucket['recall'] = bucket['detected']/bucket['total']
+    seeds = ['aligned', 'aligned_seed4218', 'aligned_seed4219']
+    flags = {name: {r['id']: r['flagged'] for r in predictions['models'][name]} for name in seeds}
+    votes = {identity: sum(flags[name][identity] for name in seeds) for identity in truth}
+    seed_consistency = {
+        'defects_by_number_of_seeds_detecting': dict(Counter(votes[i] for i in truth if truth[i])),
+        'normals_by_number_of_seeds_flagging': dict(Counter(votes[i] for i in truth if not truth[i])),
+        'missed_by_all_three_seed_ids': [i for i in truth if truth[i] and votes[i] == 0],
+        'scope': 'three cold-start corrected models, all on the same test images; warm continuation is separate',
+    }
     write(root/'diagnostics.json', {
         'primary': p['primary'], 'flagged_count': flagged_count,
         'conditional_random_subset_probability_of_at_least_observed_true_positives': chance,
         'random_control_scope': 'rejects random-label discrimination explanation; does not rule out overfitting, benchmark exposure, correlated items, or domain shift',
         'defect_slices': buckets,
+        'seed_consistency': seed_consistency,
         'slice_status': 'exploratory after prediction; not preregistered target screens, not used for model selection or threshold changes',
         'source_mask_fraction': 'positive pixels / original full-resolution pixels',
     })
