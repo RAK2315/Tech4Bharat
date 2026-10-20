@@ -1,10 +1,34 @@
 # Recall experiment ledger
 
-Created 19 October 2026; updated 20 October 2026. **Latest result: corrected-model validation failed the 95% recall target.** The frozen primary scored **100/110 defects (90.91%) and 69/894 normal false alarms (7.72%)** on the already observed official benchmark. All three corrected cold-start seeds also failed recall (90.00%–91.82%). Exact replay and independent recount passed; no new independent factory batch is available. See [validation results](2026-10-20-validation-results.md).
+Created 19 October 2026; updated 20 October 2026. **Latest study: no verified improvement from seven fixed small-defect methods.** The new nested procedure caught **231/246 defects (93.90%) with 144/1,668 false alarms (8.63%)**. Both predeclared seed repeats also caught 231/246. The full prior recipe averaged 236/246 (95.93%) and 147/1,668 (8.81%), but failed a target in two of three folds. These are previously observed official-training images; no new factory confirmation is available. See [full small-defect results](2026-10-20-small-defects-results.md).
+
+The earlier frozen benchmark primary scored **100/110 defects (90.91%) and 69/894 normal false alarms (7.72%)**. All three corrected cold-start seeds also failed recall (90.00%–91.82%). This official test set stayed closed in the new study. See [validation results](2026-10-20-validation-results.md).
 
 Baseline, bounded R01–R10 review and alignment correction are complete. Earlier development results were: best numerical checkpoint **97.56% / 5.28%** (unstable original retraining); three corrected fixed seeds **95.12%–96.34% / 6.95%–7.67%**; one corrected continuation **97.56% / 5.76%**. Those development targets did not generalize to the official test. R07 is deferred with a task-specific reason. See [round 1](2026-10-19-round1-results.md), [round 2](2026-10-20-round2-results.md) and [alignment correction](2026-10-20-alignment-results.md).
 
 Research and source rationale: [ten strategies](2026-10-19-recall-strategies.md). Saved-score-only diagnostic: [audit JSON](2026-10-19-observed-score-audit.json).
+
+## S01–S07 completed training-only study
+
+Status **completed; new procedure fails the point target and does not beat the paired control**. Frozen main source `de6ad3d2a32a50de7be94bbcaf9b19823382469a`; protocol `b7ce2f1f5dff4c5e66cf47e8f1bf44331e3a2bd00a33c191e6bcac9e2a28698f`. All seven candidates completed three inner fits and six directed inner comparisons. These overlapping inner comparisons are development observations, not independent samples.
+
+| Attempt | Fixed method | Recorded disposition |
+|---|---|---|
+| S01 | Corrected coarse supervised control, 30 epochs | Paired outer control: 232/246 defects, 132/1,668 false alarms, 36/45 small defects; fails recall |
+| S02 | Coarse head with smaller capacity, dropout, weight decay and Dice loss | Selected in two outer folds; neither met both targets |
+| S03 | Fine layer1/2 supervised features and top-three-cell score | Final inner-selected candidate; no independent performance test of that final checkpoint |
+| S04 | Fine multiscale layer1/2/3 supervised features | Selected in outer fold 0; 74/82 defects and 37/556 false alarms, 7/15 small defects; fails recall |
+| S05 | Compact fine PatchCore-style memory | All six inner comparisons fail recall; bounded configuration, not paper-scale PatchCore |
+| S06 | Normal-only PCA reconstruction | All six inner comparisons fail recall; linear control, not full DFR |
+| S07 | Native grayscale bright/dark top-hat morphology | All six inner comparisons fail recall; no learned defect labels |
+
+The selected procedure caught 34/45 small defects; 11 of its 15 misses were small. Fitting recall was 100% for all supervised inner heads, while held-out results were weaker. This demonstrates a generalization gap without identifying its unique cause. No epochs, thresholds, methods, or seeds were selected on outer or official-test outcomes.
+
+Matched refit offsets +1000 and +2000 retained the selected methods and exact fit/calibration memberships: both caught 231/246, with 129 and 158 false alarms. The full 60+12+12 prior-recipe reference caught 236/246 with 147 false alarms at fixed alpha .08; at the separately fixed historical .10 policy it caught 239/246 but made 175/1,668 false alarms (10.49%, fails). No favorable repeat or policy replaced the primary or final candidate.
+
+Every one of 11,484 model/threshold evaluations regenerated from the 1,914 original training RGB images matched exactly. Verification checked 8,148 feature artifacts and independently reconstructed 14 distinct normal-only moment sets; protected historical evidence is unchanged. The first verifier attempt had an output-schema error, and the first ZIP check had a Windows path-normalization error; both failed attempts are preserved and documented. No model or prediction changed during those repairs. All experiment rows, hashes, losses, timings, method sources, proof records and limitations are in the [study report](2026-10-20-small-defects-results.md), [export index](small-defects/export-index.json), and [checkpoint receipt](2026-10-20-small-defects-checkpoint-package.json).
+
+Publication checks matched all exported evidence bytes against staged Git blobs. Six older source dependencies were captured with CRLF working bytes while Git stores their canonical LF content. Explicit `.gitattributes` settings now reproduce those original checkout bytes; their code and frozen working hashes were unchanged. The local archive contains the exact source bytes used by the study.
 
 ## Fixed historical comparator
 

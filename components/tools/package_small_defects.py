@@ -31,6 +31,7 @@ def main():
     entries = {}
 
     def add(path, archive_name, expected=None):
+        archive_name = archive_name.replace('\\', '/')
         data = path.read_bytes()
         if expected is not None: assert sha(data) == expected, path
         assert archive_name not in entries, archive_name
@@ -54,6 +55,8 @@ def main():
         '2026-10-20-small-defects-legacy-registration.json',
         '2026-10-20-small-defects-results.md',
     )]
+    package_attempt = workspace/'docs/research/2026-10-20-small-defects-package-attempt-1.json'
+    if package_attempt.exists(): sources.append(package_attempt)
     for path in sources: add(path, 'source/'+path.relative_to(workspace).as_posix())
     # The packaged frozen sources must match their registered logical bytes.
     for file, expected in protocol['source_sha256'].items():

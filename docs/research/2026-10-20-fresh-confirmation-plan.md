@@ -19,10 +19,14 @@ label normal/defective images without seeing model predictions, with a second
 review for ambiguous items. Keep labels separate from inference inputs. Record
 ambiguous items and technical rejects explicitly; do not silently remove errors.
 
-For the current primary, freeze `warm_aligned`, head SHA-256
+For the historical V01 benchmark primary, the frozen record is `warm_aligned`, head SHA-256
 `ffca032083bd4c7a003c198b70b7dc5eb10c4d7dee40392fd7a81c9160f560d9`,
-and strict `score > -1.684261679649353`. If a future model replaces it, create a
-new selection and sealing record before touching the confirmation images.
+and strict `score > -1.684261679649353`. The later [small-defect study](2026-10-20-small-defects-results.md)
+has an inner-selected research candidate, but establishes no independently
+validated replacement. Its full prior-recipe reference passes pooled internal
+point targets while failing targets in two folds. If a future model is selected
+for factory confirmation, create a new selection and sealing record before
+touching the confirmation images.
 
 ## Sample size and decision
 

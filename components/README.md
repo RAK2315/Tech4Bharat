@@ -2,7 +2,17 @@
 
 Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
-Latest research: [corrected-model test validation](../docs/research/2026-10-20-validation-results.md).
+Latest research: [small-defect and overfitting study](../docs/research/2026-10-20-small-defects-results.md).
+Seven fixed methods were evaluated using training-only nested cross-validation.
+The new procedure reached **93.90% recall / 8.63% normal FPR**; both fixed seed
+repeats also reached 93.90% recall. It did not improve on the paired coarse
+control. The full prior recipe averaged **95.93% / 8.81%**, but failed a target
+in two of three folds. Small-defect catches were 34/45 versus 39/45 for that
+reference. These are internal results on previously observed training images.
+All 11,484 native replay evaluations matched exactly; the report links the
+independent audit, every experiment, and the local checkpoint archive.
+
+Earlier [corrected-model test validation](../docs/research/2026-10-20-validation-results.md):
 The frozen corrected primary reached **90.91% recall / 7.72% normal FPR** on all
 1,004 official KSDD2 test images: **95% recall failed**. The earlier development
 success did not generalize; all three corrected cold-start seeds also fell below

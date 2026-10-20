@@ -137,7 +137,8 @@ def main():
             directory = root/f'inner-{method}-{train}'
             if not (directory/'complete.json').exists(): continue
             fit_seconds += read(directory/'training.json')['fit_seconds']
-            fit_recalls.append(read(directory/'fitting-diagnostic.json')['metrics']['recall']['rate'])
+            if p['config']['methods'][method]['family'] == 'supervised':
+                fit_recalls.append(read(directory/'fitting-diagnostic.json')['metrics']['recall']['rate'])
             for val in range(3):
                 if train != val: records.append((train, val, read(directory/f'eval-{val}.json')))
         inner_records[method] = records
@@ -147,7 +148,8 @@ def main():
         fprs = [r['metrics']['accepted_normal_fpr']['rate'] for _, _, r in records]
         small_rates = [r['small_defects']['detected']/r['small_defects']['total'] for _, _, r in records]
         passed = sum(a >= .95 and b < .1 for a, b in zip(recalls, fprs))
-        lines.append(f'| {method} | {percent(min(fit_recalls))}–{percent(max(fit_recalls))} | {percent(min(recalls))}–{percent(max(recalls))} | {percent(min(fprs))}–{percent(max(fprs))} | {percent(min(small_rates))}–{percent(max(small_rates))} | {passed}/6 | {fit_seconds:.2f} |')
+        fit_range = f'{percent(min(fit_recalls))}–{percent(max(fit_recalls))}' if fit_recalls else 'Not recorded for non-supervised methods'
+        lines.append(f'| {method} | {fit_range} | {percent(min(recalls))}–{percent(max(recalls))} | {percent(min(fprs))}–{percent(max(fprs))} | {percent(min(small_rates))}–{percent(max(small_rates))} | {passed}/6 | {fit_seconds:.2f} |')
     lines += ['', 'The exact configurations and industrial sources are in the '
               '[preregistered protocol](2026-10-20-small-defects-protocol.md). The regularized '
               'heads are experimental bundles, compact PatchCore is not the paper-scale '
@@ -215,6 +217,12 @@ def main():
               'evidence is unchanged. Software suite before training: **125 passed**, '
               '45 upstream warnings. The arithmetic verifier is a separate implementation '
               'authored in this same work session; no third-party certification is claimed.', '',
+              ('The first audit attempt incorrectly expected supervised fitting diagnostics '
+              'for unsupervised methods and stopped with a missing-file error. The audit '
+              'and report readers were corrected to match the frozen output schema. '
+              'No models, selection rules, thresholds, or predictions changed. The '
+              '[failed audit attempt](small-defects/verification-attempt-1.json) is preserved.'
+               if (root/'verification-attempt-1.json').exists() else ''), '',
               f'Protocol identity: `{p["identity"]}`. Frozen main source commit: '
               f'`{p["source_commit"]}`. Source/config hashes in the protocol are authoritative. '
               f'New feature arrays contain {timings["new_feature_array_bytes"]/1024**3:.2f} GiB of logical data; '
@@ -239,6 +247,11 @@ def main():
               'and location. All member hashes are verified after writing. It excludes '
               'dataset images and cached arrays; it is a checkpoint backup, not a new '
               'evaluation or a standalone installer.', '',
+              ('The first ZIP membership check failed because Windows checkpoint paths '
+               'were compared with ZIP-normalized paths. The first ZIP is preserved; '
+               'the corrected archive uses normalized member names and passes all hash '
+               'checks. See [packaging attempt](2026-10-20-small-defects-package-attempt-1.json).'
+               if (args.output.parent/'2026-10-20-small-defects-package-attempt-1.json').exists() else ''), '',
               '## Every directed inner result', '']
     for method, records in inner_records.items():
         lines += [f'### {method}', '', '| Train fold → validation fold | TP / 82 | FP / 556 | Small / 15 |', '|---|---:|---:|---:|']
@@ -247,8 +260,17 @@ def main():
             lines.append(f'| {train} → {val} | {ct["TP"]}/82 | {ct["FP"]}/556 | {sm["detected"]}/15 |')
         lines.append('')
     lines += ['## Reproduce', '',
+              'The verifier defaults are bound to this published study and its two registration '
+              'snapshots. Recount the preserved local study with a new empty export directory. '
+              'A completely new fit also requires newly published registration snapshots before '
+              'outer inference; the original snapshots cannot match a new timestamp/path-based '
+              'protocol identity. Prepare those copies in an isolated repository using the '
+              'published JSON formats and preserve this original study. Source/data path '
+              'setup and the parent feature cache are prerequisites; this is not a standalone '
+              'fresh-machine installer.', '',
               'Use new empty output/export paths and the locked recall environment. Freeze and '
-              'register the supplements before any outer evaluation, then run serially:', '', '```powershell',
+              'register the supplements, publish the matching registration snapshots in that '
+              'isolated copy before any outer evaluation, then run serially:', '', '```powershell',
               'components/.venv-p0/Scripts/python.exe -m component_inspector.research.ksdd2_small_defects --phase freeze --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_control_small_defects.py --phase register --root components/outputs/recall-small-defects',
               'components/.venv-p0/Scripts/python.exe components/tools/run_repeat_small_defects.py --phase register --root components/outputs/recall-small-defects',

@@ -7,7 +7,8 @@ It does not establish production readiness or buyer acceptance.
 
 ## Start here
 
-- [Latest corrected-model validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
+- [Latest small-defect study: no verified improvement](docs/research/2026-10-20-small-defects-results.md)
+- [Earlier corrected-model test validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
 - [Development recall results and training correction](docs/research/2026-10-20-alignment-results.md)
 - [Remaining strategies, comparisons and failed repeat run](docs/research/2026-10-20-round2-results.md)
 - [Ten researched improvement strategies](docs/research/2026-10-19-recall-strategies.md)
@@ -20,8 +21,17 @@ It does not establish production readiness or buyer acceptance.
 - [Historical experiment report](experiment/artifacts/EXPERIMENT_REPORT.md)
 - [Historical experiment instructions](experiment/README.md)
 
+The new seven-method, training-only nested study reached **93.90% recall / 8.63%
+normal false alarms**; both fixed seed repeats also reached 93.90% recall.
+It did not beat the paired coarse control (94.31% / 7.91%). The full prior recipe
+averaged **95.93% / 8.81%**, but failed a recall or false-alarm target in two of
+three folds. Small-defect catches were 34/45 for the new procedure and 39/45 for
+the full prior recipe. These reused training images do not establish reliable
+95% performance. Every original-image replay decision matched; the independent
+audit and checkpoint archive are linked in the report.
+
 Dataset auditing, model fitting and the original frozen evaluation are implemented.
-The latest frozen corrected checkpoint reached **90.91% defect recall and 7.72%
+The earlier frozen corrected checkpoint reached **90.91% defect recall and 7.72%
 normal false alarms** on all 1,004 official KSDD2 test images. **The requested 95%
 recall goal failed.** All three corrected cold-start seeds also failed it
 (90.00%–91.82% recall). Exact full replay and independent metric recount passed.
@@ -33,7 +43,8 @@ so this is benchmark evidence, not pristine independent factory confirmation.
 There is no separate new factory batch available. The ten-strategy study and
 training correction remain documented; further model work and a genuinely new
 sealed confirmation batch are needed. Application development remains pending,
-and the original archived Stage 5 no-go result is unchanged.
+and the original archived Stage 5 no-go result is unchanged. The official test
+set stayed closed throughout the latest small-defect study.
 The original metal-nut recipe is deferred. See the latest results above and the
 [RGB cable-gland scope](components/docs/CABLE_GLAND_SCOPE.md).
 

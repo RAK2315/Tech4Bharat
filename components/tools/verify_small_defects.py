@@ -219,9 +219,10 @@ def main():
             plan, training = verify_model(directory, p['config']['methods'][method])
             assert training['seed'] == p['config']['seed']+train_fold
             assert all(p['folds'][i] == train_fold for i in plan['fitting_ids']+plan['calibration_ids'])
-            fit_diagnostic = read(directory/'fitting-diagnostic.json')
-            recount(fit_diagnostic, {i: by[i]['label'] for i in plan['fitting_ids']}, p['positive_source_area_fraction'])
-            assert {r['id'] for r in fit_diagnostic['calibration_scores']} == set(plan['calibration_ids'])
+            if p['config']['methods'][method]['family'] == 'supervised':
+                fit_diagnostic = read(directory/'fitting-diagnostic.json')
+                recount(fit_diagnostic, {i: by[i]['label'] for i in plan['fitting_ids']}, p['positive_source_area_fraction'])
+                assert {r['id'] for r in fit_diagnostic['calibration_scores']} == set(plan['calibration_ids'])
             for val_fold in range(3):
                 if val_fold == train_fold: continue
                 record = read(directory/f'eval-{val_fold}.json')

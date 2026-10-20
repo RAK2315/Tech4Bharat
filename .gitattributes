@@ -19,3 +19,12 @@
 /docs/research/2026-10-20-small-defects-preregistration.json text eol=lf
 /docs/research/2026-10-20-small-defects-legacy-registration.json text eol=lf
 /docs/research/2026-10-20-small-defects-checkpoint-package.json text eol=lf
+/docs/research/2026-10-20-small-defects-package-attempt-1.json text eol=lf
+# These older dependencies were frozen with CRLF working bytes. Keep their
+# checkout bytes reproducible while Git stores the canonical LF content.
+/components/src/component_inspector/data/acquire.py text eol=crlf
+/components/src/component_inspector/evaluation/calibration.py text eol=crlf
+/components/src/component_inspector/evaluation/metrics.py text eol=crlf
+/components/src/component_inspector/vision/geometry.py text eol=crlf
+/components/src/component_inspector/vision/padim_adapter.py text eol=crlf
+/components/src/component_inspector/vision/spike_worker.py text eol=crlf
