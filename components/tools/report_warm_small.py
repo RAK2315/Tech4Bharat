@@ -23,6 +23,9 @@ def main():
            f'All three second-partition checks passed: **{s["all_three_second_partition_goals_met"]}**. '
            'Each required recall >=95% and normal false-positive rate <10%. A pooled average '
            'cannot rescue a failing fold or seed.', '',
+           'The registered 95% criterion concerns overall defective-image recall. Small-defect '
+           'recall is reported separately; passing the overall criterion would not establish '
+           '95% recall within that harder subset.', '',
            'These are KSDD2 industrial surface-defect images from the official training set. '
            'All 1,914 originals had already been observed in the project. The second partition '
            'changes fitting/calibration/evaluation membership and initialization; it does not '
