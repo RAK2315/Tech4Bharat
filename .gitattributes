@@ -8,3 +8,5 @@
 /components/tools/*recall_round2*.py text eol=lf
 /components/tools/*recall_alignment.py text eol=lf
 /docs/research/alignment/*.json text eol=lf
+/components/tools/*recall_validation.py text eol=lf
+/docs/research/validation/*.json text eol=lf
