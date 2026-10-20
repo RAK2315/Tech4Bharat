@@ -90,7 +90,15 @@ def main():
     for alpha, row in legacy['outcomes'].items():
         ct, sm = row['counts'], row['small_defects']
         lines.append(f'| Calibration alpha {alpha} | {ct["TP"]} / {ct["FN"]} | {ct["FP"]} / 1,668 | {percent(row["recall"])} | {percent(row["normal_fpr"])} | {sm["detected"]}/45 |')
+    lines += ['', '| Reference fold | Calibration alpha | TP / 82 | FP / 556 | Recall | Normal FPR | Small / 15 |',
+              '|---|---:|---:|---:|---:|---:|---:|']
+    for fold, policies in legacy['folds'].items():
+        for alpha, row in policies.items():
+            ct, sm = row['counts'], row['small_defects']
+            lines.append(f'| {fold} | {alpha} | {ct["TP"]}/82 | {ct["FP"]}/556 | {percent(ct["TP"]/82)} | {percent(ct["FP"]/556)} | {sm["detected"]}/15 |')
     old = legacy['outcomes']['0.08']['counts']
+    common_all_folds = all(row['0.08']['counts']['TP']/82 >= .95 and row['0.08']['counts']['FP']/556 < .1
+                           for row in legacy['folds'].values())
     lines += ['', f'At the common .08 calibration policy, the selected nested procedure caught '
               f'**{c["TP"]-old["TP"]:+d} defects** and made **{c["FP"]-old["FP"]:+d} false alarms** '
               'relative to the full prior recipe. Both .08 and the historical .10 policy '
@@ -98,6 +106,8 @@ def main():
               'the full prior recipe unless these comparisons support it; a gain over the '
               'shorter control alone is insufficient. See '
               '[full-recipe comparison](small-defects/legacy-comparison.json).', '',
+        ('The full prior recipe meets both point targets in every common-policy fold.' if common_all_folds else
+         'The full prior recipe fails at least one common-policy fold target. Even a passing pooled average would not establish consistent per-fold performance.'), '',
         '## Every outer fold', '',
         '| Outer fold | Inner-selected method | TP / FN | FP / 556 | Recall | Normal FPR | Small / 15 |',
         '|---|---|---:|---:|---:|---:|---:|',
@@ -248,14 +258,17 @@ def main():
               '[fresh-image confirmation plan](2026-10-20-fresh-confirmation-plan.md); '
               'do not reopen or retune the official test to manufacture a passing result.', '',
               '## Next development hypothesis', '',
-              'The next useful hypothesis is native-resolution overlapping tiles with mask-aware '
-              'training crops: preserve tiny marks before the backbone downsamples them, rather '
-              'than only reading a finer feature layer after resizing the entire image. Test '
-              'that as a newly registered development study with fixed normal-only calibration, '
+              'First isolate training schedule with matched objectives, data, capacity, and '
+              'regularization: the 30-epoch candidates and full prior recipe differ in several '
+              'factors, so their comparison cannot identify a duration effect. Another useful '
+              'hypothesis is native-resolution overlapping tiles with mask-aware training crops '
+              'to preserve tiny marks before the backbone downsamples them. Test these as '
+              'newly registered development studies with fixed normal-only calibration, '
               'not by changing thresholds on these outer predictions. The current bundled '
               'changes do not isolate resolution, dropout, capacity, Dice loss, or score pooling '
               'as individual causes. Keep single-factor controls when assessing a future gain. '
-              'This hypothesis has not been trained in this study and is not a claimed result.', '']
+              'These additional hypotheses have not been trained in this study and are not '
+              'claimed results.', '']
     with args.output.open('x', encoding='utf-8', newline='\n') as f: f.write('\n'.join(lines))
     print(args.output)
 
