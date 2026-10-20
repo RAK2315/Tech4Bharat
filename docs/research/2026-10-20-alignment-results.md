@@ -2,6 +2,12 @@
 
 Completed 20 October 2026. **All three corrected initialization runs meet the requested development target.** The corrected continuation catches **80/82 defects with 24/417 normal false alarms (97.56% recall / 5.76% FPR)**. The earlier saved checkpoint remains the numerical best at 97.56% / 5.28%, but its original training recipe was unstable when retrained. This follow-up fixes that training/scoring conflict and preserves all results.
 
+**Later validation:** the frozen corrected continuation reached only **100/110
+defects (90.91% recall), with 69/894 normal false alarms (7.72%)**, on official
+test images excluded from fitting. All three cold-start seeds also missed the
+95% target. These development numbers did not establish test performance. See
+the [full validation and overfitting audit](2026-10-20-validation-results.md).
+
 ## Why another experiment was necessary
 
 The [remaining-strategy study](2026-10-20-round2-results.md) reached 80/82 detected defects and 22/417 normal false alarms (97.56% recall / 5.28% FPR) with focal training, localized scoring and hard-normal refinement. A full repeated training run with seed 4218 also caught 80/82, but seed 4219 collapsed to 3/82 with 42/417 false alarms. Two good runs did not establish a reliable training recipe.

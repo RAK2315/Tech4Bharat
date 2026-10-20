@@ -2,10 +2,14 @@
 
 Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
-Latest research: [recall results and corrected training objective](../docs/research/2026-10-20-alignment-results.md).
-The best development checkpoint reaches 97.56% recall / 5.28% normal FPR; the
-corrected retraining recipe meets 95%+ / under-10% in all three fixed initialization
-checks. This is separate from the unchanged historical Stage 5 no-go.
+Latest research: [corrected-model test validation](../docs/research/2026-10-20-validation-results.md).
+The frozen corrected primary reached **90.91% recall / 7.72% normal FPR** on all
+1,004 official KSDD2 test images: **95% recall failed**. The earlier development
+success did not generalize; all three corrected cold-start seeds also fell below
+95%. Full replay was exact and independent recount passed. The official test was
+previously observed by the project, so fresh factory confirmation remains needed.
+See the [training correction](../docs/research/2026-10-20-alignment-results.md)
+and the unchanged historical Stage 5 no-go.
 
 ## Current scope
 

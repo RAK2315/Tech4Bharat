@@ -7,7 +7,8 @@ It does not establish production readiness or buyer acceptance.
 
 ## Start here
 
-- [Latest KSDD2 recall results and training correction](docs/research/2026-10-20-alignment-results.md)
+- [Latest corrected-model validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
+- [Development recall results and training correction](docs/research/2026-10-20-alignment-results.md)
 - [Remaining strategies, comparisons and failed repeat run](docs/research/2026-10-20-round2-results.md)
 - [Ten researched improvement strategies](docs/research/2026-10-19-recall-strategies.md)
 - [Current execution plan](Tech4Bharat_Codex_Execution_Plan.md)
@@ -20,15 +21,19 @@ It does not establish production readiness or buyer acceptance.
 - [Historical experiment instructions](experiment/README.md)
 
 Dataset auditing, model fitting and the original frozen evaluation are implemented.
-The original Stage 5 benchmark returned no-go. A later KSDD2 development comparison
-reproduced PaDiM and tested the ten researched strategies with bounded variants.
-The best saved checkpoint reached **97.56% defect recall at 5.28% normal false
-alarms**, but its training recipe failed one repeat initialization. Correcting
-the training/scoring conflict reached **95.12%–96.34% recall at 6.95%–7.67% false
-alarms across all three fixed seeds**. One corrected continuation of the earlier
-best checkpoint reached **97.56% / 5.76%**. These meet the requested development
-point targets; they are not independent factory validation. Application development
-remains pending, and the original archived no-go result is unchanged.
+The latest frozen corrected checkpoint reached **90.91% defect recall and 7.72%
+normal false alarms** on all 1,004 official KSDD2 test images. **The requested 95%
+recall goal failed.** All three corrected cold-start seeds also failed it
+(90.00%–91.82% recall). Exact full replay and independent metric recount passed.
+
+The earlier **97.56% / 5.76%** corrected-checkpoint result was measured on repeatedly
+observed development data and did not hold on test images excluded from fitting.
+The official test set itself was previously observed by the project in Stage 5,
+so this is benchmark evidence, not pristine independent factory confirmation.
+There is no separate new factory batch available. The ten-strategy study and
+training correction remain documented; further model work and a genuinely new
+sealed confirmation batch are needed. Application development remains pending,
+and the original archived Stage 5 no-go result is unchanged.
 The original metal-nut recipe is deferred. See the latest results above and the
 [RGB cable-gland scope](components/docs/CABLE_GLAND_SCOPE.md).
 
