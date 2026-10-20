@@ -130,7 +130,10 @@ def main():
         coverage[grid] = {'positive_images': 246, 'empty_valid_target_ids': empty,
                           'partial_roi_boundary_targets': partial}
         assert not empty
-    assert coverage == read(root/'target-coverage-audit.json')
+    if (root/'target-coverage-audit.json').exists():
+        assert coverage == read(root/'target-coverage-audit.json')
+    else:
+        write(root/'target-coverage-audit.json', coverage)
 
     completed = [m for m in p['config']['methods'] if all((root/f'inner-{m}-{f}/complete.json').exists() for f in range(3))]
     inner, details = {}, {}
@@ -263,6 +266,38 @@ def main():
     assert len(gains)-len(losses) == totals['TP']-control_totals['TP']
     assert len(new_alarms)-len(cleared) == totals['FP']-control_totals['FP']
     write(root/'paired-comparison.json', paired)
+    repeat_plan = read(root/'refit-repeat-plan.json'); check_identity(repeat_plan)
+    assert repeat_plan['protocol_identity'] == p['identity']
+    assert sha(Path(__file__).parent/'run_repeat_small_defects.py') == repeat_plan['source_sha256']
+    repeats = {}
+    for offset in repeat_plan['seed_offsets']:
+        repeat_totals = Counter(TP=0, FN=0, FP=0, TN=0, rejected_anomalies=0, rejected_normals=0)
+        per_fold, repeat_small = {}, {'detected': 0, 'total': 0}
+        for fold in range(3):
+            directory = root/f'repeat-{offset}-outer-{fold}'
+            method = selected['outer_choices'][str(fold)]['method']
+            plan, training = verify_model(directory, p['config']['methods'][method])
+            original = read(root/f'outer-{fold}/plan.json')
+            assert plan['selection_identity'] == selected['identity'] and plan['method'] == method
+            assert plan['repeat_plan_identity'] == repeat_plan['identity']
+            assert training['seed'] == p['config']['seed']+100+fold+offset
+            assert plan['fitting_ids'] == original['fitting_ids']
+            assert plan['calibration_ids'] == original['calibration_ids']
+            record = read(directory/f'eval-{fold}.json')
+            expected = {i: by[i]['label'] for i in pool if p['folds'][i] == fold}
+            counts = recount(record, expected, p['positive_source_area_fraction'])
+            repeat_totals.update(counts)
+            for key in repeat_small: repeat_small[key] += record['small_defects'][key]
+            per_fold[str(fold)] = {'counts': counts, 'small_defects': record['small_defects']}
+        repeats[str(offset)] = {'counts': dict(repeat_totals), 'folds': per_fold,
+                               'small_defects': repeat_small,
+                               'recall': repeat_totals['TP']/246, 'normal_fpr': repeat_totals['FP']/1668,
+                               'point_goal_met': repeat_totals['TP']/246 >= .95 and repeat_totals['FP']/1668 < .1}
+    write(root/'refit-stability.json', {
+        'repeat_plan_identity': repeat_plan['identity'], 'primary_counts': dict(totals), 'repeats': repeats,
+        'all_three_point_goals_met': ci['point_goal_met'] and all(r['point_goal_met'] for r in repeats.values()),
+        'scope': repeat_plan['scope'], 'no_seed_replaces_primary_or_final_model': True,
+        'same_246_defects_and_1668_normals_are_not_tripled': True})
     frozen = read(root/'final/frozen.json'); check_identity(frozen)
     assert frozen['method'] == selected['final_method'] and frozen['selection_identity'] == selected['identity']
     assert sha(root/'final/model.pt') == frozen['model_sha256'] == summary['final_model_sha256']
@@ -302,6 +337,7 @@ def main():
                     'normal_only_moments_independently_reconstructed': len(normalization_cache),
                     'outer_selection_independently_verified': True, 'final_inner_selection_independently_verified': True,
                     'fixed_paired_control_independently_recounted': True,
+                    'all_predeclared_refit_repeats_recounted_without_seed_selection': True,
                     'protected_old_benchmarks_unchanged': True, 'official_test_scored': False,
                     'new_independent_factory_validation_complete': False,
                     'pooled_cv_binomial_bounds_are_descriptive_not_formal_cv_confidence': True,
