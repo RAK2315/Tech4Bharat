@@ -56,9 +56,14 @@ The original output root is retained; the resumed root is
 - Include this interruption and its raw evidence in the final audit/export. The
   failure is not a successful model result and cannot support the recall claim.
 
-The separate arithmetic-audit tests passed again: **9 passed**. All five recovery,
-audit, replay, report and packaging helpers compiled. The actual resumed fit must
-also complete before the infrastructure recovery is called successful.
+The separate arithmetic-audit tests passed again: **9 passed**. The updated
+recovery and proof helpers compiled. The actual retried continuation then
+**completed in 176.688 seconds**, with peak sampled RSS 521,228,288 bytes, under
+the same 1,800-second limit and its 583,414,579-byte startup cap. See its
+[raw resource record](warm-small-recovery/retry-resources.json). This establishes
+that this operational recovery succeeded; it does not establish complete-study
+accuracy or guarantee that a later explicit sleep/lid closure cannot interrupt
+another phase.
 
 The original controller correctly stopped at the failed phase. Its waiting proof
 helper subsequently stopped because no selection file existed; it did not run
