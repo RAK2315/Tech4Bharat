@@ -23,7 +23,7 @@ def main():
     if args.wait_controller_pid is not None:
         process=psutil.Process(args.wait_controller_pid)
         command=process.cmdline()
-        assert any(Path(value).name=='run_warm_small.py' for value in command)
+        assert any(Path(value).name in ('run_warm_small.py','resume_warm_small.py') for value in command)
         assert Path(command[command.index('--root')+1]).resolve()==root
         deadline=time.monotonic()+43200
         print('Waiting for the owned experiment controller; no parallel ML worker.',flush=True)
@@ -56,4 +56,13 @@ def main():
     print('PROOF AND REPORT COMPLETE',flush=True)
 
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+    import os
+    if os.name=='nt':
+        import ctypes
+        kernel=ctypes.WinDLL('kernel32',use_last_error=True)
+        kernel.SetThreadExecutionState.argtypes=[ctypes.c_uint]; kernel.SetThreadExecutionState.restype=ctypes.c_uint
+        if not kernel.SetThreadExecutionState(0x80000001): raise ctypes.WinError(ctypes.get_last_error())
+        try: main()
+        finally: kernel.SetThreadExecutionState(0x80000000)
+    else: main()

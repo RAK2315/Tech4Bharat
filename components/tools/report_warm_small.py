@@ -17,7 +17,18 @@ def main():
     assert s['protocol_identity']==v['protocol_identity']==p['identity']
     outcome=('All twelve predeclared internal checks meet the point targets.' if s['all_twelve_internal_goals_met'] else
              'The requested across-fold consistency target is not achieved in this study.')
-    lines=['# Warm-recipe small-defect study: verified internal results','',f'**{outcome}**', '',
+    lines=['# Warm-recipe small-defect study: verified internal results','',f'**{outcome}**', '']
+    if s.get('documented_infrastructure_recovery'):
+        lines += ['The first execution was interrupted by lid-triggered Windows Modern Standby. '
+                  'The failed phase saved no trained checkpoint or predictions. Its plan, empty '
+                  'log, resource failure, system power events and deterministic timeout diagnosis '
+                  'are preserved. A [published recovery registration](2026-10-21-warm-small-recovery-registration.json) '
+                  'reused three completed caches and eleven completed checkpoints byte for byte '
+                  'in a separate output root, then retried the interrupted fit with the original '
+                  'seed and continued the unchanged numerical protocol. This was an infrastructure '
+                  'recovery, not a search for a better seed or outcome. The failure does not count '
+                  'as a successful model result. See the [interruption report](2026-10-21-warm-small-recovery.md).', '']
+    lines += [
            f'The locked development selection is **{method}, normal-calibration alpha {alpha:.2f}**. '
            f'All nine development checks passed: **{s["all_nine_development_goals_met"]}**. '
            f'All three second-partition checks passed: **{s["all_three_second_partition_goals_met"]}**. '

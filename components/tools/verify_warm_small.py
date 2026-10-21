@@ -114,6 +114,19 @@ def main():
     parser.add_argument('--registration',type=Path,default=Path('docs/research/2026-10-20-warm-small-preregistration.json'))
     args=parser.parse_args(); root=args.root.resolve(); torch.set_num_threads(4); torch.set_num_interop_threads(1)
     p=read(root/'protocol.json'); identity(p); cfg=p['config']
+    recovery=None
+    if (root/'recovery.json').exists():
+        recovery=read(root/'recovery.json'); original=Path(recovery['original_root'])
+        assert recovery['before_any_resumed_fit'] and recovery['protocol_identity']==p['identity']
+        assert not recovery['numeric_changes'] and not recovery['seed_changes'] and not recovery['candidate_or_threshold_changes']
+        assert sha(root/'recovery.json')==sha(recovery['registration_path'])
+        assert sha(root/'protocol.json')==sha(original/'protocol.json')
+        for relative,value in recovery['copied_files'].items(): assert sha(root/relative)==sha(value['source'])==value['sha256']
+        for failure in recovery['preserved_failed_attempts'].values():
+            for path,value in failure['preserved_files'].items(): assert sha(path)==value['sha256']
+        for path,value in recovery['diagnostic_files'].items(): assert sha(path)==value['sha256']
+        for path,value in recovery['source_sha256'].items(): assert sha(path)==value
+        assert read(root/'recovery-end.json')['returncode']==0
     snapshot=read(args.registration); assert snapshot['before_any_new_cache_or_fit']
     for name,value in snapshot['registrations'].items(): assert sha(root/name)==value['sha256'] and read(root/name)==value['record']
     for filename,expected in p['source_sha256'].items(): assert sha(filename)==expected,filename
@@ -337,6 +350,7 @@ def main():
              'checks':checks,'qualification':{f'{method}/{alpha:.2f}':all(r['point_goal_met'] for r in rows) for (method,alpha),rows in candidates.items()},
              'originals':1914,'native_head_evaluations':native_heads,'native_threshold_evaluations':native_thresholds,
              'new_independent_factory_confirmation':False,'official_test_accessed':False,
+             'documented_infrastructure_recovery':recovery is not None,
              'scope':'observed training originals; development selection and predeclared second-partition robustness, not fresh data'}
     write(root/'summary.json',summary)
     resources={path.name:read(path) for path in root.glob('*-resources.json')}
@@ -352,6 +366,11 @@ def main():
                   'selection_independently_verified':True,'second_partition_assignment_reconstructed':True,
                   'no_official_test_access':True,'protected_old_evidence_unchanged':True,
                   'same_work_session_audit_not_third_party_certification':True,
+                  'documented_infrastructure_recovery':None if recovery is None else {
+                      'registration_sha256':sha(root/'recovery.json'),
+                      'copied_phases':recovery['completed_phases_reused_without_refitting'],
+                      'preserved_failed_phases':list(recovery['preserved_failed_attempts']),
+                      'numeric_changes':False},
                   'model_artifacts':{str(path.relative_to(root)):{'sha256':sha(path),'bytes':path.stat().st_size} for path in root.rglob('*.pt')},
                   'resources':resources}
     write(root/'verification.json',verification)
@@ -359,6 +378,17 @@ def main():
     for path in sorted(root.rglob('*')):
         if path.is_file() and path.suffix in ('.json','.log'):
             name='--'.join(path.relative_to(root).parts); destination=args.export/name
+            destination.write_bytes(path.read_bytes()); assert sha(destination)==sha(path)
+            exported[name]={'sha256':sha(path),'bytes':path.stat().st_size}
+    if recovery is not None:
+        extra={}
+        for failure in recovery['preserved_failed_attempts'].values():
+            for path in failure['preserved_files']:
+                path=Path(path); extra['interrupted--'+'--'.join(path.relative_to(original).parts)]=path
+        for path in recovery['diagnostic_files']:
+            path=Path(path); extra['diagnostic--'+path.name]=path
+        for name,path in extra.items():
+            destination=args.export/name; assert not destination.exists()
             destination.write_bytes(path.read_bytes()); assert sha(destination)==sha(path)
             exported[name]={'sha256':sha(path),'bytes':path.stat().st_size}
     write(args.export/'export-index.json',{'protocol_identity':p['identity'],'files':exported,'excluded':'model tensors and feature/target arrays remain local, with recorded hashes'})

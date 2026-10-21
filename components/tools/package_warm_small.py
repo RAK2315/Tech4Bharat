@@ -30,6 +30,8 @@ def main():
     paths.update(path.resolve() for path in (repo/'components/tests').glob('test_warm_small*.py'))
     paths.update(path.resolve() for path in (repo/'docs/research/warm-small').glob('*') if path.is_file())
     paths.update(path.resolve() for path in (repo/'docs/research').glob('2026-10-20-warm-small*') if path.is_file())
+    paths.update(path.resolve() for path in (repo/'docs/research').glob('2026-10-21-warm-small*') if path.is_file())
+    paths.add(Path(__file__).parent/'diagnose_warm_small_interruption.py')
     paths.update(path.resolve() for path in audit.glob('*') if path.is_file())
     parent=Path(p['parent']); old=read(parent/'protocol.json'); paths.add(Path(old['weights']).resolve())
     paths.update(path.resolve() for path in parent.rglob('*') if path.is_file() and path.suffix in ('.json','.log'))
