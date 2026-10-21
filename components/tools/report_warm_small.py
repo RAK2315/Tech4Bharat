@@ -132,10 +132,13 @@ def main():
               'A separate [target-visibility diagnostic](2026-10-21-warm-small-target-visibility.json) '
               'checked all 246 defective originals, including all 45 small defects. Every '
               'coarse target retains positive cells inside the valid ROI, and every parent '
-              'retains a positive crop. Target erasure by downsampling/padding is therefore '
-              'not the explanation for these misses. This does not establish that frozen '
-              'features preserve sufficient discriminative detail or uniquely identify '
-              'the cause of the generalization gap.', '',
+              'retains a positive crop. Complete erasure of an image’s positive target '
+              'does not occur. However, [partial boundary exclusion](2026-10-21-warm-small-target-boundaries.json) '
+              'affects 59 originals, including four small defects: some coarse positive '
+              'cells fall outside the registered valid ROI. Geometry effects are not '
+              'fully ruled out. These checks do not establish that frozen features retain '
+              'enough discriminative detail or uniquely identify the generalization-gap '
+              'cause; the registered geometry and all numerical training remain unchanged.', '',
               'Positive training crops are chosen from the fitting parent’s positive GT crops; '
               'normal parents use any crop. At inference, masks, labels and size strata do not '
               'choose views: tiled recipes score the full image and all ten overlapping crops, '
