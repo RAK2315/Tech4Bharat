@@ -114,6 +114,13 @@ def main():
               'small-positive loss by 3. tiles108 substitutes a native 160x160 crop for a full '
               'image with probability .5, enlarged to 256x256. tiles_small108 combines those '
               'two factors. None changes backbone weights, head capacity, or baseline moments.', '',
+              'A separate [target-visibility diagnostic](2026-10-21-warm-small-target-visibility.json) '
+              'checked all 246 defective originals, including all 45 small defects. Every '
+              'coarse target retains positive cells inside the valid ROI, and every parent '
+              'retains a positive crop. Target erasure by downsampling/padding is therefore '
+              'not the explanation for these misses. This does not establish that frozen '
+              'features preserve sufficient discriminative detail or uniquely identify '
+              'the cause of the generalization gap.', '',
               'Positive training crops are chosen from the fitting parent’s positive GT crops; '
               'normal parents use any crop. At inference, masks, labels and size strata do not '
               'choose views: tiled recipes score the full image and all ten overlapping crops, '
