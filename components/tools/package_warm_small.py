@@ -29,6 +29,7 @@ def main():
     paths.add(repo/'components/requirements-recall.lock')
     paths.update(path.resolve() for path in (repo/'components/tests').glob('test_warm_small*.py'))
     paths.update(path.resolve() for path in (repo/'docs/research/warm-small').glob('*') if path.is_file())
+    paths.update(path.resolve() for path in (repo/'docs/research/warm-small-recovery').glob('*') if path.is_file())
     paths.update(path.resolve() for path in (repo/'docs/research').glob('2026-10-20-warm-small*') if path.is_file())
     paths.update(path.resolve() for path in (repo/'docs/research').glob('2026-10-21-warm-small*') if path.is_file())
     paths.add(Path(__file__).parent/'diagnose_warm_small_interruption.py')

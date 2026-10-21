@@ -177,18 +177,23 @@ def main():
                 for f in range(3):
                     r=checks[f'dev-f{f}-s{seed}-{m}/{a:.2f}']; c=r['counts']
                     lines.append(f'| {m} | {a:.2f} | {seed} | {f} | {c["TP"]}/82 | {c["FP"]}/556 | {r["small_defects"]["detected"]}/15 | {"Pass" if r["point_goal_met"] else "Fail"} |')
+    shown_root=str(args.root).replace('\\','/')
     lines += ['', '## Reproduce','',
               'Use the locked environment and official-training originals/parent cache. Audit '
-              'this preserved run into a new empty export path with verify_warm_small.py. '
+              'this preserved run into a new empty export path. The existing evidence and '
+              'registered fit directories are exclusive and must not be overwritten.', '',
+              '```powershell',
+              f'components/.venv-p0/Scripts/python.exe components/tools/verify_warm_small.py --root {shown_root} --export docs/research/warm-small-audit-repeat',
+              '```','',
               'A new fit requires new empty paths and a newly published preregistration '
               'snapshot; pass its path using --registration. New timestamps, paths and source '
               'commits produce a new protocol identity, not a copy of this study’s identity.', '',
               '```powershell',
-              'components/.venv-p0/Scripts/python.exe -m component_inspector.research.ksdd2_warm_small --phase freeze --root components/outputs/recall-warm-small',
+              'components/.venv-p0/Scripts/python.exe -m component_inspector.research.ksdd2_warm_small --phase freeze --root components/outputs/new-warm-small',
               '# Publish matching protocol/preflight snapshots before starting new cache or fit phases.',
-              'components/.venv-p0/Scripts/python.exe components/tools/run_warm_small.py --root components/outputs/recall-warm-small',
+              'components/.venv-p0/Scripts/python.exe components/tools/run_warm_small.py --root components/outputs/new-warm-small',
               '# Run replay_warm_small.py serially for --fold 0, then 1, then 2.',
-              'components/.venv-p0/Scripts/python.exe components/tools/verify_warm_small.py --root components/outputs/recall-warm-small --export docs/research/warm-small',
+              '# Audit the new run with its own --registration path and a new empty --export path.',
               '```','']
     with args.output.open('x',encoding='utf-8',newline='\n') as f: f.write('\n'.join(lines))
     print(args.output)
