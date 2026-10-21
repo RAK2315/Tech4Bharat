@@ -51,7 +51,22 @@ def main():
         for a in cfg['alphas']:
             rows=[checks[f'dev-f{f}-s{seed}-{m}/{a:.2f}'] for seed in cfg['development_seeds'] for f in range(3)]
             lines.append(f'| {m} | {a:.2f} | {sum(r["point_goal_met"] for r in rows)}/9 | {pct(min(r["recall"] for r in rows))} | {pct(max(r["fpr"] for r in rows))} | {min(r["small_defects"]["detected"] for r in rows)}/15 |')
-    lines += ['', 'All methods and both policies were fixed before the first new feature-cache or '
+    lines += ['', '## Variation across all three seeds for each experiment','',
+              '| Method | Alpha | Pooled recall range | Pooled normal FPR range | Small catches range / 45 |',
+              '|---|---:|---:|---:|---:|']
+    for m in cfg['methods']:
+        for a in cfg['alphas']:
+            totals=[]
+            for seed in cfg['development_seeds']:
+                rows=[checks[f'dev-f{f}-s{seed}-{m}/{a:.2f}'] for f in range(3)]
+                totals.append((sum(r['counts']['TP'] for r in rows),sum(r['counts']['FP'] for r in rows),
+                               sum(r['small_defects']['detected'] for r in rows)))
+            tp,fp,small=zip(*totals)
+            lines.append(f'| {m} | {a:.2f} | {pct(min(tp)/246)} to {pct(max(tp)/246)} | {pct(min(fp)/1668)} to {pct(max(fp)/1668)} | {min(small)} to {max(small)} |')
+    lines += ['', 'Each endpoint is a complete three-fold aggregate for one fixed seed, '
+              'with 246 defective and 1,668 normal originals. These ranges describe '
+              'variability, not independent samples or a reason to choose the best seed.', '',
+              'All methods and both policies were fixed before the first new feature-cache or '
               'fit phase. Alpha .05 and .08 are two declared development policies, not a threshold '
               'scan on the official test. Every threshold uses only 200 disjoint normal training '
               'originals with strict score > threshold. Selection sees only the nine development '
