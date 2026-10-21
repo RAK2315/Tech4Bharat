@@ -28,9 +28,13 @@
 /components/tools/*seed_ensemble.py text eol=lf
 /components/tools/verify_research_publication.py text eol=lf
 /components/tools/audit_fitting_gap.py text eol=lf
+/components/tools/finalize_recall_checks.py text eol=lf
 /docs/research/2026-10-21-fitting-gap-*.json text eol=lf
 /docs/research/fitting-gap/*.json text eol=lf
 /docs/research/fitting-gap/*.log -text
+/docs/research/software-checks/*.json text eol=lf
+/docs/research/software-checks/*.log -text
+/docs/research/software-checks/*.xml -text
 /components/tests/test_seed_ensemble.py text eol=lf
 /docs/research/2026-10-21-seed-ensemble-*.json text eol=lf
 /docs/research/seed-ensemble/*.json text eol=lf

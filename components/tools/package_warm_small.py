@@ -28,6 +28,8 @@ def main():
     paths.update(path.resolve() for path in Path(__file__).parent.glob('*warm_small.py'))
     paths.add(repo/'components/requirements-recall.lock')
     paths.add(Path(__file__).parent/'verify_research_publication.py')
+    paths.add(Path(__file__).parent/'finalize_recall_checks.py')
+    paths.update(path.resolve() for path in (repo/'docs/research/software-checks').glob('*') if path.is_file())
     paths.update(path.resolve() for path in (repo/'components/tests').glob('test_warm_small*.py'))
     paths.update(path.resolve() for path in (repo/'docs/research/warm-small').glob('*') if path.is_file())
     paths.update(path.resolve() for path in (repo/'docs/research/warm-small-recovery').glob('*') if path.is_file())
