@@ -2,7 +2,12 @@
 
 Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
-Latest research: [small-defect and overfitting study](../docs/research/2026-10-20-small-defects-results.md).
+Current work: [warm-recipe small-defect protocol](../docs/research/2026-10-20-warm-small-protocol.md),
+with a [recorded infrastructure recovery](../docs/research/2026-10-21-warm-small-recovery.md).
+The fixed sweep is running; there is no complete new across-fold result yet.
+The official test remains closed, and no new production-performance claim is made.
+
+Previous completed research: [small-defect and overfitting study](../docs/research/2026-10-20-small-defects-results.md).
 Seven fixed methods were evaluated using training-only nested cross-validation.
 The new procedure reached **93.90% recall / 8.63% normal FPR**; both fixed seed
 repeats also reached 93.90% recall. It did not improve on the paired coarse

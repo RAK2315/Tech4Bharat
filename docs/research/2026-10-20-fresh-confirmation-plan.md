@@ -28,6 +28,12 @@ point targets while failing targets in two folds. If a future model is selected
 for factory confirmation, create a new selection and sealing record before
 touching the confirmation images.
 
+The subsequent [warm-recipe sweep](2026-10-20-warm-small-protocol.md) is running
+with a [documented standby recovery](2026-10-21-warm-small-recovery.md). It has no
+complete across-fold result or independently validated replacement yet. Its
+second partition reuses observed training images and cannot replace the fresh
+factory confirmation described here.
+
 ## Sample size and decision
 
 Choose sample size in advance, not by repeatedly checking whether the result
