@@ -152,7 +152,7 @@ def main():
               '## Verifiable evidence and limits','',
               f'The separate arithmetic/role verifier checked **{v["feature_artifact_hashes_checked"]} '
               f'feature artifacts**, derived labels and size fractions from **{v["raw_training_mask_hashes_and_labels_checked"]} '
-              'hashed original masks, independently reconstructed the second partition, '
+              'hashed original masks**, independently reconstructed the second partition, '
               f'{v["normalization_sets_reconstructed"]} normalization sets, '
               f'{v["hard_normal_scores_reconstructed"]} hard-normal candidate scores from saved '
               f'epoch60 weights, and {v["training_crop_choices_reconstructed"]} training-crop '

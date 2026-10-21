@@ -7,7 +7,8 @@ It does not establish production readiness or buyer acceptance.
 
 ## Start here
 
-- [Current warm-recipe sweep: fixed protocol](docs/research/2026-10-20-warm-small-protocol.md) and [recorded standby recovery](docs/research/2026-10-21-warm-small-recovery.md)
+- [Latest verified warm-recipe results: consistency target failed](docs/research/2026-10-20-warm-small-results.md)
+- [Registered three-seed ensemble: in progress](docs/research/2026-10-21-seed-ensemble-protocol.md)
 - [Latest small-defect study: no verified improvement](docs/research/2026-10-20-small-defects-results.md)
 - [Earlier corrected-model test validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
 - [Development recall results and training correction](docs/research/2026-10-20-alignment-results.md)
@@ -22,12 +23,21 @@ It does not establish production readiness or buyer acceptance.
 - [Historical experiment report](experiment/artifacts/EXPERIMENT_REPORT.md)
 - [Historical experiment instructions](experiment/README.md)
 
-The next warm-recipe sweep is running across three development folds and three
-fixed seeds, followed by a locked second-partition check. It compares extra
-training, small-defect weighting, native zoomed crops and their combination.
-A lid-triggered standby interruption is preserved in the recovery record;
-completed artifacts are reused unchanged. No complete new consistency result
-or verified replacement is available yet. The official test remains closed.
+The verified warm-recipe sweep selected **24 extra training epochs**. Across
+three fixed seeds its pooled recall ranged **92.68%–96.34%**, with **7.01%–8.69%
+normal false alarms** and **33–39 of 45 small defects** caught. Its worst fold
+had **90.24% recall**. A locked second partition reached **95.12% / 6.59%**
+overall but failed recall in one fold. **The across-fold consistency goal failed.**
+Size weighting and zoomed crops also failed; all methods and failures are documented.
+Every one of 65,076 native replay decisions matched exactly. Verification checked
+6,234 feature artifacts, source roles, calibration, mining and metrics.
+
+The separately registered three-seed average is now running with two additional
+fresh initialization seeds. Its primary policy and formula were fixed before
+the main selection and second-partition predictions. It has no result yet.
+The original standby interruption and exact recovery remain documented. The
+official test remains closed; these reused training images provide no new
+independent factory confirmation.
 
 The preceding seven-method, training-only nested study reached **93.90% recall / 8.63%
 normal false alarms**; both fixed seed repeats also reached 93.90% recall.

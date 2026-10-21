@@ -2,10 +2,18 @@
 
 Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
 
-Current work: [warm-recipe small-defect protocol](../docs/research/2026-10-20-warm-small-protocol.md),
-with a [recorded infrastructure recovery](../docs/research/2026-10-21-warm-small-recovery.md).
-The fixed sweep is running; there is no complete new across-fold result yet.
-The official test remains closed, and no new production-performance claim is made.
+Latest verified work: [warm-recipe small-defect results](../docs/research/2026-10-20-warm-small-results.md).
+The selected extra-24-epoch control varied from **92.68% to 96.34% recall** across
+three fixed seeds, with **7.01%–8.69% normal FPR** and 33–39/45 small defects caught.
+Its worst fold reached 90.24% recall. The locked second partition pooled 95.12%
+recall / 6.59% FPR but failed one fold. **Consistency failed.** All 65,076 native
+replay decisions matched exactly; independent metric/data checks passed.
+
+The [registered three-seed ensemble](../docs/research/2026-10-21-seed-ensemble-protocol.md)
+is now running; it has no result yet. The original
+[standby recovery](../docs/research/2026-10-21-warm-small-recovery.md) remains recorded.
+The official test remains closed. These observed training images provide no new
+factory confirmation or production guarantee.
 
 Previous completed research: [small-defect and overfitting study](../docs/research/2026-10-20-small-defects-results.md).
 Seven fixed methods were evaluated using training-only nested cross-validation.

@@ -23,6 +23,7 @@
 /docs/research/2026-10-20-warm-small-preregistration.json text eol=lf
 /docs/research/2026-10-20-warm-small-*.json text eol=lf
 /docs/research/2026-10-21-warm-small-*.json text eol=lf
+/docs/research/2026-10-21-warm-small-*.log -text
 /components/tools/diagnose_warm_small_interruption.py text eol=lf
 /components/configs/recall_seed_ensemble.json text eol=lf
 /components/tools/*seed_ensemble.py text eol=lf

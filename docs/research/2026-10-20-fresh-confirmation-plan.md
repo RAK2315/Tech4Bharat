@@ -28,11 +28,13 @@ point targets while failing targets in two folds. If a future model is selected
 for factory confirmation, create a new selection and sealing record before
 touching the confirmation images.
 
-The subsequent [warm-recipe sweep](2026-10-20-warm-small-protocol.md) is running
-with a [documented standby recovery](2026-10-21-warm-small-recovery.md). It has no
-complete across-fold result or independently validated replacement yet. Its
-second partition reuses observed training images and cannot replace the fresh
-factory confirmation described here.
+The subsequent [verified warm-recipe sweep](2026-10-20-warm-small-results.md)
+failed consistency across folds/seeds. Its selected control ranged from 92.68%
+to 96.34% recall across seeds; a second partition pooled 95.12% but failed one
+fold. The [registered three-seed ensemble](2026-10-21-seed-ensemble-protocol.md)
+is running and has no outcome yet. Both reuse observed training originals and
+cannot replace the fresh factory confirmation described here. No independently
+validated replacement for the historical reference is established.
 
 ## Sample size and decision
 
