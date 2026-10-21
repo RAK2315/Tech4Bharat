@@ -22,12 +22,13 @@ def main():
     paths={path.resolve() for path in root.rglob('*') if path.is_file() and path.suffix in ('.pt','.json','.log')}
     paths.update(Path(path).resolve() for path in p['source_sha256'])
     paths.update(path.resolve() for path in Path(__file__).parent.glob('*seed_ensemble.py'))
+    paths.add(Path(__file__).parent/'verify_research_publication.py')
     paths.update(path.resolve() for path in audit.glob('*') if path.is_file())
     paths.update([archive.resolve(),args.main_receipt.resolve(),repo/'components/tests/test_seed_ensemble.py',repo/'components/requirements-recall.lock',
                   repo/'docs/research/2026-10-20-warm-small-results.md'])
     for folder in ('seed-ensemble','warm-small','warm-small-recovery'):
         paths.update(path.resolve() for path in (repo/'docs/research'/folder).glob('*') if path.is_file())
-    for pattern in ('2026-10-21-seed-ensemble*','2026-10-21-warm-small*'):
+    for pattern in ('2026-10-21-seed-ensemble*','2026-10-21-warm-small*','2026-10-21-publication*'):
         paths.update(path.resolve() for path in (repo/'docs/research').glob(pattern) if path.is_file())
     for filename,value in v['model_artifacts'].items(): assert sha(filename)==value
     files={str(path.relative_to(repo)).replace('\\','/'):{'sha256':sha(path),'bytes':path.stat().st_size} for path in sorted(paths)}

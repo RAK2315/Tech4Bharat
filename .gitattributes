@@ -26,6 +26,7 @@
 /components/tools/diagnose_warm_small_interruption.py text eol=lf
 /components/configs/recall_seed_ensemble.json text eol=lf
 /components/tools/*seed_ensemble.py text eol=lf
+/components/tools/verify_research_publication.py text eol=lf
 /components/tests/test_seed_ensemble.py text eol=lf
 /docs/research/2026-10-21-seed-ensemble-*.json text eol=lf
 /docs/research/seed-ensemble/*.json text eol=lf
@@ -46,3 +47,6 @@
 /components/src/component_inspector/vision/geometry.py text eol=crlf
 /components/src/component_inspector/vision/padim_adapter.py text eol=crlf
 /components/src/component_inspector/vision/spike_worker.py text eol=crlf
+/components/src/component_inspector/vision/resources.py text eol=crlf
+/docs/research/2026-10-21-publication-*.json text eol=lf
+/docs/research/2026-10-21-publication-check-attempt-1.py -text

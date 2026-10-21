@@ -27,6 +27,10 @@
     "power-events.json": {
       "bytes": 3726,
       "sha256": "5c48b3f634965da09c1a8fdc474c90fdb0139fb4ae9d68a47553095a2f7e9073"
+    },
+    "retry-resources.json": {
+      "bytes": 304,
+      "sha256": "7b6de52d0ca9a8f6775e7bd963e9812ff5f5906a2a5bdaec1a1642281a98d7ff"
     }
   },
   "scope": "Preserved interrupted phase and no-ML diagnostic; not a successful experiment"

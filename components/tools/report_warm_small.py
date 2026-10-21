@@ -145,6 +145,14 @@ def main():
               'These are repeated implementation checks, not additional independent images. '
               'The verifier was authored in this same work session; third-party certification '
               'is not claimed.', '',
+              'The first staged-publication checker omitted the CRLF resource supervisor '
+              'from its six-file newline allowlist. Its '
+              '[failed attempt](2026-10-21-publication-check-attempt-1.json) and exact '
+              '[checker source](2026-10-21-publication-check-attempt-1.py) are preserved. '
+              'The repaired checker permits canonical Git LF only for the seven explicitly '
+              'identified CRLF source files, requiring their working bytes to retain their '
+              'frozen hashes. Explicit checkout attributes preserve those bytes. No numeric '
+              'source, checkpoint, score or threshold changed during this audit repair.', '',
               'Preflight: 131 software tests passed with 45 upstream warnings; old baseline '
               'scores matched on the two checked originals; all ten native crop feature '
               'shapes/values passed the smoke check. Historical evidence remains unchanged. '
