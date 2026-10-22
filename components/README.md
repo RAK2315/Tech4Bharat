@@ -1,46 +1,23 @@
 # Tech4Bharat component inspector
 
-Local anomaly-detection research implementation for the [Codex execution plan](../Tech4Bharat_Codex_Execution_Plan.md).
+**Current deliverable: frozen ML model and teammate handoff.** Application work
+is intentionally left for the teammate. No API, frontend or database is implemented.
 
-Latest verified work: [warm-recipe small-defect results](../docs/research/2026-10-20-warm-small-results.md).
-The selected extra-24-epoch control varied from **92.68% to 96.34% recall** across
-three fixed seeds, with **7.01%–8.69% normal FPR** and 33–39/45 small defects caught.
-Its worst fold reached 90.24% recall. The locked second partition pooled 95.12%
-recall / 6.59% FPR but failed one fold. **Consistency failed.** All 65,076 native
-replay decisions matched exactly; independent metric/data checks passed.
+- [Start here: setup, inference and continuation](../docs/handoff/START_HERE.md)
+- [Model card and exact threshold](../docs/handoff/MODEL_CARD.md)
+- [Next application tasks](../docs/handoff/NEXT_STEPS.md)
+- [Research reports and proof](../docs/research/README.md)
+- [Tool groups](tools/README.md) and [selected model registry](model_registry/README.md)
 
-The [completed three-seed ensemble](../docs/research/2026-10-21-seed-ensemble-results.md)
-passed three of six primary-alpha-.05 cases. Its predeclared diagnostic alpha .08
-passed all six, with 95.12%–97.56% recall and 6.12%–8.63% normal false alarms.
-This promising diagnostic does not rescue the failed primary qualification.
-Small catches were 40/45 and 37/45 per partition, below 95%. All 7,656 ensemble
-replay decisions matched; final software checks passed 148 tests. The
-[fitting-gap diagnostic](../docs/research/2026-10-21-fitting-gap-results.md)
-found 100% fitting recall in every head and lower held-out recall.
-See the [plain-English decision](../docs/research/2026-10-22-recall-status.md).
-The original
-[standby recovery](../docs/research/2026-10-21-warm-small-recovery.md) remains recorded.
-The official test remains closed. These observed training images provide no new
-factory confirmation or production guarantee.
+The active candidate is `ksdd2-ensemble-mvp-v1`: three existing `longer108`
+supervised ResNet18-feature heads with the saved alpha-.08 calibration cutoff.
+The model card distinguishes this exact frozen instance from procedure-level
+cross-validation results. The setting is promising for an assisted prototype;
+small-defect recall, a generalization gap and fresh factory validation remain open.
 
-Previous completed research: [small-defect and overfitting study](../docs/research/2026-10-20-small-defects-results.md).
-Seven fixed methods were evaluated using training-only nested cross-validation.
-The new procedure reached **93.90% recall / 8.63% normal FPR**; both fixed seed
-repeats also reached 93.90% recall. It did not improve on the paired coarse
-control. The full prior recipe averaged **95.93% / 8.81%**, but failed a target
-in two of three folds. Small-defect catches were 34/45 versus 39/45 for that
-reference. These are internal results on previously observed training images.
-All 11,484 native replay evaluations matched exactly; the report links the
-independent audit, every experiment, and the local checkpoint archive.
-
-Earlier [corrected-model test validation](../docs/research/2026-10-20-validation-results.md):
-The frozen corrected primary reached **90.91% recall / 7.72% normal FPR** on all
-1,004 official KSDD2 test images: **95% recall failed**. The earlier development
-success did not generalize; all three corrected cold-start seeds also fell below
-95%. Full replay was exact and independent recount passed. The official test was
-previously observed by the project, so fresh factory confirmation remains needed.
-See the [training correction](../docs/research/2026-10-20-alignment-results.md)
-and the unchanged historical Stage 5 no-go.
+The standalone `vision/ksdd2_ensemble.py` interface is ready for teammate
+integration. Historical stage records below describe earlier experiments, not
+newly completed application work. Root handoff documentation gives current status.
 
 ## Current scope
 

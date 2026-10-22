@@ -1,4 +1,17 @@
 # Preserve byte hashes for new recall evidence without rewriting old snapshots.
+/.gitattributes text eol=lf
+/AGENTS.md text eol=lf
+/components/docs/STATUS.md text eol=lf
+/components/docs/IMPLEMENTATION_PROGRESS.md text eol=lf
+/docs/handoff/*.md text eol=lf
+/components/model_registry/**/*.json text eol=lf
+/components/model_registry/**/*.pt -text
+/components/src/component_inspector/vision/ksdd2_ensemble.py text eol=lf
+/components/tools/*frozen_model.py text eol=lf
+/components/tests/test_frozen_model.py text eol=lf
+/docs/handoff/*.json text eol=lf
+/docs/handoff/*.log -text
+/docs/handoff/*.xml -text
 /README.md text eol=lf
 /components/README.md text eol=lf
 /docs/research/2026-10-22-*.json text eol=lf

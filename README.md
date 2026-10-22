@@ -1,83 +1,59 @@
-# Tech4Bharat component inspection assistant
+# Tech4Bharat — ML model handoff
 
-An experimental image inspection assistant for visible component defects, with
-human review and explicit inspection records. This repository contains research,
-the execution plan, a historical PCB experiment and the initial component scaffold.
-It does not establish production readiness or buyer acceptance.
+The ML improvement work is complete for this handoff. The team selected a
+reproducible three-model surface-defect ensemble for the experimental MVP.
+**Application implementation is left for the teammate to continue.**
 
 ## Start here
 
-- [Latest verified warm-recipe results: consistency target failed](docs/research/2026-10-20-warm-small-results.md)
-- [Latest result in plain English: promising ensemble, qualification incomplete](docs/research/2026-10-22-recall-status.md)
-- [Completed three-seed ensemble: every fold and both fixed policies](docs/research/2026-10-21-seed-ensemble-results.md)
-- [Fitting-versus-held-out diagnostic](docs/research/2026-10-21-fitting-gap-results.md)
-- [Latest small-defect study: no verified improvement](docs/research/2026-10-20-small-defects-results.md)
-- [Earlier corrected-model test validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
-- [Development recall results and training correction](docs/research/2026-10-20-alignment-results.md)
-- [Remaining strategies, comparisons and failed repeat run](docs/research/2026-10-20-round2-results.md)
-- [Ten researched improvement strategies](docs/research/2026-10-19-recall-strategies.md)
-- [Current execution plan](Tech4Bharat_Codex_Execution_Plan.md)
-- [Copy-paste Codex prompts and manual checks](docs/superpowers/plans/2026-10-18-codex-build-playbook.md)
-- [Component setup and commands](components/README.md)
-- [Setup status](components/docs/STATUS.md)
-- [Component datasets](COMPONENT_DATASETS.md)
-- [Reviewed build plan](Tech4Bharat_Anomaly_Detector_Build_Plan_Reviewed.md)
-- [Historical experiment report](experiment/artifacts/EXPERIMENT_REPORT.md)
-- [Historical experiment instructions](experiment/README.md)
+- **[Teammate / Codex handoff](docs/handoff/START_HERE.md)** — setup and prediction interface.
+- **[Next steps](docs/handoff/NEXT_STEPS.md)** — resume the application from T06.
+- **[Frozen model card](docs/handoff/MODEL_CARD.md)** — exact selection and limitations.
+- [Repository map](docs/handoff/REPOSITORY_MAP.md) and [documentation map](docs/README.md).
+- [All research reports and proof](docs/research/README.md).
+- [Agent instructions](AGENTS.md).
 
-The verified warm-recipe sweep selected **24 extra training epochs**. Across
-three fixed seeds its pooled recall ranged **92.68%–96.34%**, with **7.01%–8.69%
-normal false alarms** and **33–39 of 45 small defects** caught. Its worst fold
-had **90.24% recall**. A locked second partition reached **95.12% / 6.59%**
-overall but failed recall in one fold. **The across-fold consistency goal failed.**
-Size weighting and zoomed crops also failed; all methods and failures are documented.
-Every one of 65,076 native replay decisions matched exactly. Verification checked
-6,234 feature artifacts, source roles, calibration, mining and metrics.
+## Selected model
 
-The separately registered three-seed average is complete. Its primary alpha .05
-passed only three of six folds. The predeclared diagnostic alpha .08 passed all
-six: **95.12%–97.56% recall / 6.12%–8.63% normal false alarms**. It is a promising
-development candidate, but the diagnostic result does not replace the failed
-primary qualification. Small catches were 40/45 and 37/45 in the two partitions,
-below 95%. All 7,656 ensemble replay decisions matched, and 148 software tests
-passed. Every fitted head caught 100% of its fitting defects, exposing a
-fitting/held-out gap rather than proving freedom from overfitting.
-The original standby interruption and exact recovery remain documented. The
-official test remains closed; these reused training images provide no new
-independent factory confirmation.
+**`ksdd2-ensemble-mvp-v1`**: three supervised `longer108` ResNet18-feature heads,
+seeds 4220/4221/4222, existing confirmation fold 0. The three unchanged heads and
+manifest are committed in `components/model_registry/`; the standard pretrained
+backbone is acquired with a pinned checksum. No refitting or best-fold search.
 
-The preceding seven-method, training-only nested study reached **93.90% recall / 8.63%
-normal false alarms**; both fixed seed repeats also reached 93.90% recall.
-It did not beat the paired coarse control (94.31% / 7.91%). The full prior recipe
-averaged **95.93% / 8.81%**, but failed a recall or false-alarm target in two of
-three folds. Small-defect catches were 34/45 for the new procedure and 39/45 for
-the full prior recipe. These reused training images do not establish reliable
-95% performance. Every original-image replay decision matched; the independent
-audit and checkpoint archive are linked in the report.
+The more-sensitive, predeclared diagnostic setting met **95%+ overall recall
+and under 10% normal false alarms in all six internal folds**. Procedure-level
+second-partition results were **95.93% recall / 7.01% false alarms**, with
+**37/45 small defects caught (82.22%)**. The one exact frozen instance caught
+**78/82 defects (95.12%)**, falsely flagged **34/556 normals (6.12%)**, and caught
+**12/15 small defects (80%)**.
 
-Dataset auditing, model fitting and the original frozen evaluation are implemented.
-The earlier frozen corrected checkpoint reached **90.91% defect recall and 7.72%
-normal false alarms** on all 1,004 official KSDD2 test images. **The requested 95%
-recall goal failed.** All three corrected cold-start seeds also failed it
-(90.00%–91.82% recall). Exact full replay and independent metric recount passed.
+These are internal observations on previously observed KSDD2 training images.
+The original primary setting failed; the diagnostic result does not replace it.
+A fitting/held-out generalization gap remains. The official test stayed closed
+through this batch; fresh factory validation is pending. Scores are not defect
+probabilities, and human review is required. The model card preserves full context.
 
-The earlier **97.56% / 5.76%** corrected-checkpoint result was measured on repeatedly
-observed development data and did not hold on test images excluded from fitting.
-The official test set itself was previously observed by the project in Stage 5,
-so this is benchmark evidence, not pristine independent factory confirmation.
-There is no separate new factory batch available. The ten-strategy study and
-training correction remain documented; further model work and a genuinely new
-sealed confirmation batch are needed. Application development remains pending,
-and the original archived Stage 5 no-go result is unchanged. The official test
-set stayed closed throughout the latest small-defect study.
-The original metal-nut recipe is deferred. See the latest results above and the
-[RGB cable-gland scope](components/docs/CABLE_GLAND_SCOPE.md).
+## Use the ML interface
 
-## Repository contents
+After following the [locked-environment setup](docs/handoff/START_HERE.md):
 
-Source code, tests, configuration, dependency locks, plans and historical JSON
-metrics are tracked. Virtual environments, dependency caches, downloaded datasets,
-model weights, generated image assets and arrays are excluded. Recreate local
-dependencies using the component README; obtain data only after reviewing source
-licences and the acquisition plan. Historical report image links require the local
-generated assets and will not all resolve in a fresh clone.
+```powershell
+components/.venv-p0/Scripts/python.exe components/tools/prepare_frozen_model.py --download-backbone
+components/.venv-p0/Scripts/python.exe components/tools/predict_frozen_model.py PATH_TO_IMAGE.png
+```
+
+For Python integration, load `component_inspector.vision.ksdd2_ensemble.Ensemble`
+once and call `predict_bytes`. This is a standalone ML interface, not a running
+API or UI. No training data or labels are needed for prediction.
+
+## Project boundaries
+
+Source, tests, selected small model heads, configuration, locks and evidence are
+tracked. Datasets, large feature caches, installed bundles and environments remain
+ignored. Historical experiment paths are preserved for reproducibility.
+
+The existing [execution plan](Tech4Bharat_Codex_Execution_Plan.md) describes the
+later app/review/report work. [Component history](components/README.md),
+[dataset provenance](components/docs/DATA_SOURCES.md), and the earlier
+[PCB experiment](experiment/README.md) remain reference material. This handoff
+adds no application, cloud deployment or claim of production acceptance.
