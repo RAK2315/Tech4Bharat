@@ -9,8 +9,16 @@ Its worst fold reached 90.24% recall. The locked second partition pooled 95.12%
 recall / 6.59% FPR but failed one fold. **Consistency failed.** All 65,076 native
 replay decisions matched exactly; independent metric/data checks passed.
 
-The [registered three-seed ensemble](../docs/research/2026-10-21-seed-ensemble-protocol.md)
-is now running; it has no result yet. The original
+The [completed three-seed ensemble](../docs/research/2026-10-21-seed-ensemble-results.md)
+passed three of six primary-alpha-.05 cases. Its predeclared diagnostic alpha .08
+passed all six, with 95.12%–97.56% recall and 6.12%–8.63% normal false alarms.
+This promising diagnostic does not rescue the failed primary qualification.
+Small catches were 40/45 and 37/45 per partition, below 95%. All 7,656 ensemble
+replay decisions matched; final software checks passed 148 tests. The
+[fitting-gap diagnostic](../docs/research/2026-10-21-fitting-gap-results.md)
+found 100% fitting recall in every head and lower held-out recall.
+See the [plain-English decision](../docs/research/2026-10-22-recall-status.md).
+The original
 [standby recovery](../docs/research/2026-10-21-warm-small-recovery.md) remains recorded.
 The official test remains closed. These observed training images provide no new
 factory confirmation or production guarantee.

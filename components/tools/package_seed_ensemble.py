@@ -27,7 +27,8 @@ def main():
     paths.add(Path(__file__).parent/'finalize_recall_checks.py')
     paths.update(path.resolve() for path in audit.glob('*') if path.is_file())
     paths.update([archive.resolve(),args.main_receipt.resolve(),repo/'components/tests/test_seed_ensemble.py',repo/'components/requirements-recall.lock',
-                  repo/'docs/research/2026-10-20-warm-small-results.md'])
+                  repo/'docs/research/2026-10-20-warm-small-results.md',
+                  repo/'docs/research/2026-10-22-recall-status.md'])
     for folder in ('seed-ensemble','warm-small','warm-small-recovery','fitting-gap','software-checks'):
         paths.update(path.resolve() for path in (repo/'docs/research'/folder).glob('*') if path.is_file())
     for pattern in ('2026-10-21-seed-ensemble*','2026-10-21-warm-small*','2026-10-21-publication*','2026-10-21-fitting-gap*'):

@@ -8,7 +8,9 @@ It does not establish production readiness or buyer acceptance.
 ## Start here
 
 - [Latest verified warm-recipe results: consistency target failed](docs/research/2026-10-20-warm-small-results.md)
-- [Registered three-seed ensemble: in progress](docs/research/2026-10-21-seed-ensemble-protocol.md)
+- [Latest result in plain English: promising ensemble, qualification incomplete](docs/research/2026-10-22-recall-status.md)
+- [Completed three-seed ensemble: every fold and both fixed policies](docs/research/2026-10-21-seed-ensemble-results.md)
+- [Fitting-versus-held-out diagnostic](docs/research/2026-10-21-fitting-gap-results.md)
 - [Latest small-defect study: no verified improvement](docs/research/2026-10-20-small-defects-results.md)
 - [Earlier corrected-model test validation: 95% recall target failed](docs/research/2026-10-20-validation-results.md)
 - [Development recall results and training correction](docs/research/2026-10-20-alignment-results.md)
@@ -32,9 +34,14 @@ Size weighting and zoomed crops also failed; all methods and failures are docume
 Every one of 65,076 native replay decisions matched exactly. Verification checked
 6,234 feature artifacts, source roles, calibration, mining and metrics.
 
-The separately registered three-seed average is now running with two additional
-fresh initialization seeds. Its primary policy and formula were fixed before
-the main selection and second-partition predictions. It has no result yet.
+The separately registered three-seed average is complete. Its primary alpha .05
+passed only three of six folds. The predeclared diagnostic alpha .08 passed all
+six: **95.12%–97.56% recall / 6.12%–8.63% normal false alarms**. It is a promising
+development candidate, but the diagnostic result does not replace the failed
+primary qualification. Small catches were 40/45 and 37/45 in the two partitions,
+below 95%. All 7,656 ensemble replay decisions matched, and 148 software tests
+passed. Every fitted head caught 100% of its fitting defects, exposing a
+fitting/held-out gap rather than proving freedom from overfitting.
 The original standby interruption and exact recovery remain documented. The
 official test remains closed; these reused training images provide no new
 independent factory confirmation.

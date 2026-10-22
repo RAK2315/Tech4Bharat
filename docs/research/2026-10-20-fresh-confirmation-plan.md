@@ -31,8 +31,11 @@ touching the confirmation images.
 The subsequent [verified warm-recipe sweep](2026-10-20-warm-small-results.md)
 failed consistency across folds/seeds. Its selected control ranged from 92.68%
 to 96.34% recall across seeds; a second partition pooled 95.12% but failed one
-fold. The [registered three-seed ensemble](2026-10-21-seed-ensemble-protocol.md)
-is running and has no outcome yet. Both reuse observed training originals and
+fold. The [completed three-seed ensemble](2026-10-21-seed-ensemble-results.md)
+passed three of six primary-policy folds. Its predeclared diagnostic alpha .08
+passed all six point targets, making it a candidate for a future prospectively
+sealed study; it does not replace the failed primary. The fitting diagnostic
+found 100% fitting recall and lower held-out recall. Both studies reuse observed training originals and
 cannot replace the fresh factory confirmation described here. No independently
 validated replacement for the historical reference is established.
 

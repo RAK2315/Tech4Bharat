@@ -109,6 +109,16 @@ Preflight: 131 software tests passed with 45 upstream warnings; old baseline sco
 
 The independent audit itself completed in 645.015 seconds, with sampled owned-process-tree RSS peaking at 360,566,784 bytes. Its separate [resource record](2026-10-21-warm-small-audit-resources.json) and [raw log](2026-10-21-warm-small-audit-worker.log) are preserved outside the verifier's own export tree, avoiding a live-log or self-hash cycle.
 
+Post-study addendum, 22 October: the [three-seed ensemble extension](2026-10-21-seed-ensemble-results.md)
+is complete. Its primary policy failed, while its predeclared diagnostic policy
+passed all six internal point targets. Neither outcome changes this study's
+failed twelve-case criterion. The [fitting-gap diagnostic](2026-10-21-fitting-gap-results.md)
+found 100% fitting recall and lower held-out recall. Final full software checks
+passed [148 tests](software-checks/summary.json). The
+[local checkpoint package receipt](2026-10-21-warm-small-checkpoint-package.json)
+records exact archive and member hashes; the weights and pretrained backbone
+are preserved locally, with large feature arrays and original RGB excluded.
+
 Overlapping training sets, repeated original images, prior project exposure and unknown physical-product identity limit statistical interpretation. Binomial intervals stored per record are descriptive, not formal exact CV confidence or a production guarantee. A new sealed, blindly labeled factory batch is still required for independent confirmation; see the [collection plan](2026-10-20-fresh-confirmation-plan.md).
 
 Frozen source commit: `eebfeb73f61fdcb218de6a9ffad9a1bad183130b`. Protocol identity: `b38e03009c68fc963d81a22d5dda3e7263cdfe6f85577566a952001913b79749`. The snapshot was published before new cache/fitting phases. Model tensors and arrays remain local, with hashes; exported records preserve exact IDs, thresholds, predictions, losses, parent/view usage and logs.

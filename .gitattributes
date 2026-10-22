@@ -1,4 +1,7 @@
 # Preserve byte hashes for new recall evidence without rewriting old snapshots.
+/README.md text eol=lf
+/components/README.md text eol=lf
+/docs/research/2026-10-22-*.json text eol=lf
 /docs/research/round1/*.json text eol=lf
 /components/configs/recall_round1.json text eol=lf
 /components/src/component_inspector/research/*.py text eol=lf
@@ -38,6 +41,7 @@
 /docs/research/software-checks/*.xml -text
 /components/tests/test_seed_ensemble.py text eol=lf
 /docs/research/2026-10-21-seed-ensemble-*.json text eol=lf
+/docs/research/2026-10-21-seed-ensemble-*.log -text
 /docs/research/seed-ensemble/*.json text eol=lf
 /docs/research/seed-ensemble/*.log -text
 /components/tests/test_warm_small*.py text eol=lf
