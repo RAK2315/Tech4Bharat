@@ -1,0 +1,37 @@
+{
+  "all_crlf_differences": [
+    {
+      "canonical_staged_sha256": "a7d9cd46a3e22f5e75707c42cb91468209ab2bc69ee8767105e8cbe4e1b52fcd",
+      "frozen_working_sha256": "6568091def6551717f623afbae88d33cb800ed7ae95970e5193856654b424c7c",
+      "path": "components/requirements-recall.lock",
+      "working_crlf_count": 2125,
+      "working_lf_count": 2125
+    },
+    {
+      "canonical_staged_sha256": "dce8e09a3d9fe343c02ab412fb53c13d1fb1c91129b7821d1672b008272d31d8",
+      "frozen_working_sha256": "b16e5c69eac5d8ce9a8393f92b8a169fb376d5fad0b678e2c01c6191099737cb",
+      "path": "components/src/component_inspector/vision/geometry.py",
+      "working_crlf_count": 48,
+      "working_lf_count": 48
+    },
+    {
+      "canonical_staged_sha256": "9b86f3d933b63bef976cedc656eae83ec3f7cb3e3684e12ce9d19d3afa80b167",
+      "frozen_working_sha256": "82e4cd0abfe0d93be1df013b3357949f1a3e2ab755ad74d1aacc562046758270",
+      "path": "components/src/component_inspector/vision/media.py",
+      "working_crlf_count": 49,
+      "working_lf_count": 49
+    },
+    {
+      "canonical_staged_sha256": "0c205a89f2e53aced612e99c8ead9986a3871550fbae7119e048a0b8a896ea5b",
+      "frozen_working_sha256": "aeea16fbff6382c7775783a519e5de9f48a1e74d4e40df26836df3d621be0b7e",
+      "path": "components/src/component_inspector/vision/resources.py",
+      "working_crlf_count": 59,
+      "working_lf_count": 59
+    }
+  ],
+  "checker_sha256": "1759f63e5a60a7005efe13ff0e24b005f34a4023b081f7191caf59dc044ab05e",
+  "error": "AssertionError: Staged bytes differ: components/requirements-recall.lock",
+  "model_scores_thresholds_and_original_working_bytes_unchanged": true,
+  "reason": "The pre-existing checker only permits seven frozen Python CRLF sources; this newly registered external protocol also freezes the existing CRLF lock and media helper.",
+  "status": "failed"
+}

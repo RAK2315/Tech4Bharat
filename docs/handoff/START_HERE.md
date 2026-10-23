@@ -73,6 +73,17 @@ teammate's eventual service; do not accept arbitrary uploaded model files.
 
 ## Verification and current limits
 
+**External transfer update (23 October):** unchanged-model checks on Magnetic
+Tile, KolektorSDD1 and synthetic DAGM Class 1 produced **99.42%–100% normal
+false alarms** among scored images. The model does not reliably transfer to
+these sources. Keep any prototype explicitly limited to experimental KSDD2
+demonstration; new products require their own development and independent
+validation. [All external outcomes](../research/2026-10-23-external-transfer-results.md).
+The accompanying full software run was 160 passed / 4 failed because Windows
+Application Control blocked legacy PaDiM's Kornia DLL. The selected ensemble
+and independent result audit completed successfully; no policy bypass occurred.
+See the [recorded diagnosis](../research/external-transfer-software/diagnosis.json).
+
 The portable adapter is checked against all 638 archived held-out TRAIN scores
 for this exact fold. See [parity evidence](portable-model-parity.json) and
 [resources](portable-model-resources.json). This is implementation regression,

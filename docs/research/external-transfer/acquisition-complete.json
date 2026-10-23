@@ -1,0 +1,9 @@
+{
+  "downloader_sha256": "8d9698ef8d4abcb008794dbab5978c04df51041a96f96effc978fc09197ee5d4",
+  "sources": {
+    "dagm1-defect": true,
+    "dagm1-normal": true,
+    "ksdd1": true,
+    "magnetic": true
+  }
+}

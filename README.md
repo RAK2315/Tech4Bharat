@@ -33,6 +33,13 @@ A fitting/held-out generalization gap remains. The official test stayed closed
 through this batch; fresh factory validation is pending. Scores are not defect
 probabilities, and human review is required. The model card preserves full context.
 
+**External transfer update, 23 October:** the same frozen model was tested on
+Magnetic Tile Defects, KolektorSDD1 and synthetic DAGM Class 1. It falsely
+flagged **99.42%–100% of scored normals**, so it does not transfer reliably
+to these sources. See the [complete external results](docs/research/2026-10-23-external-transfer-results.md).
+The internal KSDD2 figures must not be presented as broad component-inspection
+performance. The selected model and cutoff remain unchanged.
+
 ## Use the ML interface
 
 After following the [locked-environment setup](docs/handoff/START_HERE.md):

@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "bytes": 101831129,
+      "content_type": "application/zip",
+      "created_utc": "2026-10-23T07:42:18.181508+00:00",
+      "extraction": {
+        "entries": 848,
+        "uncompressed_bytes": 352854408
+      },
+      "final_url": "https://data.vicos.si/datasets/KSDD/KolektorSDD.zip",
+      "sha256": "65dc621693418585de9c4467d1340ea7958a6181816f0dc2883a1e8b61f9d4dc",
+      "status": "completed",
+      "url": "https://data.vicos.si/datasets/KSDD/KolektorSDD.zip"
+    }
+  ],
+  "selected_archive": "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023\\archives\\ksdd1-attempt-1.zip"
+}

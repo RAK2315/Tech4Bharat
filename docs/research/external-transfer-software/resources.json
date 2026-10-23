@@ -1,0 +1,11 @@
+{
+  "elapsed_seconds": 33.85900000005495,
+  "max_observed_processes": 6,
+  "measurement_scope": "owned process tree RSS sum",
+  "peak_sampled_rss_bytes": 624058368,
+  "returncode": 1,
+  "rss_cap_bytes": 3085959168,
+  "sample_interval_seconds": 0.05,
+  "status": "worker_failed",
+  "time_cap_seconds": 1800
+}

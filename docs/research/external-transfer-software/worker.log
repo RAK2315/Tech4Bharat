@@ -1,0 +1,345 @@
+.....................................FFF.......F........................ [ 43%]
+........................................................................ [ 87%]
+....................                                                     [100%]
+================================== FAILURES ===================================
+________ test_padim_normalizes_once_and_keeps_backbone_frozen_in_eval _________
+
+    def test_padim_normalizes_once_and_keeps_backbone_frozen_in_eval():
+>       adapter=fixture_adapter()
+                ^^^^^^^^^^^^^^^^^
+
+components\tests\test_padim.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+components\tests\test_padim.py:17: in fixture_adapter
+    from anomalib.models.image.padim.torch_model import PadimModel
+components\.venv-p0\Lib\site-packages\anomalib\models\__init__.py:67: in <module>
+    from anomalib.models.components import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\__init__.py:39: in <module>
+    from .base import AnomalibModule, BufferListMixin, DynamicBufferMixin, MemoryBankMixin
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\__init__.py:23: in <module>
+    from .anomalib_module import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\anomalib_module.py:58: in <module>
+    from anomalib.data import Batch, InferenceBatch
+components\.venv-p0\Lib\site-packages\anomalib\data\__init__.py:50: in <module>
+    from .datamodules.base import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\__init__.py:6: in <module>
+    from .depth import Folder3D, MVTec3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\__init__.py:8: in <module>
+    from .adam_3d import ADAM3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\adam_3d.py:34: in <module>
+    from anomalib.data.datamodules.base.image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\__init__.py:6: in <module>
+    from .image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\image.py:42: in <module>
+    from anomalib.data.utils import TestSplitMode, ValSplitMode, random_split, split_by_label
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\__init__.py:25: in <module>
+    from .boxes import boxes_to_anomaly_maps, boxes_to_masks, masks_to_boxes
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\boxes.py:12: in <module>
+    from anomalib.utils.cv import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\__init__.py:22: in <module>
+    from .connected_components import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\connected_components.py:25: in <module>
+    from kornia.contrib import connected_components
+components\.venv-p0\Lib\site-packages\kornia\__init__.py:28: in <module>
+    from . import filters
+components\.venv-p0\Lib\site-packages\kornia\filters\__init__.py:40: in <module>
+    from .in_range import InRange, in_range
+components\.venv-p0\Lib\site-packages\kornia\filters\in_range.py:25: in <module>
+    from kornia.image.utils import perform_keep_shape_image
+components\.venv-p0\Lib\site-packages\kornia\image\__init__.py:26: in <module>
+    from .image import Image
+components\.venv-p0\Lib\site-packages\kornia\image\image.py:37: in <module>
+    from kornia.io.io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\__init__.py:23: in <module>
+    from .io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\io.py:24: in <module>
+    import kornia_rs
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    # Best-effort NVRTC preload for kornia_rs.cuda on systems without the CUDA
+    # toolkit: the nvidia-cuda-nvrtc-cu12 pip wheel ships libnvrtc, but it is not
+    # on the default loader path — dlopen it before the native module needs it.
+    def _preload_nvrtc() -> None:
+        try:
+            import ctypes
+            import glob
+            import os
+    
+            import nvidia.cuda_nvrtc as _nvrtc  # type: ignore[import-not-found]
+    
+            # ``nvidia.cuda_nvrtc`` is a PEP 420 namespace package, so ``__file__``
+            # is ``None`` and ``os.path.dirname(None)`` would raise — locate the
+            # bundled ``lib/`` via ``__path__`` instead (always present on a
+            # package, namespace or regular).
+            for root in getattr(_nvrtc, "__path__", []):
+                for lib in sorted(glob.glob(os.path.join(root, "lib", "libnvrtc.so*"))):
+                    ctypes.CDLL(lib, mode=ctypes.RTLD_GLOBAL)
+                    return
+        except Exception:
+            pass  # toolkit installs (e.g. Jetson) already resolve libnvrtc
+    
+    
+    _preload_nvrtc()
+    del _preload_nvrtc
+    
+>   from . import kornia_rs
+E   ImportError: DLL load failed while importing kornia_rs: An Application Control policy has blocked this file.
+
+components\.venv-p0\Lib\site-packages\kornia_rs\__init__.py:27: ImportError
+______ test_padim_requires_fit_finite_shapes_and_uses_only_valid_roi_max ______
+
+    def test_padim_requires_fit_finite_shapes_and_uses_only_valid_roi_max():
+>       adapter=fixture_adapter()
+                ^^^^^^^^^^^^^^^^^
+
+components\tests\test_padim.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+components\tests\test_padim.py:17: in fixture_adapter
+    from anomalib.models.image.padim.torch_model import PadimModel
+components\.venv-p0\Lib\site-packages\anomalib\models\__init__.py:67: in <module>
+    from anomalib.models.components import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\__init__.py:39: in <module>
+    from .base import AnomalibModule, BufferListMixin, DynamicBufferMixin, MemoryBankMixin
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\__init__.py:23: in <module>
+    from .anomalib_module import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\anomalib_module.py:58: in <module>
+    from anomalib.data import Batch, InferenceBatch
+components\.venv-p0\Lib\site-packages\anomalib\data\__init__.py:50: in <module>
+    from .datamodules.base import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\__init__.py:6: in <module>
+    from .depth import Folder3D, MVTec3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\__init__.py:8: in <module>
+    from .adam_3d import ADAM3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\adam_3d.py:34: in <module>
+    from anomalib.data.datamodules.base.image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\__init__.py:6: in <module>
+    from .image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\image.py:42: in <module>
+    from anomalib.data.utils import TestSplitMode, ValSplitMode, random_split, split_by_label
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\__init__.py:25: in <module>
+    from .boxes import boxes_to_anomaly_maps, boxes_to_masks, masks_to_boxes
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\boxes.py:12: in <module>
+    from anomalib.utils.cv import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\__init__.py:22: in <module>
+    from .connected_components import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\connected_components.py:25: in <module>
+    from kornia.contrib import connected_components
+components\.venv-p0\Lib\site-packages\kornia\__init__.py:28: in <module>
+    from . import filters
+components\.venv-p0\Lib\site-packages\kornia\filters\__init__.py:40: in <module>
+    from .in_range import InRange, in_range
+components\.venv-p0\Lib\site-packages\kornia\filters\in_range.py:25: in <module>
+    from kornia.image.utils import perform_keep_shape_image
+components\.venv-p0\Lib\site-packages\kornia\image\__init__.py:26: in <module>
+    from .image import Image
+components\.venv-p0\Lib\site-packages\kornia\image\image.py:37: in <module>
+    from kornia.io.io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\__init__.py:23: in <module>
+    from .io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\io.py:24: in <module>
+    import kornia_rs
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    # Best-effort NVRTC preload for kornia_rs.cuda on systems without the CUDA
+    # toolkit: the nvidia-cuda-nvrtc-cu12 pip wheel ships libnvrtc, but it is not
+    # on the default loader path — dlopen it before the native module needs it.
+    def _preload_nvrtc() -> None:
+        try:
+            import ctypes
+            import glob
+            import os
+    
+            import nvidia.cuda_nvrtc as _nvrtc  # type: ignore[import-not-found]
+    
+            # ``nvidia.cuda_nvrtc`` is a PEP 420 namespace package, so ``__file__``
+            # is ``None`` and ``os.path.dirname(None)`` would raise — locate the
+            # bundled ``lib/`` via ``__path__`` instead (always present on a
+            # package, namespace or regular).
+            for root in getattr(_nvrtc, "__path__", []):
+                for lib in sorted(glob.glob(os.path.join(root, "lib", "libnvrtc.so*"))):
+                    ctypes.CDLL(lib, mode=ctypes.RTLD_GLOBAL)
+                    return
+        except Exception:
+            pass  # toolkit installs (e.g. Jetson) already resolve libnvrtc
+    
+    
+    _preload_nvrtc()
+    del _preload_nvrtc
+    
+>   from . import kornia_rs
+E   ImportError: DLL load failed while importing kornia_rs: An Application Control policy has blocked this file.
+
+components\.venv-p0\Lib\site-packages\kornia_rs\__init__.py:27: ImportError
+__ test_padim_saved_state_preserves_channels_map_scores_and_rejects_mismatch __
+
+tmp_path = WindowsPath('C:/Users/rehtr/AppData/Local/Temp/pytest-of-rehtr/pytest-253/test_padim_saved_state_preserv0')
+
+    def test_padim_saved_state_preserves_channels_map_scores_and_rejects_mismatch(tmp_path):
+>       adapter=fixture_adapter()
+                ^^^^^^^^^^^^^^^^^
+
+components\tests\test_padim.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+components\tests\test_padim.py:17: in fixture_adapter
+    from anomalib.models.image.padim.torch_model import PadimModel
+components\.venv-p0\Lib\site-packages\anomalib\models\__init__.py:67: in <module>
+    from anomalib.models.components import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\__init__.py:39: in <module>
+    from .base import AnomalibModule, BufferListMixin, DynamicBufferMixin, MemoryBankMixin
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\__init__.py:23: in <module>
+    from .anomalib_module import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\anomalib_module.py:58: in <module>
+    from anomalib.data import Batch, InferenceBatch
+components\.venv-p0\Lib\site-packages\anomalib\data\__init__.py:50: in <module>
+    from .datamodules.base import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\__init__.py:6: in <module>
+    from .depth import Folder3D, MVTec3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\__init__.py:8: in <module>
+    from .adam_3d import ADAM3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\adam_3d.py:34: in <module>
+    from anomalib.data.datamodules.base.image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\__init__.py:6: in <module>
+    from .image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\image.py:42: in <module>
+    from anomalib.data.utils import TestSplitMode, ValSplitMode, random_split, split_by_label
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\__init__.py:25: in <module>
+    from .boxes import boxes_to_anomaly_maps, boxes_to_masks, masks_to_boxes
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\boxes.py:12: in <module>
+    from anomalib.utils.cv import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\__init__.py:22: in <module>
+    from .connected_components import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\connected_components.py:25: in <module>
+    from kornia.contrib import connected_components
+components\.venv-p0\Lib\site-packages\kornia\__init__.py:28: in <module>
+    from . import filters
+components\.venv-p0\Lib\site-packages\kornia\filters\__init__.py:40: in <module>
+    from .in_range import InRange, in_range
+components\.venv-p0\Lib\site-packages\kornia\filters\in_range.py:25: in <module>
+    from kornia.image.utils import perform_keep_shape_image
+components\.venv-p0\Lib\site-packages\kornia\image\__init__.py:26: in <module>
+    from .image import Image
+components\.venv-p0\Lib\site-packages\kornia\image\image.py:37: in <module>
+    from kornia.io.io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\__init__.py:23: in <module>
+    from .io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\io.py:24: in <module>
+    import kornia_rs
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    # Best-effort NVRTC preload for kornia_rs.cuda on systems without the CUDA
+    # toolkit: the nvidia-cuda-nvrtc-cu12 pip wheel ships libnvrtc, but it is not
+    # on the default loader path — dlopen it before the native module needs it.
+    def _preload_nvrtc() -> None:
+        try:
+            import ctypes
+            import glob
+            import os
+    
+            import nvidia.cuda_nvrtc as _nvrtc  # type: ignore[import-not-found]
+    
+            # ``nvidia.cuda_nvrtc`` is a PEP 420 namespace package, so ``__file__``
+            # is ``None`` and ``os.path.dirname(None)`` would raise — locate the
+            # bundled ``lib/`` via ``__path__`` instead (always present on a
+            # package, namespace or regular).
+            for root in getattr(_nvrtc, "__path__", []):
+                for lib in sorted(glob.glob(os.path.join(root, "lib", "libnvrtc.so*"))):
+                    ctypes.CDLL(lib, mode=ctypes.RTLD_GLOBAL)
+                    return
+        except Exception:
+            pass  # toolkit installs (e.g. Jetson) already resolve libnvrtc
+    
+    
+    _preload_nvrtc()
+    del _preload_nvrtc
+    
+>   from . import kornia_rs
+E   ImportError: DLL load failed while importing kornia_rs: An Application Control policy has blocked this file.
+
+components\.venv-p0\Lib\site-packages\kornia_rs\__init__.py:27: ImportError
+_________ test_chunked_gaussian_matches_pinned_library_fit_equations __________
+
+    def test_chunked_gaussian_matches_pinned_library_fit_equations():
+>       from anomalib.models.components.stats.multi_variate_gaussian import MultiVariateGaussian
+
+components\tests\test_recall_round1.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+components\.venv-p0\Lib\site-packages\anomalib\models\__init__.py:67: in <module>
+    from anomalib.models.components import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\__init__.py:39: in <module>
+    from .base import AnomalibModule, BufferListMixin, DynamicBufferMixin, MemoryBankMixin
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\__init__.py:23: in <module>
+    from .anomalib_module import AnomalibModule
+components\.venv-p0\Lib\site-packages\anomalib\models\components\base\anomalib_module.py:58: in <module>
+    from anomalib.data import Batch, InferenceBatch
+components\.venv-p0\Lib\site-packages\anomalib\data\__init__.py:50: in <module>
+    from .datamodules.base import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\__init__.py:6: in <module>
+    from .depth import Folder3D, MVTec3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\__init__.py:8: in <module>
+    from .adam_3d import ADAM3D
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\depth\adam_3d.py:34: in <module>
+    from anomalib.data.datamodules.base.image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\__init__.py:6: in <module>
+    from .image import AnomalibDataModule
+components\.venv-p0\Lib\site-packages\anomalib\data\datamodules\base\image.py:42: in <module>
+    from anomalib.data.utils import TestSplitMode, ValSplitMode, random_split, split_by_label
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\__init__.py:25: in <module>
+    from .boxes import boxes_to_anomaly_maps, boxes_to_masks, masks_to_boxes
+components\.venv-p0\Lib\site-packages\anomalib\data\utils\boxes.py:12: in <module>
+    from anomalib.utils.cv import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\__init__.py:22: in <module>
+    from .connected_components import connected_components_cpu, connected_components_gpu
+components\.venv-p0\Lib\site-packages\anomalib\utils\cv\connected_components.py:25: in <module>
+    from kornia.contrib import connected_components
+components\.venv-p0\Lib\site-packages\kornia\__init__.py:28: in <module>
+    from . import filters
+components\.venv-p0\Lib\site-packages\kornia\filters\__init__.py:40: in <module>
+    from .in_range import InRange, in_range
+components\.venv-p0\Lib\site-packages\kornia\filters\in_range.py:25: in <module>
+    from kornia.image.utils import perform_keep_shape_image
+components\.venv-p0\Lib\site-packages\kornia\image\__init__.py:26: in <module>
+    from .image import Image
+components\.venv-p0\Lib\site-packages\kornia\image\image.py:37: in <module>
+    from kornia.io.io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\__init__.py:23: in <module>
+    from .io import ImageLoadType, load_image, write_image
+components\.venv-p0\Lib\site-packages\kornia\io\io.py:24: in <module>
+    import kornia_rs
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    # Best-effort NVRTC preload for kornia_rs.cuda on systems without the CUDA
+    # toolkit: the nvidia-cuda-nvrtc-cu12 pip wheel ships libnvrtc, but it is not
+    # on the default loader path — dlopen it before the native module needs it.
+    def _preload_nvrtc() -> None:
+        try:
+            import ctypes
+            import glob
+            import os
+    
+            import nvidia.cuda_nvrtc as _nvrtc  # type: ignore[import-not-found]
+    
+            # ``nvidia.cuda_nvrtc`` is a PEP 420 namespace package, so ``__file__``
+            # is ``None`` and ``os.path.dirname(None)`` would raise — locate the
+            # bundled ``lib/`` via ``__path__`` instead (always present on a
+            # package, namespace or regular).
+            for root in getattr(_nvrtc, "__path__", []):
+                for lib in sorted(glob.glob(os.path.join(root, "lib", "libnvrtc.so*"))):
+                    ctypes.CDLL(lib, mode=ctypes.RTLD_GLOBAL)
+                    return
+        except Exception:
+            pass  # toolkit installs (e.g. Jetson) already resolve libnvrtc
+    
+    
+    _preload_nvrtc()
+    del _preload_nvrtc
+    
+>   from . import kornia_rs
+E   ImportError: DLL load failed while importing kornia_rs: An Application Control policy has blocked this file.
+
+components\.venv-p0\Lib\site-packages\kornia_rs\__init__.py:27: ImportError
+=========================== short test summary info ===========================
+FAILED components\tests\test_padim.py::test_padim_normalizes_once_and_keeps_backbone_frozen_in_eval
+FAILED components\tests\test_padim.py::test_padim_requires_fit_finite_shapes_and_uses_only_valid_roi_max
+FAILED components\tests\test_padim.py::test_padim_saved_state_preserves_channels_map_scores_and_rejects_mismatch
+FAILED components\tests\test_recall_round1.py::test_chunked_gaussian_matches_pinned_library_fit_equations
+4 failed, 160 passed in 31.93s

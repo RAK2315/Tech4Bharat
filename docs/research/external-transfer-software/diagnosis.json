@@ -1,0 +1,33 @@
+{
+  "diagnosis": "Windows Application Control blocked kornia_rs; external evaluation and frozen Ensemble do not require that extension.",
+  "fresh_selected_model_load": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "frozen Ensemble load passed\n"
+  },
+  "frozen_protocol_guard_passed": true,
+  "models_predictions_or_thresholds_changed": false,
+  "outcome": "Preserve four blocked legacy PaDiM regression failures; do not report a fully passing suite.",
+  "protocol_identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "ranked_hypotheses": [
+    {
+      "hypothesis": "Windows Application Control blocks the installed kornia_rs native extension.",
+      "prediction": "A fresh standalone import fails with the same policy message, without external-transfer code."
+    },
+    {
+      "hypothesis": "Numerical source, model or version drift invalidated the frozen procedure.",
+      "prediction": "The registered source/model/input/version guard fails."
+    },
+    {
+      "hypothesis": "External evaluation poisoned import state or the selected model depends on this blocked extension.",
+      "prediction": "A fresh selected-ensemble load fails, while a standalone extension import succeeds."
+    }
+  ],
+  "security_policy_changed_or_bypassed": false,
+  "standalone_native_import": {
+    "command": "python -c \"import kornia_rs\"",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\.venv-p0\\Lib\\site-packages\\kornia_rs\\__init__.py\", line 27, in <module>\n    from . import kornia_rs\nImportError: DLL load failed while importing kornia_rs: An Application Control policy has blocked this file.\n",
+    "stdout": ""
+  }
+}

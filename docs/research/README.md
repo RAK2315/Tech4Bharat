@@ -5,6 +5,7 @@ chosen frozen instance is described in the [model card](../handoff/MODEL_CARD.md
 
 | Work | Report | Machine-readable evidence |
 |---|---|---|
+| Frozen-model transfer to three external datasets; failed false-alarm targets | [External results](2026-10-23-external-transfer-results.md) | `external-transfer/` |
 | Fixed three-seed ensemble | [Complete results](2026-10-21-seed-ensemble-results.md) | `seed-ensemble/` |
 | Fitting versus held-out gap | [Diagnostic](2026-10-21-fitting-gap-results.md) | `fitting-gap/` |
 | Five warm-recipe/small-defect variants | [Complete results](2026-10-20-warm-small-results.md) | `warm-small/`, `warm-small-recovery/` |

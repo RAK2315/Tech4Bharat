@@ -1,0 +1,11 @@
+{
+  "all_expected_images_accounted_for": true,
+  "independent_ensemble_scores_and_flags_verified": 2771,
+  "inventory_labels_and_mask_hashes_verified": true,
+  "ksdd2_training_overlap_exclusions": [],
+  "model_and_numerical_hashes_unchanged": true,
+  "original_and_canonical_image_hashes_verified": 2893,
+  "protocol_identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "same_session_audit_not_external_certification": true,
+  "verifier_sha256": "9d48199fe775c4acc021a54f5ea6105013215c614ee0ba8c26c069b3d2df6626"
+}

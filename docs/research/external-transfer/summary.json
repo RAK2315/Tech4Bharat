@@ -1,0 +1,1217 @@
+{
+  "datasets": {
+    "dagm1": {
+      "accepted_normal_fpr": {
+        "denominator": 1000,
+        "exact_95": [
+          0.9963179161033608,
+          1.0
+        ],
+        "numerator": 1000,
+        "rate": 1.0
+      },
+      "categories": {
+        "defect": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 150,
+            "rejected_anomalies": 0,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 150,
+            "exact_95": [
+              0.975707402833878,
+              1.0
+            ],
+            "numerator": 150,
+            "rate": 1.0
+          },
+          "defect_coverage": {
+            "denominator": 150,
+            "exact_95": [
+              0.975707402833878,
+              1.0
+            ],
+            "numerator": 150,
+            "rate": 1.0
+          },
+          "defects": 150,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 150,
+          "precision": {
+            "denominator": 150,
+            "exact_95": [
+              0.975707402833878,
+              1.0
+            ],
+            "numerator": 150,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 150,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 150,
+            "exact_95": [
+              0.975707402833878,
+              1.0
+            ],
+            "numerator": 150,
+            "rate": 1.0
+          },
+          "rejection_reasons": {}
+        },
+        "normal": {
+          "accepted_normal_fpr": {
+            "denominator": 1000,
+            "exact_95": [
+              0.9963179161033608,
+              1.0
+            ],
+            "numerator": 1000,
+            "rate": 1.0
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 1000,
+            "TN": 0,
+            "TP": 0,
+            "rejected_anomalies": 0,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 1000,
+            "exact_95": [
+              0.9963179161033608,
+              1.0
+            ],
+            "numerator": 1000,
+            "rate": 1.0
+          },
+          "defect_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "defects": 0,
+          "false_flags_all_normals": {
+            "denominator": 1000,
+            "exact_95": [
+              0.9963179161033608,
+              1.0
+            ],
+            "numerator": 1000,
+            "rate": 1.0
+          },
+          "normal_coverage": {
+            "denominator": 1000,
+            "exact_95": [
+              0.9963179161033608,
+              1.0
+            ],
+            "numerator": 1000,
+            "rate": 1.0
+          },
+          "normals": 1000,
+          "originals": 1000,
+          "precision": {
+            "denominator": 1000,
+            "exact_95": [
+              0.0,
+              0.0036820838966395257
+            ],
+            "numerator": 0,
+            "rate": 0.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 1000,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "counts": {
+        "FN": 0,
+        "FP": 1000,
+        "TN": 0,
+        "TP": 150,
+        "rejected_anomalies": 0,
+        "rejected_normals": 0
+      },
+      "coverage": {
+        "denominator": 1150,
+        "exact_95": [
+          0.9967974179768552,
+          1.0
+        ],
+        "numerator": 1150,
+        "rate": 1.0
+      },
+      "defect_coverage": {
+        "denominator": 150,
+        "exact_95": [
+          0.975707402833878,
+          1.0
+        ],
+        "numerator": 150,
+        "rate": 1.0
+      },
+      "defects": 150,
+      "false_flags_all_normals": {
+        "denominator": 1000,
+        "exact_95": [
+          0.9963179161033608,
+          1.0
+        ],
+        "numerator": 1000,
+        "rate": 1.0
+      },
+      "mask_category_disagreements": 0,
+      "nonbinary_masks": 0,
+      "normal_coverage": {
+        "denominator": 1000,
+        "exact_95": [
+          0.9963179161033608,
+          1.0
+        ],
+        "numerator": 1000,
+        "rate": 1.0
+      },
+      "normals": 1000,
+      "originals": 1150,
+      "precision": {
+        "denominator": 1150,
+        "exact_95": [
+          0.11149983042550139,
+          0.15128198373353605
+        ],
+        "numerator": 150,
+        "rate": 0.13043478260869565
+      },
+      "ranking_scored_only": {
+        "auroc": 0.59068,
+        "average_precision": 0.16422763083421346,
+        "n": 1150,
+        "population": "scored subset only"
+      },
+      "recall": {
+        "denominator": 150,
+        "exact_95": [
+          0.975707402833878,
+          1.0
+        ],
+        "numerator": 150,
+        "rate": 1.0
+      },
+      "rejection_reasons": {},
+      "small_mask_images": null,
+      "source_dimensions": {
+        "height_range": [
+          512,
+          512
+        ],
+        "width_range": [
+          512,
+          512
+        ]
+      },
+      "source_images_before_overlap_exclusion": 1150
+    },
+    "ksdd1": {
+      "accepted_normal_fpr": {
+        "denominator": 347,
+        "exact_95": [
+          0.9793357303235065,
+          0.999301226792373
+        ],
+        "numerator": 345,
+        "rate": 0.9942363112391931
+      },
+      "categories": {
+        "defect": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 52,
+            "rejected_anomalies": 0,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 52,
+            "exact_95": [
+              0.9315177912966804,
+              1.0
+            ],
+            "numerator": 52,
+            "rate": 1.0
+          },
+          "defect_coverage": {
+            "denominator": 52,
+            "exact_95": [
+              0.9315177912966804,
+              1.0
+            ],
+            "numerator": 52,
+            "rate": 1.0
+          },
+          "defects": 52,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 52,
+          "precision": {
+            "denominator": 52,
+            "exact_95": [
+              0.9315177912966804,
+              1.0
+            ],
+            "numerator": 52,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 52,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 52,
+            "exact_95": [
+              0.9315177912966804,
+              1.0
+            ],
+            "numerator": 52,
+            "rate": 1.0
+          },
+          "rejection_reasons": {}
+        },
+        "normal": {
+          "accepted_normal_fpr": {
+            "denominator": 347,
+            "exact_95": [
+              0.9793357303235065,
+              0.999301226792373
+            ],
+            "numerator": 345,
+            "rate": 0.9942363112391931
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 345,
+            "TN": 2,
+            "TP": 0,
+            "rejected_anomalies": 0,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 347,
+            "exact_95": [
+              0.989425530474258,
+              1.0
+            ],
+            "numerator": 347,
+            "rate": 1.0
+          },
+          "defect_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "defects": 0,
+          "false_flags_all_normals": {
+            "denominator": 347,
+            "exact_95": [
+              0.9793357303235065,
+              0.999301226792373
+            ],
+            "numerator": 345,
+            "rate": 0.9942363112391931
+          },
+          "normal_coverage": {
+            "denominator": 347,
+            "exact_95": [
+              0.989425530474258,
+              1.0
+            ],
+            "numerator": 347,
+            "rate": 1.0
+          },
+          "normals": 347,
+          "originals": 347,
+          "precision": {
+            "denominator": 345,
+            "exact_95": [
+              0.0,
+              0.010635443656744542
+            ],
+            "numerator": 0,
+            "rate": 0.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 347,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "rejection_reasons": {}
+        }
+      },
+      "counts": {
+        "FN": 0,
+        "FP": 345,
+        "TN": 2,
+        "TP": 52,
+        "rejected_anomalies": 0,
+        "rejected_normals": 0
+      },
+      "coverage": {
+        "denominator": 399,
+        "exact_95": [
+          0.9907972945765866,
+          1.0
+        ],
+        "numerator": 399,
+        "rate": 1.0
+      },
+      "defect_coverage": {
+        "denominator": 52,
+        "exact_95": [
+          0.9315177912966804,
+          1.0
+        ],
+        "numerator": 52,
+        "rate": 1.0
+      },
+      "defects": 52,
+      "false_flags_all_normals": {
+        "denominator": 347,
+        "exact_95": [
+          0.9793357303235065,
+          0.999301226792373
+        ],
+        "numerator": 345,
+        "rate": 0.9942363112391931
+      },
+      "mask_category_disagreements": 0,
+      "nonbinary_masks": 1,
+      "normal_coverage": {
+        "denominator": 347,
+        "exact_95": [
+          0.989425530474258,
+          1.0
+        ],
+        "numerator": 347,
+        "rate": 1.0
+      },
+      "normals": 347,
+      "originals": 399,
+      "precision": {
+        "denominator": 397,
+        "exact_95": [
+          0.09939345403607623,
+          0.16819578106611163
+        ],
+        "numerator": 52,
+        "rate": 0.1309823677581864
+      },
+      "ranking_scored_only": {
+        "auroc": 0.829860341387719,
+        "average_precision": 0.5108872041499971,
+        "n": 399,
+        "population": "scored subset only"
+      },
+      "recall": {
+        "denominator": 52,
+        "exact_95": [
+          0.9315177912966804,
+          1.0
+        ],
+        "numerator": 52,
+        "rate": 1.0
+      },
+      "rejection_reasons": {},
+      "small_mask_images": {
+        "accepted_normal_fpr": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "counts": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "TP": 24,
+          "rejected_anomalies": 0,
+          "rejected_normals": 0
+        },
+        "coverage": {
+          "denominator": 24,
+          "exact_95": [
+            0.8575264022774187,
+            1.0
+          ],
+          "numerator": 24,
+          "rate": 1.0
+        },
+        "defect_coverage": {
+          "denominator": 24,
+          "exact_95": [
+            0.8575264022774187,
+            1.0
+          ],
+          "numerator": 24,
+          "rate": 1.0
+        },
+        "defects": 24,
+        "false_flags_all_normals": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "normal_coverage": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "normals": 0,
+        "originals": 24,
+        "precision": {
+          "denominator": 24,
+          "exact_95": [
+            0.8575264022774187,
+            1.0
+          ],
+          "numerator": 24,
+          "rate": 1.0
+        },
+        "ranking_scored_only": {
+          "auroc": null,
+          "average_precision": null,
+          "n": 24,
+          "population": "scored subset only"
+        },
+        "recall": {
+          "denominator": 24,
+          "exact_95": [
+            0.8575264022774187,
+            1.0
+          ],
+          "numerator": 24,
+          "rate": 1.0
+        },
+        "rejection_reasons": {}
+      },
+      "source_dimensions": {
+        "height_range": [
+          1235,
+          1285
+        ],
+        "width_range": [
+          500,
+          500
+        ]
+      },
+      "source_images_before_overlap_exclusion": 399
+    },
+    "magnetic": {
+      "accepted_normal_fpr": {
+        "denominator": 884,
+        "exact_95": [
+          0.9958357540591419,
+          1.0
+        ],
+        "numerator": 884,
+        "rate": 1.0
+      },
+      "categories": {
+        "MT_Blowhole": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 36,
+            "FP": 0,
+            "TN": 0,
+            "TP": 79,
+            "rejected_anomalies": 36,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 115,
+            "exact_95": [
+              0.5938196575024931,
+              0.77019001599482
+            ],
+            "numerator": 79,
+            "rate": 0.6869565217391305
+          },
+          "defect_coverage": {
+            "denominator": 115,
+            "exact_95": [
+              0.5938196575024931,
+              0.77019001599482
+            ],
+            "numerator": 79,
+            "rate": 0.6869565217391305
+          },
+          "defects": 115,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 115,
+          "precision": {
+            "denominator": 79,
+            "exact_95": [
+              0.9543787472413889,
+              1.0
+            ],
+            "numerator": 79,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 79,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 115,
+            "exact_95": [
+              0.5938196575024931,
+              0.77019001599482
+            ],
+            "numerator": 79,
+            "rate": 0.6869565217391305
+          },
+          "rejection_reasons": {
+            "Image minimum side below 128 pixels": 36
+          }
+        },
+        "MT_Break": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 6,
+            "FP": 0,
+            "TN": 0,
+            "TP": 79,
+            "rejected_anomalies": 6,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 85,
+            "exact_95": [
+              0.8526665411514625,
+              0.973656069653473
+            ],
+            "numerator": 79,
+            "rate": 0.9294117647058824
+          },
+          "defect_coverage": {
+            "denominator": 85,
+            "exact_95": [
+              0.8526665411514625,
+              0.973656069653473
+            ],
+            "numerator": 79,
+            "rate": 0.9294117647058824
+          },
+          "defects": 85,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 85,
+          "precision": {
+            "denominator": 79,
+            "exact_95": [
+              0.9543787472413889,
+              1.0
+            ],
+            "numerator": 79,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 79,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 85,
+            "exact_95": [
+              0.8526665411514625,
+              0.973656069653473
+            ],
+            "numerator": 79,
+            "rate": 0.9294117647058824
+          },
+          "rejection_reasons": {
+            "Image minimum side below 128 pixels": 6
+          }
+        },
+        "MT_Crack": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 5,
+            "FP": 0,
+            "TN": 0,
+            "TP": 52,
+            "rejected_anomalies": 5,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 57,
+            "exact_95": [
+              0.807042669430726,
+              0.9709014171828977
+            ],
+            "numerator": 52,
+            "rate": 0.9122807017543859
+          },
+          "defect_coverage": {
+            "denominator": 57,
+            "exact_95": [
+              0.807042669430726,
+              0.9709014171828977
+            ],
+            "numerator": 52,
+            "rate": 0.9122807017543859
+          },
+          "defects": 57,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 57,
+          "precision": {
+            "denominator": 52,
+            "exact_95": [
+              0.9315177912966804,
+              1.0
+            ],
+            "numerator": 52,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 52,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 57,
+            "exact_95": [
+              0.807042669430726,
+              0.9709014171828977
+            ],
+            "numerator": 52,
+            "rate": 0.9122807017543859
+          },
+          "rejection_reasons": {
+            "Image minimum side below 128 pixels": 5
+          }
+        },
+        "MT_Fray": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 32,
+            "rejected_anomalies": 0,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 32,
+            "exact_95": [
+              0.8911188393205571,
+              1.0
+            ],
+            "numerator": 32,
+            "rate": 1.0
+          },
+          "defect_coverage": {
+            "denominator": 32,
+            "exact_95": [
+              0.8911188393205571,
+              1.0
+            ],
+            "numerator": 32,
+            "rate": 1.0
+          },
+          "defects": 32,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 32,
+          "precision": {
+            "denominator": 32,
+            "exact_95": [
+              0.8911188393205571,
+              1.0
+            ],
+            "numerator": 32,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 32,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 32,
+            "exact_95": [
+              0.8911188393205571,
+              1.0
+            ],
+            "numerator": 32,
+            "rate": 1.0
+          },
+          "rejection_reasons": {}
+        },
+        "MT_Free": {
+          "accepted_normal_fpr": {
+            "denominator": 884,
+            "exact_95": [
+              0.9958357540591419,
+              1.0
+            ],
+            "numerator": 884,
+            "rate": 1.0
+          },
+          "counts": {
+            "FN": 0,
+            "FP": 884,
+            "TN": 0,
+            "TP": 0,
+            "rejected_anomalies": 0,
+            "rejected_normals": 68
+          },
+          "coverage": {
+            "denominator": 952,
+            "exact_95": [
+              0.9103229040960836,
+              0.9441093397686082
+            ],
+            "numerator": 884,
+            "rate": 0.9285714285714286
+          },
+          "defect_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "defects": 0,
+          "false_flags_all_normals": {
+            "denominator": 952,
+            "exact_95": [
+              0.9103229040960836,
+              0.9441093397686082
+            ],
+            "numerator": 884,
+            "rate": 0.9285714285714286
+          },
+          "normal_coverage": {
+            "denominator": 952,
+            "exact_95": [
+              0.9103229040960836,
+              0.9441093397686082
+            ],
+            "numerator": 884,
+            "rate": 0.9285714285714286
+          },
+          "normals": 952,
+          "originals": 952,
+          "precision": {
+            "denominator": 884,
+            "exact_95": [
+              0.0,
+              0.00416424594085803
+            ],
+            "numerator": 0,
+            "rate": 0.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 884,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "rejection_reasons": {
+            "Image minimum side below 128 pixels": 68
+          }
+        },
+        "MT_Uneven": {
+          "accepted_normal_fpr": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "counts": {
+            "FN": 7,
+            "FP": 0,
+            "TN": 0,
+            "TP": 96,
+            "rejected_anomalies": 7,
+            "rejected_normals": 0
+          },
+          "coverage": {
+            "denominator": 103,
+            "exact_95": [
+              0.8649776210911291,
+              0.9722413105576828
+            ],
+            "numerator": 96,
+            "rate": 0.9320388349514563
+          },
+          "defect_coverage": {
+            "denominator": 103,
+            "exact_95": [
+              0.8649776210911291,
+              0.9722413105576828
+            ],
+            "numerator": 96,
+            "rate": 0.9320388349514563
+          },
+          "defects": 103,
+          "false_flags_all_normals": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normal_coverage": {
+            "denominator": 0,
+            "exact_95": null,
+            "numerator": 0,
+            "rate": null
+          },
+          "normals": 0,
+          "originals": 103,
+          "precision": {
+            "denominator": 96,
+            "exact_95": [
+              0.9623030783761848,
+              1.0
+            ],
+            "numerator": 96,
+            "rate": 1.0
+          },
+          "ranking_scored_only": {
+            "auroc": null,
+            "average_precision": null,
+            "n": 96,
+            "population": "scored subset only"
+          },
+          "recall": {
+            "denominator": 103,
+            "exact_95": [
+              0.8649776210911291,
+              0.9722413105576828
+            ],
+            "numerator": 96,
+            "rate": 0.9320388349514563
+          },
+          "rejection_reasons": {
+            "Image minimum side below 128 pixels": 7
+          }
+        }
+      },
+      "counts": {
+        "FN": 54,
+        "FP": 884,
+        "TN": 0,
+        "TP": 338,
+        "rejected_anomalies": 54,
+        "rejected_normals": 68
+      },
+      "coverage": {
+        "denominator": 1344,
+        "exact_95": [
+          0.8925865064006688,
+          0.9240494523114118
+        ],
+        "numerator": 1222,
+        "rate": 0.9092261904761905
+      },
+      "defect_coverage": {
+        "denominator": 392,
+        "exact_95": [
+          0.8241108679838639,
+          0.8947912687758064
+        ],
+        "numerator": 338,
+        "rate": 0.8622448979591837
+      },
+      "defects": 392,
+      "false_flags_all_normals": {
+        "denominator": 952,
+        "exact_95": [
+          0.9103229040960836,
+          0.9441093397686082
+        ],
+        "numerator": 884,
+        "rate": 0.9285714285714286
+      },
+      "mask_category_disagreements": 4,
+      "nonbinary_masks": 388,
+      "normal_coverage": {
+        "denominator": 952,
+        "exact_95": [
+          0.9103229040960836,
+          0.9441093397686082
+        ],
+        "numerator": 884,
+        "rate": 0.9285714285714286
+      },
+      "normals": 952,
+      "originals": 1344,
+      "precision": {
+        "denominator": 1222,
+        "exact_95": [
+          0.25166900473060755,
+          0.30260217616668605
+        ],
+        "numerator": 338,
+        "rate": 0.2765957446808511
+      },
+      "ranking_scored_only": {
+        "auroc": 0.6261546493882031,
+        "average_precision": 0.4259748923578756,
+        "n": 1222,
+        "population": "scored subset only"
+      },
+      "recall": {
+        "denominator": 392,
+        "exact_95": [
+          0.8241108679838639,
+          0.8947912687758064
+        ],
+        "numerator": 338,
+        "rate": 0.8622448979591837
+      },
+      "rejection_reasons": {
+        "Image minimum side below 128 pixels": 122
+      },
+      "small_mask_images": {
+        "accepted_normal_fpr": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "counts": {
+          "FN": 27,
+          "FP": 0,
+          "TN": 0,
+          "TP": 151,
+          "rejected_anomalies": 27,
+          "rejected_normals": 0
+        },
+        "coverage": {
+          "denominator": 178,
+          "exact_95": [
+            0.7870313420308253,
+            0.8975965619173029
+          ],
+          "numerator": 151,
+          "rate": 0.848314606741573
+        },
+        "defect_coverage": {
+          "denominator": 178,
+          "exact_95": [
+            0.7870313420308253,
+            0.8975965619173029
+          ],
+          "numerator": 151,
+          "rate": 0.848314606741573
+        },
+        "defects": 178,
+        "false_flags_all_normals": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "normal_coverage": {
+          "denominator": 0,
+          "exact_95": null,
+          "numerator": 0,
+          "rate": null
+        },
+        "normals": 0,
+        "originals": 178,
+        "precision": {
+          "denominator": 151,
+          "exact_95": [
+            0.9758663238097465,
+            1.0
+          ],
+          "numerator": 151,
+          "rate": 1.0
+        },
+        "ranking_scored_only": {
+          "auroc": null,
+          "average_precision": null,
+          "n": 151,
+          "population": "scored subset only"
+        },
+        "recall": {
+          "denominator": 178,
+          "exact_95": [
+            0.7870313420308253,
+            0.8975965619173029
+          ],
+          "numerator": 151,
+          "rate": 0.848314606741573
+        },
+        "rejection_reasons": {
+          "Image minimum side below 128 pixels": 27
+        }
+      },
+      "source_dimensions": {
+        "height_range": [
+          222,
+          403
+        ],
+        "width_range": [
+          103,
+          632
+        ]
+      },
+      "source_images_before_overlap_exclusion": 1344
+    }
+  },
+  "interpretation": "Zero-shot domain transfer; new to the fitted supervised heads, not a guarantee of unseen pretrained-backbone exposure or physical independence.",
+  "model_id": "ksdd2-ensemble-mvp-v1",
+  "model_identity": "8ddcac9907af4c033cbc9ff208f452ce572ea6b251da373cf267c2a3df95f355",
+  "official_test_accessed": false,
+  "protocol_identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "threshold": 0.33108379983608666,
+  "training_or_calibration_on_external_data": false
+}

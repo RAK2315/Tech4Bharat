@@ -1,0 +1,4 @@
+VERIFIED magnetic {'TP': 338, 'FN': 54, 'FP': 884, 'TN': 0, 'rejected_anomalies': 54, 'rejected_normals': 68}
+VERIFIED ksdd1 {'TP': 52, 'FN': 0, 'FP': 345, 'TN': 2, 'rejected_anomalies': 0, 'rejected_normals': 0}
+VERIFIED dagm1 {'TP': 150, 'FN': 0, 'FP': 1000, 'TN': 0, 'rejected_anomalies': 0, 'rejected_normals': 0}
+EXTERNAL EVIDENCE EXPORTED 26

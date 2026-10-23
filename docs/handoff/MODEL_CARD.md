@@ -55,6 +55,13 @@ These numbers concern defective **images**, not every defect region/pixel.
 
 ## Limitations and interpretation
 
+- **External transfer failed (23 October).** With identical weights, geometry
+  and cutoff, the model falsely flagged 884/884 scored normal Magnetic Tile
+  images, 345/347 normal KolektorSDD1 images, and 1,000/1,000 synthetic DAGM
+  Class 1 normals. Magnetic Tile also had 122 minimum-size rejects, including
+  54 defects counted as misses. These newly acquired external sets were not
+  used for training or recalibration. The model cannot be assumed to work on
+  another product/material. [Full results and proof](../research/2026-10-23-external-transfer-results.md).
 - **Small defects remain difficult.** The second-partition procedure caught
   37/45 small-defect images, below 95%; the frozen instance caught 12/15.
 - **Generalization remains unproven.** All selected heads caught 100% of their

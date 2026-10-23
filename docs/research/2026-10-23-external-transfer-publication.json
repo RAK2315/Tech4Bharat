@@ -1,0 +1,32 @@
+{
+  "base_output_sha256": "431d2774741a3498db3c1465db9c7afb92d011d7ffb5f02f3dd4d6a5dd48bf1d",
+  "base_verification": {
+    "checkpoint_receipts_verified": [],
+    "exact_byte_matches": 54,
+    "files_checked": 56,
+    "frozen_crlf_sources_matching_canonical_git_lf": [
+      "components/src/component_inspector/vision/geometry.py",
+      "components/src/component_inspector/vision/resources.py"
+    ],
+    "scope": "Read-only comparison of local forensic hashes and staged Git blobs; not a new model evaluation or third-party certification.",
+    "verifier_sha256": "1759f63e5a60a7005efe13ff0e24b005f34a4023b081f7191caf59dc044ab05e"
+  },
+  "frozen_external_protocol_guard_passed": true,
+  "numerical_sources_weights_thresholds_or_predictions_changed": false,
+  "official_test_accessed": false,
+  "preserved_failed_source_export_matches_original": true,
+  "protocol_identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "status": "verified",
+  "two_additional_frozen_crlf_inputs_checked_against_git": [
+    {
+      "frozen_working_sha256": "6568091def6551717f623afbae88d33cb800ed7ae95970e5193856654b424c7c",
+      "path": "components/requirements-recall.lock",
+      "staged_canonical_lf_sha256": "a7d9cd46a3e22f5e75707c42cb91468209ab2bc69ee8767105e8cbe4e1b52fcd"
+    },
+    {
+      "frozen_working_sha256": "82e4cd0abfe0d93be1df013b3357949f1a3e2ab755ad74d1aacc562046758270",
+      "path": "components/src/component_inspector/vision/media.py",
+      "staged_canonical_lf_sha256": "9b86f3d933b63bef976cedc656eae83ec3f7cb3e3684e12ce9d19d3afa80b167"
+    }
+  ]
+}

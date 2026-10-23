@@ -5,6 +5,11 @@
 /docs/research/2026-10-23-external-transfer*.md text eol=lf
 /docs/research/external-transfer/*.json text eol=lf
 /docs/research/external-transfer/*.log -text
+/docs/research/external-transfer/*.py -text
+/docs/research/2026-10-23-external-transfer*.log -text
+/docs/research/external-transfer-software/*.json text eol=lf
+/docs/research/external-transfer-software/*.log -text -whitespace
+/docs/research/external-transfer-software/*.xml -text -whitespace
 /.gitattributes text eol=lf
 /AGENTS.md text eol=lf
 /components/docs/STATUS.md text eol=lf
@@ -80,5 +85,7 @@
 /components/src/component_inspector/vision/padim_adapter.py text eol=crlf
 /components/src/component_inspector/vision/spike_worker.py text eol=crlf
 /components/src/component_inspector/vision/resources.py text eol=crlf
+/components/src/component_inspector/vision/media.py text eol=crlf
+/components/requirements-recall.lock text eol=crlf
 /docs/research/2026-10-21-publication-*.json text eol=lf
 /docs/research/2026-10-21-publication-check-attempt-1.py -text

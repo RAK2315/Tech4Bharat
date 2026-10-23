@@ -1,0 +1,34 @@
+{
+  "cause": "Windows Application Control blocks kornia_rs native DLL, reproduced with standalone import.",
+  "counts": {
+    "errors": 0,
+    "failures": 4,
+    "skipped": 0,
+    "tests": 164
+  },
+  "failed_tests": [
+    {
+      "class": "tests.test_padim",
+      "name": "test_padim_normalizes_once_and_keeps_backbone_frozen_in_eval"
+    },
+    {
+      "class": "tests.test_padim",
+      "name": "test_padim_requires_fit_finite_shapes_and_uses_only_valid_roi_max"
+    },
+    {
+      "class": "tests.test_padim",
+      "name": "test_padim_saved_state_preserves_channels_map_scores_and_rejects_mismatch"
+    },
+    {
+      "class": "tests.test_recall_round1",
+      "name": "test_chunked_gaussian_matches_pinned_library_fit_equations"
+    }
+  ],
+  "new_external_audit_preflight": "8 passed before scoring",
+  "no_security_bypass_or_model_change": true,
+  "passed": 160,
+  "registered_source_model_versions_and_inputs_guard_passed": true,
+  "scope": "Full software checks; four legacy PaDiM/Kornia failures do not alter successful frozen-ensemble inference or independent external-result audit.",
+  "selected_frozen_model_loaded_in_fresh_process": true,
+  "status": "failed"
+}

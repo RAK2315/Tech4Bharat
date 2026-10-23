@@ -1,0 +1,99 @@
+{
+  "all_canonical_pixels_equal_original_rgb": true,
+  "exact_decoded_duplicate_groups": [
+    [
+      "ksdd1:05a84c58c5f6eb5137036c066e8fd975af10943934e84327a09c2f9a36f073d7",
+      "ksdd1:cf4ca0a69f107aa40a1ee8f1bb2fc1af200c007a41777332f90f26f6a4f27948"
+    ],
+    [
+      "ksdd1:4260606637e4fd0ddd0127c41a24bfed37a141d984c85385ecd6b638b59ba497",
+      "ksdd1:e8acbf63811354df7c83dd2b6f1939e3954b6132d7cf5fadd96e47834b60c26e"
+    ],
+    [
+      "ksdd1:1c34adac2ef585125c52a4253295b3f8c844f25451e13deb3c0ecb3e1b6b59c8",
+      "ksdd1:79cbe67eee34114683b382df2f6543dad89aa9578b2ccddd254046a970c6c978"
+    ],
+    [
+      "ksdd1:0ce3f8f3b7e74d892d54aee3c3c198e2592c2619e9f50d2465dfb96818da19d4",
+      "ksdd1:9599651c15182028c492de60d111d61d26e35556a6c457ac863929cfb0262b6a"
+    ],
+    [
+      "ksdd1:8b7665e72e978d7262a0eac4c97d627aa359254ab63e5ab3410a845242d60a4d",
+      "ksdd1:e26c94a1bc76b1d95aac056deea394950feed407133c48af98219bd988e4e5fd"
+    ],
+    [
+      "ksdd1:5fee7253aa8fc2f7f9efd7c3c7113db61d1911349c9e85135c5b0845db30f3d6",
+      "ksdd1:ce59bf4cc88a91024a047b05448fa27e0809ebe95c4dbf7272cbeebdecd56007"
+    ],
+    [
+      "ksdd1:e144f468dbe4a9b1479c6a05ac59f23760c1f4f7c72e6a81367f46f89536a053",
+      "ksdd1:8806a054d942bbb14dde212ea864d8068d5f6e5d1d0f908811ca9632c88405c6"
+    ],
+    [
+      "ksdd1:09142e0520b172e9b2dc243f771257148b7cf4f08f46e18561f42e308f887038",
+      "ksdd1:53b10de2b57faa9412f5e80150ee822eb872cfc5ab7d0bd62cf703a9b65e184e"
+    ],
+    [
+      "ksdd1:a3d703cc3b56f37f35632d2a9ca8138b7bd9c574b9a95f382d1d021cce5941f6",
+      "ksdd1:14e4e24f000e5cd759ce5ce515a0dac8d70395892181af5d9d235f4509b6c2a8"
+    ],
+    [
+      "ksdd1:f1e42a57382471c9fddc28179f4d1b87569c4cc7d2c1b3b20c91e2863a9216b2",
+      "ksdd1:6dc23ee53a2ec7324f1901100777e44300245b0d96474fd987dea3f9162212bf"
+    ],
+    [
+      "ksdd1:7555bf91269b90df1bb037511345d05bc16b6a3039e188a18025b35a87a0d8be",
+      "ksdd1:ec04f4862788a8a04e09cf8f025dbf2739321fd6269fc3a52c06a311bc26e6bd"
+    ],
+    [
+      "ksdd1:293064d7bae6f7123168c89df8dc6c8e755fc0291362fcf5e3beeb7efbc9668b",
+      "ksdd1:56e8eebb1e5f972e249c98789ec5f2aa3208241b71449cac7b04d86f74d8214d"
+    ],
+    [
+      "ksdd1:8b8a7f1980f7120c2fcd5cb3ce7c05321043ec32e5a8c801bf12f1569dfad553",
+      "ksdd1:b17c8115986f76a358cc2e86a39775b0f3f608085dc01c1c23c1f2c94e39d82b"
+    ],
+    [
+      "ksdd1:0ebf73d9bb10b9fb38823493374b9469364aeaa84925bc6b56fbf7674e5b2cf3",
+      "ksdd1:a56f9781befec6cbe49d815f39f54167043db89dfa294089fd0d19e702db7a3a"
+    ],
+    [
+      "ksdd1:b67bf646edf32d34fde099393ed4262a6c37a4968cb3e617bfb3787df718681d",
+      "ksdd1:fd427df21946d47aeca25ec0f000325c662131a9274b7f237b735ff9ae68c724"
+    ],
+    [
+      "ksdd1:77b892e3bfce0a20b68a44eb682db0e62d4f818999261bf59019c79dce5a1c72",
+      "ksdd1:2d5f7add205456ee404ba98d07f57da14ee9943accf64560b22d02b809763e6e"
+    ]
+  ],
+  "ksdd2_train_records_compared": 2331,
+  "mask_vs_category_disagreements": [
+    {
+      "category": "MT_Uneven",
+      "id": "magnetic:bfcdbfdabcddac657c6151afe0357e6e6cf199476864e0a205d0a8fb3c43bbcc",
+      "label": 1,
+      "mask_nonempty": false
+    },
+    {
+      "category": "MT_Uneven",
+      "id": "magnetic:96d8b26ca7deb5499dd71e0e97cf4787a7675570bf18ebf748ebd3cf1b2c8ae0",
+      "label": 1,
+      "mask_nonempty": false
+    },
+    {
+      "category": "MT_Uneven",
+      "id": "magnetic:b1d754ce5b65f67a3d85bf7b3364695b61100a920d65ff613540d12dbdab2c67",
+      "label": 1,
+      "mask_nonempty": false
+    },
+    {
+      "category": "MT_Uneven",
+      "id": "magnetic:b09c9cd232a3a8233f04b39efe04b46de8b49a3c96b86e60dc218894d7990f4f",
+      "label": 1,
+      "mask_nonempty": false
+    }
+  ],
+  "note": "Category truth retained for magnetic; empty defect mask does not relabel or remove an image.",
+  "official_test_images_accessed": false,
+  "overlap_exclusions": []
+}

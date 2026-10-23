@@ -1,0 +1,25 @@
+{
+  "files": {
+    "diagnosis.json": {
+      "bytes": 1790,
+      "sha256": "9addbc833dc25c8400e1a81054d140a52de959204fb55edc22bf0f2140df1b8a"
+    },
+    "junit.xml": {
+      "bytes": 42506,
+      "sha256": "12aad792088fbb0dbfdab36c31e5f761a0154fc32527628882317bac65280383"
+    },
+    "resources.json": {
+      "bytes": 308,
+      "sha256": "da01b38bc58d7d27cc9872655eb570b9401e52dd5d4a78ae159ae0142a0229ef"
+    },
+    "summary.json": {
+      "bytes": 1176,
+      "sha256": "2114991245cf4080a847082b33e82f085d63365f7dd4750a92694ce7cf24d1d1"
+    },
+    "worker.log": {
+      "bytes": 20876,
+      "sha256": "bfda68d00dbc4e8fabe64c22257894b701197e1e153c9eaa84b35ce2dec0f7fd"
+    }
+  },
+  "scope": "Failed full regression and diagnosis preserved, not reported as a passing suite."
+}

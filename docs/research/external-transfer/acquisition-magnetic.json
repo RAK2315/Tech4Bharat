@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "bytes": 53186096,
+      "content_type": "application/zip",
+      "created_utc": "2026-10-23T07:42:18.181508+00:00",
+      "extraction": {
+        "entries": 2704,
+        "uncompressed_bytes": 53109982
+      },
+      "final_url": "https://codeload.github.com/abin24/Magnetic-tile-defect-datasets./zip/cc4eb530b57b9cb7225bf76023873043ffd50655",
+      "sha256": "592b050953d1de4ffa538b93b6b91aee7268d8e59b73d4d9c92cfce187d7ce66",
+      "status": "completed",
+      "url": "https://codeload.github.com/abin24/Magnetic-tile-defect-datasets./zip/cc4eb530b57b9cb7225bf76023873043ffd50655"
+    }
+  ],
+  "selected_archive": "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023\\archives\\magnetic-attempt-1.zip"
+}

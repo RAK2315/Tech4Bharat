@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "bytes": 34556484,
+      "content_type": "application/zip",
+      "created_utc": "2026-10-23T07:42:18.181508+00:00",
+      "extraction": {
+        "entries": 152,
+        "uncompressed_bytes": 34532585
+      },
+      "final_url": "https://conferences.mpi-inf.mpg.de/dagm/2007/Class1_def.zip",
+      "sha256": "98edbf7d88ba4a2395c6a26f965fc444bbac2d3d0022f0fec87ed32f1fd8174b",
+      "status": "completed",
+      "url": "https://conferences.mpi-inf.mpg.de/dagm/2007/Class1_def.zip"
+    }
+  ],
+  "selected_archive": "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023\\archives\\dagm1-defect-attempt-1.zip"
+}

@@ -1,0 +1,5992 @@
+{
+  "labels_or_masks_read_for_scoring": false,
+  "official_test_accessed": false,
+  "protocol_identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "rows": [
+    {
+      "elapsed_seconds": 0.12471490004099905,
+      "flagged": true,
+      "id": "ksdd1:05a84c58c5f6eb5137036c066e8fd975af10943934e84327a09c2f9a36f073d7",
+      "member_logits": [
+        -1.8552827835083008,
+        3.9418020248413086,
+        1.940091609954834
+      ],
+      "score": 0.6635241775621896,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08403739996720105,
+      "flagged": true,
+      "id": "ksdd1:4260606637e4fd0ddd0127c41a24bfed37a141d984c85385ecd6b638b59ba497",
+      "member_logits": [
+        7.017436981201172,
+        16.314590454101562,
+        10.77407455444336
+      ],
+      "score": 0.9996945553270321,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10536439996212721,
+      "flagged": true,
+      "id": "ksdd1:1c34adac2ef585125c52a4253295b3f8c844f25451e13deb3c0ecb3e1b6b59c8",
+      "member_logits": [
+        1.556394100189209,
+        1.917684555053711,
+        3.185443162918091
+      ],
+      "score": 0.8859993725268197,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0937392000341788,
+      "flagged": true,
+      "id": "ksdd1:0ce3f8f3b7e74d892d54aee3c3c198e2592c2619e9f50d2465dfb96818da19d4",
+      "member_logits": [
+        0.32935991883277893,
+        5.575158596038818,
+        2.6386008262634277
+      ],
+      "score": 0.837043997429503,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10488900006748736,
+      "flagged": true,
+      "id": "ksdd1:8b7665e72e978d7262a0eac4c97d627aa359254ab63e5ab3410a845242d60a4d",
+      "member_logits": [
+        3.2278850078582764,
+        4.108211994171143,
+        4.263631820678711
+      ],
+      "score": 0.9772743582532923,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10458209994249046,
+      "flagged": true,
+      "id": "ksdd1:5fee7253aa8fc2f7f9efd7c3c7113db61d1911349c9e85135c5b0845db30f3d6",
+      "member_logits": [
+        2.4142026901245117,
+        6.04603385925293,
+        3.741373300552368
+      ],
+      "score": 0.9641234876280848,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09129589993972331,
+      "flagged": true,
+      "id": "ksdd1:e144f468dbe4a9b1479c6a05ac59f23760c1f4f7c72e6a81367f46f89536a053",
+      "member_logits": [
+        -2.792595863342285,
+        4.234184265136719,
+        0.9672247767448425
+      ],
+      "score": 0.589335655833754,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09522700007073581,
+      "flagged": true,
+      "id": "ksdd1:09142e0520b172e9b2dc243f771257148b7cf4f08f46e18561f42e308f887038",
+      "member_logits": [
+        2.9176218509674072,
+        8.908881187438965,
+        4.502775192260742
+      ],
+      "score": 0.9792062374918032,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08491470001172274,
+      "flagged": true,
+      "id": "ksdd1:43dc04517452e3b774a99e5300f4821d706796c613d97213a87ff7457b7db073",
+      "member_logits": [
+        3.2884743213653564,
+        8.728720664978027,
+        4.318603038787842
+      ],
+      "score": 0.9835753399806921,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10852880007587373,
+      "flagged": true,
+      "id": "ksdd1:227c8dd3790a93fdfba44ef349b74f3c199eb9b5b642c163f7e99c8d3f512fde",
+      "member_logits": [
+        5.462686538696289,
+        5.056093692779541,
+        2.9672164916992188
+      ],
+      "score": 0.9801722047477854,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09440369997173548,
+      "flagged": true,
+      "id": "ksdd1:7d810ff0c739efd9b742e7f00e9cd1c1796d1bea891013dbbf2adc09902b069a",
+      "member_logits": [
+        3.5455901622772217,
+        7.834484100341797,
+        4.6558403968811035
+      ],
+      "score": 0.9873817938569918,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07567739998921752,
+      "flagged": true,
+      "id": "ksdd1:d22c2e498194080173e8a9c151a83e623241444fce77a5a475476b95b43dceab",
+      "member_logits": [
+        3.3218986988067627,
+        2.96142315864563,
+        2.067101240158081
+      ],
+      "score": 0.9345457714031863,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08203689998481423,
+      "flagged": true,
+      "id": "ksdd1:37abc17b3325165c36acdb3abc7d6e94857e69375c86f92a632eb616392722e3",
+      "member_logits": [
+        2.100156545639038,
+        6.213628768920898,
+        2.384469747543335
+      ],
+      "score": 0.934851928518496,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10666930000297725,
+      "flagged": true,
+      "id": "ksdd1:731c20c22430d3b78b0109c590c6f44b9a6ffead14f3b932d8155e06472180b1",
+      "member_logits": [
+        4.568026065826416,
+        5.566566467285156,
+        5.546241760253906
+      ],
+      "score": 0.9940107432381246,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0900938999839127,
+      "flagged": true,
+      "id": "ksdd1:a4ddcf51dfa3757a0c63886df74f3a432769ef5ab0b4f1059d12e7c5bfb2eb7f",
+      "member_logits": [
+        2.8025219440460205,
+        9.215312004089355,
+        5.206698894500732
+      ],
+      "score": 0.979087529924478,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09641030000057071,
+      "flagged": true,
+      "id": "ksdd1:18eaa039547b2aad7da90f99eaebe420e894652ac29da3e9a2c281079e3cc2cf",
+      "member_logits": [
+        1.0516905784606934,
+        6.519367694854736,
+        3.4455173015594482
+      ],
+      "score": 0.9029080499868346,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1055692998925224,
+      "flagged": true,
+      "id": "ksdd1:02f93fd37d57b8b32affe5b2c002cf04005816b1326b0f0ea81e624e2a706805",
+      "member_logits": [
+        3.5386464595794678,
+        7.912717342376709,
+        7.30419921875
+      ],
+      "score": 0.9902431401920757,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10636660002637655,
+      "flagged": true,
+      "id": "ksdd1:c8ec5287a949fcf556e370e81cbc62acf04affb7cac9191b8eb0dd644f56c6a1",
+      "member_logits": [
+        0.3855842351913452,
+        4.282101154327393,
+        1.3016725778579712
+      ],
+      "score": 0.7892367309104706,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0885026000905782,
+      "flagged": true,
+      "id": "ksdd1:afc5be410a468da11d2714295427066197752116b19a4e7920c04b987ec2412c",
+      "member_logits": [
+        3.3445358276367188,
+        4.686117172241211,
+        3.1557605266571045
+      ],
+      "score": 0.9719741338955643,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1011158999754116,
+      "flagged": true,
+      "id": "ksdd1:569e18abb20f072fbe4db1988e640cfda3c25c91a3123adea32fb4e53e95a43c",
+      "member_logits": [
+        1.7059835195541382,
+        4.220489978790283,
+        2.345170021057129
+      ],
+      "score": 0.9147951400349085,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.092893399996683,
+      "flagged": true,
+      "id": "ksdd1:27d1a2ad224eca4529c580d8e80653c0b3f5197f1cf8259a8909f4b4a8723e2f",
+      "member_logits": [
+        -2.1138803958892822,
+        3.63681697845459,
+        1.4036378860473633
+      ],
+      "score": 0.6282851014188783,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09556619997601956,
+      "flagged": true,
+      "id": "ksdd1:65f361ea199f3eaa28f4b28393d85c9813ce43f6a588e39599f41c1c4156072c",
+      "member_logits": [
+        2.556798219680786,
+        6.118134021759033,
+        4.519534111022949
+      ],
+      "score": 0.9716848275497703,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1011266999412328,
+      "flagged": true,
+      "id": "ksdd1:cc6639f9dd13e5006d797cf330796673f37ff285aca43ebfbec7b3984a284afb",
+      "member_logits": [
+        1.5989030599594116,
+        4.922393321990967,
+        3.033186197280884
+      ],
+      "score": 0.9262290081364107,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10409679997246712,
+      "flagged": true,
+      "id": "ksdd1:02139adc538a02517fd9530f46b17d02fc6f0343452d677d20b09df027646436",
+      "member_logits": [
+        1.5060240030288696,
+        5.248528957366943,
+        4.0259599685668945
+      ],
+      "score": 0.931903356010468,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10632399993482977,
+      "flagged": true,
+      "id": "ksdd1:fac37095494eeeefbe4f8f97fd57c1c45d85a70ca90edb97bd5779fcd831e1a7",
+      "member_logits": [
+        3.6453256607055664,
+        9.841185569763184,
+        5.120534896850586
+      ],
+      "score": 0.9895203502438269,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09325359994545579,
+      "flagged": true,
+      "id": "ksdd1:79834ec0c7c712fec3f39f06e881f4450ecf132d9c263e279c4c8299ede62bee",
+      "member_logits": [
+        0.7167828679084778,
+        4.401392459869385,
+        3.496880292892456
+      ],
+      "score": 0.8767951001830648,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09149490005802363,
+      "flagged": true,
+      "id": "ksdd1:127b05cbd0fefaea552b6ed4469beb1516150979e470b9be32e26ce3344c161a",
+      "member_logits": [
+        3.6593472957611084,
+        2.6422035694122314,
+        3.36067795753479
+      ],
+      "score": 0.9582928887556003,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10365070006810129,
+      "flagged": true,
+      "id": "ksdd1:d00497a79e3190a466efa5aae7621ffa10255d41da125438f5bed8d275cfd41e",
+      "member_logits": [
+        3.0549659729003906,
+        4.95335054397583,
+        6.043453216552734
+      ],
+      "score": 0.9818728278018352,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10656630003359169,
+      "flagged": true,
+      "id": "ksdd1:fcedf2e08dfff1bc0eb71fe18587d32e2bfaf7f11751096ede7c1e39abac2913",
+      "member_logits": [
+        3.1544809341430664,
+        10.76392650604248,
+        7.04502534866333
+      ],
+      "score": 0.986064265529412,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1065208000363782,
+      "flagged": true,
+      "id": "ksdd1:181d8c632a752696cd826f088929f17e08e70233705a8786b157785fb1ac847b",
+      "member_logits": [
+        0.8540188670158386,
+        8.368651390075684,
+        3.6684064865112305
+      ],
+      "score": 0.8920984528654254,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10467739996965975,
+      "flagged": true,
+      "id": "ksdd1:8e8336dd3dbfdceda42e4238a7fa40e695a1b06624ed397f62adaeec6769f992",
+      "member_logits": [
+        4.562366485595703,
+        8.739653587341309,
+        7.55743932723999
+      ],
+      "score": 0.9963294869275804,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10598250001203269,
+      "flagged": true,
+      "id": "ksdd1:537e76c5c746baa0bf665cddc13f8524fb94288c32543785e7263abdd52ed78c",
+      "member_logits": [
+        5.650886058807373,
+        9.047097206115723,
+        4.140923976898193
+      ],
+      "score": 0.9935737160785773,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10556110006291419,
+      "flagged": true,
+      "id": "ksdd1:9b3c4a61da04c9204818099f4f5348e0319340a90a2b651b8d6d290172efaa86",
+      "member_logits": [
+        -0.032863762229681015,
+        6.9367218017578125,
+        3.2477266788482666
+      ],
+      "score": 0.8178018769052761,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09612860006745905,
+      "flagged": true,
+      "id": "ksdd1:896091aa26effea582465a16a9fdda2006b3f4bc17d67f265fbbe0a7b1c3af30",
+      "member_logits": [
+        -0.7431862950325012,
+        6.966827869415283,
+        3.2534942626953125
+      ],
+      "score": 0.7613881675778051,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10291889996733516,
+      "flagged": true,
+      "id": "ksdd1:75e3f52fbc39ba2f90e8de30e964c08a1011366deb9dd8a6ca8071f51ada3039",
+      "member_logits": [
+        0.9707291722297668,
+        6.30459451675415,
+        2.88598370552063
+      ],
+      "score": 0.8901964858318147,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08360820007510483,
+      "flagged": true,
+      "id": "ksdd1:3321f4b833bce718c9ed1a0306f9d4ecaff19ce7821f16eb7921f642bacfcdc8",
+      "member_logits": [
+        0.2784821093082428,
+        7.919200420379639,
+        3.41054630279541
+      ],
+      "score": 0.8456143350979534,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07762200001161546,
+      "flagged": true,
+      "id": "ksdd1:a8214b46aef3c60a84a121e467a6198891c4a36e990a34bff63962a31c90fe15",
+      "member_logits": [
+        2.4468815326690674,
+        5.398439884185791,
+        5.125985622406006
+      ],
+      "score": 0.9699748540921714,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09141620004083961,
+      "flagged": true,
+      "id": "ksdd1:533e81ff1cbd61eadd74d4122f33be618bc65cada20c678afe8469dd23e4bf91",
+      "member_logits": [
+        5.20685338973999,
+        5.775485515594482,
+        5.396461009979248
+      ],
+      "score": 0.9956485774832222,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10653009999077767,
+      "flagged": true,
+      "id": "ksdd1:621a9427858b6de22887e27544e17138dbd454b2e38df76d7aec786e66d00d41",
+      "member_logits": [
+        1.4920517206192017,
+        7.962408065795898,
+        3.918773651123047
+      ],
+      "score": 0.9321864466512101,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1070615000789985,
+      "flagged": true,
+      "id": "ksdd1:1a0d46da5ea831025b912476a184e527ee2019ad04df08890584b883b9a5de97",
+      "member_logits": [
+        3.966371536254883,
+        6.814821720123291,
+        4.846276760101318
+      ],
+      "score": 0.9908391957265272,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09719630004838109,
+      "flagged": true,
+      "id": "ksdd1:4d28163c73b4721b6551d6f4e5b15a5bbbbc2809b29153aba69b191041c1de0f",
+      "member_logits": [
+        3.7151734828948975,
+        4.843343257904053,
+        3.989943742752075
+      ],
+      "score": 0.9834146436618326,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10563489992637187,
+      "flagged": true,
+      "id": "ksdd1:a72250ed76a5db89824963a65061126b0818b1660948d521f5d172f63202c434",
+      "member_logits": [
+        1.6107538938522339,
+        4.152285099029541,
+        4.118545055389404
+      ],
+      "score": 0.9340077990569323,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0975965999532491,
+      "flagged": true,
+      "id": "ksdd1:af256a961f575069bc2822c6a1c6109505a29ceb1357d1c4331c2c44557f84e6",
+      "member_logits": [
+        -0.6903156638145447,
+        4.481568813323975,
+        3.29868483543396
+      ],
+      "score": 0.7623858284395303,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09514999995008111,
+      "flagged": true,
+      "id": "ksdd1:9659a92f519bdb3b5155045eda92b83dae10b640dd732413734cd3824e470b73",
+      "member_logits": [
+        7.034559726715088,
+        5.162674427032471,
+        5.369508266448975
+      ],
+      "score": 0.9962637569284674,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09776040003634989,
+      "flagged": true,
+      "id": "ksdd1:9dc418905b418949a2e0981520ef004c32e2d434cd77866cf22695cd8b2a42ca",
+      "member_logits": [
+        1.2939997911453247,
+        3.7336127758026123,
+        2.8959999084472656
+      ],
+      "score": 0.9030412086255812,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10713749995920807,
+      "flagged": true,
+      "id": "ksdd1:0e1867f866c9a1b050dd6fc3e32c40e9c713124c6bc52d2e495bc15104feb551",
+      "member_logits": [
+        2.0697715282440186,
+        6.3377861976623535,
+        5.3010993003845215
+      ],
+      "score": 0.9604012550537364,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08719480002764612,
+      "flagged": true,
+      "id": "ksdd1:16f7c044e10dff0ebf93060dc96941a0ffef15c56e7c8542e0cd71b8654f4e75",
+      "member_logits": [
+        4.309074401855469,
+        4.170456409454346,
+        7.903896331787109
+      ],
+      "score": 0.9903843192849063,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08618169999681413,
+      "flagged": true,
+      "id": "ksdd1:df7ed66ab9cac3b62ff21fda8c556b4197d6118bf2ea2bfcb1459ce9b35f50e1",
+      "member_logits": [
+        3.364959478378296,
+        7.707329273223877,
+        7.847806453704834
+      ],
+      "score": 0.9885838427719831,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08748739992734045,
+      "flagged": true,
+      "id": "ksdd1:30a1ba13e7e1290306aac0bd01dd76ae12210c6ef6cd658df60c0677b50cbca6",
+      "member_logits": [
+        1.1549257040023804,
+        8.269007682800293,
+        6.247774600982666
+      ],
+      "score": 0.9194073912493245,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09375360002741218,
+      "flagged": true,
+      "id": "ksdd1:7c9ac9047c6a1b0e26148676d7e112176a71d3966da414984c40bce9a534808e",
+      "member_logits": [
+        3.6427834033966064,
+        7.881388187408447,
+        5.858795642852783
+      ],
+      "score": 0.9904214603283497,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08554570004343987,
+      "flagged": true,
+      "id": "ksdd1:6b3222ff9abbc959403e8e71dbec5d15b002ef70dac74287296e0ae923d66178",
+      "member_logits": [
+        4.318906307220459,
+        3.6780853271484375,
+        4.561826229095459
+      ],
+      "score": 0.9839590162660526,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10623529995791614,
+      "flagged": true,
+      "id": "ksdd1:0bc08f1aa5550353767b4080d5c003b824242478fb1b4110c0ce85b273050812",
+      "member_logits": [
+        -1.423661231994629,
+        2.0588009357452393,
+        0.3702910840511322
+      ],
+      "score": 0.5574838201370514,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08658520004246384,
+      "flagged": true,
+      "id": "ksdd1:e9ef1eeda8003f063d47b68387008a44b4b096148d67f63f6e0103b9be6f6df0",
+      "member_logits": [
+        3.919786214828491,
+        2.0364811420440674,
+        1.5396820306777954
+      ],
+      "score": 0.8961779345217394,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09208540001418442,
+      "flagged": true,
+      "id": "ksdd1:0588264c01c8b662fd389aa727d27a510d5b51c6a7dfc713af7b64ad4ca8ac6e",
+      "member_logits": [
+        4.632574558258057,
+        4.304305553436279,
+        7.137704372406006
+      ],
+      "score": 0.9920799878969815,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10396650002803653,
+      "flagged": true,
+      "id": "ksdd1:3de0324e5612f99fccacf8ef4c1354a13d2b7e689e632a51919423035d3e4b70",
+      "member_logits": [
+        0.842772901058197,
+        2.8687241077423096,
+        2.14971661567688
+      ],
+      "score": 0.8469899054874171,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10458689997904003,
+      "flagged": true,
+      "id": "ksdd1:fe53ee9715e7713ab4eb4af6569f49204496cf60b5e5a76c1f0e427a638982a4",
+      "member_logits": [
+        3.123685836791992,
+        5.835505962371826,
+        7.198763370513916
+      ],
+      "score": 0.9847329583471449,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07682630000635982,
+      "flagged": true,
+      "id": "ksdd1:c1caeed2151ded829143904ea88c38b2bec8515c6e0445bfb88d88f395556f36",
+      "member_logits": [
+        3.71665096282959,
+        6.450592041015625,
+        7.413758754730225
+      ],
+      "score": 0.9913607668180305,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09901450003962964,
+      "flagged": true,
+      "id": "ksdd1:8c3aa706be489f719a1ebaa93b70f6b2df8e2483990ed92d09b830b5fecab211",
+      "member_logits": [
+        2.784959077835083,
+        5.274658679962158,
+        3.409473180770874
+      ],
+      "score": 0.9682544233271386,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11012620001565665,
+      "flagged": true,
+      "id": "ksdd1:00bf6e6dea2af199900fcca83f2f1427f0c71daf2f0b6ed00785218c17f3b0a1",
+      "member_logits": [
+        4.053053379058838,
+        8.057979583740234,
+        5.4491400718688965
+      ],
+      "score": 0.9927764087583645,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09651150007266551,
+      "flagged": true,
+      "id": "ksdd1:5efbf5885e770dd6629d0a96160b180162b0dab96a63e8bf43879a568247239b",
+      "member_logits": [
+        3.765913963317871,
+        6.797283172607422,
+        3.9662628173828125
+      ],
+      "score": 0.9858899129521648,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0955874000210315,
+      "flagged": true,
+      "id": "ksdd1:b0b627072b1508b4f00fddf6001c86eae0c7d582bc83c1002870ef67b483aae6",
+      "member_logits": [
+        1.6828147172927856,
+        5.519525051116943,
+        6.785741329193115
+      ],
+      "score": 0.9460522128350553,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09692199993878603,
+      "flagged": true,
+      "id": "ksdd1:8cb8e424c761cd6fbbc238431ca2fecbbccb56ef3ede861b6d6df8c963def3a1",
+      "member_logits": [
+        0.7976180911064148,
+        3.2847795486450195,
+        4.098428249359131
+      ],
+      "score": 0.8790133219101478,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09339799999725074,
+      "flagged": true,
+      "id": "ksdd1:58bba87c99e8e805e316b1e2b1d177163a92e86354b1d9d7eb0c916764f4d798",
+      "member_logits": [
+        -0.1735430806875229,
+        7.590831756591797,
+        4.224881649017334
+      ],
+      "score": 0.8139339287230243,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11023719992954284,
+      "flagged": true,
+      "id": "ksdd1:2bd2f80d42dd1664fbdebab25f3d28348087eb35c15c1acaeb221f6c808746af",
+      "member_logits": [
+        3.432729721069336,
+        6.94611930847168,
+        6.0803751945495605
+      ],
+      "score": 0.9884894578307964,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10248929995577782,
+      "flagged": true,
+      "id": "ksdd1:f56c0520a1802c76126238231847b24e2237d56b88a4aea18838b337cbd98235",
+      "member_logits": [
+        1.4992570877075195,
+        4.3419318199157715,
+        3.196124792098999
+      ],
+      "score": 0.9217691952738449,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10373659990727901,
+      "flagged": true,
+      "id": "ksdd1:06b7dac0094ff20023751246d824c46123d882b54bd51b3c46f1685aadcc9fcf",
+      "member_logits": [
+        -0.8129081130027771,
+        0.9316723346710205,
+        1.4923793077468872
+      ],
+      "score": 0.613706902917201,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1370743999723345,
+      "flagged": true,
+      "id": "ksdd1:6ea8489e15c5e30dabe47ed9f7aa6a40e3d682f3d3ba579f360a2c3ee778bc66",
+      "member_logits": [
+        3.875803232192993,
+        1.1433279514312744,
+        1.9319730997085571
+      ],
+      "score": 0.8704804740713957,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09065989998634905,
+      "flagged": true,
+      "id": "ksdd1:6c696d72e8914b0a652cd4b44b0c62d5048c18e16e8253e2301690d1275bf92a",
+      "member_logits": [
+        7.28392219543457,
+        1.667279839515686,
+        5.094166278839111
+      ],
+      "score": 0.9448105864648945,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08450200001243502,
+      "flagged": true,
+      "id": "ksdd1:1970f46056d9904fb850822dc5640fc5518213d179af24c6cbb3c9ad483a3cba",
+      "member_logits": [
+        2.4291622638702393,
+        2.132455587387085,
+        4.0149712562561035
+      ],
+      "score": 0.9317728117035471,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09570519998669624,
+      "flagged": true,
+      "id": "ksdd1:5b2b8692c5066963830da9ffed55859553eb308eff4651a56bc0adb74766cb3b",
+      "member_logits": [
+        2.4486243724823,
+        7.637106418609619,
+        2.843505859375
+      ],
+      "score": 0.9549869420771673,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10577759996522218,
+      "flagged": true,
+      "id": "ksdd1:d0d1fe8adfd15e66eaddefe82c3441daa38d346900bc577c8c9a9bb85d1898dc",
+      "member_logits": [
+        4.275062084197998,
+        2.5242021083831787,
+        5.496347427368164
+      ],
+      "score": 0.9693386224945266,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11501850001513958,
+      "flagged": true,
+      "id": "ksdd1:bdc0808389365efd4d2359ec4a521d4199e7b5776d56127a056646363e201eba",
+      "member_logits": [
+        1.964986801147461,
+        3.727834463119507,
+        4.044149875640869
+      ],
+      "score": 0.945456193973795,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1081754999468103,
+      "flagged": true,
+      "id": "ksdd1:77848a2aa7cafe5f9551a8914c9c285aa9a36af4446829fc1ed52d0fe1e07814",
+      "member_logits": [
+        1.2556670904159546,
+        5.830193996429443,
+        3.3731753826141357
+      ],
+      "score": 0.9140686721417092,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10837779997382313,
+      "flagged": true,
+      "id": "ksdd1:9ce4c5e7250d6a9b48edf8d9c80068f5aa0efab72d1c8203b37551ff919dbdf8",
+      "member_logits": [
+        1.7125908136367798,
+        3.086043357849121,
+        3.2289578914642334
+      ],
+      "score": 0.9217983246103308,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10697530000470579,
+      "flagged": true,
+      "id": "ksdd1:0d434193851ad5e1a2ec085c4ee5c48072dd74d4888bee8010efe6b5a1155e8b",
+      "member_logits": [
+        2.6791419982910156,
+        6.14312219619751,
+        3.6992597579956055
+      ],
+      "score": 0.9698321754655966,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10963890003040433,
+      "flagged": true,
+      "id": "ksdd1:f3686d7903333c07fddeea0698d57965c8ef8b1f137daba5c52fbd304ec6d4a9",
+      "member_logits": [
+        4.344072341918945,
+        8.163859367370605,
+        6.875131130218506
+      ],
+      "score": 0.9952886962947217,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11002230003941804,
+      "flagged": true,
+      "id": "ksdd1:3e6e037f2f263d6bcb10939b86f3a1282b96407f1910f66d36a978221298ec9f",
+      "member_logits": [
+        -1.9870370626449585,
+        7.105808734893799,
+        2.679838180541992
+      ],
+      "score": 0.6851924774237284,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09137119993101805,
+      "flagged": true,
+      "id": "ksdd1:b38967bd7a9347292f27a058988bc1e36488b9f1ab95fac65bb093f2842db91d",
+      "member_logits": [
+        0.36031249165534973,
+        7.594546794891357,
+        5.1065354347229
+      ],
+      "score": 0.8608641925486887,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0922429000493139,
+      "flagged": true,
+      "id": "ksdd1:d84ee9dcb4990e09ddae41ff3be32ab4923bd2a64a4ed0b68de58158a8865057",
+      "member_logits": [
+        6.547203063964844,
+        5.145526885986328,
+        5.495378017425537
+      ],
+      "score": 0.9962291169719567,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09736070001963526,
+      "flagged": true,
+      "id": "ksdd1:cd4cefb1025ca0b344128355957c6a850c66370cc4f3a2a56bd8cf089deee0f6",
+      "member_logits": [
+        4.354426860809326,
+        7.214405536651611,
+        5.684742450714111
+      ],
+      "score": 0.9943973162669343,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10826809995342046,
+      "flagged": true,
+      "id": "ksdd1:129194d64d52ffe814dced19fd38cfa63dfcfe563fabee6cdb852dce2a0deebf",
+      "member_logits": [
+        0.8004166483879089,
+        10.216010093688965,
+        4.0064826011657715
+      ],
+      "score": 0.8907183179460572,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09834120003506541,
+      "flagged": true,
+      "id": "ksdd1:c2c1d7b5984763e45cc1797b178136e90ca98d757da87d2d914a0deb2fb2bf6f",
+      "member_logits": [
+        2.064235210418701,
+        6.6285400390625,
+        3.7057907581329346
+      ],
+      "score": 0.9540222414109456,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.106536699924618,
+      "flagged": true,
+      "id": "ksdd1:b95493aa5103cf08ed125e2e8028f421886009dadc4e93439a917333d9299870",
+      "member_logits": [
+        2.205828905105591,
+        7.683432102203369,
+        4.125364780426025
+      ],
+      "score": 0.9614702885911269,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07101569999940693,
+      "flagged": true,
+      "id": "ksdd1:6b908b144e6fb161f334ae491348944b4844516f0383cd0cc837610a7b5485f7",
+      "member_logits": [
+        1.0876189470291138,
+        3.744485855102539,
+        1.553853988647461
+      ],
+      "score": 0.85010042467058,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07038409996312112,
+      "flagged": true,
+      "id": "ksdd1:75684b43c615dfd203d2318b6f4fb3c0550d993732f21c9a3c0288ff162888ef",
+      "member_logits": [
+        2.075834035873413,
+        3.4067001342773438,
+        3.617419481277466
+      ],
+      "score": 0.9434318859599582,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07101499999407679,
+      "flagged": true,
+      "id": "ksdd1:886bec86669abc60cedaf9898a14bbfb02e18e62b773cac8f670bae743613a0c",
+      "member_logits": [
+        1.192808985710144,
+        6.517001628875732,
+        4.564433574676514
+      ],
+      "score": 0.9184862508645767,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09703109995462,
+      "flagged": true,
+      "id": "ksdd1:de988d02ea54dfeab2222424f84b83277d8c3a9fdbfa6fdf0435aa36520fe1b3",
+      "member_logits": [
+        1.5585589408874512,
+        7.64199686050415,
+        5.352875232696533
+      ],
+      "score": 0.9403182084981818,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10908849991392344,
+      "flagged": true,
+      "id": "ksdd1:0d28b6d1fba6d6166761fb695af586ca2bcac048d835502e533992630caedc14",
+      "member_logits": [
+        2.7024052143096924,
+        6.584104061126709,
+        4.750834941864014
+      ],
+      "score": 0.9757392585274444,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10325220006052405,
+      "flagged": true,
+      "id": "ksdd1:8fec23b92f223aca6be91c8b9f4db7b4e163c0f23242a1aef3568612cf863db8",
+      "member_logits": [
+        -0.9391466975212097,
+        5.328951358795166,
+        2.7901599407196045
+      ],
+      "score": 0.7394629167264872,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09158219990786165,
+      "flagged": true,
+      "id": "ksdd1:c48da48465759928a6f50056ef45bc83c384c966d1755c86c1ed8a3fe40e0fc7",
+      "member_logits": [
+        3.6109611988067627,
+        5.041070938110352,
+        4.5129170417785645
+      ],
+      "score": 0.9854708618639206,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10092260001692921,
+      "flagged": true,
+      "id": "ksdd1:8ff4e845fbbab1739c0abf48474719142aa906b9ac54795754ffa883c09621b5",
+      "member_logits": [
+        3.217524766921997,
+        9.697062492370605,
+        3.7188527584075928
+      ],
+      "score": 0.9792466368053429,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10813649999909103,
+      "flagged": true,
+      "id": "ksdd1:9cdbfa8e2e81fdc8a3060f6df825d9e3e2a0258fae80f7ce216cbc3aaa3175ef",
+      "member_logits": [
+        7.7077317237854,
+        4.893383026123047,
+        6.05322790145874
+      ],
+      "score": 0.9965886205580032,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.082745699910447,
+      "flagged": true,
+      "id": "ksdd1:240321b514a6b0215536fc7ca1ed46b8b47f496a6fe919aebc04457bccac1ece",
+      "member_logits": [
+        5.147181510925293,
+        4.673083782196045,
+        5.9323554039001465
+      ],
+      "score": 0.9941052405564332,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1076121999649331,
+      "flagged": true,
+      "id": "ksdd1:cb2e3989c5cb448c45f406585ac7ac3f5fac7f0619864374bd661efb785d3697",
+      "member_logits": [
+        4.231436252593994,
+        6.458476543426514,
+        4.495214939117432
+      ],
+      "score": 0.9910242820439104,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08800690004136413,
+      "flagged": true,
+      "id": "ksdd1:82ad76f25845bdfce43ef3e9dfc3a62129becb1d577d441be1f6fdc3ee8fda5c",
+      "member_logits": [
+        1.098610758781433,
+        5.534769058227539,
+        4.574127197265625
+      ],
+      "score": 0.9119527106929993,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09582020004745573,
+      "flagged": true,
+      "id": "ksdd1:eb8d9b3052089fee59acc3802150ae14c8ce0b5fcd31420aec15697324ac4dba",
+      "member_logits": [
+        0.4461054503917694,
+        3.7499380111694336,
+        2.1361334323883057
+      ],
+      "score": 0.8270333270981257,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09467319992836565,
+      "flagged": true,
+      "id": "ksdd1:4d133c20b23db0c7ec48e18d1be825e75645461bbf3b89189dd6e2a73917e7a6",
+      "member_logits": [
+        5.046738147735596,
+        12.546546936035156,
+        5.370790958404541
+      ],
+      "score": 0.9963261094195702,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09433779993560165,
+      "flagged": true,
+      "id": "ksdd1:fab5576ec1e5bec7217cd2c37fb89532ff2cce91e8d488da4c81378cead39103",
+      "member_logits": [
+        -0.4180271327495575,
+        1.1857932806015015,
+        2.0323853492736816
+      ],
+      "score": 0.6823774693120238,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10554130002856255,
+      "flagged": true,
+      "id": "ksdd1:68a060876f1c37be2a77aa9b9aacca899d944d1dd4ffdf3aea7381ccd55a529a",
+      "member_logits": [
+        0.5167179703712463,
+        6.813564777374268,
+        4.313878536224365
+      ],
+      "score": 0.8706925295111975,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10754400002770126,
+      "flagged": true,
+      "id": "ksdd1:5865c19ddbe7ca8c74b8232359e233870962b60bd72945265f1fc0384ace885e",
+      "member_logits": [
+        -0.6929171085357666,
+        1.9152477979660034,
+        2.2081072330474854
+      ],
+      "score": 0.7019890701234224,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10311689996160567,
+      "flagged": true,
+      "id": "ksdd1:4e3d3aff98c78f1d2cd933ae9f0ce3a3e675e30f3a1338eff28cd9d220c4eaec",
+      "member_logits": [
+        -0.6524973511695862,
+        4.322885036468506,
+        2.714517593383789
+      ],
+      "score": 0.7557389544318364,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09640979999676347,
+      "flagged": true,
+      "id": "ksdd1:8aef33fc2da9c4a97e80436a85a7b25905c605a305ffe718b335cff68eec2ffd",
+      "member_logits": [
+        6.245298385620117,
+        7.924800872802734,
+        7.624744892120361
+      ],
+      "score": 0.9990715633933984,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.109752899967134,
+      "flagged": true,
+      "id": "ksdd1:4077e97fe03aebf12c938c88d1fe6fcf64ce49083b43353416c45a648f08655d",
+      "member_logits": [
+        5.140960693359375,
+        1.688740849494934,
+        2.8362293243408203
+      ],
+      "score": 0.9276143194564056,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10851809999439865,
+      "flagged": true,
+      "id": "ksdd1:09ceb393fbde4aa71c3a979b3add9d176a032f15b86f76a0c952a560177fc383",
+      "member_logits": [
+        2.4223902225494385,
+        4.813149929046631,
+        3.096525192260742
+      ],
+      "score": 0.9557370672639688,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10668570001143962,
+      "flagged": true,
+      "id": "ksdd1:880806368b3286887cc83a9ffa6530f842ff3a3c40554320c1e9d3cc13f433c2",
+      "member_logits": [
+        2.4634623527526855,
+        5.702606201171875,
+        6.006710052490234
+      ],
+      "score": 0.9719193617563185,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08550669997930527,
+      "flagged": true,
+      "id": "ksdd1:9b13d81f7e72c6d55806e0e3a1d28f2ec8df4bc2a7b6c1817dc633c2a177ac6a",
+      "member_logits": [
+        4.633268356323242,
+        5.1398539543151855,
+        5.208940029144287
+      ],
+      "score": 0.9930361793205291,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10278259997721761,
+      "flagged": true,
+      "id": "ksdd1:2dc5403bea29491252e2cdf83fc47f7face96ac5c4ecbe4f1f713e3d98c6d236",
+      "member_logits": [
+        5.425838470458984,
+        5.40416955947876,
+        4.4485931396484375
+      ],
+      "score": 0.9931934826792702,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08322239993140101,
+      "flagged": true,
+      "id": "ksdd1:6adff4fe76a1e788d8b2e1a5cd9bf3098b63ed07e65fdb4480ebe2bdb6345c1d",
+      "member_logits": [
+        1.249108910560608,
+        8.118701934814453,
+        3.124521493911743
+      ],
+      "score": 0.9115802403513021,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.110864800051786,
+      "flagged": true,
+      "id": "ksdd1:20c734991ad79cec4025d650ea833f024d984345dfb5a69a76ab52798fa5061f",
+      "member_logits": [
+        2.049424409866333,
+        7.1487298011779785,
+        3.6083996295928955
+      ],
+      "score": 0.9529079359724508,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11332430003676564,
+      "flagged": true,
+      "id": "ksdd1:cf43e8cb41b5b58d398293d146d05a331d873583b7e42aa5a5174fc47af1d10a",
+      "member_logits": [
+        4.778284549713135,
+        2.2232141494750977,
+        2.905095338821411
+      ],
+      "score": 0.9473574469362555,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10805380006786436,
+      "flagged": true,
+      "id": "ksdd1:c925c1cc33524a0a0b8e3ffb1ee755496ee1e33dcffc466e24507350580c2e65",
+      "member_logits": [
+        0.48342323303222656,
+        6.059072971343994,
+        3.8795602321624756
+      ],
+      "score": 0.8653276863517029,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10820180003065616,
+      "flagged": true,
+      "id": "ksdd1:ddbc78bd9c4caca59aaab55587b7a2efeac56f51f55fa97298f4091d9e04372f",
+      "member_logits": [
+        9.085990905761719,
+        25.40611457824707,
+        11.180392265319824
+      ],
+      "score": 0.9999576089637395,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.108990199980326,
+      "flagged": true,
+      "id": "ksdd1:ba37e42f45cd823b3b6b614064a6a3a7a97899980f943611bfb1d7ad78557293",
+      "member_logits": [
+        5.97796106338501,
+        3.935500383377075,
+        4.3128533363342285
+      ],
+      "score": 0.9883642075697598,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10460880002938211,
+      "flagged": true,
+      "id": "ksdd1:83b242cd08602c5de4233970745562e978bc105037718dce5bf43f3ceda173d0",
+      "member_logits": [
+        2.984659194946289,
+        5.2587151527404785,
+        5.411651611328125
+      ],
+      "score": 0.9807522551626268,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09879419999197125,
+      "flagged": true,
+      "id": "ksdd1:81234de2049af9dd7e6e40b531d7d7aecab234a8fe61aa31147c863eccd872ed",
+      "member_logits": [
+        3.087689161300659,
+        2.171887159347534,
+        2.72629451751709
+      ],
+      "score": 0.9308796621672087,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10965250001754612,
+      "flagged": true,
+      "id": "ksdd1:021bfe9dee263fdf0be49927260438c68038dec088decb9bedda31067727fd59",
+      "member_logits": [
+        7.750572204589844,
+        10.7986421585083,
+        9.802123069763184
+      ],
+      "score": 0.9998313104565608,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09768780006561428,
+      "flagged": true,
+      "id": "ksdd1:8987e4ddfb676f987924ab10ff83e5d009ca979fe8bbf7e064f370dd7e3cf3bb",
+      "member_logits": [
+        3.2083613872528076,
+        6.629178524017334,
+        5.448131084442139
+      ],
+      "score": 0.9851807743677057,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10185560001991689,
+      "flagged": true,
+      "id": "ksdd1:6b36d4c34bbdcfa607c9fbdf05c186689a8370e88982d2a419e0e0261c739c7a",
+      "member_logits": [
+        0.8836657404899597,
+        4.93855619430542,
+        1.7660783529281616
+      ],
+      "score": 0.8514788698015353,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10659390001092106,
+      "flagged": true,
+      "id": "ksdd1:117dbd182f8713d0dd0e0938ce41e145c8c4906f733266b60f6bbbc38fff1a79",
+      "member_logits": [
+        3.7051303386688232,
+        7.636050701141357,
+        4.587470054626465
+      ],
+      "score": 0.9884783205708291,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10643829999025911,
+      "flagged": true,
+      "id": "ksdd1:248aa62f35f882fa656195587154925f884bf1f0af67b3b3e507dc8cf2db84a3",
+      "member_logits": [
+        0.7928710579872131,
+        5.18029260635376,
+        2.306896209716797
+      ],
+      "score": 0.8640997201938543,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10506430000532418,
+      "flagged": true,
+      "id": "ksdd1:334c6ada7f778f744af6ae89d6419e90302f95304f623e84f54d3b9910825710",
+      "member_logits": [
+        4.521681308746338,
+        4.716410160064697,
+        4.302989482879639
+      ],
+      "score": 0.9890102609435699,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10592010000254959,
+      "flagged": true,
+      "id": "ksdd1:0735fda02e0c7e5e7f89843b7ccaed1baaafbe8ec2d3dd784bf9dd29cb66004e",
+      "member_logits": [
+        2.4061050415039062,
+        9.351690292358398,
+        4.14663028717041
+      ],
+      "score": 0.9672111743710068,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10808389994781464,
+      "flagged": true,
+      "id": "ksdd1:3cee17cbd0a5322f0134de760d3d5c8ec845cd4abe8229235f7f4f9fd19a78ab",
+      "member_logits": [
+        3.4774086475372314,
+        10.975852966308594,
+        7.078654766082764
+      ],
+      "score": 0.9897262634319329,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09448460000567138,
+      "flagged": true,
+      "id": "ksdd1:ca280e11b5e8c6dc7d7afa22f8741a34f00ee1a2c0d402a696228c6542c1e595",
+      "member_logits": [
+        1.8523296117782593,
+        7.69128942489624,
+        4.8937835693359375
+      ],
+      "score": 0.9521688410815673,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09696820005774498,
+      "flagged": true,
+      "id": "ksdd1:92b445072590068183dd8ba2db6416fea374aae14a91db488fe377e00f92bdd2",
+      "member_logits": [
+        0.7450377345085144,
+        8.338452339172363,
+        3.3374557495117188
+      ],
+      "score": 0.8811830163920628,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09568669996224344,
+      "flagged": true,
+      "id": "ksdd1:399cf54f8ecf21b9a59426e83375983a1e641ba7be2bc59fdcad81f6b8a43425",
+      "member_logits": [
+        5.333578586578369,
+        8.83161449432373,
+        7.198758602142334
+      ],
+      "score": 0.9981011479717036,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10086250002495944,
+      "flagged": true,
+      "id": "ksdd1:174c07f3dc3a5adb79138897556bc4e14090cd41087f2acd2339c129d44cbe6f",
+      "member_logits": [
+        7.695251941680908,
+        8.777923583984375,
+        6.253391265869141
+      ],
+      "score": 0.9991569754671922,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08513929997570813,
+      "flagged": true,
+      "id": "ksdd1:f66366ed029070b56e989baf86e0cb89a87731d43525c2d9989a68b58860ce5f",
+      "member_logits": [
+        2.9692211151123047,
+        7.219383716583252,
+        4.911506175994873
+      ],
+      "score": 0.981041597898022,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10635770007502288,
+      "flagged": true,
+      "id": "ksdd1:cdbd4bd4ec1e0cee4dd51cf98b3182b953b180ce4b6fb86ff41fbbc06c8cb66a",
+      "member_logits": [
+        4.136572360992432,
+        4.521431922912598,
+        4.598293781280518
+      ],
+      "score": 0.9878495447324812,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09706040006130934,
+      "flagged": true,
+      "id": "ksdd1:3979c6f963edd38706436953a5fce6ba1810fedf11c724b9a3d9eee390438314",
+      "member_logits": [
+        6.494497776031494,
+        3.9910545349121094,
+        5.8022685050964355
+      ],
+      "score": 0.9924446853339767,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10374020005110651,
+      "flagged": true,
+      "id": "ksdd1:5f21d1e4e074d64dc8afc14d9015d6c02f42fc6f7f17a8db538575d304af2d35",
+      "member_logits": [
+        6.062058925628662,
+        3.2562713623046875,
+        6.8767170906066895
+      ],
+      "score": 0.9865143884990545,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1061398999299854,
+      "flagged": true,
+      "id": "ksdd1:c6413261e2fb1ebab2d551977469f0c84409fe6421ec43c8116da091274a568c",
+      "member_logits": [
+        2.309035539627075,
+        9.652795791625977,
+        6.863951206207275
+      ],
+      "score": 0.9695048900642403,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09083910007029772,
+      "flagged": true,
+      "id": "ksdd1:a03c0d2fec3b0073320a6f4f899031a20eab86e4a97fb51dfb20d5855d55d79d",
+      "member_logits": [
+        2.1170496940612793,
+        7.2495503425598145,
+        5.163322925567627
+      ],
+      "score": 0.9620497429213394,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10327409999445081,
+      "flagged": true,
+      "id": "ksdd1:e0133687ae740b7b36259129977c2287a4f40c924a09cece775395fe0eeebe02",
+      "member_logits": [
+        5.612298488616943,
+        8.556697845458984,
+        8.640899658203125
+      ],
+      "score": 0.9986639055176818,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09284509997814894,
+      "flagged": true,
+      "id": "ksdd1:cf0f6f4f2d7935ded2eda63eb60ea083a44f447e0687d031ab14cf769352cbbb",
+      "member_logits": [
+        1.1806849241256714,
+        3.7723777294158936,
+        3.5849742889404297
+      ],
+      "score": 0.9052006067963694,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09956270002294332,
+      "flagged": true,
+      "id": "ksdd1:beecb9320ffaea7994a861c89c6394617150f7152e71994392fcc190aaab9361",
+      "member_logits": [
+        4.811486721038818,
+        6.351937770843506,
+        3.8685238361358643
+      ],
+      "score": 0.9899092721415803,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10266010009218007,
+      "flagged": true,
+      "id": "ksdd1:b558b59cf4d9b4d039a746a327b696a19550986471fd2e4e3790c3bed69fadaa",
+      "member_logits": [
+        2.3199055194854736,
+        4.964111804962158,
+        4.266302585601807
+      ],
+      "score": 0.9632457239797342,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10828140005469322,
+      "flagged": true,
+      "id": "ksdd1:49f8b32745739bba57a2f05db0a517ca5f2afe66e2eb4fd3ff91bc63a645254b",
+      "member_logits": [
+        0.15950551629066467,
+        2.4416592121124268,
+        1.844565510749817
+      ],
+      "score": 0.7744097262466064,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11208440002519637,
+      "flagged": true,
+      "id": "ksdd1:a1ccc470353aeaa144f0adcc5c8fe2b6fd107edf96f976e6e74cb4f63156048e",
+      "member_logits": [
+        3.1268303394317627,
+        6.827720642089844,
+        3.5507333278656006
+      ],
+      "score": 0.9763337248603302,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09931840002536774,
+      "flagged": true,
+      "id": "ksdd1:4ecbe5450796464e2d669b2e1a6c89c0b9f309fcd749f3aa5898baed31e4fd01",
+      "member_logits": [
+        5.711713790893555,
+        6.682397365570068,
+        7.953096866607666
+      ],
+      "score": 0.9983670827764253,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10335990006569773,
+      "flagged": true,
+      "id": "ksdd1:662f807dfbb22ce55fb071239570e8cf0c39de3c4381051608d816e90989f9af",
+      "member_logits": [
+        2.8263447284698486,
+        3.252424955368042,
+        4.0520195960998535
+      ],
+      "score": 0.963251009764993,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08724999998230487,
+      "flagged": true,
+      "id": "ksdd1:74dc9ac08674411c1a218250abc6b30fbf03606b12656997b480dd0c692a9c7f",
+      "member_logits": [
+        0.7339436411857605,
+        2.8630802631378174,
+        3.406245231628418
+      ],
+      "score": 0.8631867061353619,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10782140004448593,
+      "flagged": true,
+      "id": "ksdd1:4fa7d43653048b8b9837cb331af885d8982bb0465399d2d8fc86c16dc8093dd0",
+      "member_logits": [
+        2.0785677433013916,
+        6.547786712646484,
+        5.013351917266846
+      ],
+      "score": 0.9602555522451167,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1071637999266386,
+      "flagged": true,
+      "id": "ksdd1:d1400f599f87fc3b79c84006691f0cbce204f8cc49fea6914c838c2ae1224224",
+      "member_logits": [
+        2.476221799850464,
+        3.4037513732910156,
+        3.8063440322875977
+      ],
+      "score": 0.956177880847517,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1021271999925375,
+      "flagged": true,
+      "id": "ksdd1:f449d007475606393de5eb35bfcbebed31304c37ca5a901c945a4a4e5c954a16",
+      "member_logits": [
+        3.0815765857696533,
+        6.4175801277160645,
+        6.131084442138672
+      ],
+      "score": 0.9841089739946907,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11427839996758848,
+      "flagged": true,
+      "id": "ksdd1:d06f4169db5868723cb6cd9a1344321582d642d30ba8760412ec19b5215212c7",
+      "member_logits": [
+        1.9959019422531128,
+        6.118811130523682,
+        4.350889205932617
+      ],
+      "score": 0.9551462436910624,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09044059994630516,
+      "flagged": true,
+      "id": "ksdd1:599c75af18fa71d10c7a8cb57d5095519f6607fe37b29280a34d9ecdce42e103",
+      "member_logits": [
+        2.744560480117798,
+        5.7428107261657715,
+        5.0763773918151855
+      ],
+      "score": 0.9767353845164898,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10860879998654127,
+      "flagged": true,
+      "id": "ksdd1:6d6d027f0b0fd22f52540b88e94890fe63c5c8f6d380ca76ea4424274418d806",
+      "member_logits": [
+        2.5058414936065674,
+        4.837440013885498,
+        3.0490989685058594
+      ],
+      "score": 0.9571429846155469,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0872181000886485,
+      "flagged": true,
+      "id": "ksdd1:c802282398e9bb0569b4af72d04b743d435f7a1e839c6c67ee6c2dbc17cab820",
+      "member_logits": [
+        2.4881649017333984,
+        7.082468509674072,
+        5.915740489959717
+      ],
+      "score": 0.9732598521650505,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10049099999014288,
+      "flagged": true,
+      "id": "ksdd1:5a6646c51bbde18ebbe95afdd47c45878d6497abd0a94f7e1dd73e32d4bf73b1",
+      "member_logits": [
+        6.86816930770874,
+        8.731438636779785,
+        7.832359790802002
+      ],
+      "score": 0.9994675887862795,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10410300001967698,
+      "flagged": true,
+      "id": "ksdd1:16969af0a199c12250c63defc9db2f760b40a9bb6450fd85db9dee0d8435f94b",
+      "member_logits": [
+        1.248776912689209,
+        7.369714736938477,
+        6.41830587387085
+      ],
+      "score": 0.9249432184647223,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0984452998964116,
+      "flagged": true,
+      "id": "ksdd1:3b30d53b312cf7e1905336b8965286d56f65ccb5fa1584ddd35b3d6f19a6fe10",
+      "member_logits": [
+        3.712416887283325,
+        3.54654860496521,
+        4.668878555297852
+      ],
+      "score": 0.9796172123213083,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09294190001673996,
+      "flagged": true,
+      "id": "ksdd1:7bcc41a732ded09754e9663db0c95f4f92bf4d1aea85bf6eb0b71849ffdfadac",
+      "member_logits": [
+        3.235960006713867,
+        4.502346992492676,
+        3.5356380939483643
+      ],
+      "score": 0.9742962647476552,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10428309999406338,
+      "flagged": true,
+      "id": "ksdd1:78a24d6d40a17f14581813d5f4b39aa8df9d951f4efee51cad284ac9520f7156",
+      "member_logits": [
+        5.305398941040039,
+        2.989372491836548,
+        2.6452133655548096
+      ],
+      "score": 0.9602889534658385,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1031827999977395,
+      "flagged": true,
+      "id": "ksdd1:1fa045620fe6ffae6eea6f01def2d87d358bc6b52ec989c621c63d6ff6470d81",
+      "member_logits": [
+        1.1279041767120361,
+        2.4476585388183594,
+        1.8056749105453491
+      ],
+      "score": 0.8448934352496513,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0877125000115484,
+      "flagged": true,
+      "id": "ksdd1:f98c2a6d7aaf3d93c73f5c94be3729c9469568023638db0b65eeeae3114c9c58",
+      "member_logits": [
+        -0.9137380719184875,
+        3.7258541584014893,
+        1.9320601224899292
+      ],
+      "score": 0.7120623571400784,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1000802000053227,
+      "flagged": true,
+      "id": "ksdd1:754db3ee5dfe9e076b5ee6df62198a722d8977e0f752a9ec8144e2e87adff4e5",
+      "member_logits": [
+        4.141050338745117,
+        6.167976379394531,
+        7.494684219360352
+      ],
+      "score": 0.993898698110638,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09595830005127937,
+      "flagged": true,
+      "id": "ksdd1:92cf1d9168bc69ee6ddf08bc67ef3cac99cc88ae2856b2b43807f0fb5dfc7743",
+      "member_logits": [
+        -0.794670820236206,
+        4.7348313331604,
+        3.058117628097534
+      ],
+      "score": 0.7525302955708227,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10580150003079325,
+      "flagged": true,
+      "id": "ksdd1:e0266755a97d38107b879eaba559e0ed082bfbd0d38b8f5c8b964bdb51469b89",
+      "member_logits": [
+        1.0841655731201172,
+        6.440474987030029,
+        2.0885961055755615
+      ],
+      "score": 0.8784927309055789,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09908610000275075,
+      "flagged": true,
+      "id": "ksdd1:db4d0c42bba52c2d172d6a3d16424c579673088e43d582c4f3539ea29cde9496",
+      "member_logits": [
+        1.272477388381958,
+        5.374234676361084,
+        3.1652679443359375
+      ],
+      "score": 0.9120198599623244,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10524900001473725,
+      "flagged": true,
+      "id": "ksdd1:bce3f891dcf870f5d419c0acb8a007eec76d461670110d9df9daf1cba841eefb",
+      "member_logits": [
+        4.723757266998291,
+        4.430332660675049,
+        5.5790557861328125
+      ],
+      "score": 0.9918880621596609,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10364660003688186,
+      "flagged": true,
+      "id": "ksdd1:637535a7cab951eb2596b9b4172b7c7ee300b75323a514a739fac8be2709b9d9",
+      "member_logits": [
+        1.3800045251846313,
+        6.349636554718018,
+        3.359053611755371
+      ],
+      "score": 0.9212158176846579,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0921703000785783,
+      "flagged": true,
+      "id": "ksdd1:8c2539b679ecd3a7f5462fa1c6731c277f2aa8fcfdc82900d52d6b6c2db42be9",
+      "member_logits": [
+        3.7888317108154297,
+        5.9329986572265625,
+        6.1215949058532715
+      ],
+      "score": 0.9910149195822101,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0852520999033004,
+      "flagged": true,
+      "id": "ksdd1:466c7c28bb08933352b67b7387a301d00b236a08ff055cb68ccbad7a0f0a4497",
+      "member_logits": [
+        3.199920654296875,
+        7.161093235015869,
+        5.863070011138916
+      ],
+      "score": 0.9857404136195586,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09577750007156283,
+      "flagged": true,
+      "id": "ksdd1:a99be5f7441e7132c0715887f523f11483885ad880f4ab62b655c3ca0b3ac066",
+      "member_logits": [
+        2.3323991298675537,
+        3.53378963470459,
+        3.8216428756713867
+      ],
+      "score": 0.9539120786261966,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1014801999554038,
+      "flagged": true,
+      "id": "ksdd1:2d948c8ff87d55c82a26d20ff65322ac9a5ef6e713a7cae93cbab321f50b4876",
+      "member_logits": [
+        5.327817916870117,
+        5.594117641448975,
+        8.550273895263672
+      ],
+      "score": 0.9970898173893054,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10818710003513843,
+      "flagged": true,
+      "id": "ksdd1:b879d54d1f82c0984ea1372d72566913a13282df90c6830e32d777be3d3afddd",
+      "member_logits": [
+        5.119600772857666,
+        7.777647495269775,
+        6.38136625289917
+      ],
+      "score": 0.9973161169237391,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.108549700002186,
+      "flagged": true,
+      "id": "ksdd1:3677e02178a78d27acf726f2b0ecaa8ba06d3955f2b5ef77cd71f4cb3e153714",
+      "member_logits": [
+        2.0410964488983154,
+        5.018995761871338,
+        1.590012550354004
+      ],
+      "score": 0.9030316649736014,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08497689990326762,
+      "flagged": true,
+      "id": "ksdd1:45d9b4894e12f4b2d47b36bdd7533faf4fb2ebdc19d532ba5087b2fe3b81a3f5",
+      "member_logits": [
+        1.2184840440750122,
+        3.9654760360717773,
+        5.019407272338867
+      ],
+      "score": 0.9155417828017717,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09723219997249544,
+      "flagged": true,
+      "id": "ksdd1:ee4ec80ae5b0b1711d81584fc784119f14ea6eb15d4ace1b58407ea93d15e02a",
+      "member_logits": [
+        3.5136911869049072,
+        3.6996850967407227,
+        4.154318332672119
+      ],
+      "score": 0.9771621575326147,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10039380006492138,
+      "flagged": true,
+      "id": "ksdd1:362ae04c23694f2a72ca780c5122477cdf1ab022eed7528e04fd9d1bb8954e86",
+      "member_logits": [
+        2.1587374210357666,
+        2.668560743331909,
+        2.790760040283203
+      ],
+      "score": 0.9246009008355253,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10042380006052554,
+      "flagged": true,
+      "id": "ksdd1:d3435200936ba80756bc463f8ac819e3043e1f9dd30f6261f7cb7d3dcc111e75",
+      "member_logits": [
+        3.625561475753784,
+        7.175018310546875,
+        5.166062831878662
+      ],
+      "score": 0.9892057799517658,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09330810001119971,
+      "flagged": true,
+      "id": "ksdd1:f95b270bace878cb17037779962689112f099f9152faf588a8152a57984906cc",
+      "member_logits": [
+        0.9281756281852722,
+        1.860632300376892,
+        2.65864634513855
+      ],
+      "score": 0.8388725173140573,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09460760001093149,
+      "flagged": true,
+      "id": "ksdd1:e54cb00a90cc87bc762df5e6550556c6f79421502c684b821de9381f78536467",
+      "member_logits": [
+        2.8694450855255127,
+        6.35579252243042,
+        8.487324714660645
+      ],
+      "score": 0.9814584982902232,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10406030004378408,
+      "flagged": true,
+      "id": "ksdd1:8f46ed8cc7364ea703cb70ec8126f56a95ddf3b321bbe058c96292890f44b107",
+      "member_logits": [
+        3.767064332962036,
+        8.742566108703613,
+        6.374499797821045
+      ],
+      "score": 0.9918471406347832,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0992415000218898,
+      "flagged": true,
+      "id": "ksdd1:e61f57e6e3b05fec04deda04d1da9f01f58153c378c7d6159a6ec3a25e097a6f",
+      "member_logits": [
+        4.397319316864014,
+        5.452978134155273,
+        6.452249050140381
+      ],
+      "score": 0.9939998859492848,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10356079996563494,
+      "flagged": true,
+      "id": "ksdd1:8d2205dac992c11b678400e9cc609767fda9ce8bb78dcc194bde5eddf0b63786",
+      "member_logits": [
+        5.43927526473999,
+        10.475333213806152,
+        6.139122486114502
+      ],
+      "score": 0.9978319168614099,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08944729994982481,
+      "flagged": true,
+      "id": "ksdd1:de7a401e37b4bf828dcb9b0c2127c744906e03f8a1413f1ae5e94db3632f7ca1",
+      "member_logits": [
+        0.042555347084999084,
+        7.223680019378662,
+        4.355133533477783
+      ],
+      "score": 0.8324102391469818,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10144760005641729,
+      "flagged": true,
+      "id": "ksdd1:c9483cab28233b8ae21211850f3c3137dc232671e501954284bb1970969fdded",
+      "member_logits": [
+        1.9797366857528687,
+        3.9513680934906006,
+        3.3244059085845947
+      ],
+      "score": 0.9416813733291689,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08990469994023442,
+      "flagged": true,
+      "id": "ksdd1:54b900fb7a9ae652a88515c6df311eb5a01537930558d36ec62e161d8c32e2a5",
+      "member_logits": [
+        1.664353370666504,
+        8.165619850158691,
+        4.760396957397461
+      ],
+      "score": 0.9440159418655495,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08664869994390756,
+      "flagged": true,
+      "id": "ksdd1:bdfb8ee32f16dd4880318f15b7efd056ffba847f5a7ae118a3cd709b6df9cb62",
+      "member_logits": [
+        6.781614780426025,
+        9.973820686340332,
+        4.4689717292785645
+      ],
+      "score": 0.9958303240909161,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09649200004059821,
+      "flagged": true,
+      "id": "ksdd1:854fa5d4dfb30d1a5a549c545768749364d4f91ef668ae4123caa7c361a915b9",
+      "member_logits": [
+        7.016934871673584,
+        5.572335720062256,
+        10.491767883300781
+      ],
+      "score": 0.9984297590628732,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10784489999059588,
+      "flagged": true,
+      "id": "ksdd1:35dc2e64cbc5aa7b4c02546c1176a88ad4c8abeeb654ba361a64cbcf7c694c07",
+      "member_logits": [
+        0.648534893989563,
+        4.022850036621094,
+        4.229046821594238
+      ],
+      "score": 0.8749120199309433,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10762579995207489,
+      "flagged": true,
+      "id": "ksdd1:ca360c0234c39d0df9f043ba5c4177fbb734510e0dcd891825eef12d55e0bb69",
+      "member_logits": [
+        6.5440673828125,
+        6.673994541168213,
+        7.157876968383789
+      ],
+      "score": 0.9988411977511099,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.098712999955751,
+      "flagged": true,
+      "id": "ksdd1:296b5a187146ee4c45e94a1d1e8b6516b65c228b66b9d29ba066a76f35d36bcf",
+      "member_logits": [
+        1.1692818403244019,
+        9.090806007385254,
+        6.879763126373291
+      ],
+      "score": 0.9206250549471319,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09494689991697669,
+      "flagged": true,
+      "id": "ksdd1:3ec7d8a6445f5e6cc097eb381afca3337db16b3d91a9eb3ceffceaa6839026d6",
+      "member_logits": [
+        4.707361698150635,
+        4.8869309425354,
+        3.7284934520721436
+      ],
+      "score": 0.9866996689552373,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10861320002004504,
+      "flagged": true,
+      "id": "ksdd1:7f043b7558f43f22c44b67eb3dd0b0e7f53eb6e94f14a69660bf4c84702b04e6",
+      "member_logits": [
+        0.31477847695350647,
+        6.272053241729736,
+        5.5920867919921875
+      ],
+      "score": 0.8574843377733076,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10129690007306635,
+      "flagged": true,
+      "id": "ksdd1:7175fa82e196856fe2e2756ea32fe4dafe7afb6655d0cbc3c0334ef61526fc37",
+      "member_logits": [
+        2.6172378063201904,
+        5.6081929206848145,
+        4.582070827484131
+      ],
+      "score": 0.9727261554836909,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09991890005767345,
+      "flagged": true,
+      "id": "ksdd1:37590e2fb8d370ff4eb0929a00a47a6c1392813676f19256cbea62ff53a928ad",
+      "member_logits": [
+        1.0511611700057983,
+        9.411042213439941,
+        9.399802207946777
+      ],
+      "score": 0.9136110902744096,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11006029997952282,
+      "flagged": true,
+      "id": "ksdd1:3bfa13f5de001e80ed24cedbba92ac6257a6b92f123c573390b72fa7878960c7",
+      "member_logits": [
+        0.02364622987806797,
+        1.9773751497268677,
+        3.9070560932159424
+      ],
+      "score": 0.7882029344058065,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10859920002985746,
+      "flagged": true,
+      "id": "ksdd1:cda86d34bfd9dea3045b29fcaedce8df50c95e4ab7f676234b1a3f8fb35a95df",
+      "member_logits": [
+        3.7535884380340576,
+        4.716488361358643,
+        6.518434524536133
+      ],
+      "score": 0.9889206794802762,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1030970000429079,
+      "flagged": true,
+      "id": "ksdd1:586032d0509fa84f78d6c665119bbc488362c435010dcfec80165fac12aefd35",
+      "member_logits": [
+        2.8559162616729736,
+        3.3487002849578857,
+        4.555667400360107
+      ],
+      "score": 0.9670959068687403,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08952429995406419,
+      "flagged": true,
+      "id": "ksdd1:6b7ba938be30d09066f47ace5b926e731a6ff6183b99fa89a665b90a7d9a2efa",
+      "member_logits": [
+        0.2068881392478943,
+        6.5901336669921875,
+        2.3284008502960205
+      ],
+      "score": 0.8204561309040578,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08998739998787642,
+      "flagged": true,
+      "id": "ksdd1:f9657e7e5c98a87da98beb59b38515ee0b1efbd3d9c28a4cf351b939fab7d38d",
+      "member_logits": [
+        -0.5977747440338135,
+        6.0457987785339355,
+        3.4359798431396484
+      ],
+      "score": 0.7737670114232563,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10754949995316565,
+      "flagged": true,
+      "id": "ksdd1:29f0a5e83ba6b78fda4f9bf14c698380f2a2a2ed6c24d3afb17dc038534570f9",
+      "member_logits": [
+        0.3543604910373688,
+        5.023375034332275,
+        1.675031304359436
+      ],
+      "score": 0.8077936091123575,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09884019999299198,
+      "flagged": true,
+      "id": "ksdd1:3af2e6429742e9f667ad8f371eef2bd9906ce5de38a370cd2bcedabd2122222e",
+      "member_logits": [
+        4.644033432006836,
+        5.343684673309326,
+        2.5755088329315186
+      ],
+      "score": 0.9716619830057146,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09980940003879368,
+      "flagged": true,
+      "id": "ksdd1:f00b27803c2ec8eedd2b8ae8a9df44a1729dc9b16a5d7eaed189574126b51e0a",
+      "member_logits": [
+        -0.2607005536556244,
+        4.270776271820068,
+        2.788881540298462
+      ],
+      "score": 0.7878283687577511,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10933909995947033,
+      "flagged": true,
+      "id": "ksdd1:a6a25fe29c2514cb941e6ab0441ab2836e86b18562bceaf54dfcf2e7d592efaf",
+      "member_logits": [
+        1.9714254140853882,
+        2.210476875305176,
+        1.5068672895431519
+      ],
+      "score": 0.865849003310747,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1075804999563843,
+      "flagged": true,
+      "id": "ksdd1:e3c371b8952db11fcf4161afda6f7de57072a547803726d1a5094cb4061d9683",
+      "member_logits": [
+        -0.049112092703580856,
+        3.1400318145751953,
+        1.5191794633865356
+      ],
+      "score": 0.7555520701835001,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08309379999991506,
+      "flagged": true,
+      "id": "ksdd1:cf4ca0a69f107aa40a1ee8f1bb2fc1af200c007a41777332f90f26f6a4f27948",
+      "member_logits": [
+        -1.8552827835083008,
+        3.9418020248413086,
+        1.940091609954834
+      ],
+      "score": 0.6635241775621896,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07723429996985942,
+      "flagged": true,
+      "id": "ksdd1:e8acbf63811354df7c83dd2b6f1939e3954b6132d7cf5fadd96e47834b60c26e",
+      "member_logits": [
+        7.017436981201172,
+        16.314590454101562,
+        10.77407455444336
+      ],
+      "score": 0.9996945553270321,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10159159998875111,
+      "flagged": true,
+      "id": "ksdd1:79cbe67eee34114683b382df2f6543dad89aa9578b2ccddd254046a970c6c978",
+      "member_logits": [
+        1.556394100189209,
+        1.917684555053711,
+        3.185443162918091
+      ],
+      "score": 0.8859993725268197,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09911800001282245,
+      "flagged": true,
+      "id": "ksdd1:9599651c15182028c492de60d111d61d26e35556a6c457ac863929cfb0262b6a",
+      "member_logits": [
+        0.32935991883277893,
+        5.575158596038818,
+        2.6386008262634277
+      ],
+      "score": 0.837043997429503,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10762150003574789,
+      "flagged": true,
+      "id": "ksdd1:e26c94a1bc76b1d95aac056deea394950feed407133c48af98219bd988e4e5fd",
+      "member_logits": [
+        3.2278850078582764,
+        4.108211994171143,
+        4.263631820678711
+      ],
+      "score": 0.9772743582532923,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09325729997362942,
+      "flagged": true,
+      "id": "ksdd1:ce59bf4cc88a91024a047b05448fa27e0809ebe95c4dbf7272cbeebdecd56007",
+      "member_logits": [
+        2.4142026901245117,
+        6.04603385925293,
+        3.741373300552368
+      ],
+      "score": 0.9641234876280848,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1035905999597162,
+      "flagged": true,
+      "id": "ksdd1:8806a054d942bbb14dde212ea864d8068d5f6e5d1d0f908811ca9632c88405c6",
+      "member_logits": [
+        -2.792595863342285,
+        4.234184265136719,
+        0.9672247767448425
+      ],
+      "score": 0.589335655833754,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10700120008550584,
+      "flagged": true,
+      "id": "ksdd1:53b10de2b57faa9412f5e80150ee822eb872cfc5ab7d0bd62cf703a9b65e184e",
+      "member_logits": [
+        2.9176218509674072,
+        8.908881187438965,
+        4.502775192260742
+      ],
+      "score": 0.9792062374918032,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09800700005143881,
+      "flagged": true,
+      "id": "ksdd1:a3d703cc3b56f37f35632d2a9ca8138b7bd9c574b9a95f382d1d021cce5941f6",
+      "member_logits": [
+        8.111536979675293,
+        11.961006164550781,
+        10.171056747436523
+      ],
+      "score": 0.9998851279251252,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10290649998933077,
+      "flagged": true,
+      "id": "ksdd1:f1e42a57382471c9fddc28179f4d1b87569c4cc7d2c1b3b20c91e2863a9216b2",
+      "member_logits": [
+        1.6686439514160156,
+        1.4473648071289062,
+        1.0788205862045288
+      ],
+      "score": 0.7990860700581214,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10476130002643913,
+      "flagged": true,
+      "id": "ksdd1:7555bf91269b90df1bb037511345d05bc16b6a3039e188a18025b35a87a0d8be",
+      "member_logits": [
+        2.8816120624542236,
+        0.7796047329902649,
+        3.0141994953155518
+      ],
+      "score": 0.8619121194879296,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11091209994629025,
+      "flagged": true,
+      "id": "ksdd1:293064d7bae6f7123168c89df8dc6c8e755fc0291362fcf5e3beeb7efbc9668b",
+      "member_logits": [
+        1.586562156677246,
+        5.268638610839844,
+        3.1679563522338867
+      ],
+      "score": 0.9282060328606407,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09355170000344515,
+      "flagged": true,
+      "id": "ksdd1:8b8a7f1980f7120c2fcd5cb3ce7c05321043ec32e5a8c801bf12f1569dfad553",
+      "member_logits": [
+        2.53161883354187,
+        2.787980079650879,
+        4.329258441925049
+      ],
+      "score": 0.9517819320088322,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10666619997937232,
+      "flagged": true,
+      "id": "ksdd1:0ebf73d9bb10b9fb38823493374b9469364aeaa84925bc6b56fbf7674e5b2cf3",
+      "member_logits": [
+        1.3267170190811157,
+        2.815652847290039,
+        3.8622353076934814
+      ],
+      "score": 0.9044082446685796,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0997210000641644,
+      "flagged": true,
+      "id": "ksdd1:b67bf646edf32d34fde099393ed4262a6c37a4968cb3e617bfb3787df718681d",
+      "member_logits": [
+        0.9259641170501709,
+        3.0074656009674072,
+        2.854497194290161
+      ],
+      "score": 0.8715722398036988,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10987700009718537,
+      "flagged": true,
+      "id": "ksdd1:77b892e3bfce0a20b68a44eb682db0e62d4f818999261bf59019c79dce5a1c72",
+      "member_logits": [
+        2.541593551635742,
+        3.6608331203460693,
+        4.865512371063232
+      ],
+      "score": 0.9647637376774432,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08189040003344417,
+      "flagged": true,
+      "id": "ksdd1:1fddadbebabb0b501232c0e06ce924069691c0ca72ab2e67d6ee788b876b0e32",
+      "member_logits": [
+        2.552248239517212,
+        4.7920613288879395,
+        2.4416754245758057
+      ],
+      "score": 0.946482623325063,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09712089993990958,
+      "flagged": true,
+      "id": "ksdd1:6879ef0efd530284e9a97b639bbc67058968a71272a705ae579c6efb4976e0cc",
+      "member_logits": [
+        3.6506407260894775,
+        7.96491813659668,
+        4.7387518882751465
+      ],
+      "score": 0.9885540412032249,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09801459999289364,
+      "flagged": true,
+      "id": "ksdd1:61f35437c1f1887929d1b1b177b662011cfbe146b2faa70d85321c08a0fa03f9",
+      "member_logits": [
+        7.079738616943359,
+        4.306238174438477,
+        3.197132110595703
+      ],
+      "score": 0.9821933834670172,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09856920002494007,
+      "flagged": true,
+      "id": "ksdd1:a640d24e80cc82619d18bd2edd7ee5a0d1fe66bd4797a3c9f2084d6152114f7f",
+      "member_logits": [
+        5.624592304229736,
+        7.703250885009766,
+        8.52840518951416
+      ],
+      "score": 0.9985853508066808,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08562710008118302,
+      "flagged": true,
+      "id": "ksdd1:6b109072750b7e064d687f43825b80f77ef655f7466d150bcce45efbaa7ad10b",
+      "member_logits": [
+        3.6205708980560303,
+        5.4267425537109375,
+        7.619093418121338
+      ],
+      "score": 0.9896871779026961,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11066330003086478,
+      "flagged": true,
+      "id": "ksdd1:4c8028657682d4a73ee12899fa8562b776d3bc5c75a405ae4b76fb6fd0a98928",
+      "member_logits": [
+        4.180700778961182,
+        4.774501323699951,
+        3.9953887462615967
+      ],
+      "score": 0.9861676503478035,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09966820001136512,
+      "flagged": true,
+      "id": "ksdd1:7e4b2d110e637ac32be1295895f378711e7894b9e6eb391619f21450eab2a857",
+      "member_logits": [
+        6.909694671630859,
+        6.261509418487549,
+        6.496015548706055
+      ],
+      "score": 0.9985303459717393,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0941404999466613,
+      "flagged": true,
+      "id": "ksdd1:9219f4af169f0c6fe53531d4c82a0114fabcb31d12433fd035948a22f25d1bbc",
+      "member_logits": [
+        7.874538421630859,
+        5.299134731292725,
+        5.317227840423584
+      ],
+      "score": 0.9965887929770343,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07998279994353652,
+      "flagged": true,
+      "id": "ksdd1:88d1254e5436d00aaa3e8d76af16c8f89d786c05636bf048ba3efc33602ec5dc",
+      "member_logits": [
+        6.625803470611572,
+        9.426297187805176,
+        9.141448974609375
+      ],
+      "score": 0.9994961164452564,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09596649999730289,
+      "flagged": true,
+      "id": "ksdd1:91a0beb42fe11d5a553881c6ab50643c4d448f685cdbd99a94fd25e2ae6f2a6b",
+      "member_logits": [
+        3.8924014568328857,
+        4.693274021148682,
+        3.4471216201782227
+      ],
+      "score": 0.980027666129215,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11091489996761084,
+      "flagged": true,
+      "id": "ksdd1:2d3b7695fbff82d8b1b254d0e287898b2ebe07376120125627fbbd6053bdf04e",
+      "member_logits": [
+        3.4368393421173096,
+        3.125873565673828,
+        4.8537917137146
+      ],
+      "score": 0.9730151015744593,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10661469993647188,
+      "flagged": true,
+      "id": "ksdd1:711da18fe994d32bd65a64c9c0ec88edc4aa0ba2cefd904e0ea2c79e3a1935f6",
+      "member_logits": [
+        3.8446309566497803,
+        3.1622021198272705,
+        1.4059219360351562
+      ],
+      "score": 0.9138541993498452,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.11037020001094788,
+      "flagged": true,
+      "id": "ksdd1:36a3122bbbc0c04f26a4b9c92ed6bf41252f6ed7fc2083d6394b7d3ae5578d7e",
+      "member_logits": [
+        2.082488775253296,
+        1.9132556915283203,
+        2.728388547897339
+      ],
+      "score": 0.8997517031349901,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09712819999549538,
+      "flagged": true,
+      "id": "ksdd1:457fe1ab653c67c3c57bb92dcc75ffa2bd57d034f8c770a16a6cebbca9d045ff",
+      "member_logits": [
+        1.8348747491836548,
+        2.0069210529327393,
+        2.3033177852630615
+      ],
+      "score": 0.8843382332947671,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0971754000056535,
+      "flagged": true,
+      "id": "ksdd1:b99dea378131295014d158d437629363cee7830dcfb6ae8ab547e128babf6080",
+      "member_logits": [
+        -0.36977481842041016,
+        2.4829375743865967,
+        2.981778383255005
+      ],
+      "score": 0.761092179410333,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08749329997226596,
+      "flagged": true,
+      "id": "ksdd1:0da02b87e91ca76b315c18f7d12937c946bef6bf0e41e148bb3193fcbbee038b",
+      "member_logits": [
+        5.891561508178711,
+        3.7293288707733154,
+        2.453557252883911
+      ],
+      "score": 0.9648733732258991,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1031317999586463,
+      "flagged": true,
+      "id": "ksdd1:d004f27789422c5e759fc8fc2f8671a70cfe5855994c779806cc01c71d3eae5e",
+      "member_logits": [
+        7.054422378540039,
+        5.365634441375732,
+        5.7594313621521
+      ],
+      "score": 0.9971138083132473,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0937434999505058,
+      "flagged": true,
+      "id": "ksdd1:dc7098910d54edf2cc6fba98ff524c06f66f7e3bd41ff6fd8880c0904f2ec33a",
+      "member_logits": [
+        1.1886886358261108,
+        4.082904815673828,
+        5.784503936767578
+      ],
+      "score": 0.9156207022817009,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08255109994206578,
+      "flagged": true,
+      "id": "ksdd1:0d5c89040882ff447493fc96999d233c1ffa6c3e2149289c3b04f523b778f4a3",
+      "member_logits": [
+        1.7021135091781616,
+        7.046062469482422,
+        3.1527326107025146
+      ],
+      "score": 0.9346522519057098,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1100631000008434,
+      "flagged": true,
+      "id": "ksdd1:ffa7875ecbe8a7ec6792a53fa598a637acccecc3c0494566313e72735c0cc3ae",
+      "member_logits": [
+        7.870988845825195,
+        5.863399982452393,
+        5.382752895355225
+      ],
+      "score": 0.9974036129402069,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09366989997215569,
+      "flagged": true,
+      "id": "ksdd1:35687f9da76e88be20123c2d65d274935e0e0e169294311fdd665af3911de554",
+      "member_logits": [
+        3.8667898178100586,
+        7.650590896606445,
+        6.722909450531006
+      ],
+      "score": 0.9926087795731869,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10517439991235733,
+      "flagged": true,
+      "id": "ksdd1:7753df499707c716a64dbe6f76d6749370aa6f6551a40edb3b4e8a018b147333",
+      "member_logits": [
+        4.017021656036377,
+        5.643699645996094,
+        6.042436599731445
+      ],
+      "score": 0.9921381966151003,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08321499999146909,
+      "flagged": true,
+      "id": "ksdd1:7f2a3c7586d770d1ca9525acb6660ef0c65f43149879f77a1172ee5773b1d0a3",
+      "member_logits": [
+        2.5371923446655273,
+        5.679932117462158,
+        5.518854141235352
+      ],
+      "score": 0.9731039206105668,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09634760010521859,
+      "flagged": true,
+      "id": "ksdd1:d954b75fd8e8dcad05e6e5081a00a5fcb291f0b072e870c8f44d810e73a4677a",
+      "member_logits": [
+        3.762983560562134,
+        5.143927097320557,
+        4.719419002532959
+      ],
+      "score": 0.9875566434109287,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09233610006049275,
+      "flagged": true,
+      "id": "ksdd1:ccac6eb575708bfc653c7e8f197d8a21370a50166a856163423e039d6302f35e",
+      "member_logits": [
+        3.1939990520477295,
+        4.283034801483154,
+        5.9790358543396
+      ],
+      "score": 0.9814900339621512,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10808690008707345,
+      "flagged": true,
+      "id": "ksdd1:2f3b74b4a8c1b7e10f2bf000bc575f18890aef67071908eb86cdfdcdf502ea47",
+      "member_logits": [
+        2.7518415451049805,
+        3.057255506515503,
+        5.280030727386475
+      ],
+      "score": 0.9633485101994234,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09110409999266267,
+      "flagged": true,
+      "id": "ksdd1:145edd7c9169341b044549292d2b1cb7ea0b7641a296bff31fe6826abffb0cbb",
+      "member_logits": [
+        4.908541202545166,
+        6.051555633544922,
+        3.9053585529327393
+      ],
+      "score": 0.9901952755488898,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10397240007296205,
+      "flagged": true,
+      "id": "ksdd1:d515daa68c2c88cebe3256eed0c764fbc4c5000fa9dced29ef3efcd095b165f1",
+      "member_logits": [
+        1.8928390741348267,
+        5.535102367401123,
+        5.207639217376709
+      ],
+      "score": 0.953234609942502,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10678080003708601,
+      "flagged": true,
+      "id": "ksdd1:f7e9f789f058e06f15411b53beb41c731354f1b9c4f51d4f2e8221677fdc35fb",
+      "member_logits": [
+        1.601187825202942,
+        6.330465793609619,
+        5.07199239730835
+      ],
+      "score": 0.9413918163783546,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10172499995678663,
+      "flagged": true,
+      "id": "ksdd1:85a46f54ead3f0d2a65ccd2fa0bfc63c3f30f360c7696d37e3b5790fe6bbfebc",
+      "member_logits": [
+        1.8271433115005493,
+        4.207176685333252,
+        3.4322433471679688
+      ],
+      "score": 0.9384827646166675,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09833339997567236,
+      "flagged": true,
+      "id": "ksdd1:3abaa1e326520d963588b75fa3097bdbc08f2e24a047dd5d214da05672372b16",
+      "member_logits": [
+        4.8990349769592285,
+        4.633399963378906,
+        6.058162212371826
+      ],
+      "score": 0.993546695898576,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09339090005960315,
+      "flagged": true,
+      "id": "ksdd1:25b8c9be8a4517409c980a2e07c3e09f87987a16507a6f09b21e766761c44059",
+      "member_logits": [
+        1.36756432056427,
+        5.903568267822266,
+        6.65519905090332
+      ],
+      "score": 0.9309928115906988,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08672160003334284,
+      "flagged": true,
+      "id": "ksdd1:321cca5d303a12322e6118075b742195739009a731722e91da714f8032372605",
+      "member_logits": [
+        2.375053882598877,
+        8.118946075439453,
+        4.682155609130859
+      ],
+      "score": 0.9684777686797362,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0876503000035882,
+      "flagged": true,
+      "id": "ksdd1:62f0ca2c25dc50858df979924d00b8a6482ae14e0aaa9b6e02eeff2f93cc34b1",
+      "member_logits": [
+        2.729985475540161,
+        5.726151943206787,
+        5.238667011260986
+      ],
+      "score": 0.9767482296102177,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08089660003315657,
+      "flagged": true,
+      "id": "ksdd1:046aa83cbc607a373819d263f115900ae5949b43131a376fd6fa6749a09b685a",
+      "member_logits": [
+        4.707736968994141,
+        5.917797088623047,
+        7.296900272369385
+      ],
+      "score": 0.9958981567189813,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08435670007020235,
+      "flagged": true,
+      "id": "ksdd1:113de2afb1701a6c9650135444238685f1ebca28a13a051d03d58c49e3bdecb9",
+      "member_logits": [
+        2.7719790935516357,
+        4.5563530921936035,
+        3.0336968898773193
+      ],
+      "score": 0.9616083236265238,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09532490000128746,
+      "flagged": true,
+      "id": "ksdd1:50955daba707383510c68affd0de1309918e703e5f1cfd0fcb5f5e49e2535f25",
+      "member_logits": [
+        3.4785468578338623,
+        4.312994956970215,
+        6.854068756103516
+      ],
+      "score": 0.9852669176820767,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0890484000556171,
+      "flagged": true,
+      "id": "ksdd1:665fa1fc252004ed6208c0d80a333a6c299f87cc5433503f52ee20244353c964",
+      "member_logits": [
+        2.7345829010009766,
+        9.775729179382324,
+        7.282487869262695
+      ],
+      "score": 0.9794309701299238,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09888319997116923,
+      "flagged": true,
+      "id": "ksdd1:56f3a587716bc6b00b3faa3bdcec17713b4840b4672d82b2e8bbbc9fabcd566a",
+      "member_logits": [
+        1.089794397354126,
+        7.242085933685303,
+        2.5296592712402344
+      ],
+      "score": 0.8912742545354959,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09636099997442216,
+      "flagged": true,
+      "id": "ksdd1:fd10dd81edb94c49b0e30947905eb3897f27f983ada377a2bc05e9eff113f421",
+      "member_logits": [
+        1.3303436040878296,
+        5.214572906494141,
+        3.032080888748169
+      ],
+      "score": 0.9131642269600345,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1027417000150308,
+      "flagged": true,
+      "id": "ksdd1:af9d2169c6edd7afd13a0e8fea71e00eeab46e33608d61a617da3af6fb8a752e",
+      "member_logits": [
+        0.7872708439826965,
+        2.8976471424102783,
+        2.426558494567871
+      ],
+      "score": 0.8512684208515893,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09772900003008544,
+      "flagged": true,
+      "id": "ksdd1:8e5d4cdeeebac963e99daddce8df11973024c9f3a5ac0152467ed68e0707f5fb",
+      "member_logits": [
+        1.4523195028305054,
+        2.6307122707366943,
+        2.284313201904297
+      ],
+      "score": 0.8835789534339886,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09127890004310757,
+      "flagged": true,
+      "id": "ksdd1:14b02322c889b2ac5835e809729098581fed8315857634cf807bf2fa965fe81d",
+      "member_logits": [
+        4.273134708404541,
+        4.938438415527344,
+        3.2969493865966797
+      ],
+      "score": 0.9811542622753516,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10348319995682687,
+      "flagged": true,
+      "id": "ksdd1:ea4538a953457915c9282542747b74e80eee6341009d911b0ec751cd348a8d7c",
+      "member_logits": [
+        1.6281547546386719,
+        7.002458572387695,
+        2.293283700942993
+      ],
+      "score": 0.9144423847086673,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10850260010920465,
+      "flagged": true,
+      "id": "ksdd1:b2f62a7c5bfc98ec3c246352fed52297a1d50497b0fbde5a36e33f0744d188ac",
+      "member_logits": [
+        2.999692678451538,
+        1.2742542028427124,
+        1.484718680381775
+      ],
+      "score": 0.8497715401261104,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09867360000498593,
+      "flagged": true,
+      "id": "ksdd1:5cb47f36c37218cff883e3eb6cbc705675953aa0ff94cb45aba5a6af1488cf76",
+      "member_logits": [
+        0.8597285151481628,
+        3.872473955154419,
+        5.7538161277771
+      ],
+      "score": 0.8930201876662013,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09830299997702241,
+      "flagged": true,
+      "id": "ksdd1:f8a75d4ea64fb39786c1ba96c0ee642fa59311c02d017aa70b36314df5e9dac0",
+      "member_logits": [
+        5.333937168121338,
+        3.5471668243408203,
+        8.009889602661133
+      ],
+      "score": 0.9889555017191419,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10467020003125072,
+      "flagged": true,
+      "id": "ksdd1:7fa4991368d445690f11f8458513bed160f2eba98e79e496c99c199b22ca4ae8",
+      "member_logits": [
+        1.9149287939071655,
+        1.9395326375961304,
+        2.2312724590301514
+      ],
+      "score": 0.882965166290933,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09031680005136877,
+      "flagged": true,
+      "id": "ksdd1:14e4e24f000e5cd759ce5ce515a0dac8d70395892181af5d9d235f4509b6c2a8",
+      "member_logits": [
+        8.111536979675293,
+        11.961006164550781,
+        10.171056747436523
+      ],
+      "score": 0.9998851279251252,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10061650001443923,
+      "flagged": true,
+      "id": "ksdd1:6dc23ee53a2ec7324f1901100777e44300245b0d96474fd987dea3f9162212bf",
+      "member_logits": [
+        1.6686439514160156,
+        1.4473648071289062,
+        1.0788205862045288
+      ],
+      "score": 0.7990860700581214,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09397280006669462,
+      "flagged": true,
+      "id": "ksdd1:ec04f4862788a8a04e09cf8f025dbf2739321fd6269fc3a52c06a311bc26e6bd",
+      "member_logits": [
+        2.8816120624542236,
+        0.7796047329902649,
+        3.0141994953155518
+      ],
+      "score": 0.8619121194879296,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08614309993572533,
+      "flagged": true,
+      "id": "ksdd1:56e8eebb1e5f972e249c98789ec5f2aa3208241b71449cac7b04d86f74d8214d",
+      "member_logits": [
+        1.586562156677246,
+        5.268638610839844,
+        3.1679563522338867
+      ],
+      "score": 0.9282060328606407,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10954819992184639,
+      "flagged": true,
+      "id": "ksdd1:b17c8115986f76a358cc2e86a39775b0f3f608085dc01c1c23c1f2c94e39d82b",
+      "member_logits": [
+        2.53161883354187,
+        2.787980079650879,
+        4.329258441925049
+      ],
+      "score": 0.9517819320088322,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09929030004423112,
+      "flagged": true,
+      "id": "ksdd1:a56f9781befec6cbe49d815f39f54167043db89dfa294089fd0d19e702db7a3a",
+      "member_logits": [
+        1.3267170190811157,
+        2.815652847290039,
+        3.8622353076934814
+      ],
+      "score": 0.9044082446685796,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0932826999342069,
+      "flagged": true,
+      "id": "ksdd1:fd427df21946d47aeca25ec0f000325c662131a9274b7f237b735ff9ae68c724",
+      "member_logits": [
+        0.9259641170501709,
+        3.0074656009674072,
+        2.854497194290161
+      ],
+      "score": 0.8715722398036988,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10565200005657971,
+      "flagged": true,
+      "id": "ksdd1:2d5f7add205456ee404ba98d07f57da14ee9943accf64560b22d02b809763e6e",
+      "member_logits": [
+        2.541593551635742,
+        3.6608331203460693,
+        4.865512371063232
+      ],
+      "score": 0.9647637376774432,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10068289993796498,
+      "flagged": true,
+      "id": "ksdd1:33f12db29aaf43d9230c8d3c0b4eb320df57d92cfecf24471977a36c0460e6fa",
+      "member_logits": [
+        0.5998461842536926,
+        3.447500467300415,
+        2.8362629413604736
+      ],
+      "score": 0.8531272880138486,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09448540001176298,
+      "flagged": true,
+      "id": "ksdd1:674c989f1684acd7af2f98ec535a4d777fdcb3818bad679e45ecba11485d24ea",
+      "member_logits": [
+        0.8798232674598694,
+        1.7550595998764038,
+        2.7879912853240967
+      ],
+      "score": 0.8337996205447288,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10928289999719709,
+      "flagged": true,
+      "id": "ksdd1:3da7ce78d4adffa6c43183590ee50cbaa75ee9896eaa6d6a0e553b5c7e28073f",
+      "member_logits": [
+        -1.2888303995132446,
+        2.6397435665130615,
+        3.170412063598633
+      ],
+      "score": 0.7030441286307044,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0946373000042513,
+      "flagged": true,
+      "id": "ksdd1:d5a6d7afc8c75ee90611fb5b9d9bd26b8e0d88a134703e8a558fdc9808afc06e",
+      "member_logits": [
+        0.1314454972743988,
+        2.614924669265747,
+        2.3876912593841553
+      ],
+      "score": 0.7935046548295587,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08621839992702007,
+      "flagged": true,
+      "id": "ksdd1:6c4b33947d489c7645919ebcf415f3a8e1336d1ec35314bfca05703fa9b0270f",
+      "member_logits": [
+        2.733536720275879,
+        6.702922821044922,
+        4.541200637817383
+      ],
+      "score": 0.975734279735715,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10695250006392598,
+      "flagged": true,
+      "id": "ksdd1:ff4de1f4a03476231fd70bde107942969f20fbd39a7a8f95836c725a7cb6cea5",
+      "member_logits": [
+        6.253927707672119,
+        5.652946949005127,
+        6.126553058624268
+      ],
+      "score": 0.9974688527374678,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08085689996369183,
+      "flagged": true,
+      "id": "ksdd1:8a464e694ea045c460c632fe227d511a5d37265428474fa4ff289cda68156568",
+      "member_logits": [
+        -0.7559647560119629,
+        0.7319839596748352,
+        2.0352275371551514
+      ],
+      "score": 0.6264033004794786,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09661550004966557,
+      "flagged": true,
+      "id": "ksdd1:d399fe512e4b458c4ef2e27b2c71437b0deafad5bf2999e898bd035dcb5d1624",
+      "member_logits": [
+        -2.1829748153686523,
+        3.2331960201263428,
+        2.059832811355591
+      ],
+      "score": 0.6500972607749502,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10048279992770404,
+      "flagged": true,
+      "id": "ksdd1:d133e14737d1afb90b83f7d8e915adbd441943125a6d19415f3a66e20aaa7854",
+      "member_logits": [
+        -0.4808293879032135,
+        4.757666110992432,
+        2.802255392074585
+      ],
+      "score": 0.7721137792140994,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10725309990812093,
+      "flagged": true,
+      "id": "ksdd1:9ea274e4eaba9b80af934392492787dde5b8bacf2742e252a3017c8c6158658a",
+      "member_logits": [
+        0.39223694801330566,
+        5.894139766693115,
+        3.787710189819336
+      ],
+      "score": 0.8573090848384384,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10202800005208701,
+      "flagged": true,
+      "id": "ksdd1:5794e3a84dfffed612dd80e7a5f258357539765dffbf0222cdcf53110d138224",
+      "member_logits": [
+        -3.0745880603790283,
+        2.846026659011841,
+        3.153883934020996
+      ],
+      "score": 0.6494473824058362,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10354909999296069,
+      "flagged": true,
+      "id": "ksdd1:92bc78f171ffd3c043a5a52f5be1e6f2f955ea4a3e574e3974f9b33a40942882",
+      "member_logits": [
+        3.6138365268707275,
+        2.0690248012542725,
+        4.632363796234131
+      ],
+      "score": 0.9506589523722434,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09481000003870577,
+      "flagged": true,
+      "id": "ksdd1:ddfee703e14088f903686850ae943ba138e26526d2d32d5d6b5e513d0c9bb445",
+      "member_logits": [
+        0.9036856293678284,
+        1.873491883277893,
+        1.1071441173553467
+      ],
+      "score": 0.7767214717874942,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0738866999745369,
+      "flagged": true,
+      "id": "ksdd1:4822c0451ccea28eba984d7a71f73d089bbe94b2f355df68b1ae0301bf8a4063",
+      "member_logits": [
+        -2.298781633377075,
+        1.6972761154174805,
+        1.7009344100952148
+      ],
+      "score": 0.5940197652472077,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10283270000945777,
+      "flagged": true,
+      "id": "ksdd1:dbcea0f56bbf54aea8f938c16b3283bd3f12bd75c0aedb6a9b734c778cd5a90d",
+      "member_logits": [
+        4.549100875854492,
+        12.984034538269043,
+        5.39592981338501
+      ],
+      "score": 0.9950057203559468,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09354030003305525,
+      "flagged": true,
+      "id": "ksdd1:37c437b867fd0bbcd7ee7c8c843c35480d1a62ee565f7a38a7b391ad92e118f9",
+      "member_logits": [
+        4.87594747543335,
+        3.887075424194336,
+        5.334545612335205
+      ],
+      "score": 0.9891792363207021,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09707560006063432,
+      "flagged": true,
+      "id": "ksdd1:28142f0e98eeef1ee86e1a718e610bfa3f3ecdfd6e299c88aeec1bf6baceebdc",
+      "member_logits": [
+        5.351378917694092,
+        7.49179220199585,
+        8.57856273651123
+      ],
+      "score": 0.9981784589760462,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08565140003338456,
+      "flagged": true,
+      "id": "ksdd1:72d585d46c4aac654d9039032c33bcdb2caa31ce5e71d9b0d468644f78b2f87d",
+      "member_logits": [
+        0.0676284059882164,
+        1.1140923500061035,
+        2.646927833557129
+      ],
+      "score": 0.7345377705453392,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08776189992204309,
+      "flagged": true,
+      "id": "ksdd1:120af1def107209a2b2e89a435504f53c779dffa41fd40a163fe3aa4528c17f6",
+      "member_logits": [
+        -1.1883718967437744,
+        0.9510169625282288,
+        2.0880072116851807
+      ],
+      "score": 0.6148673219078238,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10488840006291866,
+      "flagged": true,
+      "id": "ksdd1:0793410fae1f07601958171d7e21eff7c1308d49e39a341d93a127e5093a380e",
+      "member_logits": [
+        -0.08633097261190414,
+        1.1001054048538208,
+        1.7946743965148926
+      ],
+      "score": 0.6954033073166247,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09820160001982003,
+      "flagged": true,
+      "id": "ksdd1:f9c8363a7d317e429cf296a792e8a9a8386c09f86aa1beda6ec80228463d96f9",
+      "member_logits": [
+        0.7148075103759766,
+        4.652928352355957,
+        2.4776771068573
+      ],
+      "score": 0.8615269904090247,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10357660008594394,
+      "flagged": true,
+      "id": "ksdd1:51cc8ac383a34beacda0d4ebbf6c256a7c6c26dbbcad09d586a5f789c5aa3100",
+      "member_logits": [
+        0.7070167660713196,
+        3.2231876850128174,
+        4.540438175201416
+      ],
+      "score": 0.8736277119313436,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07566099998075515,
+      "flagged": true,
+      "id": "ksdd1:69a9173f905eae353c4f6ba97d598ca91771a0348e27ad5246af07f044762d76",
+      "member_logits": [
+        0.059294719249010086,
+        5.440577030181885,
+        2.8843376636505127
+      ],
+      "score": 0.8191892749941632,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09936310001648962,
+      "flagged": true,
+      "id": "ksdd1:38b1f26be3b0ce12a0bf0051b4174a3f192dfc4e06dec9c05d7202a8d8f779ff",
+      "member_logits": [
+        1.8267593383789062,
+        3.9004547595977783,
+        2.551795721054077
+      ],
+      "score": 0.9230792717071812,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08557600004132837,
+      "flagged": true,
+      "id": "ksdd1:13d80d4516656e5f503caefe540576081c63c4cf413e6a9ccd4d97392684cf90",
+      "member_logits": [
+        3.5043132305145264,
+        3.620990514755249,
+        4.816788673400879
+      ],
+      "score": 0.9789078511200304,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10252400010358542,
+      "flagged": true,
+      "id": "ksdd1:7c4a18b9ce72bd518c5390a2c56ed653e0f3ce17d5fff0f10869d68082d3a2ff",
+      "member_logits": [
+        1.4285478591918945,
+        0.8828189969062805,
+        2.5329787731170654
+      ],
+      "score": 0.8135008861934617,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09629599994514138,
+      "flagged": true,
+      "id": "ksdd1:b77bdc9fc8d91f73b10b4bc91172fca7e13ab4c5368232f6b76b18f9bc8a3bc5",
+      "member_logits": [
+        -0.4778483211994171,
+        2.368908405303955,
+        1.8134945631027222
+      ],
+      "score": 0.7189898384422383,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10988250002264977,
+      "flagged": true,
+      "id": "ksdd1:139c5b01f037aff7c6a2546dfb4d4f8242be8afb69bd2c129f01d136a5b7bea4",
+      "member_logits": [
+        1.6889508962631226,
+        1.3316859006881714,
+        2.8517844676971436
+      ],
+      "score": 0.8602054531377664,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08490710007026792,
+      "flagged": true,
+      "id": "ksdd1:41e34db157d18ee36daa339e6ccc411ed58837c173dd0548dc83844b7a852d01",
+      "member_logits": [
+        1.895660400390625,
+        2.4995057582855225,
+        1.1557148694992065
+      ],
+      "score": 0.8513533189463027,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10627889994066209,
+      "flagged": true,
+      "id": "ksdd1:bcf93cd5081ea69b012fd3ce573a8e0a094405da46f557f829f7db3b1225bb52",
+      "member_logits": [
+        1.5445423126220703,
+        3.653264284133911,
+        2.5487477779388428
+      ],
+      "score": 0.9087870628021157,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10369749995879829,
+      "flagged": true,
+      "id": "ksdd1:4064ace04fa6da4c49b177b445c23b1a06deb168cbaf214e2f219c28a018c675",
+      "member_logits": [
+        0.42184269428253174,
+        4.250066757202148,
+        2.026838541030884
+      ],
+      "score": 0.8244825614213177,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09622349997516721,
+      "flagged": true,
+      "id": "ksdd1:22b2883840ca8dab5b161df082f87523f39a8e679b73e9b1bce9ff4ceb81927b",
+      "member_logits": [
+        -0.967003345489502,
+        2.147376775741577,
+        0.8517091274261475
+      ],
+      "score": 0.6239423805776881,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09316220006439835,
+      "flagged": true,
+      "id": "ksdd1:da5a4c0aa92aee2c2a7e79e74fad8e330b6cb97a8da7da811619d468b3b8b52d",
+      "member_logits": [
+        -0.43429693579673767,
+        5.360645294189453,
+        2.4188809394836426
+      ],
+      "score": 0.7688935363826417,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09848709998186678,
+      "flagged": true,
+      "id": "ksdd1:dcf58a966b5133c5fd941cb18734a34cb514836f4074d1cd1b68669be10ba19a",
+      "member_logits": [
+        -0.3159998059272766,
+        1.6897093057632446,
+        2.9751269817352295
+      ],
+      "score": 0.7390915246395063,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07547719997819513,
+      "flagged": true,
+      "id": "ksdd1:22bbd31f2ca653acea8113682c944f40a9fc1d5078601890c0fb254eb9c510ff",
+      "member_logits": [
+        1.5818347930908203,
+        2.1364362239837646,
+        0.7492302060127258
+      ],
+      "score": 0.8009565427427329,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09970969997812063,
+      "flagged": true,
+      "id": "ksdd1:cf9fb1541f37eec82bebd0975d3bd6ae81508083ea8e3cefe838d7b8b0c4751f",
+      "member_logits": [
+        -1.6435877084732056,
+        3.774171829223633,
+        2.718353271484375
+      ],
+      "score": 0.6925458388876221,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07500429998617619,
+      "flagged": true,
+      "id": "ksdd1:565a1caf8f6d78b485b7c57a7c9b5e01f015c4f76ed510fd9f2d9bb1ee4bb037",
+      "member_logits": [
+        2.2767980098724365,
+        4.4401068687438965,
+        1.703820824623108
+      ],
+      "score": 0.9137710189001904,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10599760001059622,
+      "flagged": true,
+      "id": "ksdd1:567bccb9bbae0f3086002d3ee1462e4724823af8754f375d61e672d034a31ab7",
+      "member_logits": [
+        -0.5758934020996094,
+        0.5953564643859863,
+        0.4142700135707855
+      ],
+      "score": 0.5355275314019329,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09416540001984686,
+      "flagged": true,
+      "id": "ksdd1:6a1a45876779d96f51f2abcb59744f06f51346dfbf58b61b5584329170b3d9a1",
+      "member_logits": [
+        2.5065431594848633,
+        3.9912073612213135,
+        6.289389133453369
+      ],
+      "score": 0.9682015405285398,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09571769996546209,
+      "flagged": true,
+      "id": "ksdd1:3d151d7ecac1626506873e435b6f4e0cf48d8bba874c03fe430b4edd757fbad1",
+      "member_logits": [
+        1.3200807571411133,
+        0.8695006966590881,
+        3.274846315383911
+      ],
+      "score": 0.8191308909978906,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0836715999757871,
+      "flagged": true,
+      "id": "ksdd1:28ee484bd05947fb090511b1cc04b11b0760d8e7fdb1dc7b45d6df1377a68db7",
+      "member_logits": [
+        1.8248182535171509,
+        2.2433536052703857,
+        2.1356420516967773
+      ],
+      "score": 0.8865128002600037,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10622349998448044,
+      "flagged": true,
+      "id": "ksdd1:ea68470c04090ba4bea8321bfa59b94de12c85f8350ce581e1e67df7ff0a1805",
+      "member_logits": [
+        0.27656158804893494,
+        0.7909168601036072,
+        1.9321622848510742
+      ],
+      "score": 0.7100732579866825,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0913566000526771,
+      "flagged": true,
+      "id": "ksdd1:ed3b2916b6982dae9a35f6e1eae2b70c13367e29edbbbe836859a800265ee7fd",
+      "member_logits": [
+        0.31479477882385254,
+        2.315819501876831,
+        2.481262445449829
+      ],
+      "score": 0.8036838995920715,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10620010003913194,
+      "flagged": true,
+      "id": "ksdd1:861ec540cd4495ed63a9fffcdbdaa80cc053e41dfac66a9c5f86c73ef95aca47",
+      "member_logits": [
+        -1.296346664428711,
+        0.03213614225387573,
+        0.15114353597164154
+      ],
+      "score": 0.42017598955523483,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08695719996467233,
+      "flagged": true,
+      "id": "ksdd1:1d9eefbe31c80d26bbdd0ee945ee25b60e2eafb5c601dc93b552ae37973f2e22",
+      "member_logits": [
+        -1.350983738899231,
+        2.4840753078460693,
+        0.6729540228843689
+      ],
+      "score": 0.5969639198751127,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09727699996437877,
+      "flagged": true,
+      "id": "ksdd1:42aeae21d1c6035d94918b4aa5b66f6a1efcd0aee00d6ebc609a3e55249766b9",
+      "member_logits": [
+        5.842409610748291,
+        4.636809825897217,
+        4.4195780754089355
+      ],
+      "score": 0.991871625038983,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10017460002563894,
+      "flagged": true,
+      "id": "ksdd1:6da889d5fa5744a02fb7ffc2d239997e206db35abc21ea93dbff8a8f2d0aba5c",
+      "member_logits": [
+        -1.7404727935791016,
+        1.3086435794830322,
+        1.367070198059082
+      ],
+      "score": 0.5778151225310104,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10864210000727326,
+      "flagged": true,
+      "id": "ksdd1:7dd6ee724288119c1558eccd884e3dfa4c3b726e352d0a6763f7d9e62b7d60f3",
+      "member_logits": [
+        0.019437989220023155,
+        2.7328319549560547,
+        3.5695431232452393
+      ],
+      "score": 0.8054662568917538,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09142999991308898,
+      "flagged": true,
+      "id": "ksdd1:238d91ecd9cb541b6ff2be2e4e6336a6fcd57d359d4410f34670f051e72edd76",
+      "member_logits": [
+        1.5515689849853516,
+        5.49650239944458,
+        5.771842956542969
+      ],
+      "score": 0.939317180044704,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09148519998416305,
+      "flagged": true,
+      "id": "ksdd1:c061bb5206867fcce8f26ee74bb906e11a5f55f386f6502f8b22f92df746595d",
+      "member_logits": [
+        5.255712509155273,
+        5.309030532836914,
+        6.787982940673828
+      ],
+      "score": 0.9962537045096562,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08886869996786118,
+      "flagged": true,
+      "id": "ksdd1:422b5267f02426e1d853b58fb2f089e2a2add3701f11f261c1379cca2b256101",
+      "member_logits": [
+        -0.42352089285850525,
+        2.7376010417938232,
+        1.2570315599441528
+      ],
+      "score": 0.7044661650473817,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09732699999585748,
+      "flagged": true,
+      "id": "ksdd1:59b3c2564f240aa51b9d6e7d98f20fae0ee036eb7e3670c10364ddc4e5f15cad",
+      "member_logits": [
+        2.2665586471557617,
+        2.842203378677368,
+        2.2493479251861572
+      ],
+      "score": 0.9185259493824312,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07904700003564358,
+      "flagged": true,
+      "id": "ksdd1:3d34ff72d3087ad2bd3ad908f58c31aebfaec179232ec972e397e6004862aa3c",
+      "member_logits": [
+        1.4198285341262817,
+        4.5903706550598145,
+        3.3600587844848633
+      ],
+      "score": 0.9205656972407456,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10940019995905459,
+      "flagged": true,
+      "id": "ksdd1:3618f7985337243a973a216a641bcf1470d0c0749a3260c772946b38a76ae2d7",
+      "member_logits": [
+        -0.1879018396139145,
+        0.9612643122673035,
+        3.0651161670684814
+      ],
+      "score": 0.7106559348083384,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10810389998368919,
+      "flagged": true,
+      "id": "ksdd1:b588d3204edbff94dc27f6635b225146be94246b2be556f80d92254904133c63",
+      "member_logits": [
+        2.643723726272583,
+        5.2499003410339355,
+        4.0854949951171875
+      ],
+      "score": 0.9706219018665448,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07783279998693615,
+      "flagged": true,
+      "id": "ksdd1:b817a8cd8459809c992cd0989d70ec264d8a918263547491bce2493180dbc92e",
+      "member_logits": [
+        7.358687877655029,
+        10.257027626037598,
+        7.856321334838867
+      ],
+      "score": 0.9996470390232993,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10361300001386553,
+      "flagged": true,
+      "id": "ksdd1:708cffa4b1c65b67deacf3b8c0eaabc056d4622d5fc9d1f0dc4f0bf0f749783e",
+      "member_logits": [
+        1.8538646697998047,
+        1.3210622072219849,
+        0.845628023147583
+      ],
+      "score": 0.7845292714104111,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10013540007639676,
+      "flagged": true,
+      "id": "ksdd1:c14f63a2bc933628900870c6cfb2a2313885d6cb16f3aab7cbd3dc96bc9dffb9",
+      "member_logits": [
+        0.5952039957046509,
+        5.577647686004639,
+        1.2386441230773926
+      ],
+      "score": 0.8053730008180865,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09725220000836998,
+      "flagged": true,
+      "id": "ksdd1:6a91b3c161f11bbad3ca79fcb3b3dc4e5c2ac8cd2bb6f868aafbb7d5c142cae8",
+      "member_logits": [
+        0.04127390310168266,
+        2.2741572856903076,
+        -0.5179674625396729
+      ],
+      "score": 0.5967862214221618,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08689890010282397,
+      "flagged": true,
+      "id": "ksdd1:05017bcf9a672d46cef0ef9319189f196e54ff0a1213443b6604199fb2d5a3ae",
+      "member_logits": [
+        3.93829083442688,
+        3.1550445556640625,
+        2.876563310623169
+      ],
+      "score": 0.9622244889236979,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0947688000742346,
+      "flagged": true,
+      "id": "ksdd1:d6ea6c4804620da64a02f523665a04330207e0de3f7041b91757226fabbc5923",
+      "member_logits": [
+        -1.2629488706588745,
+        3.1735031604766846,
+        1.9129096269607544
+      ],
+      "score": 0.6838790809484184,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08967269991990179,
+      "flagged": true,
+      "id": "ksdd1:827e90fed2991a516e2b8009d88d7f36368d9a9789dd73016a16e90cfade5f1b",
+      "member_logits": [
+        -0.38432595133781433,
+        1.4510530233383179,
+        2.284228563308716
+      ],
+      "score": 0.7076022676387694,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08746900002006441,
+      "flagged": true,
+      "id": "ksdd1:3c2cddf603d3da71b06c5f37ac1ca36fb8e45a7a8b6e176ce40c6b7b15d8bdc1",
+      "member_logits": [
+        -2.272648334503174,
+        0.9596787095069885,
+        -0.9738211631774902
+      ],
+      "score": 0.36353022708860117,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10426350007764995,
+      "flagged": true,
+      "id": "ksdd1:461322522319fad779008abaeff344e73149acbe1479363aeddff1a9a7c77ca8",
+      "member_logits": [
+        0.29376187920570374,
+        2.8674449920654297,
+        0.5128634572029114
+      ],
+      "score": 0.714869270312024,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0958093999652192,
+      "flagged": false,
+      "id": "ksdd1:d31b395206ff487f6b1b6c13a673999ed4d8e764a2d44078a9f7c855bb9153fd",
+      "member_logits": [
+        -2.5120818614959717,
+        -0.6282075047492981,
+        -1.0366226434707642
+      ],
+      "score": 0.22824493310131289,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08573789999354631,
+      "flagged": true,
+      "id": "ksdd1:212659be18cdbd2c075b013ebe32dbc03aaf8f2adbe3263a71a2085ff4330b4b",
+      "member_logits": [
+        4.722523212432861,
+        6.171921253204346,
+        5.946287631988525
+      ],
+      "score": 0.9954980291524432,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09361800004262477,
+      "flagged": true,
+      "id": "ksdd1:7d537ba99397ff80b4fa733513986c5598256d1f07f481f0f66ed7c425a5424d",
+      "member_logits": [
+        -0.1967833787202835,
+        1.9664868116378784,
+        -0.29131653904914856
+      ],
+      "score": 0.5852923816999818,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08806719991844147,
+      "flagged": true,
+      "id": "ksdd1:5f00cc5d2dc0cdf791c11cc0e258e3a307dada01c1f2ecc512ad21c2f002c95d",
+      "member_logits": [
+        -2.374225378036499,
+        1.4695849418640137,
+        0.35701894760131836
+      ],
+      "score": 0.4954907598685208,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07236620003823191,
+      "flagged": true,
+      "id": "ksdd1:6730dff848ee397c33651463230d61d7d2f9dd6377a8514f45e4f25dd096a5ea",
+      "member_logits": [
+        -1.9253228902816772,
+        4.952714443206787,
+        1.8746720552444458
+      ],
+      "score": 0.6624174878279281,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08235060004517436,
+      "flagged": true,
+      "id": "ksdd1:37d39de1ebb2cddbff42c349a8b5759ba0639f01968d87060dbc12d384770709",
+      "member_logits": [
+        -0.006241182330995798,
+        0.7650108933448792,
+        1.2909257411956787
+      ],
+      "score": 0.6550614038990737,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09450809995178133,
+      "flagged": true,
+      "id": "ksdd1:f176c51b4d793248fa8b75960fd5024a8850201dad166a833ddc62cc128d7ac9",
+      "member_logits": [
+        -1.3906522989273071,
+        -1.7285207509994507,
+        0.8870391249656677
+      ],
+      "score": 0.35278643512519353,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08324049995280802,
+      "flagged": false,
+      "id": "ksdd1:7fb7806b94d61281d3bf06efdded28351629ad48a726cec3ce1e49de1e7421f8",
+      "member_logits": [
+        -2.7475697994232178,
+        -0.3403603136539459,
+        -0.5670435428619385
+      ],
+      "score": 0.27928843073695825,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0952438999665901,
+      "flagged": true,
+      "id": "ksdd1:80e95d0a212c3aa8d2fa76ddccc83a636ec4297c7aeb79c9d4f9b077faa39647",
+      "member_logits": [
+        -0.3057800531387329,
+        2.938276529312134,
+        2.0471832752227783
+      ],
+      "score": 0.7531714260598705,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10337260004598647,
+      "flagged": true,
+      "id": "ksdd1:8097963a2d21279eb6ed047a913d685314c71311fc6860023a584d896c25210f",
+      "member_logits": [
+        0.23009705543518066,
+        2.688446283340454,
+        1.7974958419799805
+      ],
+      "score": 0.7838190219053192,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0964055999647826,
+      "flagged": true,
+      "id": "ksdd1:bfc42d936f42ddc57c083aac1e7965a3eed31d6af4c076d3deb5d526886c2f81",
+      "member_logits": [
+        0.6330525279045105,
+        8.158435821533203,
+        3.0457675457000732
+      ],
+      "score": 0.869164836795021,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09986570000182837,
+      "flagged": true,
+      "id": "ksdd1:188acc2dd403bd5ab043e871eeac75bfafbb62125156ecae3483408209c382e9",
+      "member_logits": [
+        -0.6993520855903625,
+        2.224186658859253,
+        2.360025644302368
+      ],
+      "score": 0.7160280912848492,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10221210005693138,
+      "flagged": true,
+      "id": "ksdd1:971edd51471bde98b21172377bba96f577603687c0b7f6298ba017e390541d2f",
+      "member_logits": [
+        3.5583229064941406,
+        5.623178482055664,
+        2.3754642009735107
+      ],
+      "score": 0.9612131357630401,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09486169996671379,
+      "flagged": true,
+      "id": "ksdd1:83aacdbd0a5a98410e185066a082e1224f90ebd9fbd1ad38e6c5a2b052e58a44",
+      "member_logits": [
+        1.5024452209472656,
+        1.7636581659317017,
+        1.8492202758789062
+      ],
+      "score": 0.8452138818068345,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07945540000218898,
+      "flagged": true,
+      "id": "ksdd1:82e1d46cdde4aa091a21a5bcc7c992fec297d6bbb614718ad43b658f66439ea1",
+      "member_logits": [
+        7.246453762054443,
+        8.579737663269043,
+        7.147958755493164
+      ],
+      "score": 0.9994380405100162,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08508979994803667,
+      "flagged": true,
+      "id": "ksdd1:87196f729936598202fa9f7f2bfe40499ce39e1f6079a09df2ae01d73a70a6bb",
+      "member_logits": [
+        -0.11728960275650024,
+        5.723241806030273,
+        1.8181875944137573
+      ],
+      "score": 0.77593374509429,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0782933000009507,
+      "flagged": true,
+      "id": "ksdd1:589b4524900b43037dff0469b7b77022fbd427f407a9188e0d58a8db8cdb465e",
+      "member_logits": [
+        1.045704960823059,
+        3.0322837829589844,
+        1.6010942459106445
+      ],
+      "score": 0.8420440071416929,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09100200003013015,
+      "flagged": true,
+      "id": "ksdd1:5481ac0c6a930b0d8eb6deb94a7c8b7f6d8b09ad9fe442f4d6465b2aaeec2c6d",
+      "member_logits": [
+        -2.0078060626983643,
+        1.4147104024887085,
+        0.8538401126861572
+      ],
+      "score": 0.5414218921059073,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1056810999289155,
+      "flagged": true,
+      "id": "ksdd1:d7a7c1fb3118ab53f39b951b63c6a8bf8303f5c3875c7a84e2c4706a5d398441",
+      "member_logits": [
+        -1.0038496255874634,
+        2.059135675430298,
+        0.7747541069984436
+      ],
+      "score": 0.6132003649712768,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09562789998017251,
+      "flagged": true,
+      "id": "ksdd1:0081c2a15cc9f01c382851ec2fa6efd7633d91e7aeade1dd22afc54c6730a75e",
+      "member_logits": [
+        5.097771167755127,
+        8.601853370666504,
+        7.8561577796936035
+      ],
+      "score": 0.9977852729354687,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10043200000654906,
+      "flagged": true,
+      "id": "ksdd1:ea38e6715721a2d6b3b50c0ae9765dadac205fc000bc65a94c54f069d7071a23",
+      "member_logits": [
+        -1.2274891138076782,
+        2.8404552936553955,
+        0.39710697531700134
+      ],
+      "score": 0.5898122586739695,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08093500009272248,
+      "flagged": true,
+      "id": "ksdd1:242206b7f5c4dfde63365c6a48e7172ad94f60227a84219d819f971ef5b3fc92",
+      "member_logits": [
+        -3.2031002044677734,
+        4.466466426849365,
+        0.28150033950805664
+      ],
+      "score": 0.5325352903689446,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07140659994911402,
+      "flagged": true,
+      "id": "ksdd1:8c237f7c3c0dfd8ea4f913b32336e751e4553386b88bffe0649a60bae58d80e8",
+      "member_logits": [
+        -0.296188086271286,
+        1.4732266664505005,
+        0.7202380299568176
+      ],
+      "score": 0.6375654531322082,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.091710300068371,
+      "flagged": true,
+      "id": "ksdd1:d615a8489d464f5ad5b775c3df5d34c356990ba0ea925e1e0b5a1d0356fb8ecc",
+      "member_logits": [
+        11.282745361328125,
+        2.6011836528778076,
+        7.235382080078125
+      ],
+      "score": 0.9767350058742647,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09848580008838326,
+      "flagged": true,
+      "id": "ksdd1:275f838187bd90d09961f220b8a4c5b35c045c00d3a1ca6839c2c29fd5c9684f",
+      "member_logits": [
+        3.466015577316284,
+        5.777766704559326,
+        6.61053991317749
+      ],
+      "score": 0.9884249411137548,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07725840003695339,
+      "flagged": true,
+      "id": "ksdd1:48375b50c39ddedacd93258e30720a0375617eb8c2820d7045af318ed8d7ea53",
+      "member_logits": [
+        4.544614315032959,
+        3.955693244934082,
+        4.028501033782959
+      ],
+      "score": 0.9844040092950505,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08308040001429617,
+      "flagged": true,
+      "id": "ksdd1:6617be2b8e0b18e307ec3a78269bc01758de22c0f8706633c9f38ee9b9e20b37",
+      "member_logits": [
+        10.966239929199219,
+        5.095283031463623,
+        5.566488742828369
+      ],
+      "score": 0.9966950431707616,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08817240002099425,
+      "flagged": true,
+      "id": "ksdd1:5f4dc92cb13b1f06b18d61d32a681cd5931cbbb6f570177784beda83afb0d8f3",
+      "member_logits": [
+        3.994610548019409,
+        6.043270111083984,
+        4.567934036254883
+      ],
+      "score": 0.9897591439017672,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10870099999010563,
+      "flagged": true,
+      "id": "ksdd1:95b40c2daeb9d2ec502c1c3a8e967d1b3c5679196149742eac38decb0ff03615",
+      "member_logits": [
+        10.686081886291504,
+        10.304142951965332,
+        7.0806403160095215
+      ],
+      "score": 0.9997010398156158,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10149479995016009,
+      "flagged": true,
+      "id": "ksdd1:3919040b2689c0be896ef42f4f3e6b37e61d95368d34ffef57463634b63d1b81",
+      "member_logits": [
+        3.7581958770751953,
+        5.174385070800781,
+        5.24778938293457
+      ],
+      "score": 0.9887821477165574,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10111620009411126,
+      "flagged": true,
+      "id": "ksdd1:ea3519f88078e1824847d4752ef9be10dccf78c0758229409a8e7c5e9eb4dd21",
+      "member_logits": [
+        1.809090495109558,
+        3.538088798522949,
+        6.657102108001709
+      ],
+      "score": 0.9432403326952116,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08966409997083247,
+      "flagged": true,
+      "id": "ksdd1:906dde0a757f7f55b19409b225032a0613dddbcb0c1521b5bfec7167720ec023",
+      "member_logits": [
+        5.895253658294678,
+        6.054868221282959,
+        5.159307956695557
+      ],
+      "score": 0.9964004361126045,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.1026689000427723,
+      "flagged": true,
+      "id": "ksdd1:81feb7eb6065561d43d59c570cb6ada527c80b8b16aa8a542c8e1e7cdb56be1c",
+      "member_logits": [
+        0.21250174939632416,
+        3.6221954822540283,
+        1.5183318853378296
+      ],
+      "score": 0.7823969238940959,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09521370008587837,
+      "flagged": true,
+      "id": "ksdd1:f180194b303f03ddf9e460732c54a45893d4e6f35771803725950be057f4f197",
+      "member_logits": [
+        2.5474014282226562,
+        4.8099141120910645,
+        3.6089794635772705
+      ],
+      "score": 0.9643168481639498,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10779979999642819,
+      "flagged": true,
+      "id": "ksdd1:fc5e8aa6809356d860d9dd6dd33cd5709f510ab08f0dac2eca2d403351fb9770",
+      "member_logits": [
+        8.096421241760254,
+        11.283097267150879,
+        14.733489036560059
+      ],
+      "score": 0.9998941607957516,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08418840006925166,
+      "flagged": true,
+      "id": "ksdd1:0560419b421a46e6f6811d46cfc13411ae2613eacf1e382c7163d4a3ed5f1ac7",
+      "member_logits": [
+        2.769542932510376,
+        4.705837726593018,
+        2.265129566192627
+      ],
+      "score": 0.9459979761857156,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10870840004645288,
+      "flagged": true,
+      "id": "ksdd1:ce4d3ccc0e66ffb152415eee0a8ab64536b2bc81dbac8e4c7a2b5fda2e531304",
+      "member_logits": [
+        2.7346084117889404,
+        2.4976069927215576,
+        2.1829700469970703
+      ],
+      "score": 0.9205739435266368,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10229139996226877,
+      "flagged": true,
+      "id": "ksdd1:5f5f9c135ff6a177e2bf17999e03afe7f3ca0c4e371ac18e120e5ce4ec5985d1",
+      "member_logits": [
+        1.0955767631530762,
+        2.438331127166748,
+        3.149851083755493
+      ],
+      "score": 0.8760123970041261,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09015930001623929,
+      "flagged": true,
+      "id": "ksdd1:ac27425cc474660465e3cd6070d54df228303c495d3ead8b6f3c0e66968849fd",
+      "member_logits": [
+        -1.0367064476013184,
+        2.7145864963531494,
+        2.1826343536376953
+      ],
+      "score": 0.6994490247971434,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09967789996881038,
+      "flagged": true,
+      "id": "ksdd1:5183acc0a661cdc95da3497b5a479e9724522b9f5f90817f0589c830d7b9cfe4",
+      "member_logits": [
+        0.6199949383735657,
+        4.518626689910889,
+        5.872337341308594
+      ],
+      "score": 0.8788742166929348,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09294510004110634,
+      "flagged": true,
+      "id": "ksdd1:4d949d2d2977b1a85ebb16ff7618cd96ec3d70036221111b7259179eebfd6640",
+      "member_logits": [
+        -0.06869407743215561,
+        5.580781936645508,
+        1.4119300842285156
+      ],
+      "score": 0.7610493202530962,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10612710006535053,
+      "flagged": true,
+      "id": "ksdd1:c50590b3e52b4819a9e97e390b4f88e2f369e89ec0e39baac0348bba858d6205",
+      "member_logits": [
+        2.5578668117523193,
+        0.6719844937324524,
+        1.8439289331436157
+      ],
+      "score": 0.817820110265734,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10069890005979687,
+      "flagged": true,
+      "id": "ksdd1:0cb290d57b03ef2a367796019caa0e1dcf5eacccf56949c2283263f400b725be",
+      "member_logits": [
+        1.420331358909607,
+        5.9240288734436035,
+        1.705709457397461
+      ],
+      "score": 0.8830006800541996,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09212840010877699,
+      "flagged": true,
+      "id": "ksdd1:09773701e470149a3c5d35159e8a7fa603536d1140876037c04b6469128abde5",
+      "member_logits": [
+        0.5463448166847229,
+        1.7402445077896118,
+        0.9510021209716797
+      ],
+      "score": 0.7351073111083276,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09079829999245703,
+      "flagged": true,
+      "id": "ksdd1:3c5cff6aaaab05ced2cc3f2ef643339eebe7dff3bb83c5406690081a42a1c2c0",
+      "member_logits": [
+        3.833081007003784,
+        6.246131896972656,
+        3.115129232406616
+      ],
+      "score": 0.9781313285684649,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10036329994909465,
+      "flagged": true,
+      "id": "ksdd1:6a2c1e5756b7115a585c7321573bcacccd8a42d846b7fd06c5ce6a1f051e1ae0",
+      "member_logits": [
+        5.382692337036133,
+        7.1718525886535645,
+        9.258890151977539
+      ],
+      "score": 0.9981876756935703,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09681090002413839,
+      "flagged": true,
+      "id": "ksdd1:0440819b42cf0c5ae2f0f4ab4819e8ba7dc35e06ca4b43f5efebdb9166fffaee",
+      "member_logits": [
+        1.1846435070037842,
+        4.0945820808410645,
+        5.6001973152160645
+      ],
+      "score": 0.9152361874741484,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09848909999709576,
+      "flagged": true,
+      "id": "ksdd1:a4e18c3490ec3c99d68a8d6ea8bd9b11371cc7626bec1c4b88fcc5416433209f",
+      "member_logits": [
+        1.536415457725525,
+        7.173440933227539,
+        3.7994015216827393
+      ],
+      "score": 0.9334276192221435,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10620699997525662,
+      "flagged": true,
+      "id": "ksdd1:eaf357bad91ee895e62b4f2286ad84692851be0b6e622e6085e6967307c5a19f",
+      "member_logits": [
+        0.6287655234336853,
+        2.206303119659424,
+        3.124934196472168
+      ],
+      "score": 0.8369777405383645,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09582189994398504,
+      "flagged": true,
+      "id": "ksdd1:86c9c3a1d028a1ecbb8d37aefe434cb0ea410ff60c07da331c36e017d513a0c8",
+      "member_logits": [
+        0.302211195230484,
+        6.715318202972412,
+        3.7175419330596924
+      ],
+      "score": 0.8500182707378737,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09459840005729347,
+      "flagged": true,
+      "id": "ksdd1:4725357a3545ddc5908e4d26d786ee9fba95b70a155ab0037f1a793a651da41d",
+      "member_logits": [
+        3.926065683364868,
+        6.680962085723877,
+        6.198158264160156
+      ],
+      "score": 0.9924594155093015,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.0905843999935314,
+      "flagged": true,
+      "id": "ksdd1:bd5e51ddc4dd00d8c8f1f901522727ad8826253090773e74a14eff9c4d8ddea3",
+      "member_logits": [
+        2.9984428882598877,
+        3.6695871353149414,
+        1.8547953367233276
+      ],
+      "score": 0.9307797772630044,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10218409996014088,
+      "flagged": true,
+      "id": "ksdd1:7ead94e4af763a7f4290caee6317407662f853d4095803b72abde2743b71060d",
+      "member_logits": [
+        2.205993890762329,
+        2.6085009574890137,
+        2.2805516719818115
+      ],
+      "score": 0.9131488796404769,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10351549996994436,
+      "flagged": true,
+      "id": "ksdd1:e306eae289a66308e32932a293168ece601f951e6adcc234b75e2f58385a9049",
+      "member_logits": [
+        0.6473343968391418,
+        6.068670749664307,
+        2.052800178527832
+      ],
+      "score": 0.8467769584920198,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.07905870000831783,
+      "flagged": true,
+      "id": "ksdd1:3048d79837345a63d3133f0886b63831ab50181722b6ec05dbd131caeebc4bca",
+      "member_logits": [
+        1.2553719282150269,
+        5.791689395904541,
+        5.56184196472168
+      ],
+      "score": 0.9237859539141247,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10394699999596924,
+      "flagged": true,
+      "id": "ksdd1:b961ca194d3d871d6dcd05cb97d20ca7762b62e6faf2fe288dc44b4524a7baaa",
+      "member_logits": [
+        4.631495952606201,
+        8.399558067321777,
+        3.152575731277466
+      ],
+      "score": 0.9830463184451856,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09182049997616559,
+      "flagged": true,
+      "id": "ksdd1:b4785107cc8e951b92d593a120ebb918ce54551713ec38b4dbaa4727eb7c9152",
+      "member_logits": [
+        1.0817896127700806,
+        4.1347126960754395,
+        5.685788631439209
+      ],
+      "score": 0.9092316857424595,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.09780260000843555,
+      "flagged": true,
+      "id": "ksdd1:98a665789551aaff09a612bc18f41f578cadf7df13a86ccb9db7e33720049369",
+      "member_logits": [
+        3.681698799133301,
+        5.742371082305908,
+        3.915426254272461
+      ],
+      "score": 0.9842329583695181,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10035000008065253,
+      "flagged": true,
+      "id": "ksdd1:1b102e4b99c74aab770ddc2e08942b0b9139a59f3cfb50b72a10d30b0929a89e",
+      "member_logits": [
+        1.1302376985549927,
+        5.759601593017578,
+        1.319787621498108
+      ],
+      "score": 0.8472955572918005,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10235050006303936,
+      "flagged": true,
+      "id": "ksdd1:71085c43949af87a622fa8170ae8e36ec1c8b9b7bf0e34f5c5c812572f6f9c83",
+      "member_logits": [
+        -1.6973233222961426,
+        2.301321268081665,
+        1.2023242712020874
+      ],
+      "score": 0.6109131950232208,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08701010001823306,
+      "flagged": true,
+      "id": "ksdd1:636bdc13b692176634290838dece042fe053c6b97af472f8bcacabee8a9890c2",
+      "member_logits": [
+        3.242039680480957,
+        4.846011638641357,
+        3.5767996311187744
+      ],
+      "score": 0.9757944532555811,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.08838359999936074,
+      "flagged": true,
+      "id": "ksdd1:e25db5e3d452409e54c5f6846f6dc9bbec6a42b6516bb26a45f033307c77a924",
+      "member_logits": [
+        -1.1123710870742798,
+        0.2509264051914215,
+        2.774582624435425
+      ],
+      "score": 0.5837067930524814,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10532410000450909,
+      "flagged": true,
+      "id": "ksdd1:39e81b62e924622890a0f7117de842493fec6fe0929955d0aab3de76f54f723c",
+      "member_logits": [
+        1.8480901718139648,
+        1.7802618741989136,
+        0.49180373549461365
+      ],
+      "score": 0.7800543881827627,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.10129080002661794,
+      "flagged": true,
+      "id": "ksdd1:7161c73f6f8774134f309de7f26de8b0fb615f860610cd8d079d2632c172a6a7",
+      "member_logits": [
+        0.12353554368019104,
+        1.2439314126968384,
+        1.7254797220230103
+      ],
+      "score": 0.718641858232723,
+      "status": "scored",
+      "warnings": [
+        "outside_ksdd2_capture_dimensions"
+      ]
+    }
+  ]
+}
