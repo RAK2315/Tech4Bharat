@@ -26,6 +26,11 @@ confirmation, or mix separate datasets into one favorable average.
    define binary truth; retain and disclose empty-mask/category disagreements.
    The authors welcome research use with citation; no additional commercial
    rights or redistribution permission are inferred.
+   Annotation-format inspection before any prediction found that some original
+   magnetic masks contain grayscale saliency values rather than strict binary
+   labels. Preserve them: nonzero defines mask presence/area for descriptive
+   inventory only; image-level category truth remains authoritative. Report
+   nonbinary-mask counts. Do not optimize a mask threshold or relabel categories.
 2. **KolektorSDD1**, entire 399-image fine-annotation release linked by
    [ViCoS](https://www.vicos.si/resources/kolektorsdd/), public
    `https://data.vicos.si/datasets/KSDD/KolektorSDD.zip`.
@@ -90,3 +95,15 @@ min(4 GiB, 60% available RAM) per dataset phase. Preserve all failures, resource
 logs, source inventories and predictions in a new output directory. Keep
 original studies and the open ML handoff unchanged except an additive result
 link after reporting. New exposed data cannot later be called untouched.
+
+## Inventory repair before any inference
+
+The first inventory attempt stopped on a strict-binary-mask assertion. The
+source fine mask `kos20/Part4_label.bmp` has values 0, 85 and 255, while 388
+Magnetic Tile masks are grayscale. Nonempty-mask image labels and nonzero-area
+accounting were already the declared rules, so retain these originals and
+report their annotation formats; no defect is dropped or relabeled. Preserve
+the failed source, diagnosis and partial inventory under the first output root.
+Complete the inventory in the new `external-transfer-20261023-v2` root using
+the exact same acquired archives. Frozen numerical/model code and thresholds
+are unchanged. Register all final source/input hashes before first prediction.

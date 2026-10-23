@@ -1,4 +1,10 @@
 # Preserve byte hashes for new recall evidence without rewriting old snapshots.
+/components/tools/*external_transfer.py text eol=lf
+/components/tests/test_external_transfer_audit.py text eol=lf
+/docs/research/2026-10-23-external-transfer*.json text eol=lf
+/docs/research/2026-10-23-external-transfer*.md text eol=lf
+/docs/research/external-transfer/*.json text eol=lf
+/docs/research/external-transfer/*.log -text
 /.gitattributes text eol=lf
 /AGENTS.md text eol=lf
 /components/docs/STATUS.md text eol=lf

@@ -1,0 +1,58 @@
+{
+  "bundle_sha256": {
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\models\\ksdd2-ensemble-mvp-v1\\backbone.safetensors": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\models\\ksdd2-ensemble-mvp-v1\\head-4220.pt": "51e2fcf5d771d35f7aeec97d1cf61ac0add065b158512845bae17576009ef60f",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\models\\ksdd2-ensemble-mvp-v1\\head-4221.pt": "365c62cb81b713b38c0d699f845b19babb8ca370b27109b9ec782c5de3f35b77",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\models\\ksdd2-ensemble-mvp-v1\\head-4222.pt": "56c693fcae67774887a76dfd2aa497d1507ccd8598af8b30cf8a2aa13151aa5c"
+  },
+  "created_utc": "2026-10-23T07:53:54.815453+00:00",
+  "datasets": [
+    "magnetic",
+    "ksdd1",
+    "dagm1"
+  ],
+  "identity": "5d40b4f7d6add57967483bca32c60db9a368cbbe78c9b559ae4f2f48ce12b073",
+  "input_sha256": {
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\acquisition-complete.json": "a4fff0d786982839cfd2c025a94b696a185db320dc7239b90bf6bc1500fcbea2",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\acquisition-dagm1-defect.json": "eee513d779578c0309e88eafe9aaf6c6d5d30afb00df68204b3ab77f11dd0728",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\acquisition-dagm1-normal.json": "ab748d8ac0a11b1341dea01127bff2d946b0c3270503c21df1cc05cb02ecd9e6",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\acquisition-ksdd1.json": "c3a1afc6f915dc774c7a476dd2f513e56045cc05bb002297f6aba9b8f09e6a6b",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\acquisition-magnetic.json": "12f7883449ba16f65c55ade3aafe0f091172acb17f66931e5cd78d312a33e561",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inference-dagm1.json": "d7052be6907a1466bf2d81d302ff11c910c42dd826f08aebbeac232042f21c16",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inference-ksdd1.json": "3c5bc19f6594403f2d1242cc76c9330ce6abec29cdd89980cc7e61c1d0d6cf76",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inference-magnetic.json": "1fc66db827c2ba6d38d5ddce0abb1d3bc34688d9dcd2f3500b0d2b4c80ffc3d3",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-attempt-1-failure.json": "23302d181e0196e5c77eda647ebc72df582d39401c88cf800c8cd2d71832a84b",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-audit.json": "9e863a83f6246f5ca466a8be864d391a60ddaf6627742b4e778b7b70d069893f",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-dagm1.json": "15a844376d13090d0a61fb5932631767f0ec76b947caefabbdb0185a474912d8",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-ksdd1.json": "cf10be797c3b15915feca6377859f77347f8f6949dc88542db35c44d8479e6ca",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-magnetic.json": "f82807c4d4a89e39d960756aeccd06db75aebfce606f1464f9bd7d5ce98a0f8d"
+  },
+  "model_id": "ksdd2-ensemble-mvp-v1",
+  "model_identity": "8ddcac9907af4c033cbc9ff208f452ce572ea6b251da373cf267c2a3df95f355",
+  "new_training_or_calibration": false,
+  "numerical_versions": {
+    "Pillow": "12.1.0",
+    "numpy": "2.2.4",
+    "safetensors": "0.8.0",
+    "timm": "1.0.30",
+    "torch": "2.10.0+cpu",
+    "torchvision": "0.25.0+cpu"
+  },
+  "official_test_access": false,
+  "source_model_selection_changed": false,
+  "source_sha256": {
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\model_registry\\ksdd2-ensemble-mvp-v1\\manifest.json": "fc23d8d928d58b11a3a207d503c2872106123afcef5e81eed4b23935f1091104",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\outputs\\external-transfer-20261023-v2\\inventory-attempt-1-source.py": "817a6f84e74867ec4b9cf7087a9ef9c692b1067072990940e9d7f8530a00a1ac",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\requirements-recall.lock": "6568091def6551717f623afbae88d33cb800ed7ae95970e5193856654b424c7c",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\src\\component_inspector\\vision\\geometry.py": "b16e5c69eac5d8ce9a8393f92b8a169fb376d5fad0b678e2c01c6191099737cb",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\src\\component_inspector\\vision\\ksdd2_ensemble.py": "f95470ce1c057396fc78ba59f2f8ba3ba4ec4c7c2eaa497181fc8ce3bee7f99a",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\src\\component_inspector\\vision\\media.py": "82e4cd0abfe0d93be1df013b3357949f1a3e2ab755ad74d1aacc562046758270",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\src\\component_inspector\\vision\\resources.py": "aeea16fbff6382c7775783a519e5de9f48a1e74d4e40df26836df3d621be0b7e",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\tests\\test_external_transfer_audit.py": "d5ca6690eb8ef245623591a491da03f06989fc2f6257064b0add6faff4cefaf7",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\tools\\acquire_external_transfer.py": "8d9698ef8d4abcb008794dbab5978c04df51041a96f96effc978fc09197ee5d4",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\tools\\external_transfer.py": "d1b9708e93947ffe9ba2fde159e8cbec259fbe0d62138894867b8fd3b6210305",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\components\\tools\\verify_external_transfer.py": "9d48199fe775c4acc021a54f5ea6105013215c614ee0ba8c26c069b3d2df6626",
+    "C:\\Users\\rehtr\\Downloads\\tech4bharat\\docs\\research\\2026-10-23-external-transfer-protocol.md": "80877562278a39cc4a22c45bb81af070c4c36eb73c6049e201816be81ebbeff7"
+  },
+  "threshold": 0.33108379983608666
+}
